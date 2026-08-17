@@ -1,0 +1,26 @@
+# HATI-Madrid — Phase 4.1 Visual Decision-Support MVP
+# Dedicated UI dependency set. Install into a Python 3.12 virtual
+# environment SEPARATE from the SOLWEIG env (.venv_solweig) and from the
+# main geo-stack interpreter. See docs/PHASE4_1_IMPLEMENTATION_REPORT.md.
+#
+#   py -3.12 -m venv .venv_app
+#   .venv_app/Scripts/python -m pip install -r app/requirements.txt
+#
+# Direct dependencies only (transitive versions pinned in requirements.lock.txt):
+
+dash==4.4.1            # Plotly Dash — approved framework (Phase 4.0 recommendation)
+dash-leaflet==1.1.3    # point-marker map layer (no MapLibre, no raster/heatmap)
+pandas==2.3.3          # read-only CSV load / filter / join of the 7 Phase 3 files
+
+# Dev / test only:
+pytest==8.4.2          # implementation-contract test suite
+
+# Explicitly NOT included (per Phase 4.1 charter):
+#   - dash-ag-grid / AG Grid
+#   - dash-bootstrap-components or any Bootstrap component library
+#   - React build tooling / bundlers
+#   - MapLibre GL
+#   - ML / AI packages
+#   - database infrastructure
+#   - pyproj / coordinate-transform libs — NOT needed: phase3_asset_catalog.csv
+#     already carries WGS84 latitude/longitude, consumed directly by Leaflet.
