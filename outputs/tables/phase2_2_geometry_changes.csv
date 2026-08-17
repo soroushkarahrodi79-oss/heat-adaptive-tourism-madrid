@@ -1,0 +1,10 @@
+asset_id,name,timestamp,geometry_verdict,correction_applied,utci_baseline,utci_corrected_central,utci_corrected_narrow,utci_corrected_wide,utci_delta_central,feas_baseline,feas_corrected_central,decision_changed,bias_direction
+A23,Jardines de Cecilio Rodríguez,12:00,PARTIALLY STALE,True,39.4,39.1,39.3,39.0,-0.3,FEASIBLE WITH CONDITIONS,FEASIBLE WITH CONDITIONS,False,overestimated heat (LiDAR understated canopy)
+A23,Jardines de Cecilio Rodríguez,15:00,PARTIALLY STALE,True,44.4,44.0,44.1,43.7,-0.4,FEASIBLE WITH CONDITIONS,FEASIBLE WITH CONDITIONS,False,overestimated heat (LiDAR understated canopy)
+A23,Jardines de Cecilio Rodríguez,18:00,PARTIALLY STALE,True,41.9,41.8,41.8,41.6,-0.1,FEASIBLE WITH CONDITIONS,FEASIBLE WITH CONDITIONS,False,overestimated heat (LiDAR understated canopy)
+A24,La Rosaleda,12:00,REPRESENTATIVE (not stale),False,40.4,40.4,40.4,40.4,0.0,FEASIBLE WITH CONDITIONS,FEASIBLE WITH CONDITIONS,False,none (LiDAR representative)
+A24,La Rosaleda,15:00,REPRESENTATIVE (not stale),False,45.0,45.0,45.0,45.0,0.0,FEASIBLE WITH CONDITIONS,FEASIBLE WITH CONDITIONS,False,none (LiDAR representative)
+A24,La Rosaleda,18:00,REPRESENTATIVE (not stale),False,45.4,45.4,45.4,45.4,0.0,FEASIBLE WITH CONDITIONS,FEASIBLE WITH CONDITIONS,False,none (LiDAR representative)
+A27,Jardines del Arquitecto Herrero Palacios,12:00,MATERIALLY STALE,True,37.6,36.5,36.8,35.8,-1.1,FEASIBLE WITH CONDITIONS,FEASIBLE WITH CONDITIONS,False,overestimated heat (LiDAR understated canopy)
+A27,Jardines del Arquitecto Herrero Palacios,15:00,MATERIALLY STALE,True,43.5,43.1,43.3,42.7,-0.4,FEASIBLE WITH CONDITIONS,FEASIBLE WITH CONDITIONS,False,overestimated heat (LiDAR understated canopy)
+A27,Jardines del Arquitecto Herrero Palacios,18:00,MATERIALLY STALE,True,42.2,41.8,42.1,41.6,-0.4,FEASIBLE WITH CONDITIONS,FEASIBLE WITH CONDITIONS,False,overestimated heat (LiDAR understated canopy)

@@ -1,0 +1,16 @@
+robustness,count,pct
+BOUNDARY,20,47.6
+ROBUST,19,45.2
+UNSTABLE,3,7.1
+ROBUST [attraction_exterior],7,77.8
+BOUNDARY [attraction_exterior],2,22.2
+UNSTABLE [attraction_exterior],0,0.0
+ROBUST [park_garden],4,22.2
+BOUNDARY [park_garden],11,61.1
+UNSTABLE [park_garden],3,16.7
+ROBUST [plaza_hardscape],7,58.3
+BOUNDARY [plaza_hardscape],5,41.7
+UNSTABLE [plaza_hardscape],0,0.0
+ROBUST [street_corridor],1,33.3
+BOUNDARY [street_corridor],2,66.7
+UNSTABLE [street_corridor],0,0.0

@@ -1,0 +1,13 @@
+scenario,local_time,ta_c,rh_pct,ws_ms,pressure_hpa,ghi_wm2,dni_wm2,dhi_wm2,source_note
+BASELINE,12:00,34.2,28.0,2.61,1016.6,722.8,791.2,129.5,"pvlib Ineichen clear-sky model (Phase 2 original, unchanged)"
+REAL_SATELLITE,12:00,34.2,28.0,2.61,1016.6,651.0,796.4,103.0,"Open-Meteo historical archive API, EUMETSAT CM SAF SARAH3 satellite radiation retrieval, real cloud_cover=10% at this hour"
+SENS_A_minus10pct,12:00,34.2,28.0,2.61,1016.6,650.5,712.1,116.5,UNCERTAINTY SCENARIO (not an observation): baseline x 0.90
+SENS_B_minus20pct,12:00,34.2,28.0,2.61,1016.6,578.2,633.0,103.6,UNCERTAINTY SCENARIO (not an observation): baseline x 0.80
+BASELINE,15:00,38.8,21.0,1.0,1013.8,861.9,829.6,142.0,"pvlib Ineichen clear-sky model (Phase 2 original, unchanged)"
+REAL_SATELLITE,15:00,38.8,21.0,1.0,1013.8,868.0,857.2,116.0,"Open-Meteo historical archive API, EUMETSAT CM SAF SARAH3 satellite radiation retrieval, real cloud_cover=15% at this hour"
+SENS_A_minus10pct,15:00,38.8,21.0,1.0,1013.8,775.7,746.6,127.8,UNCERTAINTY SCENARIO (not an observation): baseline x 0.90
+SENS_B_minus20pct,15:00,38.8,21.0,1.0,1013.8,689.5,663.7,113.6,UNCERTAINTY SCENARIO (not an observation): baseline x 0.80
+BASELINE,18:00,40.5,17.0,2.11,1011.6,497.7,701.7,106.8,"pvlib Ineichen clear-sky model (Phase 2 original, unchanged)"
+REAL_SATELLITE,18:00,40.5,17.0,2.11,1011.6,553.0,682.2,122.0,"Open-Meteo historical archive API, EUMETSAT CM SAF SARAH3 satellite radiation retrieval, real cloud_cover=15% at this hour"
+SENS_A_minus10pct,18:00,40.5,17.0,2.11,1011.6,447.9,631.5,96.1,UNCERTAINTY SCENARIO (not an observation): baseline x 0.90
+SENS_B_minus20pct,18:00,40.5,17.0,2.11,1011.6,398.2,561.4,85.4,UNCERTAINTY SCENARIO (not an observation): baseline x 0.80

@@ -1,0 +1,26 @@
+metric,proxy_a,proxy_b,value,n,cohens_kappa
+feasibility_agreement_pct,OSM,Madrid,81.0,42,0.616
+feasibility_agreement_pct,OSM,TCD,81.0,42,0.616
+feasibility_agreement_pct,OSM,green,81.0,42,0.616
+feasibility_agreement_pct,Madrid,TCD,71.4,42,0.423
+feasibility_agreement_pct,Madrid,green,81.0,42,0.616
+feasibility_agreement_pct,TCD,green,81.0,42,0.616
+unstable_outdoor_assets_pct,ALL,ALL,57.1,14,
+morphology_agreement_pct,Madrid,TCD [attraction_exterior],55.6,9,
+morphology_agreement_pct,OSM,Madrid [attraction_exterior],77.8,9,
+morphology_agreement_pct,OSM,TCD [attraction_exterior],77.8,9,
+morphology_agreement_pct,Madrid,TCD [park_garden],77.8,18,
+morphology_agreement_pct,OSM,Madrid [park_garden],88.9,18,
+morphology_agreement_pct,OSM,TCD [park_garden],88.9,18,
+morphology_agreement_pct,Madrid,TCD [plaza_hardscape],66.7,12,
+morphology_agreement_pct,OSM,Madrid [plaza_hardscape],66.7,12,
+morphology_agreement_pct,OSM,TCD [plaza_hardscape],66.7,12,
+morphology_agreement_pct,Madrid,TCD [street_corridor],100.0,3,
+morphology_agreement_pct,OSM,Madrid [street_corridor],100.0,3,
+morphology_agreement_pct,OSM,TCD [street_corridor],100.0,3,
+timestamp_agreement_pct,Madrid,TCD [12:00],57.1,14,
+timestamp_agreement_pct,Madrid,TCD [15:00],100.0,14,
+timestamp_agreement_pct,Madrid,TCD [18:00],57.1,14,
+buffer_sensitivity_agreement_pct,Madrid,TCD [buffer=25m],81.0,42,
+buffer_sensitivity_agreement_pct,Madrid,TCD [buffer=50m PRIMARY],71.4,42,
+buffer_sensitivity_agreement_pct,Madrid,TCD [buffer=100m],81.0,42,

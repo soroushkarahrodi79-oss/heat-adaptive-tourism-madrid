@@ -1,0 +1,28 @@
+asset_id,name,osm_ref,matched_in_raw,opening_hours,opening_hours:covid19,tourism,amenity,historic,leisure,name:en,wikidata,website
+A01,Museo del Prado,relation/7726080,True,Mo-Sa 10:00-20:00; Su 10:00-19:00,,museum,,,,Prado Museum,Q160112,https://www.museodelprado.es/
+A02,Museo Nacional Centro de Arte Reina Sofía,way/991444051,True,Mo 10:00-21:00; We-Sa 10:00-21:00; Su 10:00-19:00,,museum,arts_centre,,,,Q460889,https://www.museoreinasofia.es/
+A03,Museo Thyssen-Bornemisza,relation/1869336,True,Tu-Su 10:00-19:00; Mo 12:00-16:00,,museum,,,,,Q176251,https://www.museothyssen.org/
+A04,CaixaForum Madrid,way/286816147,True,Mo-Su 10:00-20:00,,museum,,,,,Q1026041,https://fundacionlacaixa.org/es/caixaforum-madrid
+A05,Museo Naval de Madrid,way/292649859,True,"Tu-Su 10:00-19:00; Mo,PH off; Jan 01,06,Dec 24,25,31: off",,museum,,,,Naval Museum of Madrid,Q1815235,
+A06,Museo Nacional de Antropología,relation/4525000,True,Tu-Sa 09:30-20:00; Su 09:30-15:00,,museum,,,,National Museum of Anthropology,Q2917041,
+A07,Museo Nacional de Artes Decorativas,relation/8278843,True,"Tu-We, Fr-Sa 09:30-15:00; Su 10:00-15:00; Th 09:30-15:00, 17:00-20:00",,museum,,,,,Q5361303,
+A08,Real Fábrica de Tapices,way/30759780,True,"Mo-Fr 10:00-14:00; Sa, Su off; PH off; Aug off",,museum,,,,,Q570665,https://www.realfabricadetapices.com/
+A09,Madrid-Puerta de Atocha-Almudena Grandes,way/733993037,True,,,,,,,,Q5846989,
+A10,Estación del Arte,node/5299314577,True,,,,,,,,Q2016175,https://www.metromadrid.es/es/linea/linea-1#estacion-115
+A11,Retiro,node/25903356,True,,,,,,,,,
+A12,Banco de España,node/5303271999,True,,,,,,,,Q2481227,https://www.metromadrid.es/es/linea/linea-2#estacion-206
+A13,Jardín Tropical,way/554720472,True,,,,,,garden,,,
+A14,Puerta de Alcalá,way/174805987,True,,,attraction,,yes,,Puerta de Alcala,Q1140634,
+A15,Fuente de Cibeles,relation/6345116,True,,,attraction,fountain,,,,Q2736564,
+A16,Fuente de Neptuno,way/553098274,True,,,attraction,,monument,,Fountain of Neptune,Q1472798,
+A17,Estatua de Goya,node/2045974223,True,,,,,monument,,,Q105622942,
+A18,Palacio de Cibeles - Ayuntamiento de Madrid,node/8928518873,True,,,attraction,townhall,,,,,
+A19,Real Observatorio de Madrid,way/29471311,True,,,,,,park,,Q4274351,
+A20,Parque del Retiro,relation/13616929,True,Oct-Mar: 06:00-22:00; Apr-Sep: 06:00-24:00,,,,,park,El Retiro Park,Q1131807,
+A21,Real Jardín Botánico de Madrid,way/15244804,True,"Jan,Feb,Nov,Dec: 10:00-18:00; Apr,Sep: 10:00-20:00; Mar,Oct: 10:00-19:00; May-Aug: 10:00-21:00",,attraction,,,garden,Royal Botanical Garden of Madrid,Q1794858,https://www.rjb.csic.es/
+A22,Palacio de Cristal,way/23596451,True,,,attraction,arts_centre,building,,Crystal Palace,Q2420025,
+A23,Jardines de Cecilio Rodríguez,relation/10005473,True,,,attraction,,,garden,,Q108378742,
+A24,La Rosaleda,way/29471363,True,"Apr-Sep Mo-Su,PH 10:00-20:00; Oct-Mar Mo-Su,PH 10:00-18:00",,,,,garden,,Q96377009,
+A25,Jardín del Parterre,relation/20827650,True,,,attraction,,,garden,Parterre Garden,Q48782205,
+A26,Monumento a Alfonso XII,way/722360391,True,,,viewpoint,,monument,,Monument to Alfonso XII,Q3862645,
+A27,Jardines del Arquitecto Herrero Palacios,relation/10005474,True,,,,,,garden,,Q114662887,

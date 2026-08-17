@@ -1,0 +1,25 @@
+metric,group,value,n
+overall_reclassification_rate_pct,ALL,33.3,42
+reclassification_direction_count,physical model MORE restrictive (proxy underestimated hazard),9.0,42
+reclassification_direction_count,physical model LESS restrictive (proxy overestimated hazard),5.0,42
+reclassification_rate_by_morphology_pct,attraction_exterior,33.3,9
+reclassification_rate_by_morphology_pct,park_garden,33.3,18
+reclassification_rate_by_morphology_pct,plaza_hardscape,33.3,12
+reclassification_rate_by_morphology_pct,street_corridor,33.3,3
+reclassification_rate_by_timestamp_pct,12:00,64.3,14
+reclassification_rate_by_timestamp_pct,15:00,0.0,14
+reclassification_rate_by_timestamp_pct,18:00,35.7,14
+asset_level_instability,A14,1.0,3
+asset_level_instability,A15,1.0,3
+asset_level_instability,A16,1.0,3
+asset_level_instability,A17,1.0,3
+asset_level_instability,A18,1.0,3
+asset_level_instability,A19,1.0,3
+asset_level_instability,A20,1.0,3
+asset_level_instability,A21,1.0,3
+asset_level_instability,A22,1.0,3
+asset_level_instability,A23,1.0,3
+asset_level_instability,A24,1.0,3
+asset_level_instability,A25,1.0,3
+asset_level_instability,A26,1.0,3
+asset_level_instability,A27,1.0,3

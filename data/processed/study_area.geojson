@@ -1,0 +1,63 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HATI-Madrid Phase 1 pilot study area",
+        "description": "Prado - Retiro - Atocha bounded pilot",
+        "lat_min": 40.404,
+        "lat_max": 40.421,
+        "lon_min": -3.696,
+        "lon_max": -3.6775,
+        "area_km2": 2.967,
+        "crs": "EPSG:4326",
+        "landmarks_used_for_boundary": {
+          "Puerta de Alcalá (N reference)": [
+            40.4201,
+            -3.6883
+          ],
+          "Estación de Madrid-Puerta de Atocha (S reference, full building centroid)": [
+            40.40456,
+            -3.68868
+          ],
+          "CaixaForum Madrid / Paseo del Prado west edge (W reference)": [
+            40.4113,
+            -3.6936
+          ],
+          "Jardines de Cecilio Rodríguez (E interior reference, real polygon centroid)": [
+            40.41335,
+            -3.67797
+          ]
+        }
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.6775,
+              40.404
+            ],
+            [
+              -3.6775,
+              40.421
+            ],
+            [
+              -3.696,
+              40.421
+            ],
+            [
+              -3.696,
+              40.404
+            ],
+            [
+              -3.6775,
+              40.404
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

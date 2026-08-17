@@ -1,0 +1,45 @@
+# ─────────────────────────────────────────────────────────────
+# HATI-Madrid .gitignore
+# Ignores virtual environments, Python caches, heavy regenerable
+# SOLWEIG run caches, and Phase 4.1 app runtime artifacts ONLY.
+# NEVER ignores scientific source (data/raw), processed data
+# (data/processed), or protected outputs (outputs/tables, outputs/maps).
+# ─────────────────────────────────────────────────────────────
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# --- Virtual environments (each kept out of version control) ---
+.venv/
+.venv_solweig/
+.venv_app/
+venv/
+env/
+ENV/
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# --- Heavy regenerable SOLWEIG run caches / working dirs (interim only) ---
+# These are large binary intermediates (GeoTIFFs, SVF memmaps, shadow mats).
+# They are NOT protected Phase 0-3 artifacts and are NOT read by the app.
+data/interim/solweig/
+data/interim/solweig_phase2_2/
+data/interim/solweig_cache/
+data/interim/solweig_cache_phase2_1/
+data/interim/solweig_cache_phase2_2/
+
+# --- Phase 4.1 app runtime artifacts ---
+*.log
+.dash_cache/

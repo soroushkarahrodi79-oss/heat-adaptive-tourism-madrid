@@ -1,0 +1,9 @@
+scenario,source_id,timestamp,access_radius_m,baseline_nearest_open_pick,baseline_pick_name,baseline_pick_distance_m,baseline_pick_indoor_outdoor,baseline_pick_survives_hati,baseline_pick_hati_exclusion,n_open_in_radius_baseline,n_hati_alternatives,n_removed_by_hati_thermal_or_evidence,removed_ids,candidate_set_changed
+S1,A16,15:00,800,A03,Museo Thyssen-Bornemisza,134.0,indoor,True,,11,9,2,"A15,A25",True
+S2,A15,15:00,800,A18,Palacio de Cibeles - Ayuntamiento de Madrid,114.0,outdoor,False,OUTDOOR_EXPOSURE_TOO_HIGH,9,6,3,"A16,A18,A25",True
+S3,A14,18:00,800,A11,Retiro,202.0,indoor,True,,10,4,6,"A15,A16,A17,A18,A25,A26",True
+S4,A26,18:00,800,A20,Parque del Retiro,274.0,outdoor,True,,9,8,1,A24,True
+S5,A19,15:00,800,A10,Estación del Arte,359.0,indoor,True,,10,7,3,"A22,A24,A25",True
+S6,A17,18:00,800,A16,Fuente de Neptuno,140.0,outdoor,False,OUTDOOR_EXPOSURE_TOO_HIGH,11,9,2,"A15,A16",True
+S7,A24,18:00,800,A22,Palacio de Cristal,345.0,outdoor,True,,6,6,0,,False
+S8,A20,15:00,500,A22,Palacio de Cristal,152.0,outdoor,False,OUTDOOR_EXPOSURE_TOO_HIGH,6,0,6,"A22,A23,A24,A25,A26,A27",True

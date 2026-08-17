@@ -1,0 +1,2441 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-17T14:00:04Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 167302670,
+  "lat": 40.4137070,
+  "lon": -3.6957228,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2025-11-18",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 559824976,
+  "lat": 40.4124146,
+  "lon": -3.6913750,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 960871298,
+  "lat": 40.4126854,
+  "lon": -3.6939563,
+  "tags": {
+    "amenity": "fountain",
+    "fountain": "decorative",
+    "height": "3",
+    "inscription": "Plaza de la Platería de Martínez",
+    "name": "Fuente de la Platería de Martínez",
+    "source": "survey",
+    "wikidata": "Q110747286"
+  }
+},
+{
+  "type": "node",
+  "id": 991793741,
+  "lat": 40.4100963,
+  "lon": -3.6908892,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2023-04-22",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 1464142403,
+  "lat": 40.4190697,
+  "lon": -3.6811704,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1743699808,
+  "lat": 40.4156411,
+  "lon": -3.6809721,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2024-05-12",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 1889602428,
+  "lat": 40.4129711,
+  "lon": -3.6765763,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1917865206,
+  "lat": 40.4182602,
+  "lon": -3.6763924,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap",
+    "source": "survey",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2494897762,
+  "lat": 40.4076385,
+  "lon": -3.6741520,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2025-07-16",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 2496787803,
+  "lat": 40.4169324,
+  "lon": -3.6761411,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2025-06-17",
+    "man_made": "water_tap",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976"
+  }
+},
+{
+  "type": "node",
+  "id": 2496787804,
+  "lat": 40.4183443,
+  "lon": -3.6855094,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2021-08-29",
+    "fountain": "drinking",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2500990740,
+  "lat": 40.4050934,
+  "lon": -3.6746206,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 2502615271,
+  "lat": 40.4090503,
+  "lon": -3.6965306,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 2527420077,
+  "lat": 40.4133699,
+  "lon": -3.6814686,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2021-08-29",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 2527420100,
+  "lat": 40.4137132,
+  "lon": -3.6814358,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 2946159113,
+  "lat": 40.4095083,
+  "lon": -3.6959545,
+  "tags": {
+    "access": "yes",
+    "amenity": "drinking_water",
+    "bottle": "yes",
+    "fee": "no",
+    "man_made": "water_tap",
+    "name": "Fuente de Santa Isabel",
+    "survey:date": "2022-07-22",
+    "wheelchair": "yes",
+    "wikidata": "Q110768340"
+  }
+},
+{
+  "type": "node",
+  "id": 2946159114,
+  "lat": 40.4113959,
+  "lon": -3.6970807,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 3100182024,
+  "lat": 40.4050072,
+  "lon": -3.6704431,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536664,
+  "lat": 40.4101588,
+  "lon": -3.6917388,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536671,
+  "lat": 40.4102906,
+  "lon": -3.6907208,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536674,
+  "lat": 40.4103419,
+  "lon": -3.6903131,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536678,
+  "lat": 40.4104892,
+  "lon": -3.6918136,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536682,
+  "lat": 40.4105545,
+  "lon": -3.6913304,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536686,
+  "lat": 40.4106208,
+  "lon": -3.6907896,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536689,
+  "lat": 40.4106729,
+  "lon": -3.6903842,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536693,
+  "lat": 40.4108046,
+  "lon": -3.6918842,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536701,
+  "lat": 40.4109385,
+  "lon": -3.6908654,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536705,
+  "lat": 40.4109920,
+  "lon": -3.6904587,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536721,
+  "lat": 40.4113414,
+  "lon": -3.6905377,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536731,
+  "lat": 40.4116164,
+  "lon": -3.6910169,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536734,
+  "lat": 40.4116614,
+  "lon": -3.6906123,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536742,
+  "lat": 40.4119463,
+  "lon": -3.6910922,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536745,
+  "lat": 40.4119978,
+  "lon": -3.6906884,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536749,
+  "lat": 40.4121340,
+  "lon": -3.6921868,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536753,
+  "lat": 40.4122373,
+  "lon": -3.6911571,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3168768769,
+  "lat": 40.4112947,
+  "lon": -3.6909458,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3170272294,
+  "lat": 40.4120637,
+  "lon": -3.6897489,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 3428424999,
+  "lat": 40.4121432,
+  "lon": -3.6930388,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3463021602,
+  "lat": 40.4242798,
+  "lon": -3.6732824,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2025-01-12",
+    "fountain": "bubbler"
+  }
+},
+{
+  "type": "node",
+  "id": 3497610236,
+  "lat": 40.4172923,
+  "lon": -3.6808290,
+  "tags": {
+    "amenity": "drinking_water",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3497610361,
+  "lat": 40.4141507,
+  "lon": -3.6827361,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2021-08-29",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 3519204115,
+  "lat": 40.4020093,
+  "lon": -3.6935836,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 3519204116,
+  "lat": 40.4020451,
+  "lon": -3.6940970,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 3519204120,
+  "lat": 40.4027643,
+  "lon": -3.6947126,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2024-09-05",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 3657652927,
+  "lat": 40.4127548,
+  "lon": -3.6932535,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap",
+    "note": "Ubicación aproximada. Existe en Julio 2015"
+  }
+},
+{
+  "type": "node",
+  "id": 3711094743,
+  "lat": 40.4009854,
+  "lon": -3.6786085,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 4227924890,
+  "lat": 40.4144412,
+  "lon": -3.6790489,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 4234629587,
+  "lat": 40.4007132,
+  "lon": -3.6762884,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2026-05-08",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 4330667459,
+  "lat": 40.4242466,
+  "lon": -3.6946022,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29"
+  }
+},
+{
+  "type": "node",
+  "id": 4330672707,
+  "lat": 40.4163972,
+  "lon": -3.6886031,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29"
+  }
+},
+{
+  "type": "node",
+  "id": 4330672708,
+  "lat": 40.4170109,
+  "lon": -3.6821419,
+  "tags": {
+    "amenity": "drinking_water",
+    "name": "Fuente de la Sardaña",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4331358251,
+  "lat": 40.4061264,
+  "lon": -3.6860234,
+  "tags": {
+    "amenity": "drinking_water",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4331358253,
+  "lat": 40.4095788,
+  "lon": -3.6715923,
+  "tags": {
+    "amenity": "drinking_water",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29"
+  }
+},
+{
+  "type": "node",
+  "id": 4331358256,
+  "lat": 40.4121604,
+  "lon": -3.6761047,
+  "tags": {
+    "amenity": "drinking_water",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29"
+  }
+},
+{
+  "type": "node",
+  "id": 4332096387,
+  "lat": 40.4022007,
+  "lon": -3.6950374,
+  "tags": {
+    "amenity": "drinking_water",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29"
+  }
+},
+{
+  "type": "node",
+  "id": 4406606777,
+  "lat": 40.4242191,
+  "lon": -3.6753988,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 4439535956,
+  "lat": 40.4238845,
+  "lon": -3.6986234,
+  "tags": {
+    "amenity": "drinking_water",
+    "description": "Fuente dentro de la Iglesia de San Antón"
+  }
+},
+{
+  "type": "node",
+  "id": 5220262671,
+  "lat": 40.4055631,
+  "lon": -3.6751808,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2025-08-09"
+  }
+},
+{
+  "type": "node",
+  "id": 5407179434,
+  "lat": 40.4151191,
+  "lon": -3.6790793,
+  "tags": {
+    "amenity": "drinking_water",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5407179435,
+  "lat": 40.4167340,
+  "lon": -3.6785096,
+  "tags": {
+    "amenity": "drinking_water",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29"
+  }
+},
+{
+  "type": "node",
+  "id": 5407179436,
+  "lat": 40.4171448,
+  "lon": -3.6792251,
+  "tags": {
+    "amenity": "drinking_water",
+    "fountain": "bubbler",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5407179457,
+  "lat": 40.4186820,
+  "lon": -3.6799125,
+  "tags": {
+    "amenity": "drinking_water",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5407179473,
+  "lat": 40.4198651,
+  "lon": -3.6802547,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5407179493,
+  "lat": 40.4206758,
+  "lon": -3.6824338,
+  "tags": {
+    "amenity": "drinking_water",
+    "fee": "no",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29"
+  }
+},
+{
+  "type": "node",
+  "id": 5407179494,
+  "lat": 40.4204166,
+  "lon": -3.6842604,
+  "tags": {
+    "amenity": "drinking_water",
+    "fountain": "drinking",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5407179495,
+  "lat": 40.4205326,
+  "lon": -3.6843953,
+  "tags": {
+    "amenity": "fountain",
+    "description": "Los madrileños del siglo XIX venian por agua a esta fuente",
+    "name": "Fuente de la Salud"
+  }
+},
+{
+  "type": "node",
+  "id": 5407179496,
+  "lat": 40.4201848,
+  "lon": -3.6860799,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 5407179497,
+  "lat": 40.4197034,
+  "lon": -3.6865706,
+  "tags": {
+    "amenity": "drinking_water",
+    "fountain": "bubbler",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5407179498,
+  "lat": 40.4186278,
+  "lon": -3.6880326,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5407188002,
+  "lat": 40.4139692,
+  "lon": -3.6883757,
+  "tags": {
+    "amenity": "drinking_water",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5407188003,
+  "lat": 40.4116961,
+  "lon": -3.6867756,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 5407192747,
+  "lat": 40.4107345,
+  "lon": -3.6871493,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29"
+  }
+},
+{
+  "type": "node",
+  "id": 5407206291,
+  "lat": 40.4098423,
+  "lon": -3.6861303,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 5407222305,
+  "lat": 40.4107577,
+  "lon": -3.6832617,
+  "tags": {
+    "amenity": "drinking_water",
+    "bottle": "yes",
+    "covered": "no",
+    "indoor": "no",
+    "lit": "no",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 5407222306,
+  "lat": 40.4093711,
+  "lon": -3.6804945,
+  "tags": {
+    "amenity": "drinking_water",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29"
+  }
+},
+{
+  "type": "node",
+  "id": 5407222307,
+  "lat": 40.4084920,
+  "lon": -3.6786313,
+  "tags": {
+    "amenity": "drinking_water",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29"
+  }
+},
+{
+  "type": "node",
+  "id": 5407222308,
+  "lat": 40.4111617,
+  "lon": -3.6809990,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 5407222310,
+  "lat": 40.4113795,
+  "lon": -3.6800558,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 5422559201,
+  "lat": 40.4155487,
+  "lon": -3.6840684,
+  "tags": {
+    "amenity": "drinking_water",
+    "bottle": "yes",
+    "covered": "no",
+    "fee": "no",
+    "indoor": "no",
+    "lit": "no",
+    "man_made": "water_tap",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5422559205,
+  "lat": 40.4157864,
+  "lon": -3.6835184,
+  "tags": {
+    "amenity": "drinking_water",
+    "bottle": "yes",
+    "covered": "no",
+    "fee": "no",
+    "indoor": "no",
+    "lit": "no",
+    "man_made": "water_tap",
+    "name": "Fuente de las Esfinges",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5422559210,
+  "lat": 40.4163956,
+  "lon": -3.6814203,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 5422559211,
+  "lat": 40.4166761,
+  "lon": -3.6800527,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5424625643,
+  "lat": 40.4194627,
+  "lon": -3.6916265,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap",
+    "name": "Fuente de Correos"
+  }
+},
+{
+  "type": "node",
+  "id": 5424962110,
+  "lat": 40.4187685,
+  "lon": -3.6865275,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5661803884,
+  "lat": 40.4127363,
+  "lon": -3.6738968,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 5661803885,
+  "lat": 40.4133904,
+  "lon": -3.6721352,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 6018055990,
+  "lat": 40.4122205,
+  "lon": -3.6904215,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 6068989351,
+  "lat": 40.4031260,
+  "lon": -3.6786135,
+  "tags": {
+    "amenity": "drinking_water",
+    "bottle": "no",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 6513754519,
+  "lat": 40.4198138,
+  "lon": -3.6932399,
+  "tags": {
+    "access": "yes",
+    "amenity": "drinking_water",
+    "fee": "no",
+    "man_made": "water_tap",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6558486185,
+  "lat": 40.4189037,
+  "lon": -3.6975515,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2026-04-19",
+    "fountain": "bubbler"
+  }
+},
+{
+  "type": "node",
+  "id": 6558498385,
+  "lat": 40.4215660,
+  "lon": -3.6924562,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2025-11-18",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 6614865890,
+  "lat": 40.4127302,
+  "lon": -3.6937646,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 6925559877,
+  "lat": 40.4160781,
+  "lon": -3.6731748,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap",
+    "ref": "51"
+  }
+},
+{
+  "type": "node",
+  "id": 7871984552,
+  "lat": 40.4222486,
+  "lon": -3.6996889,
+  "tags": {
+    "amenity": "drinking_water",
+    "survey:date": "2026-04-08"
+  }
+},
+{
+  "type": "node",
+  "id": 8714822072,
+  "lat": 40.4108722,
+  "lon": -3.6913983,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 8928837417,
+  "lat": 40.4189391,
+  "lon": -3.6947546,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 9047955431,
+  "lat": 40.4172412,
+  "lon": -3.6941218,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 9049964251,
+  "lat": 40.4166510,
+  "lon": -3.6984907,
+  "tags": {
+    "amenity": "drinking_water",
+    "fee": "no",
+    "fountain": "bubbler"
+  }
+},
+{
+  "type": "node",
+  "id": 9059608366,
+  "lat": 40.4148916,
+  "lon": -3.6929558,
+  "tags": {
+    "access": "yes",
+    "amenity": "drinking_water",
+    "bottle": "yes",
+    "covered": "no",
+    "fee": "no",
+    "fountain": "bubbler",
+    "indoor": "no",
+    "lit": "no",
+    "survey:date": "2022-07-23",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9249492979,
+  "lat": 40.4102225,
+  "lon": -3.6912505,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 9249492980,
+  "lat": 40.4112265,
+  "lon": -3.6914776,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 9249492981,
+  "lat": 40.4111677,
+  "lon": -3.6919664,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 9249492982,
+  "lat": 40.4115428,
+  "lon": -3.6915470,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 9249492983,
+  "lat": 40.4114789,
+  "lon": -3.6920351,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 9249493008,
+  "lat": 40.4118158,
+  "lon": -3.6921137,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 9249493013,
+  "lat": 40.4118736,
+  "lon": -3.6916245,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 9249496422,
+  "lat": 40.4122060,
+  "lon": -3.6917001,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 9249496446,
+  "lat": 40.4115764,
+  "lon": -3.6899603,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 9723658315,
+  "lat": 40.4089036,
+  "lon": -3.6944116,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 9905748120,
+  "lat": 40.4154028,
+  "lon": -3.6969234,
+  "tags": {
+    "access": "yes",
+    "amenity": "drinking_water",
+    "bottle": "yes",
+    "fee": "no",
+    "fountain": "drinking",
+    "survey:date": "2022-07-23",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10142702497,
+  "lat": 40.4084935,
+  "lon": -3.6933541,
+  "tags": {
+    "amenity": "drinking_water",
+    "fee": "no",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 10147239478,
+  "lat": 40.4229723,
+  "lon": -3.6931564,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 10266331347,
+  "lat": 40.4190296,
+  "lon": -3.6961220,
+  "tags": {
+    "amenity": "drinking_water",
+    "capacity": "2",
+    "fountain": "bubbler"
+  }
+},
+{
+  "type": "node",
+  "id": 10940523663,
+  "lat": 40.4046415,
+  "lon": -3.6735380,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 10971529552,
+  "lat": 40.4030426,
+  "lon": -3.6838105,
+  "tags": {
+    "amenity": "drinking_water",
+    "drinking_water": "yes",
+    "indoor": "no",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 11003299271,
+  "lat": 40.4106377,
+  "lon": -3.6980638,
+  "tags": {
+    "access": "yes",
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 11028349894,
+  "lat": 40.4103404,
+  "lon": -3.6897642,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 11151131570,
+  "lat": 40.4212117,
+  "lon": -3.6720463,
+  "tags": {
+    "access": "yes",
+    "amenity": "drinking_water",
+    "bottle": "yes",
+    "check_date": "2023-08-28",
+    "covered": "no",
+    "fee": "no",
+    "indoor": "no",
+    "man_made": "water_tap",
+    "source": "local knowledge",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11225322937,
+  "lat": 40.4179490,
+  "lon": -3.6795233,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 11305376947,
+  "lat": 40.4130959,
+  "lon": -3.6953882,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 11668867435,
+  "lat": 40.4200720,
+  "lon": -3.6957624,
+  "tags": {
+    "access": "yes",
+    "amenity": "drinking_water",
+    "bottle": "yes",
+    "fee": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11703557915,
+  "lat": 40.4020585,
+  "lon": -3.6935293,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 11847421102,
+  "lat": 40.4125853,
+  "lon": -3.6915831,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 11964827578,
+  "lat": 40.4180562,
+  "lon": -3.6715935,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 11974156086,
+  "lat": 40.4072561,
+  "lon": -3.6780860,
+  "tags": {
+    "amenity": "drinking_water",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "21/01/2022"
+  }
+},
+{
+  "type": "node",
+  "id": 12043243928,
+  "lat": 40.4247719,
+  "lon": -3.6908492,
+  "tags": {
+    "access": "yes",
+    "amenity": "drinking_water",
+    "fee": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12144709504,
+  "lat": 40.4194272,
+  "lon": -3.6919535,
+  "tags": {
+    "amenity": "drinking_water",
+    "fixme": "move to correct position",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 12337939695,
+  "lat": 40.4064565,
+  "lon": -3.6707864,
+  "tags": {
+    "amenity": "drinking_water",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "21/01/2022"
+  }
+},
+{
+  "type": "node",
+  "id": 12430299177,
+  "lat": 40.4115091,
+  "lon": -3.6948403,
+  "tags": {
+    "access": "yes",
+    "amenity": "drinking_water",
+    "fee": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12430875377,
+  "lat": 40.4010648,
+  "lon": -3.6905910,
+  "tags": {
+    "amenity": "drinking_water",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 12430875391,
+  "lat": 40.4032232,
+  "lon": -3.6742781,
+  "tags": {
+    "amenity": "drinking_water",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 12430875398,
+  "lat": 40.4008752,
+  "lon": -3.6790984,
+  "tags": {
+    "amenity": "drinking_water",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 12430928703,
+  "lat": 40.4009186,
+  "lon": -3.6999534,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 12430928704,
+  "lat": 40.4082081,
+  "lon": -3.6825541,
+  "tags": {
+    "amenity": "drinking_water",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 12459005104,
+  "lat": 40.4155688,
+  "lon": -3.6948187,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 12587570374,
+  "lat": 40.4215733,
+  "lon": -3.6913715,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 12702300385,
+  "lat": 40.4051478,
+  "lon": -3.6913158,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 12852601259,
+  "lat": 40.4240069,
+  "lon": -3.6771062,
+  "tags": {
+    "access": "yes",
+    "amenity": "drinking_water",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 12852608961,
+  "lat": 40.4213506,
+  "lon": -3.6761919,
+  "tags": {
+    "access": "yes",
+    "amenity": "drinking_water",
+    "fee": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12852632757,
+  "lat": 40.4239121,
+  "lon": -3.6759122,
+  "tags": {
+    "access": "yes",
+    "amenity": "drinking_water",
+    "fountain": "bubbler"
+  }
+},
+{
+  "type": "node",
+  "id": 12908196184,
+  "lat": 40.4071170,
+  "lon": -3.6935306,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 13015220473,
+  "lat": 40.4215538,
+  "lon": -3.6923963,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 13620585320,
+  "lat": 40.4099952,
+  "lon": -3.6906548,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 13620585327,
+  "lat": 40.4098915,
+  "lon": -3.6911817,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 13729643301,
+  "lat": 40.4167397,
+  "lon": -3.6790201,
+  "tags": {
+    "access": "yes",
+    "amenity": "drinking_water",
+    "bottle": "yes",
+    "check_date": "2026-04-13",
+    "fee": "no",
+    "indoor": "yes",
+    "seasonal": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 14094525294,
+  "lat": 40.4216245,
+  "lon": -3.6911570,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 14094525295,
+  "lat": 40.4214106,
+  "lon": -3.6913160,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "way",
+  "id": 82567678,
+  "center": {
+    "lat": 40.4132082,
+    "lon": -3.6935008
+  },
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "way",
+  "id": 174819344,
+  "center": {
+    "lat": 40.4172106,
+    "lon": -3.6938985
+  },
+  "tags": {
+    "alt_name": "fuenteApolo",
+    "amenity": "fountain",
+    "fountain": "decorative",
+    "historic": "monument",
+    "name": "Fuente de Apolo",
+    "natural": "water",
+    "tourism": "attraction",
+    "wheelchair": "yes",
+    "wikidata": "Q1647048",
+    "wikimedia_commons": "Category:Fountain of Apollo, Madrid",
+    "wikipedia": "es:Fuente de Apolo (Madrid)"
+  }
+},
+{
+  "type": "way",
+  "id": 194088939,
+  "center": {
+    "lat": 40.4112511,
+    "lon": -3.6898864
+  },
+  "tags": {
+    "amenity": "fountain",
+    "name": "Estanque de Linneo",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 336157962,
+  "center": {
+    "lat": 40.4074479,
+    "lon": -3.6788132
+  },
+  "tags": {
+    "amenity": "fountain",
+    "drinking_water": "no",
+    "name": "Fuente de las Gaviotas",
+    "natural": "water",
+    "source:name": "https://madripedia.wikis.cc/wiki/Fuentes#Fuente_de_las_Gaviotas_de_Mariano_de_Cavia"
+  }
+},
+{
+  "type": "way",
+  "id": 465630304,
+  "center": {
+    "lat": 40.4200170,
+    "lon": -3.6860101
+  },
+  "tags": {
+    "amenity": "fountain",
+    "natural": "water",
+    "panoramax": "b77f7029-4832-4164-baa0-7e7084ff9808"
+  }
+},
+{
+  "type": "way",
+  "id": 472650994,
+  "center": {
+    "lat": 40.4020702,
+    "lon": -3.6773703
+  },
+  "tags": {
+    "amenity": "fountain",
+    "fountain": "splash_pad",
+    "name": "Fuente de colores"
+  }
+},
+{
+  "type": "way",
+  "id": 488076665,
+  "center": {
+    "lat": 40.4248801,
+    "lon": -3.6752537
+  },
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "way",
+  "id": 526934862,
+  "center": {
+    "lat": 40.4202135,
+    "lon": -3.6962070
+  },
+  "tags": {
+    "amenity": "fountain",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 550912805,
+  "center": {
+    "lat": 40.4077343,
+    "lon": -3.6966290
+  },
+  "tags": {
+    "amenity": "fountain",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 551511200,
+  "center": {
+    "lat": 40.4195530,
+    "lon": -3.6876899
+  },
+  "tags": {
+    "amenity": "fountain",
+    "drinking_water": "no",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 551512273,
+  "center": {
+    "lat": 40.4195212,
+    "lon": -3.6876167
+  },
+  "tags": {
+    "amenity": "fountain",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 560711483,
+  "center": {
+    "lat": 40.4155176,
+    "lon": -3.6878206
+  },
+  "tags": {
+    "amenity": "fountain",
+    "barrier": "wall",
+    "height": "0.5",
+    "natural": "water",
+    "water": "basin",
+    "width": "0.4"
+  }
+},
+{
+  "type": "way",
+  "id": 560715385,
+  "center": {
+    "lat": 40.4143065,
+    "lon": -3.6782741
+  },
+  "tags": {
+    "amenity": "fountain",
+    "artist_name": "Vicente Pimentel",
+    "barrier": "kerb",
+    "name": "Fuente de las Gaviotas",
+    "natural": "water",
+    "year": "1962"
+  }
+},
+{
+  "type": "way",
+  "id": 562587825,
+  "center": {
+    "lat": 40.4153225,
+    "lon": -3.6863463
+  },
+  "tags": {
+    "amenity": "fountain",
+    "natural": "water",
+    "source": "Bing",
+    "water": "basin"
+  }
+},
+{
+  "type": "way",
+  "id": 562596195,
+  "center": {
+    "lat": 40.4143565,
+    "lon": -3.6778651
+  },
+  "tags": {
+    "amenity": "fountain",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 562596197,
+  "center": {
+    "lat": 40.4142540,
+    "lon": -3.6786436
+  },
+  "tags": {
+    "amenity": "fountain",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 578229239,
+  "center": {
+    "lat": 40.4190678,
+    "lon": -3.6800365
+  },
+  "tags": {
+    "amenity": "fountain",
+    "barrier": "kerb",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 681043535,
+  "center": {
+    "lat": 40.4171543,
+    "lon": -3.6820819
+  },
+  "tags": {
+    "amenity": "fountain",
+    "name": "Fuente de la Sardana",
+    "natural": "water",
+    "wikidata": "Q8962960",
+    "wikimedia_commons": "Category:Fuente de la Sardana, Madrid",
+    "wikipedia": "es:Fuente de la Sardana"
+  }
+},
+{
+  "type": "way",
+  "id": 681048520,
+  "center": {
+    "lat": 40.4186260,
+    "lon": -3.6854772
+  },
+  "tags": {
+    "alt_name": "Fuente de la Alcachofa y a Francisco Mozarán",
+    "amenity": "fountain",
+    "name": "Fuente de los Galápagos",
+    "natural": "water",
+    "wikidata": "Q5870270",
+    "wikimedia_commons": "Category:Fuente de los Galápagos",
+    "wikipedia": "es:Fuente de los Galápagos"
+  }
+},
+{
+  "type": "way",
+  "id": 956016454,
+  "center": {
+    "lat": 40.4010319,
+    "lon": -3.6992104
+  },
+  "tags": {
+    "amenity": "fountain",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 969788964,
+  "center": {
+    "lat": 40.4123769,
+    "lon": -3.6929722
+  },
+  "tags": {
+    "amenity": "fountain",
+    "fountain": "decorative",
+    "height": "3",
+    "name": "Cuatro Fuentes",
+    "natural": "water",
+    "source": "survey",
+    "start_date": "~1785",
+    "wikidata": "Q8352238",
+    "wikimedia_commons": "Category:Four Fountains, Madrid",
+    "wikipedia": "es:Cuatro Fuentes"
+  }
+},
+{
+  "type": "way",
+  "id": 969788965,
+  "center": {
+    "lat": 40.4124063,
+    "lon": -3.6927305
+  },
+  "tags": {
+    "amenity": "fountain",
+    "fountain": "decorative",
+    "height": "3",
+    "name": "Cuatro Fuentes",
+    "natural": "water",
+    "source": "survey",
+    "start_date": "~1785",
+    "wikidata": "Q8352238",
+    "wikimedia_commons": "Category:Four Fountains, Madrid",
+    "wikipedia": "es:Cuatro Fuentes"
+  }
+},
+{
+  "type": "way",
+  "id": 969788966,
+  "center": {
+    "lat": 40.4125772,
+    "lon": -3.6927663
+  },
+  "tags": {
+    "amenity": "fountain",
+    "fountain": "decorative",
+    "height": "3",
+    "name": "Cuatro Fuentes",
+    "natural": "water",
+    "source": "survey",
+    "start_date": "~1785",
+    "wikidata": "Q8352238",
+    "wikimedia_commons": "Category:Four Fountains, Madrid",
+    "wikipedia": "es:Cuatro Fuentes"
+  }
+},
+{
+  "type": "way",
+  "id": 969788967,
+  "center": {
+    "lat": 40.4125468,
+    "lon": -3.6930074
+  },
+  "tags": {
+    "amenity": "fountain",
+    "fountain": "decorative",
+    "height": "3",
+    "name": "Cuatro Fuentes",
+    "natural": "water",
+    "source": "survey",
+    "start_date": "~1785",
+    "wikidata": "Q8352238",
+    "wikimedia_commons": "Category:Four Fountains, Madrid",
+    "wikipedia": "es:Cuatro Fuentes"
+  }
+},
+{
+  "type": "way",
+  "id": 984796371,
+  "center": {
+    "lat": 40.4134538,
+    "lon": -3.6781198
+  },
+  "tags": {
+    "amenity": "fountain",
+    "barrier": "kerb",
+    "drinking_water": "no",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 984796372,
+  "center": {
+    "lat": 40.4134760,
+    "lon": -3.6779705
+  },
+  "tags": {
+    "amenity": "fountain",
+    "barrier": "kerb",
+    "drinking_water": "no",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 984796373,
+  "center": {
+    "lat": 40.4129964,
+    "lon": -3.6779917
+  },
+  "tags": {
+    "amenity": "fountain",
+    "barrier": "kerb",
+    "drinking_water": "no",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 984796374,
+  "center": {
+    "lat": 40.4130186,
+    "lon": -3.6778423
+  },
+  "tags": {
+    "amenity": "fountain",
+    "barrier": "kerb",
+    "drinking_water": "no",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 984796375,
+  "center": {
+    "lat": 40.4137820,
+    "lon": -3.6776170
+  },
+  "tags": {
+    "amenity": "fountain",
+    "barrier": "kerb",
+    "drinking_water": "no",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 984796376,
+  "center": {
+    "lat": 40.4141570,
+    "lon": -3.6777995
+  },
+  "tags": {
+    "amenity": "fountain",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 984797723,
+  "center": {
+    "lat": 40.4178574,
+    "lon": -3.6816546
+  },
+  "tags": {
+    "amenity": "fountain",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 984797724,
+  "center": {
+    "lat": 40.4201399,
+    "lon": -3.6803943
+  },
+  "tags": {
+    "amenity": "fountain",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 984800677,
+  "center": {
+    "lat": 40.4110480,
+    "lon": -3.6825391
+  },
+  "tags": {
+    "amenity": "fountain",
+    "drinking_water": "no",
+    "fountain": "decorative",
+    "name": "Fuente del Ángel Caído",
+    "natural": "water",
+    "wikidata": "Q1999259",
+    "wikimedia_commons": "Category:Fuente del Ángel Caído, Madrid",
+    "wikipedia": "es:Fuente del Ángel Caído"
+  }
+},
+{
+  "type": "way",
+  "id": 984801054,
+  "center": {
+    "lat": 40.4107977,
+    "lon": -3.6803229
+  },
+  "tags": {
+    "amenity": "fountain",
+    "drinking_water": "no",
+    "name": "Estanque Central de la Rosaleda",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 984801055,
+  "center": {
+    "lat": 40.4110606,
+    "lon": -3.6804247
+  },
+  "tags": {
+    "amenity": "fountain",
+    "drinking_water": "no",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 984801056,
+  "center": {
+    "lat": 40.4105103,
+    "lon": -3.6802141
+  },
+  "tags": {
+    "amenity": "fountain",
+    "drinking_water": "no",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 991120411,
+  "center": {
+    "lat": 40.4096597,
+    "lon": -3.6970209
+  },
+  "tags": {
+    "amenity": "fountain",
+    "fountain": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 991444030,
+  "center": {
+    "lat": 40.4082858,
+    "lon": -3.6945355
+  },
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "way",
+  "id": 991444031,
+  "center": {
+    "lat": 40.4080727,
+    "lon": -3.6940427
+  },
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "way",
+  "id": 1076530252,
+  "center": {
+    "lat": 40.4086961,
+    "lon": -3.6920173
+  },
+  "tags": {
+    "amenity": "fountain",
+    "description": "Réplica de la Fuente de la Alcachofa",
+    "drinking_water": "no",
+    "lit": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 1077518054,
+  "center": {
+    "lat": 40.4144007,
+    "lon": -3.6782873
+  },
+  "tags": {
+    "amenity": "fountain",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 1221357496,
+  "center": {
+    "lat": 40.4150637,
+    "lon": -3.6878059
+  },
+  "tags": {
+    "amenity": "fountain",
+    "barrier": "wall",
+    "height": "0.5",
+    "natural": "water",
+    "water": "basin",
+    "width": "0.4"
+  }
+},
+{
+  "type": "way",
+  "id": 1221362062,
+  "center": {
+    "lat": 40.4154111,
+    "lon": -3.6842222
+  },
+  "tags": {
+    "amenity": "fountain",
+    "barrier": "wall",
+    "name": "Fuente de la Alcachofa",
+    "natural": "water",
+    "wikidata": "Q3747351",
+    "wikipedia": "es:Fuente de la Alcachofa"
+  }
+},
+{
+  "type": "way",
+  "id": 1221362068,
+  "center": {
+    "lat": 40.4173367,
+    "lon": -3.6799126
+  },
+  "tags": {
+    "amenity": "fountain",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 1221365558,
+  "center": {
+    "lat": 40.4210660,
+    "lon": -3.6991985
+  },
+  "tags": {
+    "amenity": "fountain",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 1339103516,
+  "center": {
+    "lat": 40.4010496,
+    "lon": -3.6991503
+  },
+  "tags": {
+    "amenity": "fountain",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1346140194,
+  "center": {
+    "lat": 40.4185845,
+    "lon": -3.6934615
+  },
+  "tags": {
+    "amenity": "fountain",
+    "fountain": "decorative",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1349228936,
+  "center": {
+    "lat": 40.4240013,
+    "lon": -3.6747229
+  },
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "way",
+  "id": 1529408259,
+  "center": {
+    "lat": 40.4218946,
+    "lon": -3.6735772
+  },
+  "tags": {
+    "amenity": "fountain",
+    "area": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1545706579,
+  "center": {
+    "lat": 40.4245168,
+    "lon": -3.6982367
+  },
+  "tags": {
+    "amenity": "fountain",
+    "name": "Fuente de los Delfines",
+    "wikidata": "Q27497553",
+    "wikipedia": "es:Fuente de los Delfines (San Antón)"
+  }
+},
+{
+  "type": "relation",
+  "id": 6345116,
+  "center": {
+    "lat": 40.4193344,
+    "lon": -3.6930878
+  },
+  "tags": {
+    "amenity": "fountain",
+    "fountain": "decorative",
+    "height": "0.1",
+    "name": "Fuente de Cibeles",
+    "natural": "water",
+    "tourism": "attraction",
+    "type": "multipolygon",
+    "water": "pond",
+    "wheelchair": "no",
+    "wikidata": "Q2736564",
+    "wikipedia": "es:Fuente de Cibeles"
+  }
+},
+{
+  "type": "relation",
+  "id": 6423339,
+  "center": {
+    "lat": 40.4152601,
+    "lon": -3.6941520
+  },
+  "tags": {
+    "amenity": "fountain",
+    "fountain": "decorative",
+    "height": "0.25",
+    "natural": "water",
+    "type": "multipolygon",
+    "water": "basin"
+  }
+},
+{
+  "type": "relation",
+  "id": 8192117,
+  "center": {
+    "lat": 40.4177968,
+    "lon": -3.6809472
+  },
+  "tags": {
+    "amenity": "fountain",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 16657037,
+  "center": {
+    "lat": 40.4159089,
+    "lon": -3.6859482
+  },
+  "tags": {
+    "alt_name": "Estanque de las Campanillas",
+    "amenity": "fountain",
+    "barrier": "fence",
+    "name": "Estanque Ochavado",
+    "natural": "water",
+    "source": "Bing",
+    "type": "multipolygon",
+    "water": "basin",
+    "wikidata": "Q21162806",
+    "wikipedia": "es:Estanque Ochavado"
+  }
+}
+
+  ]
+}

@@ -1,0 +1,4 @@
+local_time,hour_utc,ta_c,rh_pct,rh_pct_recomputed,ws_ms,pressure_hpa,coco,ghi_wm2,dni_wm2,dhi_wm2,solar_zenith_deg,solar_elevation_deg
+12:00,10,34.2,28.0,28.0,2.61,1016.6,1,722.8,791.2,129.5,41.4,48.6
+15:00,13,38.8,21.0,21.1,1.0,1013.8,1,861.9,829.6,142.0,29.8,60.2
+18:00,16,40.5,17.0,17.0,2.11,1011.6,1,497.7,701.7,106.8,56.1,33.9

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>HATI-Madrid — Phase 4.0 Low-Fidelity Wireframes</title>
+<style>
+  :root{
+    --ink:#1c1c1a; --paper:#f3f1ec; --line:#8c887f; --panel:#ffffff;
+    --rust:#B5502E; --teal:#2E6B6B; --neutral:#6b6862; --faint:#c9c6bd;
+  }
+  *{box-sizing:border-box;}
+  body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;
+       margin:0;padding:32px;}
+  h1{font-size:20px;margin:0 0 4px;}
+  .meta{font-family:Arial,Helvetica,sans-serif;font-size:12px;color:var(--neutral);margin-bottom:28px;}
+  .view{border:1px solid var(--line);background:var(--panel);margin-bottom:40px;padding:18px;}
+  .view h2{font-family:Arial,Helvetica,sans-serif;font-size:13px;text-transform:uppercase;
+           letter-spacing:.06em;color:var(--neutral);margin:0 0 14px;border-bottom:1px dashed var(--line);
+           padding-bottom:8px;}
+  .box{border:1px dashed var(--line);font-family:Arial,Helvetica,sans-serif;font-size:11px;
+       color:var(--neutral);padding:6px 8px;}
+  .label{font-weight:bold;color:var(--ink);}
+  /* View 1 */
+  .v1-layout{display:grid;grid-template-columns:1fr 220px;gap:12px;}
+  .v1-map{height:340px;position:relative;border:1px dashed var(--line);}
+  .v1-time{display:flex;gap:6px;margin-bottom:10px;font-family:Arial;font-size:11px;}
+  .v1-time span{border:1px solid var(--line);padding:4px 10px;}
+  .v1-time span.active{background:var(--ink);color:var(--paper);border-color:var(--ink);}
+  .v1-caption{font-size:10px;color:var(--neutral);font-family:Arial;margin-top:4px;}
+  .marker{position:absolute;width:16px;height:16px;border-radius:50%;}
+  .m1{top:60px;left:80px;background:var(--rust);border:2px solid var(--rust);}
+  .m2{top:120px;left:180px;background:var(--teal);border:2px dashed var(--teal);}
+  .m3{top:200px;left:260px;background:var(--rust);border:2px dotted var(--rust);}
+  .m4{top:90px;left:300px;background:var(--rust);opacity:.35;border:2px solid var(--rust);}
+  .m5{top:250px;left:120px;background:var(--teal);border:2px solid var(--teal);}
+  .legend{font-family:Arial;font-size:10px;line-height:1.7;}
+  .swatch{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:middle;}
+  /* View 2 */
+  .v2-layout{display:grid;grid-template-columns:1fr 320px;gap:12px;}
+  .v2-map-stub{height:300px;border:1px dashed var(--line);}
+  .v2-panel{border:1px solid var(--line);padding:12px;font-family:Arial;font-size:11px;}
+  .row{border-bottom:1px solid var(--faint);padding:7px 0;}
+  .row .k{color:var(--neutral);font-size:9px;text-transform:uppercase;letter-spacing:.05em;}
+  .badge{display:inline-block;padding:2px 8px;font-size:10px;border-radius:2px;margin-top:2px;}
+  .badge-rust{background:var(--rust);color:#fff;}
+  .badge-teal{background:var(--teal);color:#fff;}
+  .ring-robust{border:2px solid var(--ink);border-radius:50%;width:12px;height:12px;display:inline-block;}
+  .ring-boundary{border:2px dashed var(--ink);border-radius:50%;width:12px;height:12px;display:inline-block;}
+  .ring-unstable{border:2px dotted var(--ink);border-radius:50%;width:12px;height:12px;display:inline-block;}
+  .btn{font-family:Arial;font-size:11px;border:1px solid var(--ink);padding:6px 10px;display:inline-block;margin-top:8px;}
+  /* View 3 */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px;}
+  .card{border:1px solid var(--line);padding:10px;font-family:Arial;font-size:10px;}
+  .card .name{font-family:Georgia,serif;font-size:13px;margin-bottom:6px;}
+  .excluded{border:1px dashed var(--faint);color:var(--neutral);opacity:.7;}
+  .disclosure{font-family:Arial;font-size:11px;border-top:1px dashed var(--line);padding-top:10px;color:var(--neutral);}
+  .s8{border:2px solid var(--ink);padding:16px;font-family:Arial;}
+  .s8 h3{font-family:Georgia,serif;font-size:16px;margin:0 0 4px;}
+  .s8 .sub{color:var(--neutral);font-size:11px;margin-bottom:12px;}
+  .tally{font-size:11px;margin-bottom:10px;}
+  .baseline-toggle{font-family:Arial;font-size:10px;border:1px solid var(--line);display:inline-block;padding:4px 8px;margin-bottom:10px;}
+</style>
+</head>
+<body>
+
+<h1>HATI-Madrid — Phase 4.0 Low-Fidelity Wireframes</h1>
+<div class="meta">Structural layout only — not a visual design pass. Colors indicate encoding
+channels per PHASE4_0_VISUAL_SEMANTICS.md, not final palette values. Companion to
+PHASE4_0_INFORMATION_ARCHITECTURE.md and PHASE4_0_INTERACTION_SPEC.md.</div>
+
+<div class="view">
+  <h2>View 1 — Territorial / Time View</h2>
+  <div class="v1-time">
+    <span>12:00</span><span class="active">15:00</span><span>18:00</span>
+    <span style="border:none;color:#8c887f;">— 2023-08-21</span>
+  </div>
+  <div class="v1-caption">3 modelled timestamps for one historical heat episode — not live or forecast data</div>
+  <div class="v1-layout" style="margin-top:10px;">
+    <div class="v1-map">
+      <div class="marker m1"></div>
+      <div class="marker m2"></div>
+      <div class="marker m3"></div>
+      <div class="marker m4"></div>
+      <div class="marker m5"></div>
+      <div class="box" style="position:absolute;bottom:6px;left:6px;right:6px;">
+        Basemap — Prado–Retiro–Atocha pilot area · point markers only, no continuous thermal raster
+      </div>
+    </div>
+    <div>
+      <div class="box" style="margin-bottom:10px;">Scenario jump chips: S1 S2 S3 S4 S5 S6 S7 S8</div>
+      <div class="box legend">
+        <div class="label" style="font-size:10px;margin-bottom:6px;">LEGEND</div>
+        <div><span class="swatch" style="background:var(--rust);"></span>AVOID_PROLONGED_OUTDOOR_EXPOSURE</div>
+        <div><span class="swatch" style="background:var(--teal);"></span>INDOOR_REFUGE</div>
+        <div style="margin-top:6px;">ring: solid=ROBUST, dashed=BOUNDARY, dotted=UNSTABLE</div>
+        <div>opacity: faint = closed at this timestamp</div>
+      </div>
+      <div class="box" style="margin-top:10px;">Limitations strip (Tier 1): "Thermal values are modelled (SOLWEIG/UTCI), not field-measured." →</div>
+    </div>
+  </div>
+</div>
+
+<div class="view">
+  <h2>View 2 — Asset Decision View (panel opens beside map, map stays visible)</h2>
+  <div class="v2-layout">
+    <div class="v2-map-stub box">Map (reduced width, selected marker focus-outlined)</div>
+    <div class="v2-panel">
+      <div class="row"><div class="k">Asset</div>A16 · Fuente de Neptuno · outdoor_monument</div>
+      <div class="row"><div class="k">Thermal state (modelled)</div>VERY_STRONG_HEAT_STRESS — UTCI 45.0°C</div>
+      <div class="row"><div class="k">Decision state</div><span class="badge badge-rust">AVOID_PROLONGED_OUTDOOR_EXPOSURE</span></div>
+      <div class="row"><div class="k">Decision confidence</div><span class="ring-boundary"></span> BOUNDARY — "close to a threshold; some tested variations would flip it"</div>
+      <div class="row"><div class="k">Evidence confidence</div>HIGH (border-weight indicator, separate channel)</div>
+      <div class="row"><div class="k">Relevant limitations</div>Straight-line accessibility only · no walking-exposure modelling</div>
+      <div class="btn">View 9 alternatives →</div>
+    </div>
+  </div>
+</div>
+
+<div class="view">
+  <h2>View 3a — Alternative / Trade-off View (surviving candidates)</h2>
+  <div class="baseline-toggle">☐ Compare to conventional baseline</div>
+  <div class="cards">
+    <div class="card"><div class="name">Museo Thyssen-Bornemisza</div>indoor · 134 m (straight-line) · museum_indoor<br><span class="ring-robust"></span> ROBUST · evidence HIGH</div>
+    <div class="card"><div class="name">Estación de Atocha (refuge)</div>indoor · 310 m (straight-line) · transit_refuge<br><span class="ring-robust"></span> ROBUST · evidence MODERATE</div>
+    <div class="card"><div class="name">Puerta de Alcalá</div>outdoor · 420 m (straight-line) · outdoor_monument<br><span class="ring-boundary"></span> BOUNDARY · evidence HIGH</div>
+  </div>
+  <div class="box" style="margin-bottom:10px;">sort by: distance · indoor/outdoor · experience type (reorders only, never filters)</div>
+  <div class="disclosure">▸ 14 nearby options excluded — show why (collapsed by default)</div>
+</div>
+
+<div class="view">
+  <h2>View 3b — S8 dedicated state: NO_DEFENSIBLE_ALTERNATIVE</h2>
+  <div class="s8">
+    <h3>No defensible alternative found.</h3>
+    <div class="sub">This is the correct result of the screening, not a missing feature.</div>
+    <div class="tally">Parque del Retiro (A20) · 15:00 · 500 m radius — 7 candidates evaluated · 0 survived</div>
+    <div class="disclosure" style="border-top:none;padding-top:0;margin-bottom:10px;">
+      Every open, in-range candidate was either another hot outdoor location or failed on
+      evidence/thermal grounds — recommending one would mean sending a heat-stressed visitor
+      to an equally hot location.
+    </div>
+    <div class="box excluded" style="margin-bottom:6px;">A18 Palacio de Cibeles — OUTDOOR_EXPOSURE_TOO_HIGH — "Another hot outdoor location"</div>
+    <div class="box excluded" style="margin-bottom:6px;">A21 kiosco — ACCESSIBILITY_CONSTRAINT — "Outside the 500 m radius"</div>
+    <div class="box excluded">A25 fuente — INSUFFICIENT_EVIDENCE — "Not enough reliable data"</div>
+  </div>
+</div>
+
+</body>
+</html>

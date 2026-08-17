@@ -1,0 +1,7240 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-17T13:30:40Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 25903356,
+  "lat": 40.4204766,
+  "lon": -3.6864209,
+  "tags": {
+    "covered": "yes",
+    "fare_area": "A",
+    "name": "Retiro",
+    "operator": "Metro de Madrid",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "source:name": "common knowledge",
+    "station": "subway",
+    "subway": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 167301842,
+  "lat": 40.4093166,
+  "lon": -3.6915086,
+  "tags": {
+    "artist_name": "Agustín Querol",
+    "artwork_type": "statue",
+    "historic": "memorial",
+    "memorial": "statue",
+    "name": "Monumento a Claudio Moyano",
+    "name:es": "Monumento a Claudio Moyano",
+    "name:ru": "Памятник Клаудио Мояно",
+    "start_date": "1899",
+    "tourism": "artwork",
+    "wikidata": "Q52301686",
+    "wikimedia_commons": "Category:Monument to Claudio Moyano",
+    "wikipedia": "es:Monumento a Claudio Moyano (Madrid)"
+  }
+},
+{
+  "type": "node",
+  "id": 167302670,
+  "lat": 40.4137070,
+  "lon": -3.6957228,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2025-11-18",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 324812377,
+  "lat": 40.4152748,
+  "lon": -3.6886925,
+  "tags": {
+    "addr:city": "Madrid",
+    "addr:postcode": "28014",
+    "addr:street": "Calle de Alfonso XII",
+    "alt_name": "Puerta de Mariana de Neoburgo",
+    "entrance": "yes",
+    "name": "Puerta de Felipe IV",
+    "name:en": "Felipe IV Gate",
+    "name:es": "Puerta de Felipe IV",
+    "tourism": "attraction",
+    "wikidata": "Q6091784",
+    "wikimedia_commons": "Category:Puerta de Felipe IV, Retiro",
+    "wikipedia": "es:Puerta de Felipe IV"
+  }
+},
+{
+  "type": "node",
+  "id": 325076341,
+  "lat": 40.4163870,
+  "lon": -3.6928847,
+  "tags": {
+    "historic": "monument",
+    "loc_name": "La llama eterna",
+    "man_made": "obelisk",
+    "name": "Monumento a los Caídos por España",
+    "old_name": "Monumento a los Héroes del Dos de Mayo",
+    "wikidata": "Q3034186",
+    "wikimedia_commons": "Category:Monumento a los Caídos por España, Madrid",
+    "wikipedia": "es:Monumento a los Caídos por España"
+  }
+},
+{
+  "type": "node",
+  "id": 559824976,
+  "lat": 40.4124146,
+  "lon": -3.6913750,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 929294348,
+  "lat": 40.4203737,
+  "lon": -3.6958263,
+  "tags": {
+    "addr:city": "Madrid",
+    "artist:wikidata": "Q2402329",
+    "artist_name": "Mariano Benlliure",
+    "artwork_type": "statue",
+    "memorial": "statue",
+    "name": "Estatua a Jacinto Ruiz Teniente de Infantería",
+    "tourism": "artwork",
+    "wikidata": "Q18574899",
+    "wikimedia_commons": "Category:Monument to Jacinto Ruiz y Mendoza, Madrid",
+    "wikipedia": "es:Estatua de Jacinto Ruiz"
+  }
+},
+{
+  "type": "node",
+  "id": 960871298,
+  "lat": 40.4126854,
+  "lon": -3.6939563,
+  "tags": {
+    "amenity": "fountain",
+    "fountain": "decorative",
+    "height": "3",
+    "inscription": "Plaza de la Platería de Martínez",
+    "name": "Fuente de la Platería de Martínez",
+    "source": "survey",
+    "wikidata": "Q110747286"
+  }
+},
+{
+  "type": "node",
+  "id": 991793741,
+  "lat": 40.4100963,
+  "lon": -3.6908892,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2023-04-22",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 1464142403,
+  "lat": 40.4190697,
+  "lon": -3.6811704,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1517405741,
+  "lat": 40.4087298,
+  "lon": -3.6935566,
+  "tags": {
+    "artwork_type": "architecture",
+    "material": "metal",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 1743699808,
+  "lat": 40.4156411,
+  "lon": -3.6809721,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2024-05-12",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 2045974223,
+  "lat": 40.4149830,
+  "lon": -3.6925365,
+  "tags": {
+    "addr:city": "Madrid",
+    "historic": "monument",
+    "name": "Estatua de Goya",
+    "name:it": "Statua di Goya",
+    "name:zh": "方尖碑？",
+    "wikidata": "Q105622942",
+    "wikimedia_commons": "Category:Monument to Francisco de Goya by Benlliure, Madrid",
+    "wikipedia": "es:Monumento a Francisco de Goya"
+  }
+},
+{
+  "type": "node",
+  "id": 2351203475,
+  "lat": 40.4201790,
+  "lon": -3.6818724,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "Á Fray Pedro Ponce de León * 1520. † 1584. Inventor del método oral puro para enseñar a hablar, leer, escribir y contar a los sordomudos La asociación de sordomudos de Madrid le dedica este monumento en su IV centenario 6 de junio de 1920.",
+    "material": "stone",
+    "memorial": "statue",
+    "name": "Monumento a Fray Ponce de León",
+    "source": "survey",
+    "start_date": "1920-06-06"
+  }
+},
+{
+  "type": "node",
+  "id": 2496787804,
+  "lat": 40.4183443,
+  "lon": -3.6855094,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2021-08-29",
+    "fountain": "drinking",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2527419982,
+  "lat": 40.4127123,
+  "lon": -3.6808000,
+  "tags": {
+    "historic": "memorial",
+    "name": "Busto a Ricardo Codorníu",
+    "toilets:wheelchair": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2527419986,
+  "lat": 40.4117087,
+  "lon": -3.6807607,
+  "tags": {
+    "historic": "memorial",
+    "memorial": "plaque",
+    "name": "Julio Romero de Torres",
+    "wikidata": "Q52345637",
+    "wikimedia_commons": "Category:Monument to Julio Romero de Torres, Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 2527420077,
+  "lat": 40.4133699,
+  "lon": -3.6814686,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2021-08-29",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 2527420100,
+  "lat": 40.4137132,
+  "lon": -3.6814358,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 2544271903,
+  "lat": 40.4095012,
+  "lon": -3.6777870,
+  "tags": {
+    "addr:city": "Madrid",
+    "addr:postcode": "28007",
+    "artist_name": "Angelo Biancini",
+    "artwork_type": "relief",
+    "material": "bronze",
+    "name": "Monumento a Dante",
+    "start_date": "1968",
+    "tourism": "artwork",
+    "wikidata": "Q6023007",
+    "wikimedia_commons": "Category:Puerta de Dante, Retiro",
+    "wikipedia": "es:Monumento a Dante"
+  }
+},
+{
+  "type": "node",
+  "id": 2667468715,
+  "lat": 40.4062481,
+  "lon": -3.6888019,
+  "tags": {
+    "artist_name": "Antonio López",
+    "artwork_type": "sculpture",
+    "name": "Día y Noche",
+    "tourism": "artwork",
+    "wikidata": "Q110746630"
+  }
+},
+{
+  "type": "node",
+  "id": 2946159113,
+  "lat": 40.4095083,
+  "lon": -3.6959545,
+  "tags": {
+    "access": "yes",
+    "amenity": "drinking_water",
+    "bottle": "yes",
+    "fee": "no",
+    "man_made": "water_tap",
+    "name": "Fuente de Santa Isabel",
+    "survey:date": "2022-07-22",
+    "wheelchair": "yes",
+    "wikidata": "Q110768340"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536664,
+  "lat": 40.4101588,
+  "lon": -3.6917388,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536671,
+  "lat": 40.4102906,
+  "lon": -3.6907208,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536674,
+  "lat": 40.4103419,
+  "lon": -3.6903131,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536678,
+  "lat": 40.4104892,
+  "lon": -3.6918136,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536682,
+  "lat": 40.4105545,
+  "lon": -3.6913304,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536686,
+  "lat": 40.4106208,
+  "lon": -3.6907896,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536689,
+  "lat": 40.4106729,
+  "lon": -3.6903842,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536693,
+  "lat": 40.4108046,
+  "lon": -3.6918842,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536701,
+  "lat": 40.4109385,
+  "lon": -3.6908654,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536705,
+  "lat": 40.4109920,
+  "lon": -3.6904587,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536721,
+  "lat": 40.4113414,
+  "lon": -3.6905377,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536731,
+  "lat": 40.4116164,
+  "lon": -3.6910169,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536734,
+  "lat": 40.4116614,
+  "lon": -3.6906123,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536742,
+  "lat": 40.4119463,
+  "lon": -3.6910922,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536745,
+  "lat": 40.4119978,
+  "lon": -3.6906884,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536749,
+  "lat": 40.4121340,
+  "lon": -3.6921868,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3166536753,
+  "lat": 40.4122373,
+  "lon": -3.6911571,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3168768769,
+  "lat": 40.4112947,
+  "lon": -3.6909458,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3170272294,
+  "lat": 40.4120637,
+  "lon": -3.6897489,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 3262147397,
+  "lat": 40.4152434,
+  "lon": -3.6904183,
+  "tags": {
+    "historic": "monument",
+    "name": "Monumento a la Reina María Cristina de Borbón",
+    "name:ru": "Памятник Королеве Марии Кристина де Бурбон"
+  }
+},
+{
+  "type": "node",
+  "id": 3262147398,
+  "lat": 40.4059537,
+  "lon": -3.6853146,
+  "tags": {
+    "historic": "memorial",
+    "memorial": "statue",
+    "name": "Monumento al General Vara de Rey y Héroes del Caney"
+  }
+},
+{
+  "type": "node",
+  "id": 3263684449,
+  "lat": 40.4063000,
+  "lon": -3.6885995,
+  "tags": {
+    "artist_name": "Antonio López",
+    "artwork_type": "sculpture",
+    "name": "Día y Noche",
+    "tourism": "artwork",
+    "wikidata": "Q110746630"
+  }
+},
+{
+  "type": "node",
+  "id": 3269790737,
+  "lat": 40.4121633,
+  "lon": -3.6791499,
+  "tags": {
+    "artwork_type": "statue",
+    "historic": "memorial",
+    "name": "Hércules y Yolao luchando con la Hidra de Lerna",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 3274328460,
+  "lat": 40.4140935,
+  "lon": -3.6809320,
+  "tags": {
+    "artist_name": "Agustín Ibarrola Goicoechea",
+    "artwork_type": "sculpture",
+    "material": "concrete",
+    "name": "Dados de Hormigón",
+    "tourism": "artwork",
+    "website": "https://patrimonioypaisaje.madrid.es/sites/v/index.jsp?vgnextoid=6f38091d1b9c4510091d1b9c45102e085a0aRCRD&vgnextchannel=8fac3cb702aa4510VgnVCM1000008a4a900aRCRD",
+    "wikidata": "Q110746621",
+    "wikimedia_commons": "Category:Dados de Hormigon, Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 3428424999,
+  "lat": 40.4121432,
+  "lon": -3.6930388,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 3497590682,
+  "lat": 40.4199037,
+  "lon": -3.6814886,
+  "tags": {
+    "historic": "memorial",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/79/Monumento_a_Ruperto_Chap%C3%AD_%28Madrid%29_01.jpg",
+    "memorial": "statue",
+    "name": "Ruperto Chapí",
+    "subject:wikidata": "Q964682"
+  }
+},
+{
+  "type": "node",
+  "id": 3497610236,
+  "lat": 40.4172923,
+  "lon": -3.6808290,
+  "tags": {
+    "amenity": "drinking_water",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3497610361,
+  "lat": 40.4141507,
+  "lon": -3.6827361,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2021-08-29",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 3497669669,
+  "lat": 40.4109640,
+  "lon": -3.6811396,
+  "tags": {
+    "artist_name": "Pedro Estany",
+    "historic": "memorial",
+    "memorial": "bust",
+    "name": "Busto de Federico Chueca"
+  }
+},
+{
+  "type": "node",
+  "id": 3497669670,
+  "lat": 40.4106046,
+  "lon": -3.6810988,
+  "tags": {
+    "historic": "memorial",
+    "memorial": "bust",
+    "name": "Manuel de Tolosa Latour"
+  }
+},
+{
+  "type": "node",
+  "id": 3657652927,
+  "lat": 40.4127548,
+  "lon": -3.6932535,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap",
+    "note": "Ubicación aproximada. Existe en Julio 2015"
+  }
+},
+{
+  "type": "node",
+  "id": 3771908450,
+  "lat": 40.4096930,
+  "lon": -3.6890671,
+  "tags": {
+    "artwork_type": "statue",
+    "historic": "memorial",
+    "memorial": "statue",
+    "name": "Monumento a Pío Baroja",
+    "tourism": "artwork",
+    "wikidata": "Q29566893",
+    "wikimedia_commons": "Category:Monument to Pío Baroja, Madrid",
+    "wikipedia": "es:Monumento a Pío Baroja"
+  }
+},
+{
+  "type": "node",
+  "id": 3773939421,
+  "lat": 40.4118025,
+  "lon": -3.6938576,
+  "tags": {
+    "artwork_subject": "street_art",
+    "artwork_type": "mosaic",
+    "check_date": "2025-02-09",
+    "description": "Tiled smiley on the corner",
+    "street_art": "yes",
+    "street_art:size": "small",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 4227924890,
+  "lat": 40.4144412,
+  "lon": -3.6790489,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 4319630815,
+  "lat": 40.4199930,
+  "lon": -3.6851185,
+  "tags": {
+    "artist_name": "Alicia Huertas",
+    "historic": "memorial",
+    "inscription": "Homenaje del ayuntamiento de Madrid a Antonio Mingote. Patrocinado por Concepción Mira García",
+    "memorial": "bust",
+    "name": "Homenaje a Antonio Mingote",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4330672707,
+  "lat": 40.4163972,
+  "lon": -3.6886031,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29"
+  }
+},
+{
+  "type": "node",
+  "id": 4330672708,
+  "lat": 40.4170109,
+  "lon": -3.6821419,
+  "tags": {
+    "amenity": "drinking_water",
+    "name": "Fuente de la Sardaña",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4331358251,
+  "lat": 40.4061264,
+  "lon": -3.6860234,
+  "tags": {
+    "amenity": "drinking_water",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4605454364,
+  "lat": 40.4179840,
+  "lon": -3.6800454,
+  "tags": {
+    "historic": "memorial",
+    "memorial": "bust",
+    "name": "Pedro Vargas",
+    "subject:wikidata": "Q977769",
+    "wheelchair": "yes",
+    "wikidata": "Q52084286",
+    "wikimedia_commons": "Category:Monument to Pedro Vargas, Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 4621788745,
+  "lat": 40.4167765,
+  "lon": -3.6882163,
+  "tags": {
+    "artwork_type": "statue",
+    "name": "Fernando IV",
+    "tourism": "artwork",
+    "wheelchair": "yes",
+    "wikidata": "Q110746918"
+  }
+},
+{
+  "type": "node",
+  "id": 4621795351,
+  "lat": 40.4168433,
+  "lon": -3.6873635,
+  "tags": {
+    "artwork_type": "statue",
+    "name": "D. Enrique II",
+    "tourism": "artwork",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4621796129,
+  "lat": 40.4167909,
+  "lon": -3.6878135,
+  "tags": {
+    "artwork_type": "statue",
+    "name": "D. Sancho IV",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 4621798316,
+  "lat": 40.4168699,
+  "lon": -3.6868665,
+  "tags": {
+    "artwork_type": "statue",
+    "name": "D. García",
+    "tourism": "artwork",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4621799685,
+  "lat": 40.4169039,
+  "lon": -3.6864097,
+  "tags": {
+    "artwork_type": "statue",
+    "name": "Dña. Urraca",
+    "tourism": "artwork",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 4621801073,
+  "lat": 40.4169398,
+  "lon": -3.6859412,
+  "tags": {
+    "artwork_type": "statue",
+    "name": "Dña. Berenguela",
+    "tourism": "artwork",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 4621803552,
+  "lat": 40.4167527,
+  "lon": -3.6863712,
+  "tags": {
+    "artwork_type": "statue",
+    "name": "D. Chintila",
+    "tourism": "artwork",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 4621804545,
+  "lat": 40.4168142,
+  "lon": -3.6854990,
+  "tags": {
+    "artwork_type": "statue",
+    "name": "Sancho IV",
+    "tourism": "artwork",
+    "wheelchair": "limited",
+    "wikidata": "Q54035271",
+    "wikimedia_commons": "Category:Sancho 4º, Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 4621807626,
+  "lat": 40.4167078,
+  "lon": -3.6868514,
+  "tags": {
+    "artwork_type": "statue",
+    "name": "Ramón Berenguer IV",
+    "tourism": "artwork",
+    "wheelchair": "yes",
+    "wikidata": "Q110747990",
+    "wikimedia_commons": "Category:Statue of Ramón Berenguer IV, Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 4621809435,
+  "lat": 40.4166820,
+  "lon": -3.6873362,
+  "tags": {
+    "artwork_type": "statue",
+    "name": "Carlos II",
+    "tourism": "artwork",
+    "wheelchair": "yes",
+    "wikidata": "Q110746526"
+  }
+},
+{
+  "type": "node",
+  "id": 4621814071,
+  "lat": 40.4166477,
+  "lon": -3.6877970,
+  "tags": {
+    "artwork_type": "statue",
+    "name": "Carlos I y V de Alemania",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 4621815222,
+  "lat": 40.4166219,
+  "lon": -3.6882341,
+  "tags": {
+    "artwork_type": "statue",
+    "name": "Gundemaro",
+    "tourism": "artwork",
+    "wheelchair": "yes",
+    "wikidata": "Q54035956",
+    "wikimedia_commons": "Category:Statue of Gundemaro, Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 4660568601,
+  "lat": 40.4052428,
+  "lon": -3.6831922,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "Aquí murió y fue enterrado en 1566 Fray Bartolomé de las Casas, llamado apóstol de las Indias",
+    "memorial": "plaque",
+    "name": "Fray Bartolomé de las Casas",
+    "source": "Ayuntamiento de Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 4675280667,
+  "lat": 40.4167898,
+  "lon": -3.6859074,
+  "tags": {
+    "artwork_type": "statue",
+    "name": "Alonso I",
+    "tourism": "artwork",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 4701248999,
+  "lat": 40.4136290,
+  "lon": -3.6934309,
+  "tags": {
+    "historic": "monument"
+  }
+},
+{
+  "type": "node",
+  "id": 4723840044,
+  "lat": 40.4130343,
+  "lon": -3.6904560,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "En esta casa vivió el último año de su vida, el dramaturgo Alejandro Casona (1903-1965) autor de La Dama del Alba y el Caballero de las espuelas de oro",
+    "memorial": "plaque",
+    "name": "Alejandro Casona"
+  }
+},
+{
+  "type": "node",
+  "id": 4723848916,
+  "lat": 40.4132579,
+  "lon": -3.6902263,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "En esta casa vivió sus años de estudiante, el ingeniero de caminos y político madrileño Leopoldo Calvo Sotelo Bustelo (1926-2008) presidente del Gobierno y en la transición diputado de UCD por Madrid, y marqués de la Ría de Ribadeo",
+    "memorial": "plaque",
+    "name": "Leopoldo Calvo Sotelo",
+    "source": "Ayuntamiento de Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 4728973348,
+  "lat": 40.4153063,
+  "lon": -3.6869033,
+  "tags": {
+    "historic": "memorial",
+    "memorial": "bust",
+    "name": "Monumento a Jacinto Benavente",
+    "wheelchair": "yes",
+    "wikidata": "Q20925461",
+    "wikimedia_commons": "Category:Monument to Jacinto Benavente, Madrid",
+    "wikipedia": "es:Monumento a Jacinto Benavente"
+  }
+},
+{
+  "type": "node",
+  "id": 4729073527,
+  "lat": 40.4189004,
+  "lon": -3.6834093,
+  "tags": {
+    "historic": "memorial",
+    "memorial": "bust",
+    "name": "Juan Van Halen y Sarti",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4738033681,
+  "lat": 40.4207838,
+  "lon": -3.6909859,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "Aquí nació y vivió Gregorio Marañón, médico y humanista (1887-1960)",
+    "memorial": "plaque",
+    "name": "Gregorio Marañón",
+    "source": "Ayuntamiento de Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 4738044722,
+  "lat": 40.4193119,
+  "lon": -3.6890326,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "En esta casa nació el 30 de diciembre de 1895 el escritor José Bergamín, poeta de una España peregrina",
+    "memorial": "plaque",
+    "name": "José Bergamín",
+    "source": "Ayuntamiento de Madrid",
+    "wheelchair": "yes",
+    "wikimedia_commons": "File:(MAD) J.Bergamín-casa-2.jpg"
+  }
+},
+{
+  "type": "node",
+  "id": 4738044723,
+  "lat": 40.4202143,
+  "lon": -3.6896124,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "En este lugar estuvo de 1664 a 1863 el Real Pósito de la Villa de Madrid, que integró varios edificios destinados al abastecimiento de la ciudad",
+    "memorial": "plaque",
+    "name": "Real Pósito de la Villa de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "wikimedia_commons": "Category:Commemorative plaque to Real Pósito de la Villa de Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 4738044724,
+  "lat": 40.4207374,
+  "lon": -3.6904264,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "En esta casa se fundó en 1963, Cuadernos para el Diálogo, dirigida por Joaquín Ruiz-Gimenez",
+    "memorial": "plaque",
+    "name": "Cuadernos para el Diálogo",
+    "source": "Ayuntamiento de Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 4749177170,
+  "lat": 40.4185393,
+  "lon": -3.6785616,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "A LA MEMORIA DEL ESCRITOR / AGUSTÍN DE FOXÁ / QUE VIVIÓ Y MURIÓ / EN ESTA CASA / 1906-1959 / LA SOCIEDAD GENERAL / DE / AUTORES DE ESPAÑA / MCMLXIV",
+    "memorial": "plaque",
+    "name": "Agustín de Foxá",
+    "source": "Ayuntamiento de Madrid",
+    "wheelchair": "yes",
+    "wikidata": "Q110746407"
+  }
+},
+{
+  "type": "node",
+  "id": 4749316918,
+  "lat": 40.4164203,
+  "lon": -3.6896758,
+  "tags": {
+    "artist_name": "Carlos Mingo López",
+    "historic": "memorial",
+    "inscription": "A / D. ANTONIO MAURA / EL / AYUNTAMIENTO DE MADRID / 1853 - 1925",
+    "memorial": "plaque",
+    "name": "Antonio Maura",
+    "source": "Ayuntamiento de Madrid",
+    "start_date": "1928",
+    "wikidata": "Q110746449"
+  }
+},
+{
+  "type": "node",
+  "id": 4758257145,
+  "lat": 40.4111859,
+  "lon": -3.6793879,
+  "tags": {
+    "artist_name": "Mariano Benlliure",
+    "historic": "memorial",
+    "memorial": "bust",
+    "name": "Miguel Moya",
+    "start_date": "1928",
+    "wikidata": "Q52145446",
+    "wikimedia_commons": "Category:Monument to Miguel Moya Ojanguren, Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 4760032808,
+  "lat": 40.4139482,
+  "lon": -3.6801022,
+  "tags": {
+    "historic": "memorial",
+    "memorial": "sculpture",
+    "name": "Doctor Cortezo"
+  }
+},
+{
+  "type": "node",
+  "id": 4760037952,
+  "lat": 40.4129383,
+  "lon": -3.6796489,
+  "tags": {
+    "artist_name": "Lorenzo Coullaut Valera",
+    "artwork_type": "statue",
+    "historic": "memorial",
+    "memorial": "statue",
+    "name": "Ramón de Campoamor",
+    "tourism": "artwork",
+    "wikidata": "Q6022974",
+    "wikimedia_commons": "Category:Monument to Ramón de Campoamor",
+    "wikipedia": "es:Monumento a Campoamor"
+  }
+},
+{
+  "type": "node",
+  "id": 4769711721,
+  "lat": 40.4156340,
+  "lon": -3.6827683,
+  "tags": {
+    "historic": "memorial",
+    "memorial": "bust",
+    "name": "Andrés Eloy Blanco",
+    "subject:wikidata": "Q4760185"
+  }
+},
+{
+  "type": "node",
+  "id": 4944158160,
+  "lat": 40.4052950,
+  "lon": -3.6831419,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "Aquí en su entrada en Madrid, el Rey AMADEO I, visitó el cadáver del General Prim",
+    "memorial": "plaque",
+    "name": "Amadeo I",
+    "website": "https://especiales.memoriademadrid.es/index/verficha/idpk/58148/id/8/obj/A/idag/25"
+  }
+},
+{
+  "type": "node",
+  "id": 4944158168,
+  "lat": 40.4137850,
+  "lon": -3.6904808,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "En esta casa que hizo contruir en 1924 vivió y trabajó ahsta su muerte AGUSTÍN GONZÁLEZ DE AMEZÚA historiador y académico (1881-1956)",
+    "memorial": "plaque",
+    "name": "Agustín González de Amezúa",
+    "website": "https://especiales.memoriademadrid.es/index/verficha/idpk/58190/id/8/obj/A/idag/25"
+  }
+},
+{
+  "type": "node",
+  "id": 4949498704,
+  "lat": 40.4104872,
+  "lon": -3.6957105,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "Aquí vivió sus últimos días el escritor ÁNGEL VÁZQUEZ (1929 -1980) autor de “La vida perra de Juanita Narboni”",
+    "memorial": "plaque",
+    "name": "Ángel Vázquez"
+  }
+},
+{
+  "type": "node",
+  "id": 4951446210,
+  "lat": 40.4204851,
+  "lon": -3.6915861,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "Aquí vivió el escritor y periodista ANTONIO DÍAZ-CAÑABATE, que dedicó muchas páginas a la vida madrileña (1898-1980)",
+    "memorial": "plaque",
+    "name": "Antonio Díaz-Cañabate"
+  }
+},
+{
+  "type": "node",
+  "id": 4957138054,
+  "lat": 40.4163279,
+  "lon": -3.6891952,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "En esta casa vivió de 1953 a 1958 el inolvidable director de la Orquesta Nacional ATAÚLFO ARGENTA (1913 - 1958) genial intérprete de los autores románticos y de la música española del siglo XX",
+    "memorial": "plaque",
+    "name": "Ataúlfo Argenta"
+  }
+},
+{
+  "type": "node",
+  "id": 4973920852,
+  "lat": 40.4181701,
+  "lon": -3.6775965,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "En esta casa vivió y trabajó el profesor académico y senador real CARLOS OLLERO uno de los artífices de la transición democrática española. (1912-1993)",
+    "memorial": "plaque",
+    "name": "Carlos Ollero",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4973920853,
+  "lat": 40.4120560,
+  "lon": -3.6935366,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "En esta casa estuvo la Embajada de Chile donde los diplomáticos AURELIO NÚÑEZ MORGADO Y CARLOS MORLA LYNCH, dieron asilo diplomático en la guerra civil.",
+    "memorial": "plaque",
+    "name": "Carlos Morla Linch y Núñez Morgado"
+  }
+},
+{
+  "type": "node",
+  "id": 4975520977,
+  "lat": 40.4175471,
+  "lon": -3.6951901,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "En esta casa estuvo la redacción de la revista ´´CORTIJOS Y RASCACIELOS´´ creada por Casto Fenández-Shaw, arquitecto futurista en 1930",
+    "memorial": "plaque",
+    "name": "Cortijos y Rascacielos",
+    "support": "wall_mounted"
+  }
+},
+{
+  "type": "node",
+  "id": 4975520979,
+  "lat": 40.4146030,
+  "lon": -3.6891561,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "En esta casa vivió entre 1939 y 1955 la novelista CONCHA ESPINA y en ella escribió parte de su obra la autora de LA ESFINGE MARAGATA",
+    "memorial": "plaque",
+    "name": "Concha Espina",
+    "subject:wikidata": "Q54087248"
+  }
+},
+{
+  "type": "node",
+  "id": 5029214890,
+  "lat": 40.4200094,
+  "lon": -3.6955464,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "En esta calle vivió a mediados del siglo XVIII el pintor veneciano GIACOMO AMIGONI artista al servicio del rey Fernando VI",
+    "memorial": "plaque",
+    "name": "Giacomo Amigoni"
+  }
+},
+{
+  "type": "node",
+  "id": 5029214894,
+  "lat": 40.4208118,
+  "lon": -3.6794663,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "En este lugar estuvo la casa donde vivió y fue cónsul de Chile de 1933 a 1935 GABRIELA MISTRAL, poeta, educadora y premio Nóbel de literatura en 1945",
+    "memorial": "plaque",
+    "name": "Gabriela Mistral"
+  }
+},
+{
+  "type": "node",
+  "id": 5075528113,
+  "lat": 40.4160344,
+  "lon": -3.6915986,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "EDIFICIO BAROJA / Don Pío Baroja y Nessi / VIVIÓ EN ESTE EDIFICIO / HASTA SU MUERTE EN 1956",
+    "memorial": "plaque",
+    "openplaques:id": "43744"
+  }
+},
+{
+  "type": "node",
+  "id": 5209961481,
+  "lat": 40.4175456,
+  "lon": -3.6906154,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "Aquí vivió desde 1928 hasta 1936 JORGE SEMPRÚN MAURA (1923 – 2011). Expatriado, deportado a Buchenwald, escritor y político español",
+    "memorial": "plaque",
+    "name": "Jorge Semprún Maura",
+    "source": "Ayuntamiento de Madrid",
+    "subject:wikidata": "Q54087287"
+  }
+},
+{
+  "type": "node",
+  "id": 5210042937,
+  "lat": 40.4129716,
+  "lon": -3.6955690,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "En esta casa vivió y murió en 1905 el jurista JOSÉ MARÍA MANRESA NAVARRO, cuya obra se refleja en el Código Civil de 1889",
+    "memorial": "plaque",
+    "name": "José María Manresa",
+    "source": "Ayuntamiento de Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 5210042940,
+  "lat": 40.4062835,
+  "lon": -3.6815037,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "En esta casa vivió desde 1960 hasta 2002 el poeta JOSÉ HIERRO ´´Esta casa no es la que era. Compasivamente, en la noche, sigue acunándonos.´´",
+    "memorial": "plaque",
+    "name": "José Hierro",
+    "source": "Ayuntamiento de Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 5214843165,
+  "lat": 40.4131114,
+  "lon": -3.6890564,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "En esta casa vivió desde 1940 hasta su fallecimiento JUAN BELMONTE (1892-1962). Genial y revolucionario torero trianero",
+    "memorial": "plaque",
+    "name": "Juan Belmonte",
+    "source": "Ayuntamiento de Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 5214843172,
+  "lat": 40.4153677,
+  "lon": -3.6906714,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "En esta casa vivió de 1940 a 1981 JOSÉ MARÍA PEMÁN, poeta, dramaturgo y académico",
+    "memorial": "plaque",
+    "name": "José María Pemán",
+    "source": "Ayuntamiento de Madrid",
+    "support": "wall_mounted",
+    "wikidata": "Q28004574",
+    "wikimedia_commons": "Category:Commemorative plaque to José María Pemán, Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 5214843173,
+  "lat": 40.4146680,
+  "lon": -3.6891454,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "Aquí vivió de 1940 a 1983 el científico y marino JOSÉ MARÍA OTERO DE NAVASCÚES, Marqués de Hermosilla, gran impulsor de la investigación en España",
+    "memorial": "plaque",
+    "name": "José María Otero de Navascués",
+    "source": "Ayuntamiento de Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 5219601669,
+  "lat": 40.4122655,
+  "lon": -3.6890446,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "En esta casa vivió de 1968 a 1994 el historiador y etnógrafo JULIO CARO BAROJA, vástago de una inolvidable familia",
+    "memorial": "plaque",
+    "name": "Julio Caro Baroja",
+    "source": "Ayuntamiento de Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 5222048986,
+  "lat": 40.4077681,
+  "lon": -3.6893317,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "Aquí estuvo de 1901 a 1932 el LABORATORIO DE INVESTIGACIONES BIOLÓGICAS, creado para facilitar el trabajo científico de Santiago Ramón y Cajal",
+    "memorial": "plaque",
+    "name": "Laboratorio de Investigaciones Biológicas (Cajal)",
+    "source": "Ayuntamiento de Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 5222964919,
+  "lat": 40.4108007,
+  "lon": -3.6957045,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "Aquí estuvieron su casa y banca la familia Fugger ´´LOS FÚCARES´´ banqueros de los Reyes en los siglos XVI-XVII",
+    "memorial": "plaque",
+    "name": "Los Fúcares",
+    "source": "Ayuntamiento de Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 5284621582,
+  "lat": 40.4118638,
+  "lon": -3.6937560,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "En este lugar vivió de 1923 a 1936 el beato PEDRO POVEDA (1874-1936). Humanista y pedagogo fundador de la Institución Teresiana.",
+    "memorial": "plaque",
+    "name": "Pedro Poveda",
+    "source": "Ayuntamiento de Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 5299314576,
+  "lat": 40.4069749,
+  "lon": -3.6886008,
+  "tags": {
+    "fare_area": "A",
+    "name": "Atocha",
+    "network": "Metro de Madrid",
+    "network:wikidata": "Q191987",
+    "old_name": "Atocha Renfe",
+    "operator": "Metro de Madrid",
+    "public_transport": "station",
+    "railway": "station",
+    "station": "subway",
+    "subway": "yes",
+    "url": "http://www.citram.es/HORARIOS/info.aspx?estacion=4_16",
+    "website": "https://www.metromadrid.es/es/linea/linea-1#estacion-116",
+    "wikidata": "Q23093",
+    "wikipedia": "es:Estación de Atocha"
+  }
+},
+{
+  "type": "node",
+  "id": 5299314577,
+  "lat": 40.4088389,
+  "lon": -3.6914748,
+  "tags": {
+    "fare_area": "A",
+    "name": "Estación del Arte",
+    "network": "Metro de Madrid",
+    "network:wikidata": "Q191987",
+    "old_name": "Atocha",
+    "operator": "Metro de Madrid",
+    "public_transport": "station",
+    "railway": "station",
+    "station": "subway",
+    "subway": "yes",
+    "url": "http://www.citram.es/HORARIOS/info.aspx?estacion=4_15",
+    "website": "https://www.metromadrid.es/es/linea/linea-1#estacion-115",
+    "wikidata": "Q2016175",
+    "wikipedia": "es:Estación del Arte"
+  }
+},
+{
+  "type": "node",
+  "id": 5303271999,
+  "lat": 40.4190548,
+  "lon": -3.6949256,
+  "tags": {
+    "covered": "yes",
+    "fare_area": "A",
+    "name": "Banco de España",
+    "network": "Metro de Madrid",
+    "network:wikidata": "Q191987",
+    "operator": "Metro de Madrid",
+    "public_transport": "station",
+    "railway": "station",
+    "source": "yahoo_maps",
+    "source:name": "common knowledge",
+    "station": "subway",
+    "subway": "yes",
+    "website": "https://www.metromadrid.es/es/linea/linea-2#estacion-206",
+    "wheelchair": "no",
+    "wheelchair:description": "Steps only to platforms.",
+    "wikidata": "Q2481227",
+    "wikipedia": "es:Estación de Banco de España"
+  }
+},
+{
+  "type": "node",
+  "id": 5303272000,
+  "lat": 40.4204626,
+  "lon": -3.6864269,
+  "tags": {
+    "covered": "yes",
+    "fare_area": "A",
+    "name": "Retiro",
+    "network": "Metro de Madrid",
+    "network:wikidata": "Q191987",
+    "operator": "Metro de Madrid",
+    "public_transport": "station",
+    "railway": "station",
+    "source:name": "common knowledge",
+    "station": "subway",
+    "subway": "yes",
+    "website": "https://www.metromadrid.es/es/linea/linea-2#estacion-205",
+    "wheelchair": "no",
+    "wikidata": "Q2056874",
+    "wikipedia": "es:Estación de Retiro"
+  }
+},
+{
+  "type": "node",
+  "id": 5303272012,
+  "lat": 40.4204470,
+  "lon": -3.6864129,
+  "tags": {
+    "covered": "yes",
+    "fare_area": "A",
+    "name": "Retiro",
+    "operator": "Metro de Madrid",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "source:name": "common knowledge",
+    "station": "subway",
+    "subway": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5307477095,
+  "lat": 40.4183658,
+  "lon": -3.6781374,
+  "tags": {
+    "alt_name": "Ibiza metro station",
+    "colour": "#9F1F99",
+    "fare_area": "A",
+    "name": "Ibiza",
+    "network": "Metro de Madrid",
+    "network:wikidata": "Q191987",
+    "operator": "Metro de Madrid",
+    "public_transport": "station",
+    "railway": "station",
+    "station": "subway",
+    "subway": "yes",
+    "wheelchair": "no",
+    "wikidata": "Q2464739",
+    "wikipedia": "es:Estación de Ibiza"
+  }
+},
+{
+  "type": "node",
+  "id": 5322417135,
+  "lat": 40.4205226,
+  "lon": -3.6871432,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "En este lugar se alzó desde 1749 a 1874 la PLAZA DE TOROS DE LA PUERTA DE ALCALÁ, lugar de inspiración para Francisco de Goya",
+    "memorial": "plaque",
+    "name": "Plaza de Toros de la Puerta de Alcalá",
+    "source": "Ayuntamiento de Madrid",
+    "wikidata": "Q54165576",
+    "wikimedia_commons": "Category:Commemorative plaque to the Street of Alcalá bullring, Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 5322474566,
+  "lat": 40.4129119,
+  "lon": -3.6897021,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "En esta casa vivió hasta 1936 el escritor y orador RAMIRO DE MAEZTU, político y pensador muerto por sus ideas",
+    "memorial": "plaque",
+    "name": "Ramiro de Maeztu",
+    "source": "Ayuntamiento de Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 5322474569,
+  "lat": 40.4138321,
+  "lon": -3.6890935,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "En esta casa vivió y tuvo su estudio el dibujante madrileño RAFAEL DE PENAGOS de 1914 a1926, años fundamentales en su creación artística",
+    "memorial": "plaque",
+    "name": "Rafael de Penagos",
+    "source": "Ayuntamiento de Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 5322517817,
+  "lat": 40.4160643,
+  "lon": -3.6777638,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "En esta casa vivió entre 1935 y 1936 el escritor RAMÓN J. SENDER y aquí escribió MISTER WITT EN EL CANTÓN",
+    "memorial": "plaque",
+    "name": "Ramón J. Sender",
+    "source": "Ayuntamiento de Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 5326186932,
+  "lat": 40.4175684,
+  "lon": -3.6831880,
+  "tags": {
+    "tourism": "artwork",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5326186933,
+  "lat": 40.4170450,
+  "lon": -3.6829731,
+  "tags": {
+    "tourism": "artwork",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5326186934,
+  "lat": 40.4174278,
+  "lon": -3.6832983,
+  "tags": {
+    "tourism": "artwork",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5326186935,
+  "lat": 40.4173155,
+  "lon": -3.6833430,
+  "tags": {
+    "tourism": "artwork",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5326186936,
+  "lat": 40.4172038,
+  "lon": -3.6832976,
+  "tags": {
+    "tourism": "artwork",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5326186937,
+  "lat": 40.4171300,
+  "lon": -3.6831821,
+  "tags": {
+    "tourism": "artwork",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5326186938,
+  "lat": 40.4173372,
+  "lon": -3.6827341,
+  "tags": {
+    "tourism": "artwork",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5326186939,
+  "lat": 40.4174304,
+  "lon": -3.6827697,
+  "tags": {
+    "tourism": "artwork",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5329765748,
+  "lat": 40.4194199,
+  "lon": -3.6789677,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "En esta vivió el periodista y escritor madrileño VICENTE ZABALA maestro y figura de la crítica taurina. (1937-1995)",
+    "memorial": "plaque",
+    "name": "Vicente Zabala",
+    "source": "Ayuntamiento de Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 5403357323,
+  "lat": 40.4105063,
+  "lon": -3.6852319,
+  "tags": {
+    "historic": "memorial",
+    "memorial": "plaque",
+    "name": "Juantxu Rodríguez",
+    "wikidata": "Q110747553"
+  }
+},
+{
+  "type": "node",
+  "id": 5407179434,
+  "lat": 40.4151191,
+  "lon": -3.6790793,
+  "tags": {
+    "amenity": "drinking_water",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5407179435,
+  "lat": 40.4167340,
+  "lon": -3.6785096,
+  "tags": {
+    "amenity": "drinking_water",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29"
+  }
+},
+{
+  "type": "node",
+  "id": 5407179436,
+  "lat": 40.4171448,
+  "lon": -3.6792251,
+  "tags": {
+    "amenity": "drinking_water",
+    "fountain": "bubbler",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5407179457,
+  "lat": 40.4186820,
+  "lon": -3.6799125,
+  "tags": {
+    "amenity": "drinking_water",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5407179473,
+  "lat": 40.4198651,
+  "lon": -3.6802547,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5407179493,
+  "lat": 40.4206758,
+  "lon": -3.6824338,
+  "tags": {
+    "amenity": "drinking_water",
+    "fee": "no",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29"
+  }
+},
+{
+  "type": "node",
+  "id": 5407179494,
+  "lat": 40.4204166,
+  "lon": -3.6842604,
+  "tags": {
+    "amenity": "drinking_water",
+    "fountain": "drinking",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5407179495,
+  "lat": 40.4205326,
+  "lon": -3.6843953,
+  "tags": {
+    "amenity": "fountain",
+    "description": "Los madrileños del siglo XIX venian por agua a esta fuente",
+    "name": "Fuente de la Salud"
+  }
+},
+{
+  "type": "node",
+  "id": 5407179496,
+  "lat": 40.4201848,
+  "lon": -3.6860799,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 5407179497,
+  "lat": 40.4197034,
+  "lon": -3.6865706,
+  "tags": {
+    "amenity": "drinking_water",
+    "fountain": "bubbler",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5407179498,
+  "lat": 40.4186278,
+  "lon": -3.6880326,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5407188002,
+  "lat": 40.4139692,
+  "lon": -3.6883757,
+  "tags": {
+    "amenity": "drinking_water",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5407188003,
+  "lat": 40.4116961,
+  "lon": -3.6867756,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 5407192747,
+  "lat": 40.4107345,
+  "lon": -3.6871493,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29"
+  }
+},
+{
+  "type": "node",
+  "id": 5407206291,
+  "lat": 40.4098423,
+  "lon": -3.6861303,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 5407222305,
+  "lat": 40.4107577,
+  "lon": -3.6832617,
+  "tags": {
+    "amenity": "drinking_water",
+    "bottle": "yes",
+    "covered": "no",
+    "indoor": "no",
+    "lit": "no",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 5407222306,
+  "lat": 40.4093711,
+  "lon": -3.6804945,
+  "tags": {
+    "amenity": "drinking_water",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29"
+  }
+},
+{
+  "type": "node",
+  "id": 5407222307,
+  "lat": 40.4084920,
+  "lon": -3.6786313,
+  "tags": {
+    "amenity": "drinking_water",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29"
+  }
+},
+{
+  "type": "node",
+  "id": 5407222308,
+  "lat": 40.4111617,
+  "lon": -3.6809990,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 5407222310,
+  "lat": 40.4113795,
+  "lon": -3.6800558,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 5407299065,
+  "lat": 40.4108988,
+  "lon": -3.6798856,
+  "tags": {
+    "artwork_type": "sculpture",
+    "name": "Jarrón de fruta",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 5407299066,
+  "lat": 40.4106997,
+  "lon": -3.6807605,
+  "tags": {
+    "artwork_type": "sculpture",
+    "name": "Jarrón de fruta",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 5422559201,
+  "lat": 40.4155487,
+  "lon": -3.6840684,
+  "tags": {
+    "amenity": "drinking_water",
+    "bottle": "yes",
+    "covered": "no",
+    "fee": "no",
+    "indoor": "no",
+    "lit": "no",
+    "man_made": "water_tap",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5422559205,
+  "lat": 40.4157864,
+  "lon": -3.6835184,
+  "tags": {
+    "amenity": "drinking_water",
+    "bottle": "yes",
+    "covered": "no",
+    "fee": "no",
+    "indoor": "no",
+    "lit": "no",
+    "man_made": "water_tap",
+    "name": "Fuente de las Esfinges",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5422559206,
+  "lat": 40.4159640,
+  "lon": -3.6827460,
+  "tags": {
+    "artwork_type": "installation",
+    "name": "Homenaje a la Mar - Ancla del buque Villa de Madrid 1982",
+    "tourism": "artwork",
+    "wheelchair": "limited",
+    "year": "1862"
+  }
+},
+{
+  "type": "node",
+  "id": 5422559210,
+  "lat": 40.4163956,
+  "lon": -3.6814203,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 5422559211,
+  "lat": 40.4166761,
+  "lon": -3.6800527,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "2016-06-29",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5424625643,
+  "lat": 40.4194627,
+  "lon": -3.6916265,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap",
+    "name": "Fuente de Correos"
+  }
+},
+{
+  "type": "node",
+  "id": 5424962110,
+  "lat": 40.4187685,
+  "lon": -3.6865275,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5462590351,
+  "lat": 40.4042973,
+  "lon": -3.6811007,
+  "tags": {
+    "addr:city": "Madrid",
+    "addr:housenumber": "44",
+    "addr:postcode": "28007",
+    "addr:street": "Avenida de Menéndez Pelayo",
+    "description": "Linea 1",
+    "name": "Menéndez Pelayo",
+    "network": "Metro de Madrid",
+    "network:wikidata": "Q191987",
+    "operator": "Metro de Madrid",
+    "public_transport": "station",
+    "railway": "station",
+    "station": "subway",
+    "subway": "yes",
+    "url": "http://www.citram.es/HORARIOS/info.aspx?estacion=4_17",
+    "website": "https://www.metromadrid.es/es/linea/linea-1#estacion-117",
+    "wheelchair": "yes",
+    "wikidata": "Q2479001",
+    "wikipedia": "es:Estación de Menéndez Pelayo"
+  }
+},
+{
+  "type": "node",
+  "id": 5560576641,
+  "lat": 40.4084658,
+  "lon": -3.6940356,
+  "tags": {
+    "artist_name": "Pablo Picasso",
+    "artwork_type": "painting",
+    "historic": "yes",
+    "indoor": "yes",
+    "location": "indoor",
+    "name": "Guernica",
+    "name:es": "Guernica",
+    "name:zh": "二层 6C 格尔尼卡",
+    "start_date": "1937",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 5652336608,
+  "lat": 40.4081778,
+  "lon": -3.6888479,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "SANTIAGO RAMON Y CAJAL / «LA MAXIMA FIGVRA / DE LA CIENCIA ESPAÑOLA / DE NVESTRO TIEMPO / Y QVIZA DE TODOS LOS TIEMPOS» / (G. MARAÑON) / NOBEL 1906 / EL AYVNTAMIENTO DE MADRID / LE RINDE EL HOMENAJE / DE SV ADMIRACION Y RESPETO / EN SV CINCVENTENARIO ...",
+    "memorial": "plaque",
+    "openplaques:id": "43743"
+  }
+},
+{
+  "type": "node",
+  "id": 5759275094,
+  "lat": 40.4198878,
+  "lon": -3.6831904,
+  "tags": {
+    "historic": "wayside_cross"
+  }
+},
+{
+  "type": "node",
+  "id": 6018055990,
+  "lat": 40.4122205,
+  "lon": -3.6904215,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 6070769162,
+  "lat": 40.4129042,
+  "lon": -3.6796407,
+  "tags": {
+    "name": "Quién supiera escribir",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 6070787552,
+  "lat": 40.4129735,
+  "lon": -3.6796536,
+  "tags": {
+    "name": "El gaitero de Gijón",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 6205472289,
+  "lat": 40.4155193,
+  "lon": -3.6902564,
+  "tags": {
+    "affiliation": "Rebel_faction",
+    "historic": "memorial",
+    "inscription": "Por Dios y por España al alférez provisional 1936-1939",
+    "memorial": "war_memorial",
+    "memorial:conflict": "Spanish_Civil_War",
+    "name": "Monumento al Alférez Provisional",
+    "note": "Curiosamente, la ley de memoria histórica no ha hecho que se elimine este memorial, que solía recordar solo a los oficiales provisionales de uno de los dos bandos. Descansen en paz.",
+    "note_1": "Aquí hay una pokeparada",
+    "start_date": "1965",
+    "wikidata": "Q29566707",
+    "wikimedia_commons": "Category:Monolito al Alférez Provisional, Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 6225677416,
+  "lat": 40.4187896,
+  "lon": -3.6957880,
+  "tags": {
+    "historic": "memorial",
+    "material": "metal",
+    "memorial": "ghost_bike",
+    "name": "Juanjo Cristóbal",
+    "note": "El suceso tuvo lugar el 11/07/2017. La bicicleta original se colocó el 27/07/2017, se retiró por obras de mejora de la Calle Alcalá en 2022. El 25/03/2023 se repuso una nueva.",
+    "start_date": "2023-03-25"
+  }
+},
+{
+  "type": "node",
+  "id": 6363691988,
+  "lat": 40.4109990,
+  "lon": -3.6933767,
+  "tags": {
+    "tourism": "viewpoint"
+  }
+},
+{
+  "type": "node",
+  "id": 6504639737,
+  "lat": 40.4172646,
+  "lon": -3.6833330,
+  "tags": {
+    "tourism": "viewpoint",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6513754519,
+  "lat": 40.4198138,
+  "lon": -3.6932399,
+  "tags": {
+    "access": "yes",
+    "amenity": "drinking_water",
+    "fee": "no",
+    "man_made": "water_tap",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6614865890,
+  "lat": 40.4127302,
+  "lon": -3.6937646,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 7274987929,
+  "lat": 40.4164897,
+  "lon": -3.6949451,
+  "tags": {
+    "artist_name": "Juan de Avalos",
+    "artwork_type": "bust",
+    "material": "bronze",
+    "name": "Busto de Hans Heinrich von Thyssen-Bornemisza",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 7499028215,
+  "lat": 40.4059688,
+  "lon": -3.6887662,
+  "tags": {
+    "name": "Atocha-Cercanías",
+    "network": "Cercanías Madrid",
+    "network:wikidata": "Q1054785",
+    "operator": "Renfe",
+    "operator:wikidata": "Q2476154",
+    "owner": "Adif",
+    "owner:wikidata": "Q358752",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:ref": "AT",
+    "ref": "18000",
+    "ref:EU:PLC": "ES18000",
+    "train": "yes",
+    "url": "https://www.crtm.es/tu-transporte-publico/cercanias-renfe/estaciones/5_11",
+    "website": "https://www.adif.es/w/18000-madrid-atocha-c.",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 7499028216,
+  "lat": 40.4056837,
+  "lon": -3.6900187,
+  "tags": {
+    "iata": "XOC",
+    "name": "Madrid-Puerta de Atocha-Almudena Grandes",
+    "operator": "Adif",
+    "operator:wikidata": "Q358752",
+    "owner": "Adif AV",
+    "owner:wikidata": "Q115684403",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:ref": "MPA",
+    "ref": "60000",
+    "ref:EU:PLC": "ES60000",
+    "train": "yes",
+    "uic_ref": "7160000",
+    "website": "https://www.adif.es/w/60000-madrid-pta-de-atocha",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8122113776,
+  "lat": 40.4161239,
+  "lon": -3.6920465,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "En esta casa vivió y escribió durante 1943 el renombrado escritor búlgaro Dimitar Dimov 1909-1966. Gran amigo de España. Madrid le recuerda en el XXI aniversario de su muerte",
+    "memorial": "plaque",
+    "name": "Dimitar Dimov",
+    "openplaques:id": "54345",
+    "start_date": "25/06/1987",
+    "wikidata": "Q110746634"
+  }
+},
+{
+  "type": "node",
+  "id": 8714822072,
+  "lat": 40.4108722,
+  "lon": -3.6913983,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 8928518873,
+  "lat": 40.4188508,
+  "lon": -3.6919027,
+  "tags": {
+    "amenity": "townhall",
+    "name": "Palacio de Cibeles - Ayuntamiento de Madrid",
+    "tourism": "attraction"
+  }
+},
+{
+  "type": "node",
+  "id": 8928837417,
+  "lat": 40.4189391,
+  "lon": -3.6947546,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 9047955431,
+  "lat": 40.4172412,
+  "lon": -3.6941218,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 9059608366,
+  "lat": 40.4148916,
+  "lon": -3.6929558,
+  "tags": {
+    "access": "yes",
+    "amenity": "drinking_water",
+    "bottle": "yes",
+    "covered": "no",
+    "fee": "no",
+    "fountain": "bubbler",
+    "indoor": "no",
+    "lit": "no",
+    "survey:date": "2022-07-23",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9066413375,
+  "lat": 40.4155303,
+  "lon": -3.6852656,
+  "tags": {
+    "historic": "memorial",
+    "name": "Monumento al Mariscal Francisco Solano López",
+    "wikimedia_commons": "File:Monumento a Francisco Solano Lopez - Madrid 01.jpg"
+  }
+},
+{
+  "type": "node",
+  "id": 9066413383,
+  "lat": 40.4151730,
+  "lon": -3.6842147,
+  "tags": {
+    "historic": "memorial",
+    "material": "metal",
+    "memorial": "plaque",
+    "name": "General Francisco Morazan",
+    "wikidata": "Q110747387",
+    "wikimedia_commons": "Category:Monument to Francisco Morazán, Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 9066413403,
+  "lat": 40.4192538,
+  "lon": -3.6938310,
+  "tags": {
+    "artist_name": "Carlos Rubio Carvajal",
+    "historic": "memorial",
+    "memorial": "sculpture",
+    "name": "Monumento en memoria de las víctimas de la pandemia de la Covid-19",
+    "name:en": "Monument in memory of the victims of the Covid 19 pandemic",
+    "website": "https://www.esmadrid.com/en/tourist-information/monument-memory-victims-covid-19-pandemic?utm_referrer=https%3A%2F%2Fwww.esmadrid.com%2Fde%2Ftouristeninformation%2Fdenkmal-fuer-die-opfer-der-covid-19-pandemie",
+    "wikidata": "Q96021900",
+    "wikimedia_commons": "Category:Monument to the victims of the Coronavirus, Madrid",
+    "wikipedia": "es:Monumento en recuerdo de las víctimas de la pandemia de COVID-19 (Madrid)"
+  }
+},
+{
+  "type": "node",
+  "id": 9129007796,
+  "lat": 40.4162953,
+  "lon": -3.6873760,
+  "tags": {
+    "artwork_type": "sculpture",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 9160301645,
+  "lat": 40.4081792,
+  "lon": -3.6942848,
+  "tags": {
+    "artwork_type": "sculpture",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 9160301646,
+  "lat": 40.4087672,
+  "lon": -3.6939547,
+  "tags": {
+    "artwork_type": "sculpture",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 9230670357,
+  "lat": 40.4188416,
+  "lon": -3.6826628,
+  "tags": {
+    "artwork_type": "statue",
+    "name": "Estatua de Diana",
+    "tourism": "artwork",
+    "wikidata": "Q52084255",
+    "wikimedia_commons": "Category:Diana, Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 9249492978,
+  "lat": 40.4111463,
+  "lon": -3.6906728,
+  "tags": {
+    "addr:city": "Madrid",
+    "artwork_type": "bust",
+    "historic": "monument",
+    "name": "Estatua de Carlos III",
+    "name:en": "Carlos III statue",
+    "name:es": "Estatua de Carlos III",
+    "name:zh-Hans": "东方广场",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 9249492979,
+  "lat": 40.4102225,
+  "lon": -3.6912505,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 9249492980,
+  "lat": 40.4112265,
+  "lon": -3.6914776,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 9249492981,
+  "lat": 40.4111677,
+  "lon": -3.6919664,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 9249492982,
+  "lat": 40.4115428,
+  "lon": -3.6915470,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 9249492983,
+  "lat": 40.4114789,
+  "lon": -3.6920351,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 9249493008,
+  "lat": 40.4118158,
+  "lon": -3.6921137,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 9249493013,
+  "lat": 40.4118736,
+  "lon": -3.6916245,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 9249496422,
+  "lat": 40.4122060,
+  "lon": -3.6917001,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 9249496446,
+  "lat": 40.4115764,
+  "lon": -3.6899603,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 9294644433,
+  "lat": 40.4062466,
+  "lon": -3.6839904,
+  "tags": {
+    "historic": "tomb",
+    "name": "Mausoleo Conjunto",
+    "tomb": "mausoleum"
+  }
+},
+{
+  "type": "node",
+  "id": 9532156717,
+  "lat": 40.4209967,
+  "lon": -3.6927067,
+  "tags": {
+    "historic": "monument",
+    "name": "Madrid a los refugiados"
+  }
+},
+{
+  "type": "node",
+  "id": 9723658315,
+  "lat": 40.4089036,
+  "lon": -3.6944116,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 9847022600,
+  "lat": 40.4155133,
+  "lon": -3.6882553,
+  "tags": {
+    "artwork_type": "sculpture",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 9847022601,
+  "lat": 40.4155302,
+  "lon": -3.6873796,
+  "tags": {
+    "artwork_type": "sculpture",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 9938774937,
+  "lat": 40.4185955,
+  "lon": -3.6929268,
+  "tags": {
+    "artwork_type": "sculpture",
+    "name": "Niños con jarrón",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 9984717159,
+  "lat": 40.4110472,
+  "lon": -3.6825404,
+  "tags": {
+    "artist_name": "Ricardo Bellver",
+    "artwork_type": "sculpture",
+    "material": "bronze",
+    "name": "El Ángel Caído",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 10142702497,
+  "lat": 40.4084935,
+  "lon": -3.6933541,
+  "tags": {
+    "amenity": "drinking_water",
+    "fee": "no",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 10289891593,
+  "lat": 40.4119044,
+  "lon": -3.6913635,
+  "tags": {
+    "artwork_type": "statue",
+    "name": "José Quer y Martínez",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 10289891594,
+  "lat": 40.4112597,
+  "lon": -3.6912180,
+  "tags": {
+    "artwork_type": "statue",
+    "name": "Simón de Rojas Clemente y Rubio",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 10654185205,
+  "lat": 40.4110841,
+  "lon": -3.6931650,
+  "tags": {
+    "garden:type": "green_wall",
+    "leisure": "garden",
+    "name": "Jardín Vertical Caixaforum",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11028349894,
+  "lat": 40.4103404,
+  "lon": -3.6897642,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 11225322937,
+  "lat": 40.4179490,
+  "lon": -3.6795233,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 11305376947,
+  "lat": 40.4130959,
+  "lon": -3.6953882,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 11354283973,
+  "lat": 40.4130910,
+  "lon": -3.6952638,
+  "tags": {
+    "artist_name": "Rodrigo Romero Pérez",
+    "artwork_type": "statue",
+    "material": "bronze",
+    "name": "Perro Paco",
+    "source": "local knowledge",
+    "start_date": "2023-01-16",
+    "tourism": "artwork",
+    "wikidata": "Q123282910"
+  }
+},
+{
+  "type": "node",
+  "id": 11482769345,
+  "lat": 40.4053533,
+  "lon": -3.6832688,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "Fundador de los Dominicos",
+    "material": "stone",
+    "memorial": "statue",
+    "name": "Santo Domingo de Guzman O.P.",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 11491986727,
+  "lat": 40.4127496,
+  "lon": -3.6943149,
+  "tags": {
+    "direction": "10",
+    "historic": "memorial",
+    "memorial": "plaque",
+    "name": "José de Espronceda",
+    "source": "survey",
+    "wikidata": "Q110747507"
+  }
+},
+{
+  "type": "node",
+  "id": 11591969569,
+  "lat": 40.4139755,
+  "lon": -3.6808807,
+  "tags": {
+    "tourism": "viewpoint"
+  }
+},
+{
+  "type": "node",
+  "id": 11668867435,
+  "lat": 40.4200720,
+  "lon": -3.6957624,
+  "tags": {
+    "access": "yes",
+    "amenity": "drinking_water",
+    "bottle": "yes",
+    "fee": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11768590069,
+  "lat": 40.4189415,
+  "lon": -3.6920346,
+  "tags": {
+    "name:en": "Observation deck",
+    "tourism": "viewpoint"
+  }
+},
+{
+  "type": "node",
+  "id": 11847421102,
+  "lat": 40.4125853,
+  "lon": -3.6915831,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 11974156086,
+  "lat": 40.4072561,
+  "lon": -3.6780860,
+  "tags": {
+    "amenity": "drinking_water",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "source": "Ayuntamiento de Madrid",
+    "source:date": "21/01/2022"
+  }
+},
+{
+  "type": "node",
+  "id": 12078746585,
+  "lat": 40.4106619,
+  "lon": -3.6929200,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "El 2 de mayo de 1.808 fueron fusilados más de 50 PATRIOTAS en este lugar del Paseo del Prado, Paseo de Recoletos, Fuente de Cibeles y Puerta de Alcalá",
+    "material": "metal",
+    "memorial": "plaque",
+    "name": "50 Patriotas",
+    "url": "https://esculturayarte.com/054008/50-Patriotas-en-Placas-Memoria-de-Madrid.html"
+  }
+},
+{
+  "type": "node",
+  "id": 12144709504,
+  "lat": 40.4194272,
+  "lon": -3.6919535,
+  "tags": {
+    "amenity": "drinking_water",
+    "fixme": "move to correct position",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 12409563572,
+  "lat": 40.4161503,
+  "lon": -3.6789262,
+  "tags": {
+    "artwork_type": "sculpture",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 12409563573,
+  "lat": 40.4161621,
+  "lon": -3.6788463,
+  "tags": {
+    "artwork_type": "sculpture",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 12409563574,
+  "lat": 40.4148103,
+  "lon": -3.6784556,
+  "tags": {
+    "artwork_type": "sculpture",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 12409563575,
+  "lat": 40.4148230,
+  "lon": -3.6783922,
+  "tags": {
+    "artwork_type": "sculpture",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 12430299177,
+  "lat": 40.4115091,
+  "lon": -3.6948403,
+  "tags": {
+    "access": "yes",
+    "amenity": "drinking_water",
+    "fee": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12430928704,
+  "lat": 40.4082081,
+  "lon": -3.6825541,
+  "tags": {
+    "amenity": "drinking_water",
+    "operator": "Ayuntamiento de Madrid",
+    "operator:type": "government",
+    "operator:wikidata": "Q3773976",
+    "operator:wikipedia": "es:Ayuntamiento de Madrid",
+    "source": "Ayuntamiento de Madrid"
+  }
+},
+{
+  "type": "node",
+  "id": 12459005104,
+  "lat": 40.4155688,
+  "lon": -3.6948187,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 12487950308,
+  "lat": 40.4168662,
+  "lon": -3.6801136,
+  "tags": {
+    "artwork_type": "sculpture",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 12571055330,
+  "lat": 40.4118027,
+  "lon": -3.6955737,
+  "tags": {
+    "artwork_subject": "street_art",
+    "artwork_type": "mosaic",
+    "check_date": "2025-02-09",
+    "name": "Where's Nean?",
+    "street_art": "yes",
+    "street_art:size": "small",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 12571055333,
+  "lat": 40.4117589,
+  "lon": -3.6938339,
+  "tags": {
+    "artwork_subject": "street_art",
+    "artwork_type": "installation",
+    "check_date": "2025-02-09",
+    "description": "Art on \"No Entry\" sign",
+    "street_art": "yes",
+    "street_art:size": "small",
+    "tourism": "artwork",
+    "traffic_sign": "no_entry"
+  }
+},
+{
+  "type": "node",
+  "id": 12571055334,
+  "lat": 40.4117944,
+  "lon": -3.6938437,
+  "tags": {
+    "artwork_subject": "street_art",
+    "artwork_type": "installation",
+    "check_date": "2025-02-09",
+    "description": "Art on \"No Entry\" sign",
+    "street_art": "yes",
+    "street_art:size": "small",
+    "tourism": "artwork",
+    "traffic_sign": "no_entry"
+  }
+},
+{
+  "type": "node",
+  "id": 12702300385,
+  "lat": 40.4051478,
+  "lon": -3.6913158,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 12803756889,
+  "lat": 40.4169777,
+  "lon": -3.6855040,
+  "tags": {
+    "artwork_type": "statue",
+    "name": "Juana I",
+    "tourism": "artwork",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 12879510490,
+  "lat": 40.4123908,
+  "lon": -3.6870443,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "El Homenaje y agradecimiento a todas las víctimas del terrorismo / cuya memoria permanece viva en nuestra convivencia / y la enriquece constantemente / Los ciudadanos de Madrid 11 de marzo de 2005",
+    "memorial": "plaque",
+    "subject:wikidata": "Q213531"
+  }
+},
+{
+  "type": "node",
+  "id": 12879510491,
+  "lat": 40.4123787,
+  "lon": -3.6872362,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "Monumento construido como homenaje a las víctimas de los / atentados del terrorismo yihadista del 11 de marzo de 2004 / Ayuntamiento de Madrid / 2004",
+    "memorial": "plaque",
+    "subject:wikidata": "Q213531"
+  }
+},
+{
+  "type": "node",
+  "id": 12908196184,
+  "lat": 40.4071170,
+  "lon": -3.6935306,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 13135392410,
+  "lat": 40.4066570,
+  "lon": -3.6909664,
+  "tags": {
+    "authorization": "Francisco López",
+    "historic": "memorial",
+    "material": "copper",
+    "memorial": "statue",
+    "name": "Homenaje al Agente Comercial"
+  }
+},
+{
+  "type": "node",
+  "id": 13369839701,
+  "lat": 40.4104566,
+  "lon": -3.6898638,
+  "tags": {
+    "historic": "monument",
+    "name": "Este jardín forma parte de la red mundial de Jardines por la Paz"
+  }
+},
+{
+  "type": "node",
+  "id": 13426865515,
+  "lat": 40.4104266,
+  "lon": -3.6928248,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "AQUÍ VIVIÓ ELEUTERIO DÍAZ-TENDERO MERCHÁN NACIDO 1882 EXILIADO FRANCIA DEPORTADO 1944 'TREN FANTASMA' DACHAU ASESINADO 13.2.1945",
+    "memorial": "stolperstein",
+    "memorial:addr:city": "Madrid",
+    "memorial:addr:housenumber": "40",
+    "memorial:addr:postcode": "28014",
+    "memorial:addr:street": "Paseo del Prado",
+    "name": "Eleuterio Díaz-Tendero Merchán",
+    "wikidata": "Q131139193"
+  }
+},
+{
+  "type": "node",
+  "id": 13429574865,
+  "lat": 40.4050909,
+  "lon": -3.6813766,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "AQUÍ VIVIÓ ÁNGEL HERNÁNDEZ SÁNCHEZ NACIDO 1915 EXILIADO FRANCIA STALAG GNEIXENDORF DEPORTADO 1941 MAUTHAUSEN ASESINADO 13.8.1942 GUSEN",
+    "memorial": "stolperstein",
+    "memorial:addr:city": "Madrid",
+    "memorial:addr:housenumber": "6",
+    "memorial:addr:postcode": "28014",
+    "memorial:addr:street": "Calle de Gutenberg",
+    "name": "Ángel Hernández Sánchez",
+    "wikimedia_commons": "File:Stolperstein para Ángel Hernández Sánchez (Madrid).png"
+  }
+},
+{
+  "type": "node",
+  "id": 13620585320,
+  "lat": 40.4099952,
+  "lon": -3.6906548,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 13620585327,
+  "lat": 40.4098915,
+  "lon": -3.6911817,
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "node",
+  "id": 13729643301,
+  "lat": 40.4167397,
+  "lon": -3.6790201,
+  "tags": {
+    "access": "yes",
+    "amenity": "drinking_water",
+    "bottle": "yes",
+    "check_date": "2026-04-13",
+    "fee": "no",
+    "indoor": "yes",
+    "seasonal": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 13830742021,
+  "lat": 40.4117137,
+  "lon": -3.6892601,
+  "tags": {
+    "tourism": "viewpoint"
+  }
+},
+{
+  "type": "node",
+  "id": 13830742023,
+  "lat": 40.4103253,
+  "lon": -3.6927926,
+  "tags": {
+    "historic": "memorial",
+    "memorial": "stolperstein",
+    "name": "Eleuterio Díaz-Ternero Merchán"
+  }
+},
+{
+  "type": "node",
+  "id": 13830742125,
+  "lat": 40.4117136,
+  "lon": -3.6892186,
+  "tags": {
+    "historic": "memorial",
+    "memorial": "plaque",
+    "name": "Donado por Felipe González"
+  }
+},
+{
+  "type": "node",
+  "id": 13830742204,
+  "lat": 40.4112228,
+  "lon": -3.6901226,
+  "tags": {
+    "historic": "memorial",
+    "memorial": "plaque",
+    "name": "Carlos Linneo"
+  }
+},
+{
+  "type": "way",
+  "id": 4349012,
+  "center": {
+    "lat": 40.4172276,
+    "lon": -3.6939296
+  },
+  "tags": {
+    "leisure": "park",
+    "name": "Parque Infantil Paseo del prado"
+  }
+},
+{
+  "type": "way",
+  "id": 4487669,
+  "center": {
+    "lat": 40.4195625,
+    "lon": -3.6953548
+  },
+  "tags": {
+    "addr:city": "Madrid",
+    "alt_name": "Edificio de las Cariátides",
+    "building": "civic",
+    "name": "Instituto Cervantes",
+    "name:es": "Instituto Cervantes",
+    "name:zh": "塞萬提斯學院",
+    "office": "educational_institution",
+    "tourism": "attraction",
+    "website": "https://www.cervantes.es/default.htm",
+    "wheelchair": "yes",
+    "wikidata": "Q7386456",
+    "wikimedia_commons": "Category:Instituto Cervantes, Madrid (ex Banco del Río de la Plata)",
+    "wikipedia": "es:Edificio de las Cariátides"
+  }
+},
+{
+  "type": "way",
+  "id": 15244787,
+  "center": {
+    "lat": 40.4149307,
+    "lon": -3.6923674
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 15244804,
+  "center": {
+    "lat": 40.4111694,
+    "lon": -3.6907526
+  },
+  "tags": {
+    "addr:city": "Madrid",
+    "addr:housenumber": "2",
+    "addr:postcode": "28014",
+    "addr:street": "Plaza Murillo",
+    "barrier": "fence",
+    "check_date:opening_hours": "2023-04-22",
+    "garden:type": "botanical",
+    "leisure": "garden",
+    "name": "Real Jardín Botánico de Madrid",
+    "name:de": "Königlicher Botanischer Garten von Madrid",
+    "name:en": "Royal Botanical Garden of Madrid",
+    "name:es": "Real Jardín Botánico de Madrid",
+    "name:fr": "Jardin Botanique Royal de Madrid",
+    "name:ko": "마드리드 왕립식물원",
+    "name:pt": "Real Jardim Botânico de Madri",
+    "name:zh": "皇家植物園",
+    "opening_hours": "Jan,Feb,Nov,Dec: 10:00-18:00; Apr,Sep: 10:00-20:00; Mar,Oct: 10:00-19:00; May-Aug: 10:00-21:00",
+    "phone": "+34 91 420 30 17",
+    "ref:herbarium": "MA",
+    "source": "personal observation",
+    "tourism": "attraction",
+    "website": "https://www.rjb.csic.es/",
+    "wheelchair": "yes",
+    "wikidata": "Q1794858",
+    "wikipedia": "es:Real Jardín Botánico de Madrid"
+  }
+},
+{
+  "type": "way",
+  "id": 15244847,
+  "center": {
+    "lat": 40.4139330,
+    "lon": -3.6936563
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 23596451,
+  "center": {
+    "lat": 40.4135924,
+    "lon": -3.6820570
+  },
+  "tags": {
+    "alt_name:zh": "水晶宫",
+    "amenity": "arts_centre",
+    "building": "greenhouse",
+    "historic": "building",
+    "name": "Palacio de Cristal",
+    "name:de": "Kristallpalast",
+    "name:en": "Crystal Palace",
+    "name:es": "Palacio de Cristal",
+    "name:it": "Palazzo di Cristallo",
+    "name:pt": "Palácio de Cristal",
+    "name:ru": "Хрустальный дворец",
+    "name:zh": "玻璃房",
+    "tourism": "attraction",
+    "wheelchair": "yes",
+    "wikidata": "Q2420025",
+    "wikimedia_commons": "Category:Palacio de Cristal, Madrid",
+    "wikipedia": "es:Palacio de Cristal del Retiro"
+  }
+},
+{
+  "type": "way",
+  "id": 23596468,
+  "center": {
+    "lat": 40.4192106,
+    "lon": -3.6840988
+  },
+  "tags": {
+    "addr:city": "Madrid",
+    "addr:housenumber": "1",
+    "addr:postcode": "28009",
+    "addr:street": "Paseo de Colombia",
+    "building": "civic",
+    "email": "cccasadevacas@madrid.es",
+    "fee": "no",
+    "name": "Centro Cultural Casa de Vacas",
+    "opening_hours": "Mo-Su 10:00-21:30",
+    "phone": "+34 914 095 819",
+    "tourism": "gallery",
+    "website": "https://www.madrid.es/portales/munimadrid/es/Inicio/El-Ayuntamiento/Cultura-y-ocio/Cultura/Casa-de-Vacas?vgnextoid=7be29431c79ab010VgnVCM100000d90ca8c0RCRD&vgnextchannel=2e2b9ad016e07010VgnVCM100000dc0ca8c0RCRD",
+    "wheelchair": "yes",
+    "wikidata": "Q108328073",
+    "wikipedia": "es:Centro cultural Casa de Vacas"
+  }
+},
+{
+  "type": "way",
+  "id": 28683983,
+  "center": {
+    "lat": 40.4044891,
+    "lon": -3.6959248
+  },
+  "tags": {
+    "leisure": "park",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 28684061,
+  "center": {
+    "lat": 40.4089024,
+    "lon": -3.6903414
+  },
+  "tags": {
+    "addr:city": "Madrid",
+    "addr:housenumber": "1",
+    "addr:postcode": "28014",
+    "addr:street": "Paseo de la Infanta Isabel",
+    "building": "public",
+    "building:levels": "5",
+    "government": "ministry",
+    "historic": "building",
+    "name": "Palacio de Fomento",
+    "roof:levels": "1",
+    "roof:shape": "dome",
+    "start_date": "1890",
+    "wikidata": "Q15253453",
+    "wikimedia_commons": "Category:Ministry_of_Agriculture,_Fisheries_and_Food_of_Spain_headquarters,_Madrid",
+    "wikipedia": "es:Palacio de Fomento"
+  }
+},
+{
+  "type": "way",
+  "id": 28684065,
+  "center": {
+    "lat": 40.4092508,
+    "lon": -3.6914931
+  },
+  "tags": {
+    "leisure": "park"
+  }
+},
+{
+  "type": "way",
+  "id": 29452034,
+  "center": {
+    "lat": 40.4062068,
+    "lon": -3.6838195
+  },
+  "tags": {
+    "addr:city": "Madrid",
+    "addr:housenumber": "3",
+    "addr:postcode": "28014",
+    "addr:street": "Calle de Julián Gayarre",
+    "addr:suburb": "Pacifico",
+    "building": "civic",
+    "description": "Tu-Sa 10:00-14:00, 16:00-18:30; PH, Su 10:00-15:00; Mo off;",
+    "email": "info@patrimonionacional.es",
+    "fax": "+34 914548700",
+    "phone": "+34 914548700",
+    "source": "Ayuntamiento de Madrid",
+    "source:url": "https://www.madrid.es",
+    "tomb": "mausoleum",
+    "tourism": "attraction",
+    "url": "https://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=361cef4d7f71c010VgnVCM1000000b205a0aRCRD",
+    "website": "https://www.patrimonionacional.es/visita/panteon-de-espana",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 29471311,
+  "center": {
+    "lat": 40.4084364,
+    "lon": -3.6872662
+  },
+  "tags": {
+    "access": "permissive",
+    "barrier": "fence",
+    "designation": "Observatorio Astronómico de Madrid",
+    "leisure": "park",
+    "name": "Real Observatorio de Madrid",
+    "wikidata": "Q4274351",
+    "wikipedia": "es:Real Observatorio de Madrid"
+  }
+},
+{
+  "type": "way",
+  "id": 29471325,
+  "center": {
+    "lat": 40.4084419,
+    "lon": -3.6875966
+  },
+  "tags": {
+    "building": "public",
+    "building:levels": "1",
+    "man_made": "observatory",
+    "name": "Edificio Villanueva",
+    "observatory:type": "astronomical",
+    "source": "Imagen Catastro de España",
+    "tourism": "museum"
+  }
+},
+{
+  "type": "way",
+  "id": 29471363,
+  "center": {
+    "lat": 40.4107880,
+    "lon": -3.6803184
+  },
+  "tags": {
+    "access": "yes",
+    "barrier": "hedge",
+    "fee": "no",
+    "garden:style": "rosarium",
+    "height": "2",
+    "leaf_cycle": "evergreen",
+    "leaf_type": "needleleaved",
+    "leisure": "garden",
+    "name": "La Rosaleda",
+    "official_name": "La Rosaleda de Cecilio Rodríguez",
+    "opening_hours": "Apr-Sep Mo-Su,PH 10:00-20:00; Oct-Mar Mo-Su,PH 10:00-18:00",
+    "wikidata": "Q96377009",
+    "wikipedia": "es:La Rosaleda del Retiro"
+  }
+},
+{
+  "type": "way",
+  "id": 29489645,
+  "center": {
+    "lat": 40.4163864,
+    "lon": -3.6929134
+  },
+  "tags": {
+    "leisure": "park",
+    "name": "Plaza de la Lealtad",
+    "wikidata": "Q6080203",
+    "wikimedia_commons": "Category:Plaza de la Lealtad, Madrid",
+    "wikipedia": "es:Plaza de la Lealtad"
+  }
+},
+{
+  "type": "way",
+  "id": 30675430,
+  "center": {
+    "lat": 40.4154876,
+    "lon": -3.6900467
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 30759681,
+  "center": {
+    "lat": 40.4060195,
+    "lon": -3.6859884
+  },
+  "tags": {
+    "leisure": "park",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 30759780,
+  "center": {
+    "lat": 40.4058032,
+    "lon": -3.6824072
+  },
+  "tags": {
+    "addr:city": "Madrid",
+    "addr:housename": "Real Fábrica de Tapices",
+    "addr:housenumber": "2",
+    "addr:postcode": "28014",
+    "addr:street": "Calle de Fuenterrabía",
+    "email": "info@realfabricadetapices.com",
+    "fax": "+34 915513409",
+    "man_made": "works",
+    "name": "Real Fábrica de Tapices",
+    "name:etymology:wikidata": "Q570665",
+    "opening_hours": "Mo-Fr 10:00-14:00; Sa, Su off; PH off; Aug off",
+    "phone": "+34 914340550",
+    "source:email": "Ayuntamiento de Madrid",
+    "source:fax": "Ayuntamiento de Madrid",
+    "source:opening_hours": "Ayuntamiento de Madrid",
+    "source:phone": "Ayuntamiento de Madrid",
+    "source:wheelchair": "Ayuntamiento de Madrid",
+    "tourism": "museum",
+    "website": "https://www.realfabricadetapices.com/",
+    "wheelchair": "no",
+    "wikidata": "Q570665",
+    "wikimedia_commons": "Category:Real Fábrica de Tapices",
+    "wikipedia": "es:Real Fábrica de Tapices"
+  }
+},
+{
+  "type": "way",
+  "id": 82567678,
+  "center": {
+    "lat": 40.4132082,
+    "lon": -3.6935008
+  },
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "way",
+  "id": 85518565,
+  "center": {
+    "lat": 40.4149575,
+    "lon": -3.6908389
+  },
+  "tags": {
+    "addr:city": "Madrid",
+    "addr:housenumber": "4",
+    "addr:postcode": "28014",
+    "addr:street": "Calle de Felipe IV",
+    "architect": "Miguel Aguado de la Sierra",
+    "architect:wikidata": "Q6013786",
+    "architect:wikipedia": "es:Miguel Aguado de la Sierra",
+    "building": "public",
+    "building:architecture": "neoclassicism",
+    "historic": "building",
+    "name": "Real Academia Española",
+    "phone": "+34 914 20 14 78",
+    "ref:bic": "RI-51-0010191",
+    "start_date": "1894",
+    "website": "https://rae.es",
+    "wikidata": "Q26960988",
+    "wikimedia_commons": "Category:Real Academia Española building",
+    "wikipedia": "es:Sede de la Real Academia Española"
+  }
+},
+{
+  "type": "way",
+  "id": 85817355,
+  "center": {
+    "lat": 40.4152553,
+    "lon": -3.6896066
+  },
+  "tags": {
+    "addr:city": "Madrid",
+    "addr:housenumber": "28",
+    "addr:postcode": "28014",
+    "addr:street": "Calle de Alfonso XII",
+    "addr:suburb": "Los Jerónimos",
+    "building": "civic",
+    "description": "Edificio que forma parte del Museo Nacional del Prado, donde pueden consultarse fondos de la Biblioteca, del Archivo y del Servicio de Documentación de la colección del Museo y de otras fuentes relativas a la historia del arte.",
+    "email": "biblioteca@museodelprado.es",
+    "name": "Casón del Buen Retiro",
+    "name:etymology:wikidata": "Q3321174",
+    "opening_hours": "Mo-Th 09:00-15:00; Fr 09:00-14:30; Mo 15:00-18:00; We 15:00-18:00; Jun 16-Sep 15: Mo-Fr 09:00-14:30; PH off",
+    "phone": "+34 902 10 70 77",
+    "ref:bic": "RI-MU-0000001",
+    "source": "Ayuntamiento de Madrid",
+    "tourism": "museum",
+    "url": "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=f0443d0b5e71c010VgnVCM1000000b205a0aRCRD",
+    "wheelchair": "no",
+    "wikidata": "Q3321174",
+    "wikimedia_commons": "Category:Casón del Buen Retiro",
+    "wikipedia": "es:Casón del Buen Retiro"
+  }
+},
+{
+  "type": "way",
+  "id": 108878883,
+  "center": {
+    "lat": 40.4065085,
+    "lon": -3.6870958
+  },
+  "tags": {
+    "leisure": "garden",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 108878921,
+  "center": {
+    "lat": 40.4061638,
+    "lon": -3.6871509
+  },
+  "tags": {
+    "leisure": "garden",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "way",
+  "id": 112478143,
+  "center": {
+    "lat": 40.4178448,
+    "lon": -3.6921954
+  },
+  "tags": {
+    "addr:city": "Madrid",
+    "addr:housenumber": "2",
+    "addr:postcode": "28014",
+    "addr:street": "Calle de Montalbán",
+    "building": "public",
+    "historic": "building",
+    "name": "Cuartel General de la Armada",
+    "start_date": "1925",
+    "wikidata": "Q16553950",
+    "wikimedia_commons": "Category:Cuartel General de la Armada (Spain)",
+    "wikipedia": "es:Cuartel General de la Armada"
+  }
+},
+{
+  "type": "way",
+  "id": 121788436,
+  "center": {
+    "lat": 40.4175037,
+    "lon": -3.6829789
+  },
+  "tags": {
+    "building": "yes",
+    "historic": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 128089340,
+  "center": {
+    "lat": 40.4126364,
+    "lon": -3.6920350
+  },
+  "tags": {
+    "barrier": "fence",
+    "height": "0.3",
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 146498512,
+  "center": {
+    "lat": 40.4208130,
+    "lon": -3.6898316
+  },
+  "tags": {
+    "addr:city": "Madrid",
+    "addr:housenumber": "9",
+    "addr:postcode": "28001",
+    "addr:street": "Calle de Salustiano Olózaga",
+    "building": "office",
+    "building:levels": "3",
+    "country": "FR",
+    "diplomatic": "embassy",
+    "embassy": "yes",
+    "historic": "manor",
+    "name": "Embajada de Francia",
+    "name:fr": "Ambassade de France",
+    "office": "diplomatic",
+    "opening_hours": "Mo-Fr 09:00-19:00",
+    "phone": "+34 91 423 89 00",
+    "roof:levels": "0",
+    "roof:shape": "hipped",
+    "target": "ES",
+    "website": "http://www.ambafrance-es.org",
+    "wikidata": "Q26834087",
+    "wikipedia": "es:Sede de la Embajada de Francia en España"
+  }
+},
+{
+  "type": "way",
+  "id": 146498993,
+  "center": {
+    "lat": 40.4214456,
+    "lon": -3.6909592
+  },
+  "tags": {
+    "addr:city": "Madrid",
+    "addr:housename": "Palacio del Marqués de Salamanca",
+    "addr:housenumber": "10",
+    "addr:street": "Paseo de Recoletos",
+    "building": "civic",
+    "castle_type": "palace",
+    "historic": "castle",
+    "name": "Palacio del Marqués de Salamanca - Fundación BBVA",
+    "website": "https://www.fbbva.es/",
+    "wikidata": "Q9054715",
+    "wikimedia_commons": "Category:Palacio del Marqués de Salamanca, Madrid",
+    "wikipedia": "es:Palacio del Marqués de Salamanca"
+  }
+},
+{
+  "type": "way",
+  "id": 158854585,
+  "center": {
+    "lat": 40.4145764,
+    "lon": -3.6917421
+  },
+  "tags": {
+    "barrier": "kerb",
+    "height": "0.2",
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 174805987,
+  "center": {
+    "lat": 40.4199868,
+    "lon": -3.6887244
+  },
+  "tags": {
+    "addr:city": "Madrid",
+    "addr:postcode": "28001",
+    "addr:street": "Plaza de la Independencia",
+    "building": "triumphal_arch",
+    "height": "21.946",
+    "historic": "yes",
+    "name": "Puerta de Alcalá",
+    "name:en": "Puerta de Alcala",
+    "name:es": "Puerta de Alcalá",
+    "name:ko": "푸에르타 데 알칼라(마드리드 개선문)",
+    "nohousenumber": "yes",
+    "source:name": "common knowledge",
+    "tourism": "attraction",
+    "wheelchair": "limited",
+    "wikidata": "Q1140634",
+    "wikimedia_commons": "Category:Puerta de Alcalá, Madrid",
+    "wikipedia": "es:Puerta de Alcalá"
+  }
+},
+{
+  "type": "way",
+  "id": 174819344,
+  "center": {
+    "lat": 40.4172106,
+    "lon": -3.6938985
+  },
+  "tags": {
+    "alt_name": "fuenteApolo",
+    "amenity": "fountain",
+    "fountain": "decorative",
+    "historic": "monument",
+    "name": "Fuente de Apolo",
+    "natural": "water",
+    "tourism": "attraction",
+    "wheelchair": "yes",
+    "wikidata": "Q1647048",
+    "wikimedia_commons": "Category:Fountain of Apollo, Madrid",
+    "wikipedia": "es:Fuente de Apolo (Madrid)"
+  }
+},
+{
+  "type": "way",
+  "id": 183204360,
+  "center": {
+    "lat": 40.4076650,
+    "lon": -3.6867602
+  },
+  "tags": {
+    "building": "public",
+    "building:levels": "1",
+    "designation": "Herschel Pavillon",
+    "man_made": "telescope",
+    "name": "Pabellón del Telescopio de Herschel",
+    "name:en": "Herschel Pavillion",
+    "name:es": "Pabellón del Telescopio de Herschel",
+    "source": "Imagen Catastro de España",
+    "tourism": "museum"
+  }
+},
+{
+  "type": "way",
+  "id": 183204444,
+  "center": {
+    "lat": 40.4081657,
+    "lon": -3.6864432
+  },
+  "tags": {
+    "building": "public",
+    "building:levels": "1",
+    "name": "Sala de Ciencias de la Tierra y del Universo",
+    "name:en": "Earth and Universe Hall",
+    "name:es": "Sala de Ciencias de la Tierra y del Universo",
+    "source": "Imagen Catastro de España",
+    "tourism": "museum"
+  }
+},
+{
+  "type": "way",
+  "id": 183206076,
+  "center": {
+    "lat": 40.4080137,
+    "lon": -3.6870956
+  },
+  "tags": {
+    "building": "civic",
+    "building:levels": "1",
+    "name": "Pabellón del Astrógrafo",
+    "name:en": "Astrograph Pavillion",
+    "name:es": "Pabellón del Astrógrafo",
+    "source": "Imagen Catastro de España",
+    "tourism": "museum"
+  }
+},
+{
+  "type": "way",
+  "id": 183206078,
+  "center": {
+    "lat": 40.4078315,
+    "lon": -3.6867598
+  },
+  "tags": {
+    "building": "civic",
+    "building:levels": "1",
+    "designation": "Solar Pavillion",
+    "name": "Pabellón del Sol",
+    "name:en": "Solar Pavillion",
+    "name:es": "Pabellón del Sol",
+    "source": "Imagen Catastro de España",
+    "tourism": "museum"
+  }
+},
+{
+  "type": "way",
+  "id": 183213419,
+  "center": {
+    "lat": 40.4093376,
+    "lon": -3.6879316
+  },
+  "tags": {
+    "leisure": "park"
+  }
+},
+{
+  "type": "way",
+  "id": 186321487,
+  "center": {
+    "lat": 40.4078474,
+    "lon": -3.6879186
+  },
+  "tags": {
+    "leisure": "park"
+  }
+},
+{
+  "type": "way",
+  "id": 194088939,
+  "center": {
+    "lat": 40.4112511,
+    "lon": -3.6898864
+  },
+  "tags": {
+    "amenity": "fountain",
+    "name": "Estanque de Linneo",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 219016719,
+  "center": {
+    "lat": 40.4104464,
+    "lon": -3.6935882
+  },
+  "tags": {
+    "addr:city": "Madrid",
+    "addr:housenumber": "15",
+    "addr:postcode": "28014",
+    "addr:street": "Calle de la Alameda",
+    "amenity": "arts_centre",
+    "building": "public",
+    "layer": "-1",
+    "location": "surface",
+    "name": "Espacio Cultural Serrería Belga",
+    "name:etymology:wikidata": "Q42912700",
+    "old_name": "Medialab-Prado",
+    "phone": "+34 91 5787758",
+    "tourism": "museum",
+    "was:leisure": "hackerspace",
+    "was:wikidata": "Q6008551",
+    "wheelchair": "yes",
+    "wikidata": "Q42912700",
+    "wikipedia": "es:Serrería Belga (Madrid)"
+  }
+},
+{
+  "type": "way",
+  "id": 243095305,
+  "center": {
+    "lat": 40.4120839,
+    "lon": -3.6871756
+  },
+  "tags": {
+    "historic": "memorial",
+    "memorial": "plaque",
+    "name": "Bosque del Recuerdo",
+    "start_date": "2005-03-11",
+    "subject:wikidata": "Q213531",
+    "wikidata": "Q833213",
+    "wikimedia_commons": "Category:Bosque del Recuerdo",
+    "wikipedia": "es:Bosque del Recuerdo"
+  }
+},
+{
+  "type": "way",
+  "id": 255246387,
+  "center": {
+    "lat": 40.4070621,
+    "lon": -3.6914084
+  },
+  "tags": {
+    "building": "public",
+    "name": "Atocha (Histórica)",
+    "name:en": "Atocha (Historic)",
+    "name:es": "Atocha (Histórica)",
+    "name:ko": "아토차 구 역사",
+    "name:ru": "Вокзал Аточа",
+    "tourism": "attraction",
+    "wikidata": "Q130340447",
+    "wikimedia_commons": "Category:Invernadero de Atocha",
+    "wikipedia": "es:Invernadero de Atocha"
+  }
+},
+{
+  "type": "way",
+  "id": 255246391,
+  "center": {
+    "lat": 40.4053057,
+    "lon": -3.6880869
+  },
+  "tags": {
+    "alt_name": "Atocha",
+    "building": "train_station",
+    "building:levels": "1",
+    "building:levels:underground": "3",
+    "name": "Atocha-Cercanías",
+    "network": "Adif",
+    "nohousenumber": "yes",
+    "operator": "Renfe",
+    "public_transport": "station",
+    "ref": "60000",
+    "uic_ref": "7160000",
+    "url:timetable": "http://www.citram.es/HORARIOS/info.aspx?estacion=5_11",
+    "website": "https://www.crtm.es/tu-transporte-publico/cercanias-renfe/estaciones/5_11.aspx",
+    "wheelchair": "yes",
+    "wikidata": "Q2842655",
+    "wikimedia_commons": "Category:Atocha-Cercanías train station",
+    "wikipedia": "es:Estación de Atocha-Cercanías"
+  }
+},
+{
+  "type": "way",
+  "id": 258660334,
+  "center": {
+    "lat": 40.4110737,
+    "lon": -3.6931680
+  },
+  "tags": {
+    "access": "yes",
+    "addr:city": "Madrid",
+    "addr:housenumber": "34",
+    "addr:postcode": "28014",
+    "addr:street": "Calle de Cenicero",
+    "fee": "no",
+    "garden": "green_wall",
+    "garden:type": "roof_garden",
+    "name": "Jardín Vertical Caixaforum",
+    "source": "survey",
+    "tourism": "attraction",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 261164085,
+  "center": {
+    "lat": 40.4077275,
+    "lon": -3.6900958
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 261523820,
+  "center": {
+    "lat": 40.4078990,
+    "lon": -3.6928725
+  },
+  "tags": {
+    "access": "yes",
+    "area:highway": "traffic_island",
+    "leisure": "garden",
+    "surface": "grass"
+  }
+},
+{
+  "type": "way",
+  "id": 286816147,
+  "center": {
+    "lat": 40.4111065,
+    "lon": -3.6935688
+  },
+  "tags": {
+    "addr:city": "Madrid",
+    "addr:housenumber": "36",
+    "addr:postcode": "28014",
+    "addr:street": "Paseo del Prado",
+    "building": "civic",
+    "description": "Exposiciones temporales, Jardín vertical",
+    "fee": "yes",
+    "museum": "art",
+    "name": "CaixaForum Madrid",
+    "name:es": "CaixaForum Madrid",
+    "name:etymology:wikidata": "Q1026041",
+    "name:ko": "카익사포룸 마드리드",
+    "name:zh": "36'卡伊莎中心，免费",
+    "opening_hours": "Mo-Su 10:00-20:00",
+    "operator": "Caixa",
+    "source": "PNOA",
+    "source:date": "2009",
+    "tourism": "museum",
+    "website": "https://fundacionlacaixa.org/es/caixaforum-madrid",
+    "wheelchair": "yes",
+    "wikidata": "Q1026041",
+    "wikimedia_commons": "Category:CaixaForum Madrid",
+    "wikipedia": "es:CaixaForum Madrid"
+  }
+},
+{
+  "type": "way",
+  "id": 292649859,
+  "center": {
+    "lat": 40.4175183,
+    "lon": -3.6923891
+  },
+  "tags": {
+    "addr:city": "Madrid",
+    "addr:housenumber": "3",
+    "addr:postcode": "28014",
+    "addr:street": "Paseo del Prado",
+    "addr:suburb": "Los Jeronimos",
+    "air_conditioning": "yes",
+    "alt_name": "Museo Naval",
+    "building": "civic",
+    "check_date": "2026-07-27",
+    "contact:facebook": "FundacionMuseoNaval",
+    "contact:instagram": "museo_naval",
+    "contact:twitter": "Museo_Naval",
+    "description": "Temática: historia de la navegación española Historical museum of the Spanish navy and maritime exploration. Includes a map from 1500 showing America for the first time.",
+    "email": "ohculturanaval@fn.mde.es",
+    "fax": "+34 913795056",
+    "fee": "donation 3 Euros",
+    "name": "Museo Naval de Madrid",
+    "name:en": "Naval Museum of Madrid",
+    "name:es": "Museo Naval de Madrid",
+    "name:etymology:wikidata": "Q1815235",
+    "name:ru": "Морской музей",
+    "opening_hours": "Tu-Su 10:00-19:00; Mo,PH off; Jan 01,06,Dec 24,25,31: off",
+    "phone": "+34 915238516",
+    "source": "Ayuntamiento de Madrid",
+    "source:addr": "Ayuntamiento de Madrid",
+    "source:description": "Ayuntamiento de Madrid",
+    "source:email": "Ayuntamiento de Madrid",
+    "source:fax": "Ayuntamiento de Madrid",
+    "source:opening_hours": "Ayuntamiento de Madrid",
+    "source:phone": "Ayuntamiento de Madrid and phone survey",
+    "source:url": "Ayuntamiento de Madrid",
+    "source:wheelchair": "Ayuntamiento de Madrid",
+    "toilets": "yes",
+    "toilets:wheelchair": "yes",
+    "tourism": "museum",
+    "url": "http://www.armada.mde.es/museonaval/",
+    "wheelchair": "yes",
+    "wikidata": "Q1815235",
+    "wikimedia_commons": "Category:Museo Naval, Madrid",
+    "wikipedia": "es:Museo Naval (Madrid)"
+  }
+},
+{
+  "type": "way",
+  "id": 311105283,
+  "center": {
+    "lat": 40.4144462,
+    "lon": -3.6931076
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 311105284,
+  "center": {
+    "lat": 40.4146097,
+    "lon": -3.6920851
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 311105285,
+  "center": {
+    "lat": 40.4128255,
+    "lon": -3.6925394
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 311105286,
+  "center": {
+    "lat": 40.4130864,
+    "lon": -3.6926656
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 311105287,
+  "center": {
+    "lat": 40.4140475,
+    "lon": -3.6925622
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 311105288,
+  "center": {
+    "lat": 40.4144866,
+    "lon": -3.6929755
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 311105289,
+  "center": {
+    "lat": 40.4145051,
+    "lon": -3.6928254
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 311105290,
+  "center": {
+    "lat": 40.4134127,
+    "lon": -3.6928772
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 311105291,
+  "center": {
+    "lat": 40.4146473,
+    "lon": -3.6929324
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 311105292,
+  "center": {
+    "lat": 40.4134628,
+    "lon": -3.6924316
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 311105293,
+  "center": {
+    "lat": 40.4139817,
+    "lon": -3.6930091
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 311105294,
+  "center": {
+    "lat": 40.4143631,
+    "lon": -3.6927926
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 311105295,
+  "center": {
+    "lat": 40.4129451,
+    "lon": -3.6926350
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 311105296,
+  "center": {
+    "lat": 40.4143445,
+    "lon": -3.6929429
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 311105297,
+  "center": {
+    "lat": 40.4131057,
+    "lon": -3.6925162
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 311105298,
+  "center": {
+    "lat": 40.4129640,
+    "lon": -3.6924824
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 311105299,
+  "center": {
+    "lat": 40.4135407,
+    "lon": -3.6926863
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 311105300,
+  "center": {
+    "lat": 40.4139121,
+    "lon": -3.6927559
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 311105301,
+  "center": {
+    "lat": 40.4133376,
+    "lon": -3.6926314
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 311105302,
+  "center": {
+    "lat": 40.4141132,
+    "lon": -3.6928142
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 311105303,
+  "center": {
+    "lat": 40.4130295,
+    "lon": -3.6927826
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 311105304,
+  "center": {
+    "lat": 40.4142417,
+    "lon": -3.6928422
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 311105305,
+  "center": {
+    "lat": 40.4132089,
+    "lon": -3.6926144
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 311106574,
+  "center": {
+    "lat": 40.4114515,
+    "lon": -3.6929193
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 311106575,
+  "center": {
+    "lat": 40.4095161,
+    "lon": -3.6922530
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 311275308,
+  "center": {
+    "lat": 40.4120008,
+    "lon": -3.6919124
+  },
+  "tags": {
+    "leisure": "garden",
+    "name": "Plantas ornamentales"
+  }
+},
+{
+  "type": "way",
+  "id": 311275311,
+  "center": {
+    "lat": 40.4110223,
+    "lon": -3.6916914
+  },
+  "tags": {
+    "leisure": "garden",
+    "name": "Rosaleda"
+  }
+},
+{
+  "type": "way",
+  "id": 311391622,
+  "center": {
+    "lat": 40.4114496,
+    "lon": -3.6909785
+  },
+  "tags": {
+    "leisure": "garden",
+    "name": "Astéridas"
+  }
+},
+{
+  "type": "way",
+  "id": 311391623,
+  "center": {
+    "lat": 40.4111738,
+    "lon": -3.6904921
+  },
+  "tags": {
+    "leisure": "garden",
+    "name": "Cariofílidas y Dillénidas"
+  }
+},
+{
+  "type": "way",
+  "id": 311391624,
+  "center": {
+    "lat": 40.4104567,
+    "lon": -3.6907591
+  },
+  "tags": {
+    "leisure": "garden",
+    "name": "Comelínidas"
+  }
+},
+{
+  "type": "way",
+  "id": 311391625,
+  "center": {
+    "lat": 40.4103422,
+    "lon": -3.6903074
+  },
+  "tags": {
+    "leisure": "garden",
+    "name": "Gimnospermas"
+  }
+},
+{
+  "type": "way",
+  "id": 311391626,
+  "center": {
+    "lat": 40.4101937,
+    "lon": -3.6915029
+  },
+  "tags": {
+    "leisure": "garden",
+    "name": "Huerta y frutales"
+  }
+},
+{
+  "type": "way",
+  "id": 311391627,
+  "center": {
+    "lat": 40.4106778,
+    "lon": -3.6903779
+  },
+  "tags": {
+    "leisure": "garden",
+    "name": "Magnólidas y Hamamélidas"
+  }
+},
+{
+  "type": "way",
+  "id": 311391628,
+  "center": {
+    "lat": 40.4104918,
+    "lon": -3.6918144
+  },
+  "tags": {
+    "leisure": "garden",
+    "name": "Plantas acidófilas"
+  }
+},
+{
+  "type": "way",
+  "id": 311391629,
+  "center": {
+    "lat": 40.4105542,
+    "lon": -3.6913316
+  },
+  "tags": {
+    "leisure": "garden",
+    "name": "Plantas aromáticas y medicinales"
+  }
+},
+{
+  "type": "way",
+  "id": 311391630,
+  "center": {
+    "lat": 40.4115159,
+    "lon": -3.6918015
+  },
+  "tags": {
+    "leisure": "garden",
+    "name": "Plantas de bosque de ribera y de la Comunidad de Madrid"
+  }
+},
+{
+  "type": "way",
+  "id": 311391631,
+  "center": {
+    "lat": 40.4118358,
+    "lon": -3.6906425
+  },
+  "tags": {
+    "leisure": "garden",
+    "name": "Rósidas"
+  }
+},
+{
+  "type": "way",
+  "id": 320320747,
+  "center": {
+    "lat": 40.4077117,
+    "lon": -3.6793991
+  },
+  "tags": {
+    "barrier": "wall",
+    "height": "0.5",
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 323039754,
+  "center": {
+    "lat": 40.4199986,
+    "lon": -3.6885473
+  },
+  "tags": {
+    "barrier": "kerb",
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 323039756,
+  "center": {
+    "lat": 40.4199746,
+    "lon": -3.6889170
+  },
+  "tags": {
+    "barrier": "kerb",
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 323039759,
+  "center": {
+    "lat": 40.4200513,
+    "lon": -3.6882608
+  },
+  "tags": {
+    "barrier": "kerb",
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 323143341,
+  "center": {
+    "lat": 40.4075551,
+    "lon": -3.6796847
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 323143346,
+  "center": {
+    "lat": 40.4082265,
+    "lon": -3.6795776
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 336157962,
+  "center": {
+    "lat": 40.4074479,
+    "lon": -3.6788132
+  },
+  "tags": {
+    "amenity": "fountain",
+    "drinking_water": "no",
+    "name": "Fuente de las Gaviotas",
+    "natural": "water",
+    "source:name": "https://madripedia.wikis.cc/wiki/Fuentes#Fuente_de_las_Gaviotas_de_Mariano_de_Cavia"
+  }
+},
+{
+  "type": "way",
+  "id": 356932659,
+  "center": {
+    "lat": 40.4179884,
+    "lon": -3.6959079
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 356932662,
+  "center": {
+    "lat": 40.4165526,
+    "lon": -3.6949204
+  },
+  "tags": {
+    "leisure": "garden",
+    "name": "Jardines del Thyssen"
+  }
+},
+{
+  "type": "way",
+  "id": 370648509,
+  "center": {
+    "lat": 40.4201856,
+    "lon": -3.6919347
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 393196791,
+  "center": {
+    "lat": 40.4082232,
+    "lon": -3.6873588
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 393196796,
+  "center": {
+    "lat": 40.4082475,
+    "lon": -3.6878507
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 393196797,
+  "center": {
+    "lat": 40.4081645,
+    "lon": -3.6873147
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 393196798,
+  "center": {
+    "lat": 40.4082771,
+    "lon": -3.6873080
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 393196799,
+  "center": {
+    "lat": 40.4082842,
+    "lon": -3.6874225
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 393196800,
+  "center": {
+    "lat": 40.4081753,
+    "lon": -3.6874342
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905871,
+  "center": {
+    "lat": 40.4111965,
+    "lon": -3.6919391
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905872,
+  "center": {
+    "lat": 40.4111077,
+    "lon": -3.6920237
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905873,
+  "center": {
+    "lat": 40.4112253,
+    "lon": -3.6919129
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905874,
+  "center": {
+    "lat": 40.4111354,
+    "lon": -3.6919967
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905875,
+  "center": {
+    "lat": 40.4111881,
+    "lon": -3.6920076
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905876,
+  "center": {
+    "lat": 40.4111207,
+    "lon": -3.6918964
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905877,
+  "center": {
+    "lat": 40.4111440,
+    "lon": -3.6919308
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905878,
+  "center": {
+    "lat": 40.4112104,
+    "lon": -3.6920458
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905879,
+  "center": {
+    "lat": 40.4108365,
+    "lon": -3.6918533
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905880,
+  "center": {
+    "lat": 40.4107477,
+    "lon": -3.6919379
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905881,
+  "center": {
+    "lat": 40.4108652,
+    "lon": -3.6918272
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905882,
+  "center": {
+    "lat": 40.4107753,
+    "lon": -3.6919110
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905883,
+  "center": {
+    "lat": 40.4108281,
+    "lon": -3.6919219
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905884,
+  "center": {
+    "lat": 40.4107607,
+    "lon": -3.6918108
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905885,
+  "center": {
+    "lat": 40.4107840,
+    "lon": -3.6918451
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905886,
+  "center": {
+    "lat": 40.4108504,
+    "lon": -3.6919601
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905887,
+  "center": {
+    "lat": 40.4109011,
+    "lon": -3.6913738
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905888,
+  "center": {
+    "lat": 40.4108123,
+    "lon": -3.6914583
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905889,
+  "center": {
+    "lat": 40.4109298,
+    "lon": -3.6913475
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905890,
+  "center": {
+    "lat": 40.4108399,
+    "lon": -3.6914315
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905891,
+  "center": {
+    "lat": 40.4108927,
+    "lon": -3.6914423
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905892,
+  "center": {
+    "lat": 40.4108253,
+    "lon": -3.6913311
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905893,
+  "center": {
+    "lat": 40.4108486,
+    "lon": -3.6913655
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905894,
+  "center": {
+    "lat": 40.4109150,
+    "lon": -3.6914805
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905895,
+  "center": {
+    "lat": 40.4111795,
+    "lon": -3.6914106
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905896,
+  "center": {
+    "lat": 40.4111665,
+    "lon": -3.6915378
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905897,
+  "center": {
+    "lat": 40.4112692,
+    "lon": -3.6915600
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905898,
+  "center": {
+    "lat": 40.4112840,
+    "lon": -3.6914271
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905899,
+  "center": {
+    "lat": 40.4112469,
+    "lon": -3.6915218
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905900,
+  "center": {
+    "lat": 40.4112553,
+    "lon": -3.6914533
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905901,
+  "center": {
+    "lat": 40.4111942,
+    "lon": -3.6915110
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 463905902,
+  "center": {
+    "lat": 40.4112028,
+    "lon": -3.6914450
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 465630304,
+  "center": {
+    "lat": 40.4200170,
+    "lon": -3.6860101
+  },
+  "tags": {
+    "amenity": "fountain",
+    "natural": "water",
+    "panoramax": "b77f7029-4832-4164-baa0-7e7084ff9808"
+  }
+},
+{
+  "type": "way",
+  "id": 468436708,
+  "center": {
+    "lat": 40.4211176,
+    "lon": -3.6805155
+  },
+  "tags": {
+    "building": "yes",
+    "fee": "no",
+    "layer": "-1",
+    "location": "underground",
+    "name": "Sala de exposiciones de la Montaña Artificial",
+    "tourism": "gallery",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 539422505,
+  "center": {
+    "lat": 40.4141635,
+    "lon": -3.6917500
+  },
+  "tags": {
+    "leisure": "garden",
+    "location": "roof"
+  }
+},
+{
+  "type": "way",
+  "id": 539422507,
+  "center": {
+    "lat": 40.4140183,
+    "lon": -3.6916987
+  },
+  "tags": {
+    "leisure": "garden",
+    "location": "roof"
+  }
+},
+{
+  "type": "way",
+  "id": 539422508,
+  "center": {
+    "lat": 40.4138364,
+    "lon": -3.6916869
+  },
+  "tags": {
+    "leisure": "garden",
+    "location": "roof"
+  }
+},
+{
+  "type": "way",
+  "id": 539422509,
+  "center": {
+    "lat": 40.4136685,
+    "lon": -3.6916724
+  },
+  "tags": {
+    "leisure": "garden",
+    "location": "roof"
+  }
+},
+{
+  "type": "way",
+  "id": 539422511,
+  "center": {
+    "lat": 40.4134547,
+    "lon": -3.6916427
+  },
+  "tags": {
+    "leisure": "garden",
+    "location": "roof"
+  }
+},
+{
+  "type": "way",
+  "id": 551509929,
+  "center": {
+    "lat": 40.4205709,
+    "lon": -3.6803810
+  },
+  "tags": {
+    "access": "yes",
+    "building": "church",
+    "denomination": "catholic",
+    "historic": "ruins",
+    "historic:civilization": "medieval",
+    "name": "Ermita de San Pelayo y San Isidoro de Ávila",
+    "religion": "christian",
+    "wikidata": "Q5836186",
+    "wikimedia_commons": "Category:Hermitage of San Pelayo and San Isidoro",
+    "wikipedia": "es:Ermita de San Pelayo y San Isidoro"
+  }
+},
+{
+  "type": "way",
+  "id": 551511200,
+  "center": {
+    "lat": 40.4195530,
+    "lon": -3.6876899
+  },
+  "tags": {
+    "amenity": "fountain",
+    "drinking_water": "no",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 551512273,
+  "center": {
+    "lat": 40.4195212,
+    "lon": -3.6876167
+  },
+  "tags": {
+    "amenity": "fountain",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 553098274,
+  "center": {
+    "lat": 40.4152553,
+    "lon": -3.6941511
+  },
+  "tags": {
+    "historic": "monument",
+    "name": "Fuente de Neptuno",
+    "name:en": "Fountain of Neptune",
+    "name:it": "Fonte Neptuno",
+    "name:ko": "포세이돈 분수대",
+    "tourism": "attraction",
+    "wheelchair": "no",
+    "wikidata": "Q1472798",
+    "wikimedia_commons": "Category:Fountain of Neptune, Madrid",
+    "wikipedia": "es:Fuente de Neptuno (Madrid)"
+  }
+},
+{
+  "type": "way",
+  "id": 554720472,
+  "center": {
+    "lat": 40.4070141,
+    "lon": -3.6913643
+  },
+  "tags": {
+    "leisure": "garden",
+    "level": "0",
+    "name": "Jardín Tropical"
+  }
+},
+{
+  "type": "way",
+  "id": 556136740,
+  "center": {
+    "lat": 40.4050188,
+    "lon": -3.6941735
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 556136741,
+  "center": {
+    "lat": 40.4049753,
+    "lon": -3.6941710
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 560711483,
+  "center": {
+    "lat": 40.4155176,
+    "lon": -3.6878206
+  },
+  "tags": {
+    "amenity": "fountain",
+    "barrier": "wall",
+    "height": "0.5",
+    "natural": "water",
+    "water": "basin",
+    "width": "0.4"
+  }
+},
+{
+  "type": "way",
+  "id": 560715385,
+  "center": {
+    "lat": 40.4143065,
+    "lon": -3.6782741
+  },
+  "tags": {
+    "amenity": "fountain",
+    "artist_name": "Vicente Pimentel",
+    "barrier": "kerb",
+    "name": "Fuente de las Gaviotas",
+    "natural": "water",
+    "year": "1962"
+  }
+},
+{
+  "type": "way",
+  "id": 562587825,
+  "center": {
+    "lat": 40.4153225,
+    "lon": -3.6863463
+  },
+  "tags": {
+    "amenity": "fountain",
+    "natural": "water",
+    "source": "Bing",
+    "water": "basin"
+  }
+},
+{
+  "type": "way",
+  "id": 562596195,
+  "center": {
+    "lat": 40.4143565,
+    "lon": -3.6778651
+  },
+  "tags": {
+    "amenity": "fountain",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 562596197,
+  "center": {
+    "lat": 40.4142540,
+    "lon": -3.6786436
+  },
+  "tags": {
+    "amenity": "fountain",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 570379828,
+  "center": {
+    "lat": 40.4198732,
+    "lon": -3.6937833
+  },
+  "tags": {
+    "leisure": "garden",
+    "source": "PNOA",
+    "source:date": "2017"
+  }
+},
+{
+  "type": "way",
+  "id": 577853686,
+  "center": {
+    "lat": 40.4144904,
+    "lon": -3.6909401
+  },
+  "tags": {
+    "addr:housenumber": "4",
+    "addr:postcode": "28014",
+    "addr:street": "Calle Moreto",
+    "alt_name": "Iglesia de los Jerónimos",
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "roman_catholic",
+    "height": "20",
+    "name": "Parroquia San Jerónimo el Real",
+    "name:en": "Church of Saint Jerome the Royal",
+    "name:zh": "皇家聖赫羅尼莫教堂",
+    "religion": "christian",
+    "source:url": "Ayuntamiento de Madrid",
+    "tourism": "attraction",
+    "url": "https://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=cf03ef4d7f71c010VgnVCM1000000b205a0aRCRD",
+    "wikidata": "Q7414379",
+    "wikimedia_commons": "Category:Iglesia de San Jerónimo el Real",
+    "wikipedia": "es:Iglesia de San Jerónimo el Real"
+  }
+},
+{
+  "type": "way",
+  "id": 577857243,
+  "center": {
+    "lat": 40.4178010,
+    "lon": -3.6809532
+  },
+  "tags": {
+    "artist_name": "Mariano Benlliure",
+    "historic": "memorial",
+    "memorial": "statue",
+    "name": "General Martínez Campos",
+    "start_date": "1907",
+    "statue": "equestrian",
+    "subject:wikidata": "Q548543",
+    "wikidata": "Q6022958",
+    "wikimedia_commons": "Category:Monument to General Arsenio Martínez-Campos",
+    "wikipedia": "es:Monumento a Arsenio Martínez Campos"
+  }
+},
+{
+  "type": "way",
+  "id": 578219908,
+  "center": {
+    "lat": 40.4198720,
+    "lon": -3.6831923
+  },
+  "tags": {
+    "artwork_type": "mural",
+    "name": "Monumento a Galicia",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "way",
+  "id": 578219909,
+  "center": {
+    "lat": 40.4196184,
+    "lon": -3.6820957
+  },
+  "tags": {
+    "artwork_type": "statue",
+    "building": "yes",
+    "historic": "memorial",
+    "memorial": "statue",
+    "name": "Monumento a los Hermanos Álvarez Quintero",
+    "tourism": "artwork",
+    "wikidata": "Q6023104",
+    "wikimedia_commons": "Category:Monumento a Serafín y Joaquín Alvarez Quintero, Madrid",
+    "wikipedia": "es:Monumento a Serafín y Joaquín Álvarez Quintero"
+  }
+},
+{
+  "type": "way",
+  "id": 578219911,
+  "center": {
+    "lat": 40.4170718,
+    "lon": -3.6815276
+  },
+  "tags": {
+    "artist:wikidata": "Q9033503",
+    "artist_name": "Miguel Oslé",
+    "artwork_type": "statue",
+    "historic": "memorial",
+    "memorial": "bust",
+    "name": "Jacinto Verdaguer",
+    "start_date": "1961",
+    "subject:wikidata": "Q379290",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "way",
+  "id": 578219912,
+  "center": {
+    "lat": 40.4164809,
+    "lon": -3.6812890
+  },
+  "tags": {
+    "artist:wikidata": "Q3302484",
+    "artist_name": "Victorio Macho Rogado",
+    "historic": "memorial",
+    "image": "https://commons.wikimedia.org/wiki/File:Srcajal-1.jpg",
+    "memorial": "statue",
+    "name": "Monumento a Santiago Ramón y Cajal",
+    "subject:wikidata": "Q150526",
+    "tourism": "artwork",
+    "wikidata": "Q9034960",
+    "wikimedia_commons": "File:Srcajal-1.jpg",
+    "wikipedia": "es:Monumento a Santiago Ramón y Cajal"
+  }
+},
+{
+  "type": "way",
+  "id": 578225553,
+  "center": {
+    "lat": 40.4137270,
+    "lon": -3.6926919
+  },
+  "tags": {
+    "artist_name": "Aniceto Marinas (estatua); Vicente Lampérez (pedestal)",
+    "building": "yes",
+    "building:material": "stone",
+    "height": "1.9",
+    "historic": "memorial",
+    "inscription": "VELÁZQUEZ",
+    "material": "stone",
+    "memorial": "statue",
+    "name": "Monumento a Velázquez",
+    "name:es": "Monumento a Velázquez",
+    "name:it": "Monumento a Velázquez",
+    "wikidata": "Q52084080",
+    "wikimedia_commons": "Category:Statue of Velazquez, Museo del Prado",
+    "wikipedia": "es:Monumento a Velázquez (Madrid)"
+  }
+},
+{
+  "type": "way",
+  "id": 578229239,
+  "center": {
+    "lat": 40.4190678,
+    "lon": -3.6800365
+  },
+  "tags": {
+    "amenity": "fountain",
+    "barrier": "kerb",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 584992253,
+  "center": {
+    "lat": 40.4078633,
+    "lon": -3.6792581
+  },
+  "tags": {
+    "barrier": "wall",
+    "height": "0.5",
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 598662590,
+  "center": {
+    "lat": 40.4208150,
+    "lon": -3.6928418
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 598662591,
+  "center": {
+    "lat": 40.4210111,
+    "lon": -3.6923940
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 626041830,
+  "center": {
+    "lat": 40.4193431,
+    "lon": -3.6815464
+  },
+  "tags": {
+    "description": "Fuente con esculturas, obra de Mariano Benlliure, Miguel Blay, Juan Cristóbal y Francisco Asorey. Se inició en 1931 y se inauguró en 1952.",
+    "drinking_water": "no",
+    "fountain": "yes",
+    "historic": "memorial",
+    "inscription": "A Cuba",
+    "memorial": "statue",
+    "name": "Monumento a Cuba",
+    "natural": "water",
+    "wikidata": "Q97925401",
+    "wikimedia_commons": "Category:Monumento a Cuba, Buen Retiro",
+    "wikipedia": "es:Monumento a Cuba"
+  }
+},
+{
+  "type": "way",
+  "id": 661052395,
+  "center": {
+    "lat": 40.4077207,
+    "lon": -3.6783916
+  },
+  "tags": {
+    "leisure": "park"
+  }
+},
+{
+  "type": "way",
+  "id": 661052396,
+  "center": {
+    "lat": 40.4072280,
+    "lon": -3.6782440
+  },
+  "tags": {
+    "leisure": "park"
+  }
+},
+{
+  "type": "way",
+  "id": 661052397,
+  "center": {
+    "lat": 40.4074746,
+    "lon": -3.6784301
+  },
+  "tags": {
+    "barrier": "kerb",
+    "leisure": "park"
+  }
+},
+{
+  "type": "way",
+  "id": 681043535,
+  "center": {
+    "lat": 40.4171543,
+    "lon": -3.6820819
+  },
+  "tags": {
+    "amenity": "fountain",
+    "name": "Fuente de la Sardana",
+    "natural": "water",
+    "wikidata": "Q8962960",
+    "wikimedia_commons": "Category:Fuente de la Sardana, Madrid",
+    "wikipedia": "es:Fuente de la Sardana"
+  }
+},
+{
+  "type": "way",
+  "id": 681048520,
+  "center": {
+    "lat": 40.4186260,
+    "lon": -3.6854772
+  },
+  "tags": {
+    "alt_name": "Fuente de la Alcachofa y a Francisco Mozarán",
+    "amenity": "fountain",
+    "name": "Fuente de los Galápagos",
+    "natural": "water",
+    "wikidata": "Q5870270",
+    "wikimedia_commons": "Category:Fuente de los Galápagos",
+    "wikipedia": "es:Fuente de los Galápagos"
+  }
+},
+{
+  "type": "way",
+  "id": 692839978,
+  "center": {
+    "lat": 40.4123861,
+    "lon": -3.6919784
+  },
+  "tags": {
+    "building": "public",
+    "historic": "monument",
+    "name": "Puerta de Murillo",
+    "name:es": "Puerta de Murillo",
+    "name:zh": "穆里略门",
+    "nohousenumber": "yes",
+    "tourism": "attraction"
+  }
+},
+{
+  "type": "way",
+  "id": 722360391,
+  "center": {
+    "lat": 40.4173143,
+    "lon": -3.6830670
+  },
+  "tags": {
+    "historic": "monument",
+    "name": "Monumento a Alfonso XII",
+    "name:en": "Monument to Alfonso XII",
+    "tourism": "viewpoint",
+    "wheelchair": "no",
+    "wikidata": "Q3862645",
+    "wikimedia_commons": "Category:Monument to Alfonso XII of Spain, Madrid",
+    "wikipedia": "es:Monumento a Alfonso XII (Madrid)"
+  }
+},
+{
+  "type": "way",
+  "id": 733993037,
+  "center": {
+    "lat": 40.4045571,
+    "lon": -3.6886835
+  },
+  "tags": {
+    "building": "train_station",
+    "building:levels": "1",
+    "building:levels:underground": "2",
+    "layer": "2",
+    "name": "Madrid-Puerta de Atocha-Almudena Grandes",
+    "name:de": "Madrid-Puerta de Atocha-Almudena Grandes",
+    "name:es": "Madrid-Puerta de Atocha-Almudena Grandes",
+    "nohousenumber": "yes",
+    "operator": "adif",
+    "public_transport": "station",
+    "roof:shape": "many",
+    "uic_ref": "7160000",
+    "wikidata": "Q5846989",
+    "wikipedia": "es:Estación de Madrid-Puerta de Atocha-Almudena Grandes"
+  }
+},
+{
+  "type": "way",
+  "id": 741227868,
+  "center": {
+    "lat": 40.4211284,
+    "lon": -3.6837328
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 818605681,
+  "center": {
+    "lat": 40.4090166,
+    "lon": -3.6802745
+  },
+  "tags": {
+    "barrier": "fence",
+    "leisure": "dog_park"
+  }
+},
+{
+  "type": "way",
+  "id": 957893522,
+  "center": {
+    "lat": 40.4205610,
+    "lon": -3.6909584
+  },
+  "tags": {
+    "historic": "manor",
+    "name": "Palacio de Zabálburu",
+    "start_date": "1872",
+    "wikidata": "Q26882537",
+    "wikimedia_commons": "Category:Palacio de Zabálburu, Madrid",
+    "wikipedia": "es:Palacio de Zabálburu"
+  }
+},
+{
+  "type": "way",
+  "id": 969788964,
+  "center": {
+    "lat": 40.4123769,
+    "lon": -3.6929722
+  },
+  "tags": {
+    "amenity": "fountain",
+    "fountain": "decorative",
+    "height": "3",
+    "name": "Cuatro Fuentes",
+    "natural": "water",
+    "source": "survey",
+    "start_date": "~1785",
+    "wikidata": "Q8352238",
+    "wikimedia_commons": "Category:Four Fountains, Madrid",
+    "wikipedia": "es:Cuatro Fuentes"
+  }
+},
+{
+  "type": "way",
+  "id": 969788965,
+  "center": {
+    "lat": 40.4124063,
+    "lon": -3.6927305
+  },
+  "tags": {
+    "amenity": "fountain",
+    "fountain": "decorative",
+    "height": "3",
+    "name": "Cuatro Fuentes",
+    "natural": "water",
+    "source": "survey",
+    "start_date": "~1785",
+    "wikidata": "Q8352238",
+    "wikimedia_commons": "Category:Four Fountains, Madrid",
+    "wikipedia": "es:Cuatro Fuentes"
+  }
+},
+{
+  "type": "way",
+  "id": 969788966,
+  "center": {
+    "lat": 40.4125772,
+    "lon": -3.6927663
+  },
+  "tags": {
+    "amenity": "fountain",
+    "fountain": "decorative",
+    "height": "3",
+    "name": "Cuatro Fuentes",
+    "natural": "water",
+    "source": "survey",
+    "start_date": "~1785",
+    "wikidata": "Q8352238",
+    "wikimedia_commons": "Category:Four Fountains, Madrid",
+    "wikipedia": "es:Cuatro Fuentes"
+  }
+},
+{
+  "type": "way",
+  "id": 969788967,
+  "center": {
+    "lat": 40.4125468,
+    "lon": -3.6930074
+  },
+  "tags": {
+    "amenity": "fountain",
+    "fountain": "decorative",
+    "height": "3",
+    "name": "Cuatro Fuentes",
+    "natural": "water",
+    "source": "survey",
+    "start_date": "~1785",
+    "wikidata": "Q8352238",
+    "wikimedia_commons": "Category:Four Fountains, Madrid",
+    "wikipedia": "es:Cuatro Fuentes"
+  }
+},
+{
+  "type": "way",
+  "id": 969788976,
+  "center": {
+    "lat": 40.4126363,
+    "lon": -3.6920325
+  },
+  "tags": {
+    "addr:city": "Madrid",
+    "area": "yes",
+    "artwork_type": "statue",
+    "height": "3",
+    "historic": "memorial",
+    "memorial": "statue",
+    "name": "Estatua de Murillo",
+    "name:es": "Estatua de Murillo",
+    "name:zh": "巴托洛梅-埃斯特万-穆里略纪念碑",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "way",
+  "id": 984796371,
+  "center": {
+    "lat": 40.4134538,
+    "lon": -3.6781198
+  },
+  "tags": {
+    "amenity": "fountain",
+    "barrier": "kerb",
+    "drinking_water": "no",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 984796372,
+  "center": {
+    "lat": 40.4134760,
+    "lon": -3.6779705
+  },
+  "tags": {
+    "amenity": "fountain",
+    "barrier": "kerb",
+    "drinking_water": "no",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 984796373,
+  "center": {
+    "lat": 40.4129964,
+    "lon": -3.6779917
+  },
+  "tags": {
+    "amenity": "fountain",
+    "barrier": "kerb",
+    "drinking_water": "no",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 984796374,
+  "center": {
+    "lat": 40.4130186,
+    "lon": -3.6778423
+  },
+  "tags": {
+    "amenity": "fountain",
+    "barrier": "kerb",
+    "drinking_water": "no",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 984796375,
+  "center": {
+    "lat": 40.4137820,
+    "lon": -3.6776170
+  },
+  "tags": {
+    "amenity": "fountain",
+    "barrier": "kerb",
+    "drinking_water": "no",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 984796376,
+  "center": {
+    "lat": 40.4141570,
+    "lon": -3.6777995
+  },
+  "tags": {
+    "amenity": "fountain",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 984797723,
+  "center": {
+    "lat": 40.4178574,
+    "lon": -3.6816546
+  },
+  "tags": {
+    "amenity": "fountain",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 984797724,
+  "center": {
+    "lat": 40.4201399,
+    "lon": -3.6803943
+  },
+  "tags": {
+    "amenity": "fountain",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 984800677,
+  "center": {
+    "lat": 40.4110480,
+    "lon": -3.6825391
+  },
+  "tags": {
+    "amenity": "fountain",
+    "drinking_water": "no",
+    "fountain": "decorative",
+    "name": "Fuente del Ángel Caído",
+    "natural": "water",
+    "wikidata": "Q1999259",
+    "wikimedia_commons": "Category:Fuente del Ángel Caído, Madrid",
+    "wikipedia": "es:Fuente del Ángel Caído"
+  }
+},
+{
+  "type": "way",
+  "id": 984801054,
+  "center": {
+    "lat": 40.4107977,
+    "lon": -3.6803229
+  },
+  "tags": {
+    "amenity": "fountain",
+    "drinking_water": "no",
+    "name": "Estanque Central de la Rosaleda",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 984801055,
+  "center": {
+    "lat": 40.4110606,
+    "lon": -3.6804247
+  },
+  "tags": {
+    "amenity": "fountain",
+    "drinking_water": "no",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 984801056,
+  "center": {
+    "lat": 40.4105103,
+    "lon": -3.6802141
+  },
+  "tags": {
+    "amenity": "fountain",
+    "drinking_water": "no",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 991444022,
+  "center": {
+    "lat": 40.4082186,
+    "lon": -3.6947059
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 991444023,
+  "center": {
+    "lat": 40.4084302,
+    "lon": -3.6945444
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 991444024,
+  "center": {
+    "lat": 40.4083500,
+    "lon": -3.6943241
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 991444025,
+  "center": {
+    "lat": 40.4082358,
+    "lon": -3.6940624
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 991444026,
+  "center": {
+    "lat": 40.4081369,
+    "lon": -3.6938724
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 991444027,
+  "center": {
+    "lat": 40.4081191,
+    "lon": -3.6945079
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 991444028,
+  "center": {
+    "lat": 40.4080055,
+    "lon": -3.6942502
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 991444029,
+  "center": {
+    "lat": 40.4079280,
+    "lon": -3.6940319
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 991444030,
+  "center": {
+    "lat": 40.4082858,
+    "lon": -3.6945355
+  },
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "way",
+  "id": 991444031,
+  "center": {
+    "lat": 40.4080727,
+    "lon": -3.6940427
+  },
+  "tags": {
+    "amenity": "fountain"
+  }
+},
+{
+  "type": "way",
+  "id": 991444051,
+  "center": {
+    "lat": 40.4080445,
+    "lon": -3.6945950
+  },
+  "tags": {
+    "addr:city": "Madrid",
+    "addr:housenumber": "52",
+    "addr:postcode": "28012",
+    "addr:street": "Calle de Santa Isabel",
+    "addr:suburb": "Embajadores",
+    "alt_name": "Museo Reina Sofía",
+    "amenity": "arts_centre",
+    "building:colour": "white",
+    "building:levels": "4",
+    "check_date": "2025-08-23",
+    "description": "Museo de arte moderno",
+    "email": "info@museoreinasofia.es",
+    "fee": "yes",
+    "name": "Museo Nacional Centro de Arte Reina Sofía",
+    "name:es": "Museo Nacional Centro de Arte Reina Sofía",
+    "name:etymology:wikidata": "Q460889",
+    "name:ko": "국립 소피아 왕비 예술센터(레이나 소피아 국립미술센터)",
+    "opening_hours": "Mo 10:00-21:00; We-Sa 10:00-21:00; Su 10:00-19:00",
+    "phone": "+34 917741000",
+    "roof:colour": "grey",
+    "source:email": "Ayuntamiento de Madrid",
+    "tourism": "museum",
+    "website": "https://www.museoreinasofia.es/",
+    "wheelchair": "yes",
+    "wheelchair:description": "wheelchair toilett",
+    "wikidata": "Q460889",
+    "wikimedia_commons": "Category:Museo Nacional Centro de Arte Reina Sofía",
+    "wikipedia": "es:Museo Nacional Centro de Arte Reina Sofía"
+  }
+},
+{
+  "type": "way",
+  "id": 991537873,
+  "center": {
+    "lat": 40.4098510,
+    "lon": -3.6951869
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 991537874,
+  "center": {
+    "lat": 40.4096537,
+    "lon": -3.6948184
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 1002170738,
+  "center": {
+    "lat": 40.4109421,
+    "lon": -3.6922567
+  },
+  "tags": {
+    "access": "no",
+    "artist_name": "Sabatini",
+    "building": "public",
+    "entrance": "yes",
+    "historic": "monument",
+    "material": "granite",
+    "name": "Puerta del Rey Carlos III",
+    "name:es": "Puerta del Rey Carlos III",
+    "name:ru": "Пуэрта-дель-Рей",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "way",
+  "id": 1007478809,
+  "center": {
+    "lat": 40.4061900,
+    "lon": -3.6838735
+  },
+  "tags": {
+    "historic": "wayside_cross"
+  }
+},
+{
+  "type": "way",
+  "id": 1016940339,
+  "center": {
+    "lat": 40.4195460,
+    "lon": -3.6945487
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 1016940340,
+  "center": {
+    "lat": 40.4195807,
+    "lon": -3.6942100
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 1016940349,
+  "center": {
+    "lat": 40.4200407,
+    "lon": -3.6942488
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 1016940350,
+  "center": {
+    "lat": 40.4200269,
+    "lon": -3.6947710
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 1016940351,
+  "center": {
+    "lat": 40.4197828,
+    "lon": -3.6948888
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 1016940352,
+  "center": {
+    "lat": 40.4205118,
+    "lon": -3.6951484
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 1057731910,
+  "center": {
+    "lat": 40.4074725,
+    "lon": -3.6783122
+  },
+  "tags": {
+    "barrier": "kerb",
+    "leisure": "park"
+  }
+},
+{
+  "type": "way",
+  "id": 1073617785,
+  "center": {
+    "lat": 40.4164186,
+    "lon": -3.6789952
+  },
+  "tags": {
+    "attraction": "animal",
+    "name": "Antigua casa de Fieras (Foso)",
+    "operational_status": "out_of_order",
+    "tourism": "attraction",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 1076530252,
+  "center": {
+    "lat": 40.4086961,
+    "lon": -3.6920173
+  },
+  "tags": {
+    "amenity": "fountain",
+    "description": "Réplica de la Fuente de la Alcachofa",
+    "drinking_water": "no",
+    "lit": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 1076612640,
+  "center": {
+    "lat": 40.4166769,
+    "lon": -3.6886281
+  },
+  "tags": {
+    "addr:city": "Madrid",
+    "addr:housenumber": "1",
+    "addr:postcode": "28014",
+    "addr:street": "Calle de Alfonso XII",
+    "area": "yes",
+    "name": "Puerta de España",
+    "name:en": "Spain Gate",
+    "tourism": "attraction"
+  }
+},
+{
+  "type": "way",
+  "id": 1077518054,
+  "center": {
+    "lat": 40.4144007,
+    "lon": -3.6782873
+  },
+  "tags": {
+    "amenity": "fountain",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 1089699299,
+  "center": {
+    "lat": 40.4164277,
+    "lon": -3.6792821
+  },
+  "tags": {
+    "animal": "bear",
+    "attraction": "animal",
+    "building": "yes",
+    "name": "Osera de la casa de Fieras",
+    "operational_status": "out_of_order",
+    "tourism": "attraction"
+  }
+},
+{
+  "type": "way",
+  "id": 1144539856,
+  "center": {
+    "lat": 40.4192260,
+    "lon": -3.6933649
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 1173738187,
+  "center": {
+    "lat": 40.4072125,
+    "lon": -3.6925579
+  },
+  "tags": {
+    "access": "no",
+    "leisure": "garden",
+    "operator": "Adif",
+    "surface": "pebblestone"
+  }
+},
+{
+  "type": "way",
+  "id": 1173759677,
+  "center": {
+    "lat": 40.4072479,
+    "lon": -3.6925258
+  },
+  "tags": {
+    "artwork_type": "mural",
+    "colour": "#006338",
+    "surface": "carpet",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "way",
+  "id": 1221357496,
+  "center": {
+    "lat": 40.4150637,
+    "lon": -3.6878059
+  },
+  "tags": {
+    "amenity": "fountain",
+    "barrier": "wall",
+    "height": "0.5",
+    "natural": "water",
+    "water": "basin",
+    "width": "0.4"
+  }
+},
+{
+  "type": "way",
+  "id": 1221362062,
+  "center": {
+    "lat": 40.4154111,
+    "lon": -3.6842222
+  },
+  "tags": {
+    "amenity": "fountain",
+    "barrier": "wall",
+    "name": "Fuente de la Alcachofa",
+    "natural": "water",
+    "wikidata": "Q3747351",
+    "wikipedia": "es:Fuente de la Alcachofa"
+  }
+},
+{
+  "type": "way",
+  "id": 1221362068,
+  "center": {
+    "lat": 40.4173367,
+    "lon": -3.6799126
+  },
+  "tags": {
+    "amenity": "fountain",
+    "natural": "water"
+  }
+},
+{
+  "type": "way",
+  "id": 1333561605,
+  "center": {
+    "lat": 40.4211057,
+    "lon": -3.6934202
+  },
+  "tags": {
+    "garden:type": "private",
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 1341580052,
+  "center": {
+    "lat": 40.4165584,
+    "lon": -3.6798572
+  },
+  "tags": {
+    "area": "yes",
+    "artwork_type": "statue",
+    "name": "Diosa Hera",
+    "tourism": "artwork",
+    "wikidata": "Q52084240",
+    "wikimedia_commons": "Category:Diosa Hera, Madrid"
+  }
+},
+{
+  "type": "way",
+  "id": 1341621436,
+  "center": {
+    "lat": 40.4120713,
+    "lon": -3.6801683
+  },
+  "tags": {
+    "artist_name": "Victorio Macho",
+    "historic": "memorial",
+    "material": "stone",
+    "name": "Benito Pérez Galdós",
+    "tourism": "artwork",
+    "wikidata": "Q18203300",
+    "wikimedia_commons": "Category:Monument to Benito Pérez Galdós, Madrid",
+    "wikipedia": "es:Monumento a Galdós en el Retiro"
+  }
+},
+{
+  "type": "way",
+  "id": 1343434224,
+  "center": {
+    "lat": 40.4157703,
+    "lon": -3.6782915
+  },
+  "tags": {
+    "area": "yes",
+    "artwork_type": "sculpture",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "way",
+  "id": 1345287210,
+  "center": {
+    "lat": 40.4094756,
+    "lon": -3.6777182
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 1346140194,
+  "center": {
+    "lat": 40.4185845,
+    "lon": -3.6934615
+  },
+  "tags": {
+    "amenity": "fountain",
+    "fountain": "decorative",
+    "natural": "water",
+    "water": "pond"
+  }
+},
+{
+  "type": "way",
+  "id": 1346140195,
+  "center": {
+    "lat": 40.4193336,
+    "lon": -3.6930908
+  },
+  "tags": {
+    "artwork_type": "statue",
+    "height": "8",
+    "historic": "monument",
+    "inscription": "Fuente neoclásica del siglo XVIII en la que se representa a la diosa Cibeles en un carro tirado por 2 leones.",
+    "name": "Fuente de Cibeles",
+    "tourism": "attraction",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 1349934498,
+  "center": {
+    "lat": 40.4194611,
+    "lon": -3.6803549
+  },
+  "tags": {
+    "historic": "memorial",
+    "inscription": "Inventor de la Taquigrafía española 1761-1827",
+    "name": "Francisco de Paula Martí Mora",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "way",
+  "id": 1352302585,
+  "center": {
+    "lat": 40.4164472,
+    "lon": -3.6926561
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 1352302586,
+  "center": {
+    "lat": 40.4165504,
+    "lon": -3.6927451
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 1352302587,
+  "center": {
+    "lat": 40.4165656,
+    "lon": -3.6929643
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 1436385157,
+  "center": {
+    "lat": 40.4117974,
+    "lon": -3.6900204
+  },
+  "tags": {
+    "barrier": "hedge",
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 1436385158,
+  "center": {
+    "lat": 40.4117718,
+    "lon": -3.6898044
+  },
+  "tags": {
+    "barrier": "hedge",
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 1436385159,
+  "center": {
+    "lat": 40.4116009,
+    "lon": -3.6897943
+  },
+  "tags": {
+    "barrier": "hedge",
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 1436385160,
+  "center": {
+    "lat": 40.4114638,
+    "lon": -3.6897168
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 1436780490,
+  "center": {
+    "lat": 40.4089760,
+    "lon": -3.6912731
+  },
+  "tags": {
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 1485733716,
+  "center": {
+    "lat": 40.4115580,
+    "lon": -3.6901545
+  },
+  "tags": {
+    "barrier": "hedge",
+    "leisure": "garden"
+  }
+},
+{
+  "type": "way",
+  "id": 1527305180,
+  "center": {
+    "lat": 40.4205890,
+    "lon": -3.6805552
+  },
+  "tags": {
+    "barrier": "wall",
+    "historic": "ruins",
+    "ruins": "wall"
+  }
+},
+{
+  "type": "way",
+  "id": 1527305181,
+  "center": {
+    "lat": 40.4204473,
+    "lon": -3.6804708
+  },
+  "tags": {
+    "barrier": "wall",
+    "historic": "ruins",
+    "ruins": "wall"
+  }
+},
+{
+  "type": "way",
+  "id": 1539046369,
+  "center": {
+    "lat": 40.4171954,
+    "lon": -3.6828613
+  },
+  "tags": {
+    "building": "yes",
+    "historic": "yes"
+  }
+},
+{
+  "type": "relation",
+  "id": 132468,
+  "center": {
+    "lat": 40.4209666,
+    "lon": -3.6945447
+  },
+  "tags": {
+    "building": "civic",
+    "building:levels": "4",
+    "castle_type": "palace",
+    "historic": "castle",
+    "name": "Palacio de Buenavista",
+    "name:es": "Palacio de Buenavista",
+    "note": "El catastro no está bien. Ver ortofoto.",
+    "roof:material": "slate",
+    "roof:shape": "hipped",
+    "source": "Ayuntamiento de Madrid - Ortofoto actualizada",
+    "type": "multipolygon",
+    "wikidata": "Q3889284",
+    "wikipedia": "es:Palacio de Buenavista (Madrid)"
+  }
+},
+{
+  "type": "relation",
+  "id": 1213832,
+  "center": {
+    "lat": 40.4082481,
+    "lon": -3.6941730
+  },
+  "tags": {
+    "building": "yes",
+    "building:colour": "white",
+    "building:levels": "4",
+    "building:material": "stone",
+    "historic": "yes",
+    "name": "Edificio Sabatini",
+    "roof:colour": "grey",
+    "type": "multipolygon",
+    "wheelchair": "yes",
+    "wheelchair:description": "wheelchair toilett",
+    "wikidata": "Q16576069",
+    "wikipedia": "es:Hospital General y de la Pasión"
+  }
+},
+{
+  "type": "relation",
+  "id": 1869334,
+  "center": {
+    "lat": 40.4165526,
+    "lon": -3.6949204
+  },
+  "tags": {
+    "garden:type": "community",
+    "leisure": "garden",
+    "name": "Jardín",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 1869336,
+  "center": {
+    "lat": 40.4162225,
+    "lon": -3.6950996
+  },
+  "tags": {
+    "addr:city": "Madrid",
+    "addr:housenumber": "8",
+    "addr:postcode": "28014",
+    "addr:street": "Paseo del Prado",
+    "air_conditioning": "yes",
+    "alt_name": "Museo Thyssen",
+    "check_date": "2025-02-27",
+    "description": "El Palacio donde se ubica la colección fue el antiguo palacio del duque de Villahermosa. Edificación neoclásica. El museo ofrece un recorrido por la historia de la pintura europea desde sus inicios en el siglo XIII , hasta finales del siglo XX.",
+    "email": "mtb@museothyssen.org",
+    "fax": "+34 914202780",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "internet_access:ssid": "Museo Thyssen Free",
+    "museum": "art",
+    "name": "Museo Thyssen-Bornemisza",
+    "name:etymology:wikidata": "Q176251",
+    "name:ko": "티센 보르네미사 미술관",
+    "opening_hours": "Tu-Su 10:00-19:00; Mo 12:00-16:00",
+    "operator": "Fundación-Colección Thyssen-Bornemisza",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+34 902760511",
+    "source": "survey",
+    "source:description": "Ayuntamiento de Madrid",
+    "source:email": "Ayuntamiento de Madrid",
+    "source:fax": "Ayuntamiento de Madrid",
+    "source:name": "common knowledge",
+    "source:phone": "Ayuntamiento de Madrid",
+    "toilets": "yes",
+    "toilets:wheelchair": "yes",
+    "tourism": "museum",
+    "type": "multipolygon",
+    "website": "https://www.museothyssen.org/",
+    "wheelchair": "yes",
+    "wheelchair:description": "wheelchair toilet",
+    "wikidata": "Q176251",
+    "wikipedia": "es:Museo Thyssen-Bornemisza"
+  }
+},
+{
+  "type": "relation",
+  "id": 4038449,
+  "center": {
+    "lat": 40.4149692,
+    "lon": -3.6961563
+  },
+  "tags": {
+    "addr:city": "Madrid",
+    "addr:housenumber": "2-8",
+    "addr:street": "Calle del Duque de Medinaceli",
+    "architect": "Edmond De Lune, Gabriel Abreu Barreda, Fernando García Mercadal, Pedro Muguruza, Miguel Fisac y Ricardo Fernández Vallespín",
+    "building": "yes",
+    "building:levels": "3",
+    "historic": "building",
+    "name": "Palacio de Hielo y del Automóvil",
+    "start_date": "1920",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 4525000,
+  "center": {
+    "lat": 40.4077650,
+    "lon": -3.6891068
+  },
+  "tags": {
+    "addr:city": "Madrid",
+    "addr:housenumber": "68",
+    "addr:postcode": "28014",
+    "addr:street": "Calle de Alfonso XII",
+    "addr:suburb": "Los Jeronimos",
+    "building": "civic",
+    "description": "El Museo Nacional de Antropología ofrece al público una visión global de la cultura de diferentes pueblos y establece las semejanzas o diferencias culturales que les unen o separan para poner de manifiesto la riqueza y diversidad de las culturas del Mundo",
+    "fax": "+34 914677098",
+    "name": "Museo Nacional de Antropología",
+    "name:de": "Nationalmuseum für Anthropologie",
+    "name:en": "National Museum of Anthropology",
+    "name:es": "Museo Nacional de Antropología",
+    "name:fr": "Musée national d’anthropologie",
+    "name:it": "Museo nazionale di antropologia",
+    "name:pl": "Narodowe Muzeum Antropologiczne",
+    "name:pt": "Museu Nacional de Antropologia",
+    "name:ru": "Национальный Музей Антропологии",
+    "opening_hours": "Tu-Sa 09:30-20:00; Su 09:30-15:00",
+    "phone": "+34 915306418",
+    "source": "Ayuntamiento de Madrid",
+    "tourism": "museum",
+    "type": "multipolygon",
+    "url": "https://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=456079262ef5d010VgnVCM1000000b205a0aRCRD",
+    "wheelchair": "yes",
+    "wikidata": "Q2917041",
+    "wikipedia": "es:Museo Nacional de Antropología (España)"
+  }
+},
+{
+  "type": "relation",
+  "id": 4661214,
+  "center": {
+    "lat": 40.4199105,
+    "lon": -3.6920661
+  },
+  "tags": {
+    "architect": "Adolf Ombrecht",
+    "building": "civic",
+    "building:levels": "3",
+    "castle_type": "palace",
+    "historic": "building",
+    "layer": "-1",
+    "location": "surface",
+    "name": "Palacio de Linares",
+    "roof:shape": "flat",
+    "start_date": "1877",
+    "type": "multipolygon",
+    "wikidata": "Q2628455",
+    "wikimedia_commons": "Category:Palacio_de_Linares",
+    "wikipedia": "es:Palacio de Linares"
+  }
+},
+{
+  "type": "relation",
+  "id": 4756144,
+  "center": {
+    "lat": 40.4074475,
+    "lon": -3.6788125
+  },
+  "tags": {
+    "barrier": "kerb",
+    "leisure": "garden",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 6345116,
+  "center": {
+    "lat": 40.4193344,
+    "lon": -3.6930878
+  },
+  "tags": {
+    "amenity": "fountain",
+    "fountain": "decorative",
+    "height": "0.1",
+    "name": "Fuente de Cibeles",
+    "natural": "water",
+    "tourism": "attraction",
+    "type": "multipolygon",
+    "water": "pond",
+    "wheelchair": "no",
+    "wikidata": "Q2736564",
+    "wikipedia": "es:Fuente de Cibeles"
+  }
+},
+{
+  "type": "relation",
+  "id": 6423339,
+  "center": {
+    "lat": 40.4152601,
+    "lon": -3.6941520
+  },
+  "tags": {
+    "amenity": "fountain",
+    "fountain": "decorative",
+    "height": "0.25",
+    "natural": "water",
+    "type": "multipolygon",
+    "water": "basin"
+  }
+},
+{
+  "type": "relation",
+  "id": 7148326,
+  "center": {
+    "lat": 40.4051856,
+    "lon": -3.6891258
+  },
+  "tags": {
+    "alt_name": "Atocha",
+    "building": "train_station",
+    "historic:railway": "station",
+    "name": "Estación de Atocha",
+    "ref": "60000",
+    "tourism": "attraction",
+    "type": "site",
+    "wheelchair": "yes",
+    "wikidata": "Q23093",
+    "wikipedia": "es:Estación de Atocha"
+  }
+},
+{
+  "type": "relation",
+  "id": 7294247,
+  "center": {
+    "lat": 40.4207124,
+    "lon": -3.6881493
+  },
+  "tags": {
+    "addr:city": "Madrid",
+    "addr:housenumber": "5",
+    "addr:postcode": "28001",
+    "addr:street": "Plaza de la Independencia",
+    "building": "commercial",
+    "historic": "building",
+    "name": "Palacio de Linares",
+    "source": "Catastro",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 7726080,
+  "center": {
+    "lat": 40.4138195,
+    "lon": -3.6916199
+  },
+  "tags": {
+    "addr:city": "Madrid",
+    "addr:postcode": "28014",
+    "addr:street": "Paseo del Prado",
+    "addr:suburb": "Los Jerónimos",
+    "air_conditioning": "yes",
+    "alt_name": "el Prado",
+    "check_date": "2024-03-09",
+    "description": "Construido inicialmente como Museo de Ciencias Naturales, este edificio neoclásico fue transformado en pinacoteca de las Colecciones Reales en 1818 con colecciones de pintura, dibujos, grabados, monedas y medallas desde el Románico hasta el siglo XIX.",
+    "fee": "15€. 2h before closing free.",
+    "internet_access": "no",
+    "museum": "art",
+    "name": "Museo del Prado",
+    "name:en": "Prado Museum",
+    "name:etymology:wikidata": "Q160112",
+    "name:it": "Museo del Prado",
+    "name:ja": "プラド美術館",
+    "name:ko": "프라도 국립미술관",
+    "name:pt": "Museu do Prado",
+    "name:ru": "музей Прадо",
+    "name:zh": "普拉多美術館",
+    "name:zh-Hans": "普拉多博物馆",
+    "nohousenumber": "yes",
+    "official_name": "Museo Nacional de El Prado",
+    "opening_hours": "Mo-Sa 10:00-20:00; Su 10:00-19:00",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+34 913302800",
+    "source": "Ayuntamiento de Madrid",
+    "toilets": "yes",
+    "toilets:wheelchair": "yes",
+    "tourism": "museum",
+    "type": "multipolygon",
+    "url": "https://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=060079262ef5d010VgnVCM1000000b205a0aRCRD",
+    "website": "https://www.museodelprado.es/",
+    "wheelchair": "yes",
+    "wheelchair:description": "wheelchair toilet",
+    "wikidata": "Q160112",
+    "wikipedia": "es:Museo del Prado"
+  }
+},
+{
+  "type": "relation",
+  "id": 8192117,
+  "center": {
+    "lat": 40.4177968,
+    "lon": -3.6809472
+  },
+  "tags": {
+    "amenity": "fountain",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 8278843,
+  "center": {
+    "lat": 40.4177862,
+    "lon": -3.6897270
+  },
+  "tags": {
+    "addr:city": "Madrid",
+    "addr:housenumber": "12",
+    "addr:postcode": "28014",
+    "addr:street": "Calle de Montalbán",
+    "addr:suburb": "Los Jerónimos",
+    "building": "civic",
+    "description": "Inaugurado en 1912, su sede es un típico palacete madrileño del último tercio del siglo XIX. El museo posee muebles, cerámicas, vidrios, joyas, tejidos, arte oriental, y hasta 30.000 objetos distintos.",
+    "fax": "+34 915232086",
+    "fee": "yes",
+    "name": "Museo Nacional de Artes Decorativas",
+    "name:etymology:wikidata": "Q5361303",
+    "name:ru": "Национальный музей декоративного искусства",
+    "opening_hours": "Tu-We, Fr-Sa 09:30-15:00; Su 10:00-15:00; Th 09:30-15:00, 17:00-20:00",
+    "operator": "Ministerio de Educación, Cultura y Deporte",
+    "operator:type": "government",
+    "phone": "+34 915 32 64 99",
+    "source": "Ayuntamiento de Madrid",
+    "source:url": "https://www.madrid.es",
+    "tourism": "museum",
+    "type": "multipolygon",
+    "url": "https://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=287079262ef5d010VgnVCM1000000b205a0aRCRD",
+    "wheelchair": "no",
+    "wikidata": "Q5361303",
+    "wikipedia": "es:Museo Nacional de Artes Decorativas"
+  }
+},
+{
+  "type": "relation",
+  "id": 8348919,
+  "center": {
+    "lat": 40.4169429,
+    "lon": -3.6920221
+  },
+  "tags": {
+    "addr:city": "Madrid",
+    "addr:housenumber": "1",
+    "addr:postcode": "28014",
+    "addr:street": "Plaza de la Lealtad",
+    "building": "civic",
+    "historic": "building",
+    "name": "Bolsa de Madrid",
+    "name:en": "Madrid Stock Exchange - Bolsa de Madrid",
+    "name:es": "Bolsa de Madrid",
+    "type": "multipolygon",
+    "website": "http://www.bolsamadrid.es/",
+    "wikidata": "Q3361062",
+    "wikipedia": "es:Palacio de la Bolsa de Madrid"
+  }
+},
+{
+  "type": "relation",
+  "id": 10005473,
+  "center": {
+    "lat": 40.4133475,
+    "lon": -3.6779725
+  },
+  "tags": {
+    "barrier": "fence",
+    "bicycle": "no",
+    "dog": "no",
+    "fence_type": "metal",
+    "leisure": "garden",
+    "name": "Jardines de Cecilio Rodríguez",
+    "name:es": "Jardines de Cecilio Rodríguez",
+    "name:zh": "賽西爾花園",
+    "tourism": "attraction",
+    "type": "multipolygon",
+    "wikidata": "Q108378742",
+    "wikipedia": "es:Jardines de Cecilio Rodríguez"
+  }
+},
+{
+  "type": "relation",
+  "id": 10005474,
+  "center": {
+    "lat": 40.4156127,
+    "lon": -3.6786338
+  },
+  "tags": {
+    "leisure": "garden",
+    "name": "Jardines del Arquitecto Herrero Palacios",
+    "type": "site",
+    "wikidata": "Q114662887",
+    "wikipedia": "es:Jardines de Herrero Palacios"
+  }
+},
+{
+  "type": "relation",
+  "id": 13493465,
+  "center": {
+    "lat": 40.4062183,
+    "lon": -3.6837053
+  },
+  "tags": {
+    "alt_name": "panteonHombresIlustres",
+    "barrier": "fence",
+    "fence_type": "metal",
+    "historic": "memorial",
+    "name": "Panteón de España",
+    "tourism": "museum",
+    "type": "multipolygon",
+    "wikidata": "Q7131757",
+    "wikipedia": "es:Panteón de Hombres Ilustres"
+  }
+},
+{
+  "type": "relation",
+  "id": 13493466,
+  "center": {
+    "lat": 40.4061900,
+    "lon": -3.6838715
+  },
+  "tags": {
+    "leisure": "garden",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 13616929,
+  "center": {
+    "lat": 40.4148635,
+    "lon": -3.6827128
+  },
+  "tags": {
+    "access": "yes",
+    "alt_name": "Parque del Buen Retiro",
+    "barrier": "fence",
+    "leisure": "park",
+    "loc_name": "El Retiro",
+    "name": "Parque del Retiro",
+    "name:ca": "Parc del Retiro",
+    "name:en": "El Retiro Park",
+    "name:es": "Parque del Retiro",
+    "name:etymology:wikidata": "Q1131807",
+    "name:it": "Parco del Retiro",
+    "name:ko": "레티로 공원",
+    "name:pl": "Park Retiro",
+    "name:ru": "Буэн-Ретиро",
+    "opening_hours": "Oct-Mar: 06:00-22:00; Apr-Sep: 06:00-24:00",
+    "source:opening_hours": "survey",
+    "type": "multipolygon",
+    "wikidata": "Q1131807",
+    "wikipedia": "es:Parque del Retiro de Madrid"
+  }
+},
+{
+  "type": "relation",
+  "id": 15470278,
+  "center": {
+    "lat": 40.4193346,
+    "lon": -3.6930879
+  },
+  "tags": {
+    "leisure": "garden",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 15470279,
+  "center": {
+    "lat": 40.4152596,
+    "lon": -3.6941511
+  },
+  "tags": {
+    "leisure": "garden",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 16657037,
+  "center": {
+    "lat": 40.4159089,
+    "lon": -3.6859482
+  },
+  "tags": {
+    "alt_name": "Estanque de las Campanillas",
+    "amenity": "fountain",
+    "barrier": "fence",
+    "name": "Estanque Ochavado",
+    "natural": "water",
+    "source": "Bing",
+    "type": "multipolygon",
+    "water": "basin",
+    "wikidata": "Q21162806",
+    "wikipedia": "es:Estanque Ochavado"
+  }
+},
+{
+  "type": "relation",
+  "id": 16657038,
+  "center": {
+    "lat": 40.4154109,
+    "lon": -3.6842223
+  },
+  "tags": {
+    "barrier": "fence",
+    "leisure": "garden",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 18571165,
+  "center": {
+    "lat": 40.4162502,
+    "lon": -3.6928532
+  },
+  "tags": {
+    "leisure": "garden",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 20827650,
+  "center": {
+    "lat": 40.4152953,
+    "lon": -3.6874061
+  },
+  "tags": {
+    "leisure": "garden",
+    "name": "Jardín del Parterre",
+    "name:en": "Parterre Garden",
+    "name:pt": "Jardim do Parterre",
+    "tourism": "attraction",
+    "type": "multipolygon",
+    "wikidata": "Q48782205",
+    "wikipedia": "es:Parterre del Retiro"
+  }
+}
+
+  ]
+}

@@ -1,0 +1,9 @@
+scenario,source_id,timestamp,primary_radius_m,n_alt_500m,n_alt_800m,n_alt_1200m,recommendation_category_stable_500_1200
+S1,A16,15:00,800,6,9,15,True
+S2,A15,15:00,800,4,6,12,True
+S3,A14,18:00,800,1,4,7,True
+S4,A26,18:00,800,5,8,13,True
+S5,A19,15:00,800,4,7,9,True
+S6,A17,18:00,800,6,9,14,True
+S7,A24,18:00,800,3,6,14,True
+S8,A20,15:00,500,0,2,7,False

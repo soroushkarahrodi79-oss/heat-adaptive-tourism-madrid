@@ -1,0 +1,4 @@
+# Preserve exact bytes of all files (no EOL conversion). This keeps the
+# immutable Phase 0-3 scientific data/outputs byte-identical across any
+# checkout, so integrity hashes remain stable.
+* -text

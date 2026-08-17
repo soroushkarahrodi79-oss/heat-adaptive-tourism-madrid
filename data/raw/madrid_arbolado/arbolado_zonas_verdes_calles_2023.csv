@@ -1,0 +1,282 @@
+﻿Nº_Distrito;Nombre_distrito;NOMBRE_ESPECIE;Nº_Unidades 2023
+1;CENTRO;Ligustrum japonicum;2602
+1;CENTRO;Styphnolobium japonicum;1588
+1;CENTRO;Platanus x hispanica;1397
+1;CENTRO;Aesculus hippocastanum;493
+1;CENTRO;Prunus cerasifera  subsp. pissardii;442
+1;CENTRO;Pyrus calleryana 'Chanticleer';438
+1;CENTRO;Ligustrum japonicum 'Variegatum';323
+1;CENTRO;Ulmus pumila;322
+1;CENTRO;Cercis siliquastrum;314
+1;CENTRO;Otros;4061
+;;;
+2;ARGANZUELA;Platanus x hispanica;3404
+2;ARGANZUELA;Styphnolobium japonicum;2351
+2;ARGANZUELA;Celtis australis;1669
+2;ARGANZUELA;Ligustrum japonicum;1251
+2;ARGANZUELA;Ulmus pumila;1197
+2;ARGANZUELA;Pinus pinea;1186
+2;ARGANZUELA;Robinia pseudoacacia;1152
+2;ARGANZUELA;Acer negundo;1126
+2;ARGANZUELA;Melia azedarach;1117
+2;ARGANZUELA;Gleditsia triacanthos;655
+2;ARGANZUELA;Prunus cerasifera  subsp. pissardii;620
+2;ARGANZUELA;Otros;7921
+;;;
+3;RETIRO;Platanus x hispanica;2514
+3;RETIRO;Styphnolobium japonicum;2321
+3;RETIRO;Ulmus pumila;1820
+3;RETIRO;Ligustrum japonicum;943
+3;RETIRO;Pinus pinea;612
+3;RETIRO;Celtis australis;530
+3;RETIRO;Robinia pseudoacacia;521
+3;RETIRO;Cupressus sempervirens;409
+3;RETIRO;Cupressus arizonica;325
+3;RETIRO;Liquidambar styraciflua;311
+3;RETIRO;Aesculus hippocastanum;290
+3;RETIRO;x Cupressocyparis x leylandii;273
+3;RETIRO;Prunus cerasifera  subsp. pissardii;266
+3;RETIRO;Otros;3524
+;;;
+4;SALAMANCA;Styphnolobium japonicum;5743
+4;SALAMANCA;Platanus x hispanica;2368
+4;SALAMANCA;Ligustrum japonicum;1759
+4;SALAMANCA;Ulmus pumila;813
+4;SALAMANCA;Aesculus hippocastanum;654
+4;SALAMANCA;Robinia pseudoacacia;502
+4;SALAMANCA;Pinus pinea;459
+4;SALAMANCA;Prunus cerasifera  subsp. pissardii;403
+4;SALAMANCA;Melia azedarach;363
+4;SALAMANCA;Acer negundo;362
+4;SALAMANCA;Otros;6348
+;;;
+5;CHAMARTIN;Platanus x hispanica;5969
+5;CHAMARTIN;Styphnolobium japonicum;3607
+5;CHAMARTIN;Ulmus pumila;2421
+5;CHAMARTIN;Celtis australis;1217
+5;CHAMARTIN;Robinia pseudoacacia;1003
+5;CHAMARTIN;Ligustrum japonicum;910
+5;CHAMARTIN;Pinus pinea;901
+5;CHAMARTIN;Prunus cerasifera  subsp. pissardii;849
+5;CHAMARTIN;Melia azedarach;805
+5;CHAMARTIN;Aesculus hippocastanum;649
+5;CHAMARTIN;Populus alba 'Bolleana';504
+5;CHAMARTIN;Otros;6953
+;;;
+6;TETUAN;Platanus x hispanica;4532
+6;TETUAN;Ligustrum japonicum;870
+6;TETUAN;Ulmus pumila;773
+6;TETUAN;Prunus cerasifera  subsp. pissardii;586
+6;TETUAN;Styphnolobium japonicum;527
+6;TETUAN;Melia azedarach;519
+6;TETUAN;Celtis australis;513
+6;TETUAN;Cupressus sempervirens;481
+6;TETUAN;Aesculus hippocastanum;443
+6;TETUAN;Pinus pinea;422
+6;TETUAN;Otros;5006
+;;;
+7;CHAMBERI;Styphnolobium japonicum;5708
+7;CHAMBERI;Platanus x hispanica;1727
+7;CHAMBERI;Celtis australis;792
+7;CHAMBERI;Ulmus pumila;783
+7;CHAMBERI;Ligustrum japonicum;604
+7;CHAMBERI;Melia azedarach;523
+7;CHAMBERI;Robinia pseudoacacia;293
+7;CHAMBERI;Koelreuteria paniculata;278
+7;CHAMBERI;Aesculus hippocastanum;260
+7;CHAMBERI;Prunus cerasifera  subsp. pissardii;231
+7;CHAMBERI;Cercis siliquastrum;201
+7;CHAMBERI;Fraxinus angustifolia;174
+7;CHAMBERI;Otros;1976
+;;;
+8;FUENCARRAL - EL PARDO;Platanus x hispanica;9351
+8;FUENCARRAL - EL PARDO;Ulmus pumila;4667
+8;FUENCARRAL - EL PARDO;Celtis australis;4204
+8;FUENCARRAL - EL PARDO;Pinus pinea;2926
+8;FUENCARRAL - EL PARDO;Melia azedarach;2277
+8;FUENCARRAL - EL PARDO;Robinia pseudoacacia;2235
+8;FUENCARRAL - EL PARDO;Styphnolobium japonicum;1656
+8;FUENCARRAL - EL PARDO;Prunus cerasifera  subsp. pissardii;1636
+8;FUENCARRAL - EL PARDO;Acer negundo;1463
+8;FUENCARRAL - EL PARDO;Morus alba;1459
+8;FUENCARRAL - EL PARDO;Aesculus hippocastanum;1158
+8;FUENCARRAL - EL PARDO;Cupressus sempervirens;1141
+8;FUENCARRAL - EL PARDO;Ligustrum japonicum;1004
+8;FUENCARRAL - EL PARDO;Catalpa bignonioides;934
+8;FUENCARRAL - EL PARDO;Otros;21818
+;;;
+9;MONCLOA - ARAVACA;Platanus x hispanica;5004
+9;MONCLOA - ARAVACA;Styphnolobium japonicum;2649
+9;MONCLOA - ARAVACA;Ulmus pumila;2090
+9;MONCLOA - ARAVACA;Acer negundo;1607
+9;MONCLOA - ARAVACA;Pinus pinea;1592
+9;MONCLOA - ARAVACA;Cupressus sempervirens;1262
+9;MONCLOA - ARAVACA;Robinia pseudoacacia;1142
+9;MONCLOA - ARAVACA;Catalpa bignonioides;935
+9;MONCLOA - ARAVACA;Celtis australis;887
+9;MONCLOA - ARAVACA;Ligustrum japonicum;783
+9;MONCLOA - ARAVACA;Prunus cerasifera  subsp. pissardii;614
+9;MONCLOA - ARAVACA;Cupressus arizonica;608
+9;MONCLOA - ARAVACA;Otros;12315
+;;;
+10;LATINA;Platanus x hispanica;5158
+10;LATINA;Ulmus pumila;3609
+10;LATINA;Pinus pinea;2071
+10;LATINA;Celtis australis;1852
+10;LATINA;Robinia pseudoacacia;1589
+10;LATINA;Styphnolobium japonicum;1552
+10;LATINA;Prunus cerasifera  subsp. pissardii;1252
+10;LATINA;Ligustrum japonicum;1097
+10;LATINA;Cupressus sempervirens;939
+10;LATINA;Acer negundo;914
+10;LATINA;Melia azedarach;849
+10;LATINA;Otros;14937
+;;;
+11;CARABANCHEL;Platanus x hispanica;7454
+11;CARABANCHEL;Pinus pinea;4142
+11;CARABANCHEL;Styphnolobium japonicum;2707
+11;CARABANCHEL;Ulmus pumila;2585
+11;CARABANCHEL;Robinia pseudoacacia;2174
+11;CARABANCHEL;Celtis australis;2102
+11;CARABANCHEL;Acer negundo;1468
+11;CARABANCHEL;Gleditsia triacanthos;1372
+11;CARABANCHEL;Aesculus hippocastanum;963
+11;CARABANCHEL;Ligustrum japonicum;958
+11;CARABANCHEL;Cupressus sempervirens;934
+11;CARABANCHEL;Melia azedarach;784
+11;CARABANCHEL;Otros;13825
+;;;
+12;USERA;Platanus x hispanica;4912
+12;USERA;Ulmus pumila;3602
+12;USERA;Robinia pseudoacacia;1899
+12;USERA;Pinus pinea;1815
+12;USERA;Celtis australis;1504
+12;USERA;Styphnolobium japonicum;1321
+12;USERA;Acer negundo;1048
+12;USERA;Cedrus deodara;760
+12;USERA;Melia azedarach;735
+12;USERA;Ligustrum japonicum;643
+12;USERA;Platanus orientalis;590
+12;USERA;Gleditsia triacanthos;544
+12;USERA;Otros;11319
+;;;
+13;PUENTE DE VALLECAS;Platanus x hispanica;4478
+13;PUENTE DE VALLECAS;Platanus orientalis;4275
+13;PUENTE DE VALLECAS;Styphnolobium japonicum;3446
+13;PUENTE DE VALLECAS;Robinia pseudoacacia;3135
+13;PUENTE DE VALLECAS;Ulmus pumila;2841
+13;PUENTE DE VALLECAS;Acer negundo;2135
+13;PUENTE DE VALLECAS;Ligustrum japonicum;2004
+13;PUENTE DE VALLECAS;Pinus pinea;1944
+13;PUENTE DE VALLECAS;Celtis australis;1518
+13;PUENTE DE VALLECAS;Melia azedarach;1124
+13;PUENTE DE VALLECAS;Catalpa bignonioides;999
+13;PUENTE DE VALLECAS;Prunus cerasifera  subsp. pissardii;896
+13;PUENTE DE VALLECAS;Otros;15979
+;;;
+14;MORATALAZ;Ulmus pumila;5287
+14;MORATALAZ;Platanus x hispanica;1959
+14;MORATALAZ;Celtis australis;1777
+14;MORATALAZ;Pinus pinea;1419
+14;MORATALAZ;Acer negundo;1145
+14;MORATALAZ;Platanus orientalis;1034
+14;MORATALAZ;Melia azedarach;673
+14;MORATALAZ;Catalpa bignonioides;539
+14;MORATALAZ;Acer pseudoplatanus;537
+14;MORATALAZ;Prunus cerasifera  subsp. pissardii;524
+14;MORATALAZ;Otros;9458
+;;;
+15;CIUDAD LINEAL;Platanus x hispanica;4538
+15;CIUDAD LINEAL;Ulmus pumila;4153
+15;CIUDAD LINEAL;Pinus pinea;3435
+15;CIUDAD LINEAL;Styphnolobium japonicum;1593
+15;CIUDAD LINEAL;Celtis australis;1447
+15;CIUDAD LINEAL;Prunus cerasifera  subsp. pissardii;1312
+15;CIUDAD LINEAL;Robinia pseudoacacia;1228
+15;CIUDAD LINEAL;Acer negundo;1160
+15;CIUDAD LINEAL;Cupressus sempervirens;970
+15;CIUDAD LINEAL;Prunus dulcis;933
+15;CIUDAD LINEAL;Ulmus minor;834
+15;CIUDAD LINEAL;Otros;16369
+;;;
+16;HORTALEZA;Pinus pinea;4543
+16;HORTALEZA;Platanus x hispanica;4254
+16;HORTALEZA;Celtis australis;3129
+16;HORTALEZA;Styphnolobium japonicum;2905
+16;HORTALEZA;Cupressus sempervirens;2066
+16;HORTALEZA;Robinia pseudoacacia;2013
+16;HORTALEZA;Acer negundo;2003
+16;HORTALEZA;Ligustrum japonicum;1857
+16;HORTALEZA;Melia azedarach;1508
+16;HORTALEZA;Prunus cerasifera  subsp. pissardii;1431
+16;HORTALEZA;Ulmus pumila;1409
+16;HORTALEZA;Aesculus hippocastanum;1170
+16;HORTALEZA;Populus alba;1155
+16;HORTALEZA;Catalpa bignonioides;1114
+16;HORTALEZA;Otros;27198
+;;;
+17;VILLAVERDE;Ulmus pumila;5086
+17;VILLAVERDE;Celtis australis;3446
+17;VILLAVERDE;Platanus x hispanica;2970
+17;VILLAVERDE;Ligustrum japonicum;2041
+17;VILLAVERDE;Melia azedarach;1954
+17;VILLAVERDE;Pinus pinea;1745
+17;VILLAVERDE;Robinia pseudoacacia;1616
+17;VILLAVERDE;Pinus halepensis;1543
+17;VILLAVERDE;Aesculus hippocastanum;1477
+17;VILLAVERDE;Prunus cerasifera  subsp. pissardii;1377
+17;VILLAVERDE;Acer negundo;1155
+17;VILLAVERDE;Catalpa bignonioides;961
+17;VILLAVERDE;Otros;13003
+;;;
+18;VILLA DE VALLECAS;Platanus x hispanica;4849
+18;VILLA DE VALLECAS;Celtis australis;2937
+18;VILLA DE VALLECAS;Pinus halepensis;2705
+18;VILLA DE VALLECAS;Acer negundo;1992
+18;VILLA DE VALLECAS;Ulmus pumila;1802
+18;VILLA DE VALLECAS;Robinia pseudoacacia;1757
+18;VILLA DE VALLECAS;Melia azedarach;1289
+18;VILLA DE VALLECAS;Cupressus sempervirens;1144
+18;VILLA DE VALLECAS;Pinus pinea;1126
+18;VILLA DE VALLECAS;Styphnolobium japonicum;836
+18;VILLA DE VALLECAS;Otros;15805
+;;;
+19;VICALVARO;Celtis australis;2328
+19;VICALVARO;Pyrus calleryana;1944
+19;VICALVARO;Ligustrum japonicum;1880
+19;VICALVARO;Platanus x hispanica;1870
+19;VICALVARO;Platanus orientalis;1728
+19;VICALVARO;Pinus pinea;1566
+19;VICALVARO;Styphnolobium japonicum;1458
+19;VICALVARO;Robinia pseudoacacia;1356
+19;VICALVARO;Ulmus pumila;1233
+19;VICALVARO;Aesculus hippocastanum;1070
+19;VICALVARO;Otros;15098
+;;;
+20;SAN BLAS - CANILLEJAS;Platanus x hispanica;7965
+20;SAN BLAS - CANILLEJAS;Pinus halepensis;4799
+20;SAN BLAS - CANILLEJAS;Pinus pinea;3630
+20;SAN BLAS - CANILLEJAS;Celtis australis;2765
+20;SAN BLAS - CANILLEJAS;Acer negundo;1776
+20;SAN BLAS - CANILLEJAS;Robinia pseudoacacia;1569
+20;SAN BLAS - CANILLEJAS;Aesculus hippocastanum;1440
+20;SAN BLAS - CANILLEJAS;Ulmus sp;1176
+20;SAN BLAS - CANILLEJAS;Ulmus pumila;1088
+20;SAN BLAS - CANILLEJAS;Melia azedarach;1025
+20;SAN BLAS - CANILLEJAS;Styphnolobium japonicum;1000
+20;SAN BLAS - CANILLEJAS;Otros;17808
+;;;
+21;BARAJAS;Platanus x hispanica;3144
+21;BARAJAS;Celtis australis;961
+21;BARAJAS;Catalpa bignonioides;692
+21;BARAJAS;Melia azedarach;600
+21;BARAJAS;Pinus pinea;596
+21;BARAJAS;Pinus halepensis;588
+21;BARAJAS;Styphnolobium japonicum;579
+21;BARAJAS;Robinia pseudoacacia;577
+21;BARAJAS;Ulmus pumila;510
+21;BARAJAS;Prunus cerasifera  subsp. pissardii;438
+21;BARAJAS;Ligustrum japonicum;429
+21;BARAJAS;Acer negundo;367
+21;BARAJAS;Otros;6773
+;;;

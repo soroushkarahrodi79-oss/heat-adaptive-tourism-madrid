@@ -1,0 +1,7 @@
+asset_id,name,category,indoor_outdoor,source,geometry,water_dist_m,transit_dist_m,adaptation_state
+R01,Plaza Niño Jesús,park_general,outdoor,"OpenStreetMap relation/2468711 (ring extension, ODbL)",POINT (-3.6755629 40.4111511),121.1,15.5,GOOD
+R02,Jardines Doce de Octubre,garden_outdoor,outdoor,"OpenStreetMap way/15245169 (ring extension, ODbL)",POINT (-3.6732566 40.4157742),34.4,98.0,GOOD
+R03,Parque Daoíz y Velarde,park_general,outdoor,"OpenStreetMap way/472650975 (ring extension, ODbL)",POINT (-3.6778654 40.4020461),42.1,107.0,GOOD
+R04,La Casa Encendida,museum_indoor,indoor,"OpenStreetMap way/48761444 (ring extension, ODbL)",POINT (-3.6998849 40.4060871),331.3,85.0,LIMITED
+R05,Jardín de Palestina,garden_outdoor,outdoor,"OpenStreetMap way/239434996 (ring extension, ODbL)",POINT (-3.6952378 40.4022315),17.3,92.9,GOOD
+R06,Casa de Cervantes,museum_indoor,indoor,"OpenStreetMap node/5774110605 (ring extension, ODbL)",POINT (-3.6985628 40.414297),185.5,198.3,GOOD
