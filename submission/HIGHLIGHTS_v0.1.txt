@@ -1,0 +1,5 @@
+Thermal representation changed one third of outdoor asset-time classifications
+Constraint-first screening changed the candidate set in 7 of 8 scenarios
+The nearest-open option failed heat screening in 3 of 8 scenarios
+Screening can return an explicit no-defensible-alternative when none qualifies
+Uncertainty and exclusion reasons stay explicit, not merged into one score

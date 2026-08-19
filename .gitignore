@@ -43,3 +43,20 @@ data/interim/solweig_cache_phase2_2/
 # --- Phase 4.1 app runtime artifacts ---
 *.log
 .dash_cache/
+
+# --- Secrets / credentials (defensive; none currently present) ---
+.env
+.env.*
+*.pem
+*.key
+*_secret*
+*credentials*
+*.token
+
+# --- Temp / cache / scratch ---
+*.tmp
+temp/
+tmp/
+cache/
+.cache/
+scratch/

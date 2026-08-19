@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: >-
+  This is a research pilot and manuscript-in-preparation. Author metadata and the final
+  article title are not yet confirmed; fields marked TO VERIFY are placeholders.
+title: "HATI-Madrid — Heat-Adaptive Tourism Opportunity Screening (Madrid pilot)"
+abstract: >-
+  A reproducible pilot that screens urban tourism opportunities under extreme heat with a
+  constraint-first, uncertainty-aware architecture, and tests whether the choice of thermal
+  method (a simple operational proxy vs a physically based SOLWEIG/UTCI configuration)
+  changes tourism-feasibility classifications and the surviving candidate set. Single-day,
+  single-city pilot in central Madrid; no field validation of Tmrt/UTCI and no behavioural
+  data.
+type: software
+authors:
+  - name: "[AUTHOR NAME(S) TO VERIFY]"
+    # given-names: "TO VERIFY"
+    # family-names: "TO VERIFY"
+    # affiliation: "[AFFILIATION TO VERIFY]"
+    # orcid: "[ORCID TO VERIFY]"
+keywords:
+  - urban tourism
+  - extreme heat
+  - UTCI
+  - tourism decision support
+  - SOLWEIG
+  - uncertainty-aware decision-making
+repository-code: "[GITHUB URL — set after repository creation]"
+license: "LICENSE DECISION REQUIRED — not yet chosen"
+version: "0.2-pre-targeted-revision"
+date-released: "2026-08-19"
+# --- Associated manuscript (provisional; title may change in targeted revision) ---
+preferred-citation:
+  type: article
+  title: >-
+    Decision sensitivity to thermal-method choice in heat-adaptive tourism opportunity
+    screening: evidence from a Madrid pilot [PROVISIONAL TITLE — under revision]
+  status: in-preparation
+  authors:
+    - name: "[AUTHOR NAME(S) TO VERIFY]"
+  notes: >-
+    Target journal: Tourism Management Perspectives (primary). Title, authors, and venue not
+    yet finalised.

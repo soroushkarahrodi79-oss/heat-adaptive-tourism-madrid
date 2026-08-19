@@ -1,0 +1,9 @@
+scenario,source,timestamp,reach_m,nearest_open_pick,baseline_survives_screening,surviving_alternatives,removed_thermal_evidence,outcome
+S1,Fuente de Neptuno,15:00,800,Museo Thyssen-Bornemisza,yes,9,2,ALTERNATIVES_FOUND
+S2,Fuente de Cibeles,15:00,800,Palacio de Cibeles - Ayuntamiento de Madrid,no (OUTDOOR_EXPOSURE_TOO_HIGH),6,3,ALTERNATIVES_FOUND
+S3,Puerta de Alcalá,18:00,800,Retiro,yes,4,6,ALTERNATIVES_FOUND
+S4,Monumento a Alfonso XII,18:00,800,Parque del Retiro,yes,8,1,ALTERNATIVES_FOUND
+S5,Real Observatorio de Madrid,15:00,800,Estación del Arte,yes,7,3,ALTERNATIVES_FOUND
+S6,Estatua de Goya,18:00,800,Fuente de Neptuno,no (OUTDOOR_EXPOSURE_TOO_HIGH),9,2,ALTERNATIVES_FOUND
+S7,La Rosaleda,18:00,800,Palacio de Cristal,yes,6,0,ALTERNATIVES_FOUND
+S8,Parque del Retiro,15:00,500,Palacio de Cristal,no (OUTDOOR_EXPOSURE_TOO_HIGH),0,6,NO_DEFENSIBLE_ALTERNATIVE
