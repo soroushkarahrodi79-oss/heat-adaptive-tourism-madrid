@@ -1,4 +1,4 @@
-# HATI-Madrid — Phase 4.1 Visual Decision-Support MVP
+# HATI-Madrid — Visual Decision-Support interface (Phase 4.1 → 4.2)
 # Dedicated UI dependency set. Install into a Python 3.12 virtual
 # environment SEPARATE from the SOLWEIG env (.venv_solweig) and from the
 # main geo-stack interpreter. See docs/PHASE4_1_IMPLEMENTATION_REPORT.md.
@@ -8,19 +8,32 @@
 #
 # Direct dependencies only (transitive versions pinned in requirements.lock.txt):
 
-dash==4.4.1            # Plotly Dash — approved framework (Phase 4.0 recommendation)
-dash-leaflet==1.1.3    # point-marker map layer (no MapLibre, no raster/heatmap)
-pandas==2.3.3          # read-only CSV load / filter / join of the 7 Phase 3 files
+dash==4.4.1                        # Plotly Dash — approved framework (Phase 4.0)
+dash-leaflet==1.1.3                # point-marker map layer (no MapLibre, no raster)
+dash-mantine-components==2.8.0     # Phase 4.2: accessible SegmentedControl, Select,
+                                   # Menu, Popover, Drawer, Modal, Accordion, Switch,
+                                   # ScrollArea. Adopted selectively — see
+                                   # docs/PHASE4_2_DESIGN_SPEC.md §11.
+dash-svg==0.0.12                   # Phase 4.2: renders the local inline-SVG icon set
+                                   # (already a transitive dep; pinned as direct).
+pandas==2.3.3                      # read-only CSV load / filter / join of the 7 files
 
 # Dev / test only:
 pytest==8.4.2          # implementation-contract test suite
 
-# Explicitly NOT included (per Phase 4.1 charter):
+# Dev / QA only (not required to run the app):
+#   playwright                     # browser QA harness, Phase 4.2 §16
+#
+# Explicitly NOT included (per the Phase 4.1 charter, still in force):
 #   - dash-ag-grid / AG Grid
 #   - dash-bootstrap-components or any Bootstrap component library
 #   - React build tooling / bundlers
-#   - MapLibre GL
+#   - MapLibre GL / deck.gl
 #   - ML / AI packages
 #   - database infrastructure
+#   - dash-iconify: it resolves every icon from api.iconify.design at render
+#     time, so the interface loses its iconography offline or behind a
+#     restrictive network policy. Icons ship in-repo as inline SVG instead
+#     (app/components/icons.py).
 #   - pyproj / coordinate-transform libs — NOT needed: phase3_asset_catalog.csv
 #     already carries WGS84 latitude/longitude, consumed directly by Leaflet.
