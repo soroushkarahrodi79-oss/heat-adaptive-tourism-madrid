@@ -103,5 +103,6 @@ python -m pytest tests/test_outputs.py
   not a validation of them.
 - Opening hours were documented in 2026 and applied to the 2023 study day (temporal
   alignment limitation; see the manuscript Limitations section).
-- Large public geodata (Madrid arbolado, ≈13 MB each) are included here for a private
-  snapshot; for a public release they may be excluded with a documented download step.
+- Large public geodata (Madrid arbolado, ≈13 MB each) are currently vendored into the
+  repository for a self-contained snapshot; they may later be excluded in favour of a documented
+  download step to keep the repository lightweight.

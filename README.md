@@ -14,12 +14,14 @@ uncertainty auditable rather than collapsed into a single score.
 ![Study area: Madrid pilot](https://img.shields.io/badge/study%20area-Madrid%20pilot-555555)
 ![Python 3.14 / 3.12](https://img.shields.io/badge/python-3.14%20%7C%203.12-3776AB)
 ![Reproducible research](https://img.shields.io/badge/reproducible-research-2E7D32)
-![Repository: private](https://img.shields.io/badge/repository-private-8E44AD)
+![Repository: public](https://img.shields.io/badge/repository-public-2E7D32)
 
-> **Status — pre-submission manuscript.** Not published, accepted, or peer reviewed. A
-> reviewer-driven **targeted revision has been completed on a development branch**
+> **Status — public research repository · pre-submission manuscript.** Not published, accepted,
+> or peer reviewed, and **not an operational or real-time tourism product**. A reviewer-driven
+> **targeted revision has been completed on a development branch**
 > (`phase-5.4b3-targeted-revision`); the `main` publication snapshot update is pending. The
-> figures and findings shown below are descriptive results of a single Madrid pilot.
+> figures and findings shown below are **descriptive** results of a single Madrid pilot; several
+> thermal outputs are **model-derived** (see *What the project does not claim*).
 
 ---
 
@@ -37,7 +39,7 @@ uncertainty auditable rather than collapsed into a single score.
 | **Decision architecture** | constraint-first, first-failing-gate screening (no composite score) |
 | **Research status** | pre-submission / targeted revision on development branch |
 | **Primary journal orientation** | *Tourism Management Perspectives* |
-| **Repository visibility** | private research repository |
+| **Repository visibility** | public research repository (pre-submission research status) |
 
 ---
 
@@ -99,6 +101,38 @@ filtered. This is a bounded pilot demonstration, not a claim that no prior work 
 
 The two thermal paths are **alternative operationalisations of equal standing** — neither is
 treated as a corrected or superior version of the other.
+
+---
+
+## Eligibility before ranking
+
+The organising principle of HATI-Madrid is that a recommendation should not begin by asking
+*"which option scores highest?"* but *"which options are even admissible under the constraints?"*
+
+```
+        Raw candidate universe (all curated assets)
+                        │
+              hard eligibility constraints
+        open? → reachable? → thermally feasible? →
+           evidence sufficient? → improvement?
+                        │
+              Surviving candidate set
+                        │
+           ranking / comparison — only among survivors
+```
+
+Ranking and eligibility are kept as **separate stages**, not folded into one composite score. A
+high-scoring candidate is irrelevant if it violates a hard constraint, so screening comes first;
+only the survivors are eligible to be compared or ranked at all. Two consequences follow directly
+and are visible in this pilot:
+
+- The **first failing gate wins** and records one machine-readable exclusion reason, so every
+  removal is traceable rather than absorbed into a weighting.
+- When **no** candidate survives, the system returns an explicit `NO_DEFENSIBLE_ALTERNATIVE`
+  state rather than forcing a least-bad recommendation (see scenario S8 below).
+
+This section documents the existing screening architecture; it introduces no new weights, scores,
+thresholds, or scenarios.
 
 ---
 
@@ -243,7 +277,8 @@ A supplementary UTCI-field figure and the graphical abstract are in `outputs/pub
 **Publication / reproducibility core:** `manuscript/`, `supplementary/`, `submission/`,
 `outputs/`, `src/`, `scripts_assembly/`, `tests/`, and the provenance files in `docs/`.
 **Internal research record:** the phase gates, audits, and reviewer notes in `docs/` are kept
-versioned because the repository is private, and would be curated before any public release.
+versioned as a transparent audit trail. They are working research records rather than curated
+public documentation, and would be tidied as part of preparing a formal release or submission.
 
 ---
 
@@ -353,10 +388,10 @@ These match the manuscript's Limitations section.
 
 ## Contributing
 
-This repository currently represents an active research manuscript and is not yet maintained as a
-general-purpose software package. Research collaboration and methodological discussion are
-welcome; contribution procedures will be formalised if and when the repository is publicly
-released.
+This is a public repository that currently represents an active research manuscript, not yet
+maintained as a general-purpose software package. Research collaboration and methodological
+discussion are welcome; formal contribution procedures will be added as the project moves toward
+submission.
 
 ## Citation
 
@@ -366,7 +401,9 @@ See **[CITATION.cff](CITATION.cff)**. Manuscript metadata (authors, title, venue
 ## Licence
 
 **No repository-wide licence has yet been assigned.** Third-party datasets and software retain
-their original licences. A repository licence will be selected before any public release.
+their original licences. A repository licence is expected to be selected before formal submission;
+until then, please treat the code and text as "all rights reserved" and contact the author before
+reuse.
 
 ## Contact
 
