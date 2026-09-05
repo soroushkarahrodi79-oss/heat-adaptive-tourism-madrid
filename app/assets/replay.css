@@ -1,0 +1,37 @@
+/* Scenario status uses separate text badges, never thermal fill or confidence rings. */
+.replay-map-badge {
+  position: absolute; left: 30px; top: 1px; padding: 2px 3px;
+  background: var(--surface); color: var(--text-primary); border: 1px solid currentColor;
+  border-radius: 2px; font: bold 10px/16px system-ui; white-space: nowrap;
+  pointer-events: none;
+}
+.replay-context { display: block; max-width: 620px; font-size: 12px; line-height: 1.4; margin-top: 4px; }
+.replay-panel { padding: 16px; font-size: 14px; line-height: 1.5; overflow-wrap: anywhere; }
+.replay-panel h2 { font-size: 22px; margin: 8px 0; }
+.replay-panel h3 { font-size: 17px; margin: 16px 0 8px; }
+.replay-panel p { margin: 8px 0; }
+.replay-nav { display: flex; justify-content: space-between; gap: 12px; }
+.replay-nav button { min-height: 32px; }
+.replay-outcome { font-weight: bold; }
+.replay-candidates { list-style: none; padding: 0; margin: 0; }
+.replay-candidate {
+  display: flex; align-items: center; gap: 8px; width: 100%; min-height: 44px;
+  text-align: left; padding: 8px; margin-bottom: 6px; font: inherit;
+  color: inherit; background: transparent; border: 1px solid currentColor;
+  border-radius: 4px; cursor: pointer;
+}
+.replay-candidate--selected { outline: 2px solid currentColor; outline-offset: 1px; }
+.replay-list-badge { font-weight: bold; min-width: 30px; font-size: 12px; }
+.replay-list-role { margin-left: auto; font-size: 12px; }
+.replay-provenance { font-size: 12px; padding: 8px 0; overflow-wrap: anywhere; }
+.replay-panel summary, .replay-provenance summary { cursor: pointer; min-height: 32px; padding: 4px 0; }
+.replay-panel button:focus-visible, .replay-panel summary:focus-visible,
+.replay-provenance summary:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+.replay-integrity-error { padding: 32px; max-width: 800px; font-family: system-ui; }
+@media (max-width: 699px) {
+  .cockpit-main .map-wrap { flex: 0 0 45%; height: auto; min-height: 180px; }
+  .cockpit-main .cockpit-panel--open { flex: 1 1 0; min-height: 0; }
+  .cockpit-main:has(.cockpit-panel--closed) .map-wrap { flex: 1 1 auto; }
+  .replay-context { max-width: 100%; font-size: 11px; }
+  .replay-panel { padding: 12px; }
+}

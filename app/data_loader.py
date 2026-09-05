@@ -19,6 +19,7 @@ from pathlib import Path
 import pandas as pd
 
 from . import constants as C
+from .replay_contract import load_verified
 
 # Repo root = parent of the ``app`` package directory.
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -38,13 +39,7 @@ DATA_FILES = {
 @lru_cache(maxsize=1)
 def _load_all() -> dict[str, pd.DataFrame]:
     """Load the seven CSVs once. UTF-8, string timestamps preserved."""
-    frames: dict[str, pd.DataFrame] = {}
-    for key, path in DATA_FILES.items():
-        if not path.exists():
-            raise FileNotFoundError(f"Required Phase 3 file missing: {path}")
-        df = pd.read_csv(path, encoding="utf-8", dtype={"timestamp": str})
-        frames[key] = df
-    return frames
+    return load_verified(REPO_ROOT, DATA_FILES)
 
 
 def frame(key: str) -> pd.DataFrame:
@@ -156,3 +151,62 @@ def known_exclusion_tokens() -> set[str]:
     excl = frame("exclusion_reasons")["exclusion_reason"].dropna()
     tokens.update(t for t in excl.astype(str) if t.strip())
     return tokens
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# Phase 4.2 — additional read-only accessors.
+# Filter / join / sort / count only. Nothing below computes a scientific
+# value, and there is still no write path anywhere in this module.
+# ═══════════════════════════════════════════════════════════════════════════
+def asset_options(timestamp: str) -> list[dict]:
+    """`{value, label}` for every asset, for the command-bar asset picker.
+
+    Sorted by name — an alphabetical list is the least evaluative order
+    available and is what a reader looking up a specific place expects.
+    """
+    df = assets_at_timestamp(timestamp)
+    df = df.sort_values("name")
+    return [{"value": r["asset_id"], "label": str(r["name"])}
+            for _, r in df.iterrows()]
+
+
+def scenario_options() -> list[dict]:
+    """Summary rows S1..S8 flattened for the scenario menu (display only)."""
+    out = []
+    for _, r in all_scenarios().iterrows():
+        out.append({
+            "scenario": r["scenario"],
+            "source_id": r["source_id"],
+            "source_name": r["source_name"],
+            "timestamp": r["timestamp"],
+            "radius_m": int(r["access_radius_m"]),
+            "n_alternatives": int(r["n_candidate_alternatives"]),
+            "recommendation": str(r["recommendation"]),
+            "description": str(r.get("scenario_desc", "")),
+        })
+    return out
+
+
+def exclusion_breakdown(scenario: str) -> list[tuple[str, int]]:
+    """`(exclusion_reason, count)` for one scenario's excluded candidates.
+
+    A ``value_counts`` of the locked ``exclusion_reason`` column, descending.
+    No category is invented, merged or renamed here; the plain-language
+    rendering happens at display time via ``translate_exclusion``.
+    """
+    _, excluded = scenario_candidates(scenario)
+    if excluded.empty:
+        return []
+    counts = excluded["exclusion_reason"].fillna("").astype(str).value_counts()
+    return [(token, int(n)) for token, n in counts.items() if token.strip()]
+
+
+def scenario_source_name(scenario: str) -> str | None:
+    row = summary_row(scenario)
+    return None if row is None else str(row["source_name"])
+
+
+def asset_name(asset_id: str) -> str | None:
+    cat = frame("catalog")
+    hit = cat[cat["asset_id"] == asset_id]
+    return None if hit.empty else str(hit.iloc[0]["name"])

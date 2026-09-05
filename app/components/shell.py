@@ -1,142 +1,80 @@
-"""App shell: header, temporal selector, scenario jump chips, and the
-two-tier limitations disclosure. These frame all three views.
+"""App shell.
+
+Phase 4.1 kept the header, timestamp control, scenario chips and both
+limitation tiers here. In 4.2 those moved to focused modules
+(``command_bar``, ``scenario_selector``, ``limitations``, ``legend``); this
+module now assembles them into the page frame and owns the contextual panel
+container.
 """
 from __future__ import annotations
 
+import dash_mantine_components as dmc
 from dash import html
 
 from .. import constants as C
-from .. import data_loader as dl
-from .primitives import confidence_ring_glyph
+from .. import theme as T
+from .command_bar import command_bar
+from .legend import compact_legend, symbols_body
+from .limitations import limitations_drawer
+from .map_view import map_canvas
 
 
-# ── Temporal control (3 fixed positions, never a slider) ───────────────────
-def scenario_time_selector(selected: str):
-    buttons = [
-        html.Button(
-            ts,
-            id={"type": "ts-btn", "index": ts},
-            n_clicks=0,
-            className="ts-btn" + (" ts-btn--active" if ts == selected else ""),
-        )
-        for ts in C.TIMESTAMPS
-    ]
-    return html.Div(
+def symbols_modal():
+    """The same symbol explanation the legend popover shows, reachable from
+    the command bar. Needed below 700 px, where the compact legend collapses
+    to an icon, and useful as a keyboard-first path at any width."""
+    return dmc.Modal(
+        symbols_body(),
+        id="symbols-modal",
+        opened=False,
+        title=C.LEGEND_TITLE,
+        size="lg",
+        centered=True,
+        closeOnEscape=True,
+        className="symbols-modal",
+    )
+
+
+def panel_shell():
+    """The contextual panel container.
+
+    Mounted once and never unmounted, so opening and closing it cannot
+    disturb the map. Only its children and width class change.
+    """
+    return html.Aside(
+        dmc.ScrollArea(
+            html.Div([], id="side-panel-body", className="panel-body"),
+            type="hover", scrollbarSize=8, className="panel-scroll",
+        ),
+        id="side-panel",
+        className="cockpit-panel cockpit-panel--closed",
+        role="region",
+        **{"aria-label": C.ARIA_PANEL_REGION},
+    )
+
+
+def workspace(timestamp: str, selected_asset: str | None = None):
+    return html.Main(
         [
             html.Div(
-                [
-                    html.Span("Scenario timestamp", className="ts-label"),
-                    html.Div(buttons, className="ts-group", role="group"),
-                    html.Span(C.STUDY_DATE, className="ts-date"),
-                ],
-                className="ts-row",
+                [map_canvas(timestamp, selected_asset), compact_legend()],
+                className="map-wrap",
             ),
-            # "not live" caption — always visible beneath the control.
-            html.Div(C.NOT_LIVE_CAPTION, className="ts-caption"),
+            panel_shell(),
         ],
-        className="ts-selector",
+        className="cockpit-main",
+        **{"aria-label": C.ARIA_WORKSPACE},
     )
 
 
-# ── Scenario jump chips S1..S8 (shortcuts, not a 4th view) ──────────────────
-def scenario_jump_chips():
-    chips = []
-    for _, r in dl.all_scenarios().iterrows():
-        label = f"{r['scenario']} · {r['source_name']} · {r['timestamp']}"
-        chips.append(
-            html.Button(
-                label,
-                id={"type": "jump-chip", "index": r["scenario"]},
-                n_clicks=0,
-                className="jump-chip",
-                title=str(r.get("scenario_desc", "")),
-            )
-        )
-    return html.Div(
-        [html.Span("Jump to scenario", className="chips-label"),
-         html.Div(chips, className="chips-row")],
-        className="jump-chips",
-    )
-
-
-# ── Tier-1 limitations strip (always visible, context-sensitive) ───────────
-def limitations_strip(context: str = "map"):
-    text = C.TIER1_LIMITATIONS.get(context, C.TIER1_LIMITATIONS["map"])
-    return html.Div(
-        [html.Span("Limitation", className="limstrip__tag"),
-         html.Span(text, className="limstrip__text")],
-        id="limitations-strip",
-        className="limstrip",
-    )
-
-
-# ── Tier-2 limitations drawer (one click, never leaves the interface) ──────
-def limitations_drawer():
-    items = [html.Li(t) for t in C.TIER2_LIMITATIONS]
-    return html.Details(
-        [
-            html.Summary("Permanent limitations", className="limdrawer__summary"),
-            html.Div(
-                [
-                    html.P("These constraints are permanent properties of the "
-                           "method and hold for every view and every asset:",
-                           className="limdrawer__intro"),
-                    html.Ol(items, className="limdrawer__list"),
-                    html.P(C.TIER2_SOURCE_NOTE, className="limdrawer__source"),
-                ],
-                className="limdrawer__body",
-            ),
-        ],
-        className="limdrawer",
-    )
-
-
-# ── Always-visible map legend (3 simultaneous channels) ────────────────────
-def map_legend():
-    def swatch(color, label):
-        return html.Div(
-            [html.Span(className="legend__swatch",
-                       style={"background": color}),
-             html.Span(label, className="legend__label")],
-            className="legend__row",
-        )
-
-    def ring_example(style, label):
-        return html.Div(
-            [html.Span(className=f"legend__ring legend__ring--{style}"),
-             html.Span(label, className="legend__label")],
-            className="legend__row",
-        )
-
-    def glyph_example(glyph, label):
-        return html.Div(
-            [html.Span(glyph, className="legend__glyph"),
-             html.Span(label, className="legend__label")],
-            className="legend__row",
-        )
-
+def page(timestamp: str, selected_asset: str | None = None,
+         active_scenario: str | None = None):
     return html.Div(
         [
-            html.Div("Legend", className="legend__title"),
-            html.Div("Decision", className="legend__group"),
-            swatch(C.DECISION_STATE_COLOR["AVOID_PROLONGED_OUTDOOR_EXPOSURE"],
-                   "Avoid prolonged outdoor exposure"),
-            swatch(C.DECISION_STATE_COLOR["INDOOR_REFUGE"], "Indoor refuge"),
-            html.Div("Decision confidence", className="legend__group"),
-            ring_example("solid", "Robust"),
-            ring_example("dashed", "Boundary"),
-            ring_example("dotted", "Unstable"),
-            ring_example("none", "Indoor bypass (n/a)"),
-            html.Div("Thermal state", className="legend__group"),
-            glyph_example(C.THERMAL_STATE_GLYPH["VERY_STRONG_HEAT_STRESS"],
-                          "Very strong heat stress (modelled)"),
-            glyph_example(C.THERMAL_STATE_GLYPH["INDOOR_NOT_MODELLED"],
-                          "Indoor — not modelled"),
-            html.Div("Availability", className="legend__group"),
-            html.Div([html.Span(className="legend__dim-example"),
-                      html.Span("Dimmed = closed at this timestamp",
-                                className="legend__label")],
-                     className="legend__row"),
+            command_bar(timestamp, selected_asset, active_scenario),
+            workspace(timestamp, selected_asset),
+            limitations_drawer(),
+            symbols_modal(),
         ],
-        className="legend",
+        className="cockpit",
     )

@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-09-05T15:39:12.389Z",
+  "applicationEnvironment": "clean locked Python 3.12 environment",
+  "browsers": [
+    {
+      "name": "chromium",
+      "status": "PASS",
+      "checks": [
+        "12:00 asset-only initial state",
+        "All S1–S8 source/survivor/excluded map and list counts",
+        "S8 recorded first-failure groups and universe wording",
+        "A24 excluded candidate vs uncertain source; keyboard candidate selection; pinned provenance; back navigation",
+        "Candidate/time invalidation, no stale back link, refresh resets to valid 12:00 state",
+        "Space marker activation, Escape overlay, close clears scenario/panel",
+        "900px and 390px layout, no horizontal overflow, keyboard selection",
+        "Blocked genuine tile requests preserve map markers and scientific records",
+        "Real hash failure in temporary test copy blocks scientific display"
+      ],
+      "executable": "chrome.exe",
+      "version": "149.0.7827.55",
+      "actualBasemap": {
+        "loaded": 28,
+        "failed": 0
+      }
+    },
+    {
+      "name": "firefox",
+      "status": "UNAVAILABLE",
+      "executable": "firefox.exe"
+    }
+  ],
+  "scientificFixtures": "Only an intentionally corrupted temporary copy for integrity failure; no synthetic tiles."
+}

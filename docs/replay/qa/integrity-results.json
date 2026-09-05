@@ -1,0 +1,47 @@
+{
+  "scientific_commit": "036c50b273b539140260097760a148893176f7ec",
+  "artifacts": [
+    {
+      "path": "outputs/tables/phase3_accessibility_sensitivity.csv",
+      "expected": "2ded4494271d92aa2aefa63048b684cc1c05fc9ed79782d2adb8c062b0619ef0",
+      "actual": "2ded4494271d92aa2aefa63048b684cc1c05fc9ed79782d2adb8c062b0619ef0",
+      "match": true
+    },
+    {
+      "path": "outputs/tables/phase3_hati_vs_baseline.csv",
+      "expected": "7ab737038c680144b472cabff2d4f6937d5bf2c6449cd3436f9ef5fc4dd28650",
+      "actual": "7ab737038c680144b472cabff2d4f6937d5bf2c6449cd3436f9ef5fc4dd28650",
+      "match": true
+    },
+    {
+      "path": "data/processed/phase3_asset_catalog.csv",
+      "expected": "936d6dd51150e96d8c8445fec6910c40d273f005a99b5d945cff2f8b106b7b54",
+      "actual": "936d6dd51150e96d8c8445fec6910c40d273f005a99b5d945cff2f8b106b7b54",
+      "match": true
+    },
+    {
+      "path": "outputs/tables/phase3_exclusion_reasons.csv",
+      "expected": "065babc59e0585c5f9693e4973ac213c3bfac92da68013858d98b4fa82b54f71",
+      "actual": "065babc59e0585c5f9693e4973ac213c3bfac92da68013858d98b4fa82b54f71",
+      "match": true
+    },
+    {
+      "path": "data/processed/phase3_scenarios.csv",
+      "expected": "79ce49c174e9143cd937eaebb515be334efdf1e86989d65740e9d406200129cf",
+      "actual": "79ce49c174e9143cd937eaebb515be334efdf1e86989d65740e9d406200129cf",
+      "match": true
+    },
+    {
+      "path": "data/processed/phase3_candidate_screening.csv",
+      "expected": "deecfe44aa07f22cfc9d50718d090646943186befc246b5cc1a85be2f7fd28b2",
+      "actual": "deecfe44aa07f22cfc9d50718d090646943186befc246b5cc1a85be2f7fd28b2",
+      "match": true
+    },
+    {
+      "path": "data/processed/phase3_scenarios_summary.csv",
+      "expected": "9b6c406d30d47308beeb824a6d27c71e7f3c7b60998beba7f05bff56845132be",
+      "actual": "9b6c406d30d47308beeb824a6d27c71e7f3c7b60998beba7f05bff56845132be",
+      "match": true
+    }
+  ]
+}
