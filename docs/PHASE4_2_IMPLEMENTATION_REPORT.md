@@ -1,5 +1,11 @@
 # PHASE4_2_IMPLEMENTATION_REPORT.md — HATI-Madrid
 
+> **Historical document.** This report records the Phase 4.2 cockpit state
+> before the HATI Spatial Decision Replay. The current authoritative replay
+> implementation and verification are documented in
+> [`docs/replay/README.md`](replay/README.md) and
+> [`docs/replay/VALIDATION.md`](replay/VALIDATION.md).
+
 Version 1.0 · Phase 4.2 · Spatial Decision Cockpit.
 Branch `claude/phase-4-2-ui-ux-redesign-swywzi`, from `c317d80`.
 
@@ -389,7 +395,8 @@ rather than a bare `click()`.
   arrow-key traversal (limitation 3).
 - Highlight the surviving alternatives spatially on the map while View 3 is
   open — Phase 4.0 IA §1 anticipated it and it is the clearest remaining gap
-  between the panel and the canvas.
+  between the panel and the canvas. **Subsequent status:** implemented and
+  superseded by the HATI Spatial Decision Replay; see [`docs/replay/`](replay/).
 - A draggable bottom sheet with a snap point on touch (limitation 4).
 - Deep-linkable URL state (`?ts=15:00&asset=A16`) so a reviewer can cite an
   exact view.

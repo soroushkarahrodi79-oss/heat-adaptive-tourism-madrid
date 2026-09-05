@@ -1,5 +1,11 @@
 # PHASE4_2_DESIGN_SPEC.md — HATI-Madrid
 
+> **Historical document.** This specification records the Phase 4.2 cockpit
+> state before the HATI Spatial Decision Replay. The current authoritative
+> replay implementation and verification are documented in
+> [`docs/replay/README.md`](replay/README.md) and
+> [`docs/replay/VALIDATION.md`](replay/VALIDATION.md).
+
 Version 1.0 · Phase 4.2 · Spatial Decision Cockpit.
 Binding design specification for the Phase 4.2 implementation. Everything
 here is a *presentation* decision. No value in this document is a scientific
@@ -368,13 +374,13 @@ A designed result page, in this order:
 │ ▌ timestamp and reach constraint, no         │
 │ ▌ candidate satisfies all gates.             │
 │ ▌                                            │
-│ ▌ 26 candidates evaluated within 500 m       │  tabular
+│ ▌ 26 candidates evaluated                     │  tabular
 │ ▌  0 survived all gates                      │
 ├──────────────────────────────────────────────┤
 │ WHY CANDIDATES WERE EXCLUDED                 │
-│ Outside the 500 m reach                  18  │  bar + count, neutral ink
-│ Closed at this time                       6  │
-│ Another hot outdoor location              2  │
+│ Outside the 500 m reach                  15  │  bar + count, neutral ink
+│ Another hot outdoor location              6  │
+│ Closed at this time                       5  │
 │  (counts are of the locked exclusion_reason  │
 │   column; first failure wins)                │
 ├──────────────────────────────────────────────┤
@@ -526,7 +532,7 @@ Mapping stack unchanged: `dash-leaflet` 1.1.3, CartoDB Positron.
 | No baseline row | `No precomputed baseline comparison exists for this scenario.` |
 | No sensitivity row | The section is omitted entirely rather than showing zeros. |
 | Absent UTCI (indoor) | `Not physically modelled for indoor assets.` — never `0.0 °C`, never `n/a` alone. |
-| **Basemap tiles unavailable** | The map keeps `--bg`; a dismissible chip states *"Basemap tiles unavailable — asset positions and all screening results are computed locally and remain correct."* Markers, panel and every scientific statement continue to function. |
+| **Basemap tiles unavailable** | The map keeps `--bg`; a dismissible chip states *"Basemap tiles unavailable — asset positions and recorded screening results remain inspectable without the basemap."* Markers and panel continue to function. |
 | Initial load | No skeleton; the layout is server-rendered and complete on first paint. |
 
 ---
