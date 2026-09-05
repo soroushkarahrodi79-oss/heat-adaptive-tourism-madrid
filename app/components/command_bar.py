@@ -52,6 +52,8 @@ def timestamp_control(selected: str):
                 className="ts-segmented",
             ),
             html.Span(C.NOT_LIVE_CAPTION, className="ts-caption"),
+            html.Span("No precomputed scenario at this timestamp.",
+                      id="replay-context", className="replay-context", role="status"),
         ],
         className="ts-block",
         role="group",

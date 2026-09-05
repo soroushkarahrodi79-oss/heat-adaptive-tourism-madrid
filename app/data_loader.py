@@ -19,6 +19,7 @@ from pathlib import Path
 import pandas as pd
 
 from . import constants as C
+from .replay_contract import load_verified
 
 # Repo root = parent of the ``app`` package directory.
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -38,13 +39,7 @@ DATA_FILES = {
 @lru_cache(maxsize=1)
 def _load_all() -> dict[str, pd.DataFrame]:
     """Load the seven CSVs once. UTF-8, string timestamps preserved."""
-    frames: dict[str, pd.DataFrame] = {}
-    for key, path in DATA_FILES.items():
-        if not path.exists():
-            raise FileNotFoundError(f"Required Phase 3 file missing: {path}")
-        df = pd.read_csv(path, encoding="utf-8", dtype={"timestamp": str})
-        frames[key] = df
-    return frames
+    return load_verified(REPO_ROOT, DATA_FILES)
 
 
 def frame(key: str) -> pd.DataFrame:

@@ -96,7 +96,7 @@ EXCLUSION_TRANSLATIONS = {
         "Would not be meaningfully cooler than the source "
         "(below the 0.8 °C pre-registered margin).",
     "OUTDOOR_EXPOSURE_TOO_HIGH":
-        "Another hot outdoor location — doesn't solve the heat problem.",
+        "Outdoor candidate has a higher recorded UTCI than the source.",
 }
 
 # ── experience_type → readable label (display only) ─────────────────────────
@@ -167,7 +167,7 @@ VIEW_ALTERNATIVES = "alternatives"   # View 3 open
 # ═══════════════════════════════════════════════════════════════════════════
 
 PRODUCT_NAME = "HATI-Madrid"
-PRODUCT_TAGLINE = "Heat-Adaptive Tourism Decision Support"
+PRODUCT_TAGLINE = "Spatial Decision Replay"
 PILOT_LABEL = "Madrid pilot · Prado–Retiro–Atocha"
 STUDY_DATE_HUMAN = "21 Aug 2023"
 
@@ -198,7 +198,7 @@ LEGEND_INTRO = (
 )
 LEGEND_CHANNELS = [
     ("Fill colour", "the decision", "decision_state"),
-    ("Ring style", "how reliable that decision is", "decision_confidence"),
+    ("Ring style", "stability under tested variation", "decision_confidence"),
     ("Inner glyph", "the modelled thermal condition", "thermal_state"),
     ("Dimming", "whether the asset is open at this timestamp", "is_open"),
 ]
@@ -211,7 +211,7 @@ LEGEND_TIER1 = TIER1_LIMITATIONS["map"]
 MAP_HINT_NO_SELECTION = "Select an asset on the map to see its decision."
 MAP_TILE_FALLBACK = (
     "Basemap tiles are unavailable. Asset positions and every screening "
-    "result are computed locally and remain correct."
+    "result remain available from the pinned local snapshot."
 )
 
 # ── Command bar ────────────────────────────────────────────────────────────
@@ -236,7 +236,7 @@ PANEL_DECISION_LABEL = "Decision"
 PANEL_CONFIDENCE_LABEL = "Decision confidence"
 PANEL_THERMAL_LABEL = "Thermal condition"
 PANEL_EVIDENCE_LABEL = "Evidence confidence"
-PANEL_TRACE_LABEL = "Why this decision — full trace"
+PANEL_TRACE_LABEL = "Recorded asset state and sources"
 PANEL_LIMITATIONS_LABEL = "Relevant limitations"
 
 MODEL_PROVENANCE_NOTE = (
@@ -261,8 +261,8 @@ CONFIDENCE_NOT_SEVERITY_NOTE = (
 # this asset gets excluded when it appears as somebody else's candidate).
 PANEL_EXCLUSION_LABEL = "Where this asset is excluded as an alternative"
 PANEL_EXCLUSION_NOTE = (
-    "This is why this asset is filtered out when it is evaluated as an "
-    "alternative for another location. First failing gate wins."
+    "This is the context-free screening reason. A scenario may record an "
+    "earlier failure, such as its reach constraint. See that scenario record."
 )
 
 # ── Alternatives view ──────────────────────────────────────────────────────
@@ -322,9 +322,8 @@ NODEF_SUBLINE = (
     "gates."
 )
 NODEF_METHOD = (
-    "Every open, in-reach candidate was either another hot outdoor location "
-    "or failed on evidence or thermal grounds. Naming one anyway would mean "
-    "sending a heat-stressed visitor to an equally hot place."
+    "No candidate survived the recorded constraints. Exclusion counts below "
+    "describe the first recorded failure across the full candidate universe."
 )
 NODEF_BREAKDOWN_TITLE = "Why candidates were excluded"
 NODEF_BREAKDOWN_NOTE = (

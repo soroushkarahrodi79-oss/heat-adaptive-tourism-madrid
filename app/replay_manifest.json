@@ -1,0 +1,350 @@
+{
+  "schema_version": "1.0.0",
+  "scientific_commit": "036c50b273b539140260097760a148893176f7ec",
+  "phase4_2_ui_commit": "e96baff16ee721140db13dc13171f571e458676a",
+  "study_date": "2023-08-21",
+  "local_time_basis": "Madrid local civil time (Europe/Madrid); labels preserved from the scientific outputs, no browser timezone conversion",
+  "timestamps": [
+    "12:00",
+    "15:00",
+    "18:00"
+  ],
+  "geography": "Prado–Retiro–Atocha, Madrid; 27 curated assets",
+  "coordinate_reference": "WGS84 latitude/longitude",
+  "method_references": [
+    "docs/PHASE3_METHOD.md",
+    "docs/PHASE3_DECISION_ARCHITECTURE.md",
+    "src/phase3_candidate_screening.py",
+    "src/phase3_scenarios.py",
+    "docs/PHASE2_SOLWEIG_METHOD.md",
+    "docs/PHASE2_2_DECISION_UNCERTAINTY.md"
+  ],
+  "limitations": [
+    "Historical bounded pilot; not live, forecast or operational guidance.",
+    "Model-derived outdoor UTCI; no field validation.",
+    "Indoor buffering is assumed; indoor UTCI is not modelled.",
+    "Opening hours documented in 2026 applied retrospectively to 2023.",
+    "Straight-line reach; no route exposure or actual walking-time claim.",
+    "Confidence describes tested uncertainty only, not safety or eligibility.",
+    "Only recorded first failure and final status are available; no full gate execution trace.",
+    "No precomputed scenario at 12:00."
+  ],
+  "exclusion_tokens": [
+    "OUTSIDE_PILOT_SCOPE",
+    "CLOSED_AT_TIMESTAMP",
+    "ACCESSIBILITY_CONSTRAINT",
+    "THERMAL_LIMIT_EXCEEDED",
+    "INSUFFICIENT_EVIDENCE",
+    "NO_MEANINGFUL_THERMAL_IMPROVEMENT",
+    "OUTDOOR_EXPOSURE_TOO_HIGH"
+  ],
+  "screening_enums": {
+    "thermal_state": [
+      "INDOOR_NOT_MODELLED",
+      "VERY_STRONG_HEAT_STRESS"
+    ],
+    "decision_state": [
+      "AVOID_PROLONGED_OUTDOOR_EXPOSURE",
+      "INDOOR_REFUGE"
+    ],
+    "decision_confidence": [
+      "BOUNDARY",
+      "INDOOR_BYPASS",
+      "ROBUST",
+      "UNSTABLE"
+    ],
+    "evidence_confidence": [
+      "HIGH",
+      "LOW",
+      "MODERATE"
+    ],
+    "screening_status": [
+      "AVAILABLE_CANDIDATE",
+      "EXCLUDED"
+    ],
+    "indoor_outdoor": [
+      "indoor",
+      "outdoor"
+    ]
+  },
+  "artifacts": {
+    "accessibility": {
+      "path": "outputs/tables/phase3_accessibility_sensitivity.csv",
+      "sha256": "2ded4494271d92aa2aefa63048b684cc1c05fc9ed79782d2adb8c062b0619ef0",
+      "keys": [
+        "scenario"
+      ],
+      "rows": 8,
+      "columns": [
+        "scenario",
+        "source_id",
+        "timestamp",
+        "primary_radius_m",
+        "n_alt_500m",
+        "n_alt_800m",
+        "n_alt_1200m",
+        "recommendation_category_stable_500_1200"
+      ],
+      "source_column_lineage": {
+        "scenario": "outputs/tables/phase3_accessibility_sensitivity.csv#scenario",
+        "source_id": "outputs/tables/phase3_accessibility_sensitivity.csv#source_id",
+        "timestamp": "outputs/tables/phase3_accessibility_sensitivity.csv#timestamp",
+        "primary_radius_m": "outputs/tables/phase3_accessibility_sensitivity.csv#primary_radius_m",
+        "n_alt_500m": "outputs/tables/phase3_accessibility_sensitivity.csv#n_alt_500m",
+        "n_alt_800m": "outputs/tables/phase3_accessibility_sensitivity.csv#n_alt_800m",
+        "n_alt_1200m": "outputs/tables/phase3_accessibility_sensitivity.csv#n_alt_1200m",
+        "recommendation_category_stable_500_1200": "outputs/tables/phase3_accessibility_sensitivity.csv#recommendation_category_stable_500_1200"
+      }
+    },
+    "baseline": {
+      "path": "outputs/tables/phase3_hati_vs_baseline.csv",
+      "sha256": "7ab737038c680144b472cabff2d4f6937d5bf2c6449cd3436f9ef5fc4dd28650",
+      "keys": [
+        "scenario"
+      ],
+      "rows": 8,
+      "columns": [
+        "scenario",
+        "source_id",
+        "timestamp",
+        "access_radius_m",
+        "baseline_nearest_open_pick",
+        "baseline_pick_name",
+        "baseline_pick_distance_m",
+        "baseline_pick_indoor_outdoor",
+        "baseline_pick_survives_hati",
+        "baseline_pick_hati_exclusion",
+        "n_open_in_radius_baseline",
+        "n_hati_alternatives",
+        "n_removed_by_hati_thermal_or_evidence",
+        "removed_ids",
+        "candidate_set_changed"
+      ],
+      "source_column_lineage": {
+        "scenario": "outputs/tables/phase3_hati_vs_baseline.csv#scenario",
+        "source_id": "outputs/tables/phase3_hati_vs_baseline.csv#source_id",
+        "timestamp": "outputs/tables/phase3_hati_vs_baseline.csv#timestamp",
+        "access_radius_m": "outputs/tables/phase3_hati_vs_baseline.csv#access_radius_m",
+        "baseline_nearest_open_pick": "outputs/tables/phase3_hati_vs_baseline.csv#baseline_nearest_open_pick",
+        "baseline_pick_name": "outputs/tables/phase3_hati_vs_baseline.csv#baseline_pick_name",
+        "baseline_pick_distance_m": "outputs/tables/phase3_hati_vs_baseline.csv#baseline_pick_distance_m",
+        "baseline_pick_indoor_outdoor": "outputs/tables/phase3_hati_vs_baseline.csv#baseline_pick_indoor_outdoor",
+        "baseline_pick_survives_hati": "outputs/tables/phase3_hati_vs_baseline.csv#baseline_pick_survives_hati",
+        "baseline_pick_hati_exclusion": "outputs/tables/phase3_hati_vs_baseline.csv#baseline_pick_hati_exclusion",
+        "n_open_in_radius_baseline": "outputs/tables/phase3_hati_vs_baseline.csv#n_open_in_radius_baseline",
+        "n_hati_alternatives": "outputs/tables/phase3_hati_vs_baseline.csv#n_hati_alternatives",
+        "n_removed_by_hati_thermal_or_evidence": "outputs/tables/phase3_hati_vs_baseline.csv#n_removed_by_hati_thermal_or_evidence",
+        "removed_ids": "outputs/tables/phase3_hati_vs_baseline.csv#removed_ids",
+        "candidate_set_changed": "outputs/tables/phase3_hati_vs_baseline.csv#candidate_set_changed"
+      }
+    },
+    "catalog": {
+      "path": "data/processed/phase3_asset_catalog.csv",
+      "sha256": "936d6dd51150e96d8c8445fec6910c40d273f005a99b5d945cff2f8b106b7b54",
+      "keys": [
+        "asset_id"
+      ],
+      "rows": 27,
+      "columns": [
+        "asset_id",
+        "name",
+        "tourism_category",
+        "indoor_outdoor",
+        "latitude",
+        "longitude",
+        "opening_hours",
+        "opening_hours_source",
+        "open_1200",
+        "open_1500",
+        "open_1800",
+        "tourism_relevance_evidence",
+        "evidence_completeness",
+        "asset_source"
+      ],
+      "source_column_lineage": {
+        "asset_id": "data/processed/phase3_asset_catalog.csv#asset_id",
+        "name": "data/processed/phase3_asset_catalog.csv#name",
+        "tourism_category": "data/processed/phase3_asset_catalog.csv#tourism_category",
+        "indoor_outdoor": "data/processed/phase3_asset_catalog.csv#indoor_outdoor",
+        "latitude": "data/processed/phase3_asset_catalog.csv#latitude",
+        "longitude": "data/processed/phase3_asset_catalog.csv#longitude",
+        "opening_hours": "data/processed/phase3_asset_catalog.csv#opening_hours",
+        "opening_hours_source": "data/processed/phase3_asset_catalog.csv#opening_hours_source",
+        "open_1200": "data/processed/phase3_asset_catalog.csv#open_1200",
+        "open_1500": "data/processed/phase3_asset_catalog.csv#open_1500",
+        "open_1800": "data/processed/phase3_asset_catalog.csv#open_1800",
+        "tourism_relevance_evidence": "data/processed/phase3_asset_catalog.csv#tourism_relevance_evidence",
+        "evidence_completeness": "data/processed/phase3_asset_catalog.csv#evidence_completeness",
+        "asset_source": "data/processed/phase3_asset_catalog.csv#asset_source"
+      }
+    },
+    "exclusion_reasons": {
+      "path": "outputs/tables/phase3_exclusion_reasons.csv",
+      "sha256": "065babc59e0585c5f9693e4973ac213c3bfac92da68013858d98b4fa82b54f71",
+      "keys": [
+        "exclusion_reason"
+      ],
+      "rows": 5,
+      "columns": [
+        "exclusion_reason",
+        "count_in_scenarios",
+        "count_context_free"
+      ],
+      "source_column_lineage": {
+        "exclusion_reason": "outputs/tables/phase3_exclusion_reasons.csv#exclusion_reason",
+        "count_in_scenarios": "outputs/tables/phase3_exclusion_reasons.csv#count_in_scenarios",
+        "count_context_free": "outputs/tables/phase3_exclusion_reasons.csv#count_context_free"
+      }
+    },
+    "scenarios": {
+      "path": "data/processed/phase3_scenarios.csv",
+      "sha256": "79ce49c174e9143cd937eaebb515be334efdf1e86989d65740e9d406200129cf",
+      "keys": [
+        "scenario",
+        "candidate_id"
+      ],
+      "rows": 208,
+      "columns": [
+        "scenario",
+        "source_id",
+        "source_name",
+        "timestamp",
+        "access_radius_m",
+        "candidate_id",
+        "candidate_name",
+        "candidate_category",
+        "experience_type",
+        "indoor_outdoor",
+        "distance_m",
+        "walk_min",
+        "cand_thermal_state",
+        "cand_decision_state",
+        "cand_decision_confidence",
+        "cand_utci",
+        "source_utci",
+        "cand_evidence_confidence",
+        "status",
+        "exclusion_reason",
+        "improvement_note"
+      ],
+      "source_column_lineage": {
+        "scenario": "data/processed/phase3_scenarios.csv#scenario",
+        "source_id": "data/processed/phase3_scenarios.csv#source_id",
+        "source_name": "data/processed/phase3_scenarios.csv#source_name",
+        "timestamp": "data/processed/phase3_scenarios.csv#timestamp",
+        "access_radius_m": "data/processed/phase3_scenarios.csv#access_radius_m",
+        "candidate_id": "data/processed/phase3_scenarios.csv#candidate_id",
+        "candidate_name": "data/processed/phase3_scenarios.csv#candidate_name",
+        "candidate_category": "data/processed/phase3_scenarios.csv#candidate_category",
+        "experience_type": "data/processed/phase3_scenarios.csv#experience_type",
+        "indoor_outdoor": "data/processed/phase3_scenarios.csv#indoor_outdoor",
+        "distance_m": "data/processed/phase3_scenarios.csv#distance_m",
+        "walk_min": "data/processed/phase3_scenarios.csv#walk_min",
+        "cand_thermal_state": "data/processed/phase3_scenarios.csv#cand_thermal_state",
+        "cand_decision_state": "data/processed/phase3_scenarios.csv#cand_decision_state",
+        "cand_decision_confidence": "data/processed/phase3_scenarios.csv#cand_decision_confidence",
+        "cand_utci": "data/processed/phase3_scenarios.csv#cand_utci",
+        "source_utci": "data/processed/phase3_scenarios.csv#source_utci",
+        "cand_evidence_confidence": "data/processed/phase3_scenarios.csv#cand_evidence_confidence",
+        "status": "data/processed/phase3_scenarios.csv#status",
+        "exclusion_reason": "data/processed/phase3_scenarios.csv#exclusion_reason",
+        "improvement_note": "data/processed/phase3_scenarios.csv#improvement_note"
+      }
+    },
+    "screening": {
+      "path": "data/processed/phase3_candidate_screening.csv",
+      "sha256": "deecfe44aa07f22cfc9d50718d090646943186befc246b5cc1a85be2f7fd28b2",
+      "keys": [
+        "asset_id",
+        "timestamp"
+      ],
+      "rows": 81,
+      "columns": [
+        "asset_id",
+        "name",
+        "timestamp",
+        "tourism_category",
+        "indoor_outdoor",
+        "is_open",
+        "thermal_state",
+        "decision_state",
+        "decision_confidence",
+        "utci_baseline",
+        "utci_envelope_low",
+        "utci_envelope_high",
+        "opening_hours_evidence",
+        "thermal_evidence",
+        "evidence_confidence",
+        "screening_status",
+        "context_free_exclusion_reason",
+        "tourism_relevance_evidence"
+      ],
+      "source_column_lineage": {
+        "asset_id": "data/processed/phase3_candidate_screening.csv#asset_id",
+        "name": "data/processed/phase3_candidate_screening.csv#name",
+        "timestamp": "data/processed/phase3_candidate_screening.csv#timestamp",
+        "tourism_category": "data/processed/phase3_candidate_screening.csv#tourism_category",
+        "indoor_outdoor": "data/processed/phase3_candidate_screening.csv#indoor_outdoor",
+        "is_open": "data/processed/phase3_candidate_screening.csv#is_open",
+        "thermal_state": "data/processed/phase3_candidate_screening.csv#thermal_state",
+        "decision_state": "data/processed/phase3_candidate_screening.csv#decision_state",
+        "decision_confidence": "data/processed/phase3_candidate_screening.csv#decision_confidence",
+        "utci_baseline": "data/processed/phase3_candidate_screening.csv#utci_baseline",
+        "utci_envelope_low": "data/processed/phase3_candidate_screening.csv#utci_envelope_low",
+        "utci_envelope_high": "data/processed/phase3_candidate_screening.csv#utci_envelope_high",
+        "opening_hours_evidence": "data/processed/phase3_candidate_screening.csv#opening_hours_evidence",
+        "thermal_evidence": "data/processed/phase3_candidate_screening.csv#thermal_evidence",
+        "evidence_confidence": "data/processed/phase3_candidate_screening.csv#evidence_confidence",
+        "screening_status": "data/processed/phase3_candidate_screening.csv#screening_status",
+        "context_free_exclusion_reason": "data/processed/phase3_candidate_screening.csv#context_free_exclusion_reason",
+        "tourism_relevance_evidence": "data/processed/phase3_candidate_screening.csv#tourism_relevance_evidence"
+      }
+    },
+    "summary": {
+      "path": "data/processed/phase3_scenarios_summary.csv",
+      "sha256": "9b6c406d30d47308beeb824a6d27c71e7f3c7b60998beba7f05bff56845132be",
+      "keys": [
+        "scenario"
+      ],
+      "rows": 8,
+      "columns": [
+        "scenario",
+        "source_id",
+        "source_name",
+        "timestamp",
+        "access_radius_m",
+        "source_indoor_outdoor",
+        "source_open",
+        "source_thermal_state",
+        "source_decision_state",
+        "source_decision_confidence",
+        "source_utci",
+        "n_candidate_alternatives",
+        "alternative_ids",
+        "experience_types_offered",
+        "recommendation",
+        "scenario_class",
+        "scenario_desc"
+      ],
+      "source_column_lineage": {
+        "scenario": "data/processed/phase3_scenarios_summary.csv#scenario",
+        "source_id": "data/processed/phase3_scenarios_summary.csv#source_id",
+        "source_name": "data/processed/phase3_scenarios_summary.csv#source_name",
+        "timestamp": "data/processed/phase3_scenarios_summary.csv#timestamp",
+        "access_radius_m": "data/processed/phase3_scenarios_summary.csv#access_radius_m",
+        "source_indoor_outdoor": "data/processed/phase3_scenarios_summary.csv#source_indoor_outdoor",
+        "source_open": "data/processed/phase3_scenarios_summary.csv#source_open",
+        "source_thermal_state": "data/processed/phase3_scenarios_summary.csv#source_thermal_state",
+        "source_decision_state": "data/processed/phase3_scenarios_summary.csv#source_decision_state",
+        "source_decision_confidence": "data/processed/phase3_scenarios_summary.csv#source_decision_confidence",
+        "source_utci": "data/processed/phase3_scenarios_summary.csv#source_utci",
+        "n_candidate_alternatives": "data/processed/phase3_scenarios_summary.csv#n_candidate_alternatives",
+        "alternative_ids": "data/processed/phase3_scenarios_summary.csv#alternative_ids",
+        "experience_types_offered": "data/processed/phase3_scenarios_summary.csv#experience_types_offered",
+        "recommendation": "data/processed/phase3_scenarios_summary.csv#recommendation",
+        "scenario_class": "data/processed/phase3_scenarios_summary.csv#scenario_class",
+        "scenario_desc": "data/processed/phase3_scenarios_summary.csv#scenario_desc"
+      }
+    }
+  }
+}

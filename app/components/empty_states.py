@@ -47,7 +47,7 @@ def no_defensible_panel(scenario: dict, excluded: pd.DataFrame):
                         [
                             html.Div(
                                 [html.Span(str(n_eval), className="nodef__num tabular"),
-                                 html.Span(f"candidates evaluated within {radius} m",
+                                 html.Span(f"candidates evaluated; {radius} m reach constraint",
                                            className="nodef__num-label")],
                                 className="nodef__stat",
                             ),

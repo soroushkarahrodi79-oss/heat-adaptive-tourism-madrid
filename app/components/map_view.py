@@ -15,6 +15,7 @@ from .. import data_loader as dl_data
 from .. import theme as T
 from .legend import map_hint, tile_fallback_notice
 from .primitives import marker_aria_label, marker_html
+from .replay import roles, ROLE_LABELS, ROLE_BADGES
 
 # CartoDB Positron — muted, editorial basemap (light labels, low saturation).
 # Not a satellite basemap: imagery would compete with the marker channels and
@@ -30,7 +31,7 @@ def map_center() -> list[float]:
     return [float(cat["latitude"].mean()), float(cat["longitude"].mean())]
 
 
-def build_markers(timestamp: str, selected: str | None = None) -> list:
+def build_markers(timestamp: str, selected: str | None = None, scenario: str | None = None) -> list:
     """One DivMarker per asset for the given timestamp.
 
     ``selected`` adds the neutral selection halo to exactly one marker and
@@ -39,11 +40,18 @@ def build_markers(timestamp: str, selected: str | None = None) -> list:
     untouched.
     """
     df = dl_data.assets_at_timestamp(timestamp)
+    scenario_roles = roles(scenario, timestamp)
     markers = []
     for _, r in df.iterrows():
         rec = r.to_dict()
         is_selected = (selected is not None and rec["asset_id"] == selected)
         aria = marker_aria_label(rec)
+        role = scenario_roles.get(rec["asset_id"])
+        marker = marker_html(rec, selected=is_selected)
+        if role:
+            aria += f" Scenario {scenario}: {ROLE_LABELS[role]}."
+            marker += (f'<span class="replay-map-badge" data-role="{role}" '
+                       f'aria-hidden="true">{ROLE_BADGES[role]}</span>')
         gloss = C.CONFIDENCE_GLOSS.get(str(rec.get("decision_confidence", "")), "")
         tooltip = dl.Tooltip(
             html.Div(
@@ -67,7 +75,7 @@ def build_markers(timestamp: str, selected: str | None = None) -> list:
             dl.DivMarker(
                 position=[float(rec["latitude"]), float(rec["longitude"])],
                 iconOptions={
-                    "html": marker_html(rec, selected=is_selected),
+                    "html": marker,
                     "className": "asset-marker-icon",
                     "iconSize": [size, size],
                     "iconAnchor": [size // 2, size // 2],

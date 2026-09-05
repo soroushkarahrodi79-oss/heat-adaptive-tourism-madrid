@@ -214,7 +214,7 @@ def _alternatives_cta(asset_id: str, timestamp: str):
                 [icon("no-result", 15), html.Span(C.NODEF_HEADLINE)],
                 className="alt-cta__verdict",
             ),
-            html.Div(f"{n_eval} candidates evaluated within "
+            html.Div(f"{n_eval} candidates evaluated; reach constraint "
                      f"{int(scenario['access_radius_m'])} m · 0 survived.",
                      className="alt-cta__tally tabular"),
             dmc.Button(

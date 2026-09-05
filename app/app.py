@@ -21,6 +21,9 @@ from .components import asset_panel as ap
 from .components import map_view as mv
 from .components import shell
 from .components import tradeoff as tv
+from .components import replay
+from .replay_contract import IntegrityError
+from .replay_state import normalize, transition
 
 app = dash.Dash(
     __name__,
@@ -50,10 +53,17 @@ app.index_string = """<!DOCTYPE html>
 </html>""".replace("__HATI_TOKENS__", T.css_variables())
 
 DEFAULT_TIMESTAMP = "12:00"
-DEFAULT_SORT = "distance"
+DEFAULT_SORT = "name"
 
 
 def _layout():
+    try:
+        dl._load_all()
+    except IntegrityError as exc:
+        return html.Div([
+            html.H1("Replay integrity error"), html.P(str(exc)),
+            html.P("Scientific display is blocked. Restore the pinned artifacts and restart the server."),
+        ], id="replay-integrity-error", role="alert", className="replay-integrity-error")
     return html.Div(
         [
             # ── interface-only state (never scientific result tables) ──
@@ -120,86 +130,34 @@ def _router(ts_value, picker_value, marker_clicks, scenario_clicks, sort_values,
         raise PreventUpdate
 
     kind = trig.get("type") if isinstance(trig, dict) else trig
-
+    current = (timestamp, asset, view, scenario, sort, baseline)
     if kind == "timestamp-control":
-        if not ts_value or ts_value == timestamp:
+        if ts_value == timestamp or ts_value not in C.TIMESTAMPS:
             raise PreventUpdate
-        timestamp = ts_value
-        # A pre-computed scenario is bound to one timestamp, so changing the
-        # timestamp steps back from View 3 rather than showing a scenario
-        # that was never computed for this hour.
-        if view == C.VIEW_ALTERNATIVES:
-            view, scenario = C.VIEW_ASSET, None
-
-    elif kind == "asset-picker":
-        if picker_value is None:
-            view, asset = C.VIEW_MAP, None
-        else:
-            asset, view = picker_value, C.VIEW_ASSET
-
-    elif kind == "asset-marker":
-        if not _any_click(marker_clicks):
+        return transition(current, "timestamp", ts_value)
+    if kind == "asset-picker":
+        if picker_value == asset:
             raise PreventUpdate
-        asset, view = trig["index"], C.VIEW_ASSET
-
-    elif kind == "scenario-item":
-        if not _any_click(scenario_clicks):
+        return transition(current, "asset", picker_value)
+    if kind in ("asset-marker", "card-open-asset", "scenario-item", "back-asset", "close-panel", "open-alt"):
+        clicks = {"asset-marker": marker_clicks, "card-open-asset": card_clicks,
+                  "scenario-item": scenario_clicks, "back-asset": back_clicks,
+                  "close-panel": close_clicks, "open-alt": alt_clicks}[kind]
+        if not _any_click(clicks):
             raise PreventUpdate
-        row = dl.summary_row(trig["index"])
-        if row is None:
-            raise PreventUpdate
-        timestamp, asset = row["timestamp"], row["source_id"]
-        scenario, view = trig["index"], C.VIEW_ASSET
-        sort, baseline = DEFAULT_SORT, False
-
-    elif kind == "sort-select":
-        picked = next((v for v in (sort_values or []) if v), None)
-        if picked not in C.SORT_KEYS:
-            raise PreventUpdate
-        sort = picked
-
-    elif kind == "card-open-asset":
-        if not _any_click(card_clicks):
-            raise PreventUpdate
-        asset, view = trig["index"], C.VIEW_ASSET
-
-    elif kind == "open-alt":
-        if not _any_click(alt_clicks):
-            raise PreventUpdate
-        scn = dl.scenario_for_source(asset, timestamp)
-        if scn is None:                      # never fabricate a scenario
-            raise PreventUpdate
-        scenario, view = scn["scenario"], C.VIEW_ALTERNATIVES
-        sort, baseline = DEFAULT_SORT, False
-
-    elif kind == "close-panel":
-        if not _any_click(close_clicks):
-            raise PreventUpdate
-        view, asset = C.VIEW_MAP, None
-
-    elif kind == "back-asset":
-        if not _any_click(back_clicks):
-            raise PreventUpdate
-        if view == C.VIEW_ALTERNATIVES:
-            row = dl.summary_row(scenario) if scenario else None
-            if row is not None:
-                asset = row["source_id"]
-            view = C.VIEW_ASSET
-        else:                                # from a candidate back to View 3
-            view = C.VIEW_ALTERNATIVES
-
-    elif kind == "baseline-toggle":
-        checked = next((c for c in (baseline_checked or []) if c is not None),
-                       None)
-        if checked is None:
-            raise PreventUpdate
-        baseline = bool(checked)
-
-    else:
-        raise PreventUpdate
-
-    return timestamp, asset, view, scenario, sort, baseline
-
+        if kind == "open-alt":
+            row = dl.scenario_for_source(asset, timestamp)
+            if row is None:
+                raise PreventUpdate
+            return transition(current, "scenario", row["scenario"])
+        event = {"asset-marker": "asset", "card-open-asset": "asset",
+                 "scenario-item": "scenario", "back-asset": "back", "close-panel": "close"}[kind]
+        return transition(current, event, trig.get("index"))
+    if kind == "sort-select":
+        return transition(current, "sort", next((v for v in sort_values if v), None))
+    if kind == "baseline-toggle":
+        return transition(current, "baseline", next((v for v in baseline_checked if v is not None), False))
+    raise PreventUpdate
 
 # ═══════════════════════════════════════════════════════════════════════════
 # Render callbacks
@@ -208,12 +166,13 @@ def _router(ts_value, picker_value, marker_clicks, scenario_clicks, sort_values,
     Output("asset-markers", "children"),
     Input("store-timestamp", "data"),
     Input("store-selected-asset", "data"),
+    Input("store-scenario", "data"),
 )
-def _render_markers(timestamp, selected):
+def _render_markers(timestamp, selected, scenario):
     """Only the LayerGroup children are replaced — the MapContainer, its
     centre and its zoom are never touched, so the spatial frame persists
     across every timestamp change and every selection."""
-    return mv.build_markers(timestamp or DEFAULT_TIMESTAMP, selected)
+    return mv.build_markers(timestamp or DEFAULT_TIMESTAMP, selected, scenario)
 
 
 @app.callback(
@@ -227,20 +186,13 @@ def _render_markers(timestamp, selected):
     Input("store-baseline", "data"),
 )
 def _render_side_panel(view, asset, timestamp, scenario, sort, baseline):
+    timestamp, asset, view, scenario, sort, baseline = normalize(timestamp, asset, view, scenario, sort, baseline)
     base = "cockpit-panel"
+    if scenario:
+        return replay.panel(scenario, asset), f"{base} {base}--open {T.PANEL_CLASS_ALTERNATIVES}"
     if view == C.VIEW_ASSET and asset:
-        # Offer "back to the alternatives" only when this asset was reached
-        # from a scenario it is not itself the source of.
-        back_to = None
-        if scenario:
-            row = dl.summary_row(scenario)
-            if row is not None and row["source_id"] != asset:
-                back_to = f"{row['scenario']} alternatives"
-        return (ap.asset_panel(asset, timestamp, back_to=back_to),
+        return (html.Div([ap.asset_panel(asset, timestamp), replay.asset_provenance(asset, timestamp)]),
                 f"{base} {base}--open {T.PANEL_CLASS_ASSET}")
-    if view == C.VIEW_ALTERNATIVES and scenario:
-        return (tv.tradeoff_view(scenario, sort or DEFAULT_SORT, bool(baseline)),
-                f"{base} {base}--open {T.PANEL_CLASS_ALTERNATIVES}")
     return [], f"{base} {base}--closed"
 
 
@@ -272,6 +224,14 @@ def _sync_timestamp_control(timestamp):
 )
 def _render_scenario_label(scenario):
     return scenario or C.SCENARIO_MENU_LABEL
+
+
+@app.callback(
+    Output("replay-context", "children"),
+    Input("store-scenario", "data"), Input("store-timestamp", "data"),
+)
+def _render_replay_context(scenario, timestamp):
+    return replay.context(scenario, timestamp)
 
 
 @app.callback(
@@ -333,9 +293,16 @@ clientside_callback(
         const mark = function () {
             surface.setAttribute('data-tiles', 'failed');
         };
+        if (!surface.__hatiTileCapture) {
+            surface.__hatiTileCapture = true;
+            surface.addEventListener('error', function(e) {
+                if (e.target.classList && e.target.classList.contains('leaflet-tile')) mark();
+            }, true);
+        }
         const attach = function () {
             const imgs = surface.querySelectorAll('.leaflet-tile');
             imgs.forEach(function (img) {
+                if (img.complete && !img.naturalWidth) mark();
                 if (!img.__hatiWatched) {
                     img.__hatiWatched = true;
                     img.addEventListener('error', mark, {once: true});
@@ -350,6 +317,23 @@ clientside_callback(
     """,
     Output("map-surface", "data-tilewatch"),
     Input("asset-markers", "children"),
+)
+
+clientside_callback(
+    """
+    function(children) {
+        const previousFocus = document.activeElement;
+        requestAnimationFrame(function() {
+            if (document.activeElement !== previousFocus && document.activeElement?.matches('.replay-candidate')) return;
+            const heading = document.getElementById('replay-selected-title');
+            if (heading) { heading.focus({preventScroll: true}); heading.scrollIntoView({block: 'nearest'}); }
+        });
+        return window.dash_clientside.no_update;
+    }
+    """,
+    Output("side-panel", "data-selection-focus"),
+    Input("side-panel-body", "children"),
+    prevent_initial_call=True,
 )
 
 
