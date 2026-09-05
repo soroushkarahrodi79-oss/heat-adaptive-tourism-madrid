@@ -2,8 +2,11 @@
 
 This is a read-only inspection interface over the existing historical pilot.
 It is not visitor guidance, new science, a field-validation exercise, a
-publication revision or an operational service. Usefulness has not been tested
-with reviewers. Follow [DESK_REVIEW.md](DESK_REVIEW.md) for that separate step.
+publication revision or an operational service. A bounded desk review was
+completed by the project owner, who judged the spatial replay useful for
+inspecting scenario membership, exclusions and provenance. This was not a
+formal usability validation or user study. [DESK_REVIEW.md](DESK_REVIEW.md)
+records the review boundary and protocol.
 
 ## Baselines and boundaries
 
@@ -30,9 +33,11 @@ py -3.12 -m venv .venv_replay
 .venv_replay/Scripts/python -B -m app.app
 ```
 
-Open `http://127.0.0.1:8050`. The implementation session used the original
-checkout's already-installed app interpreter read-only, with `-B`, instead of
-changing that environment. This is not evidence of a clean lock-file install.
+Open `http://127.0.0.1:8050`. Final hardening also created a separate temporary
+Python 3.12 environment, installed all 53 versions from
+`app/requirements.lock.txt`, constructed the verified replay layout, ran all
+tests and served the application for Chromium QA. The temporary environment is
+outside the repository and is not committed.
 
 ## Architecture
 
@@ -84,6 +89,7 @@ separate QA environment, or expose an existing installation with `NODE_PATH`.
 
 ```powershell
 $env:HATI_PYTHON = (Resolve-Path .venv_replay/Scripts/python.exe).Path
+$env:HATI_APP_ENV = "clean locked Python 3.12 environment"
 node tests/replay/browser.cjs
 ```
 
@@ -105,6 +111,8 @@ or substitute geographic imagery are used.
 - Opening hours documented in 2026 are applied to 2023.
 - Reach is straight-line, not a route or measured walking time.
 - Confidence describes tested uncertainty, not safety or candidate eligibility.
-- Browser tests establish implemented behavior, not usefulness or field validity.
+- Browser tests establish implemented behavior, not usability or field validity.
+- The owner desk review supports promotion for code review only; it does not
+  establish general usability, scientific validity or operational effectiveness.
 - No routing, scores, ranking, new scenarios, live feeds, LLM decisions, 3D,
   publication changes, deployment or release.

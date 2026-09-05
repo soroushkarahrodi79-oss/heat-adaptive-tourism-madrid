@@ -1,7 +1,10 @@
 # Spike validation — 5 September 2026
 
-Technical disposition: **READY_FOR_DESK_REVIEW**. This is not a usefulness
-verdict, accessibility certification or physical field-validation result.
+Technical disposition: **PR_READY** after a bounded project-owner desk review.
+The owner judged the spatial replay useful for inspecting scenario membership,
+exclusions and provenance and authorized promotion to a pull request. This is
+not formal usability validation, a user study, accessibility certification,
+scientific validation or physical field validation.
 
 ## Repository verification
 
@@ -27,18 +30,29 @@ actual values. No scientific pipeline was run. Runtime changes consist of
 validation, lookups, joins, counts, formatting and UI state transitions; no new
 scientific calculation or external scientific feed is present.
 
-## Python regression results
+## Clean-environment and Python regression results
+
+A separate temporary Python 3.12 virtual environment was created outside the
+repository. Installation from the complete 53-line
+`app/requirements.lock.txt` succeeded without fallback to global packages or
+the existing app/SOLWEIG environments. The clean interpreter loaded and
+validated the manifest, produced record counts 27/81/208, imported Dash,
+constructed a `Div` layout with nine callbacks, and started the HTTP app.
+
+The final test and browser results below were produced against this clean
+environment. No dependency or setup defect required a code or lock change.
 
 Final command: `python -B -m pytest -p no:cacheprovider tests -q`.
-**122 passed in 12.48 seconds**: all 95 existing tests plus 27 replay tests.
+**122 passed in 24.61 seconds** in the clean environment: all 95 existing
+tests plus 27 replay tests.
 The new tests exercise actual hash failure on a temporary copy, blocked error
 layout, schema/identity/binding failures, exact map-role and survivor sets,
 source/candidate separation, deterministic reads and invalid state clearing.
 
-Actual environment: Python 3.12.10; Dash 4.4.1; dash-leaflet 1.1.3;
+Clean environment: Python 3.12.10; Dash 4.4.1; dash-leaflet 1.1.3;
 dash-mantine-components 2.8.0; dash-svg 0.0.12; pandas 2.3.3; pytest 8.4.2.
-These direct package versions match the app pins. A fresh environment/full
-transitive lock installation was not performed.
+These direct package versions match the app pins, and the complete transitive
+lock was installed successfully.
 
 ## Scenario fidelity
 
@@ -69,7 +83,7 @@ UNSTABLE/LOW source in S7. No noon scenario is inferred.
 [qa/browser-results.json](qa/browser-results.json) is the machine-produced
 result of `tests/replay/browser.cjs`.
 
-- Chromium 149.0.7827.55: **PASS**. All eight scenario map/list counts,
+- Chromium 149.0.7827.55 against the clean environment: **PASS**. All eight scenario map/list counts,
   candidate selection, pinned provenance, source/candidate distinction,
   back/close, timestamp invalidation, refresh reset and integrity blocking.
 - Real basemap run: **28 loaded tiles, 0 failed** at the initial sampled view.
@@ -95,13 +109,14 @@ unfinished transition.
 
 ## Remaining limitations
 
-No human desk review or field validation has occurred. Markers/badges can
+No formal usability study or field validation has occurred. Markers/badges can
 overlap at broad zoom levels; all candidates remain accessible through the
 list and asset picker. Small screens require panel scrolling. Refresh resets
 rather than restoring a shareable URL state. Basemap availability is external;
-scientific records remain local. Confidence/thermal semantics still require
-reviewer comprehension testing. Broader browser, zoom and assistive-technology
-coverage remains future verification, not an implied pass.
+scientific records remain local. Confidence/thermal semantics still warrant
+broader reviewer comprehension testing. Broader browser, zoom and
+assistive-technology coverage remains future verification, not an implied pass.
 
 No merge, push, PR, deployment, public release or publication-status change.
-Use [DESK_REVIEW.md](DESK_REVIEW.md) to decide whether the linked map is useful.
+See [DESK_REVIEW.md](DESK_REVIEW.md) for the bounded owner disposition and the
+protocol for any future review.

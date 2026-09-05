@@ -1,12 +1,25 @@
-# Desk-review protocol — not yet executed
+# Desk-review record and protocol
 
 Purpose: falsify whether linking recorded scenario eligibility to the map adds
 useful scientific inspection beyond the candidate list. This is an interface
 review, not a tourism behavior study or physical field validation.
 
+## Recorded owner decision
+
+Desk review completed by project owner; spatial replay judged useful for
+inspecting scenario membership, exclusions and provenance. Owner disposition:
+`USEFUL` / `PROMOTE_TO_PR`.
+
+This is a bounded owner review of the replay concept. It is not a formal
+usability validation, user study, field validation or scientific validation.
+No population, performance, visitor-benefit or operational claim follows from
+the disposition. The detailed task record was supplied outside the repository;
+this file does not invent reviewer timing, metrics or observations.
+
+The protocol below remains the reproducible checklist for future reviews.
 Record reviewer/date, browser/viewport, commit, prior familiarity and whether
-assistance was required. Do not publish performance claims from this small
-qualitative review. No findings are asserted in this protocol.
+assistance was required. Do not publish performance claims from a small
+qualitative review.
 
 ## Tasks and answer key
 
@@ -52,5 +65,5 @@ Stop spatial expansion if the map adds no concrete inspection value, or if it
 repeatedly causes users to read thermal condition as eligibility or confidence
 as safety. A technically passing build alone does not establish usefulness.
 
-Reviewer observations and the usefulness verdict are deliberately blank until
-an actual review takes place. No field observations or simulated participants.
+Future reviewer observations remain blank until an actual additional review
+takes place. No field observations or simulated participants.

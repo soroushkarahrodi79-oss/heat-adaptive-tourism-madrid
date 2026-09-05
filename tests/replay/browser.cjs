@@ -9,7 +9,7 @@ const { spawn } = require('node:child_process');
 const base = process.env.HATI_URL || 'http://127.0.0.1:8050';
 const out = path.resolve('docs/replay/qa');
 fs.mkdirSync(out, { recursive: true });
-const report = { timestamp: new Date().toISOString(), browsers: [], scientificFixtures: 'Only an intentionally corrupted temporary copy for integrity failure; no synthetic tiles.' };
+const report = { timestamp: new Date().toISOString(), applicationEnvironment: process.env.HATI_APP_ENV || 'unspecified', browsers: [], scientificFixtures: 'Only an intentionally corrupted temporary copy for integrity failure; no synthetic tiles.' };
 const expected = { S1: [9,17], S2: [6,20], S3: [4,22], S4: [8,18], S5: [7,19], S6: [9,17], S7: [6,20], S8: [0,26] };
 const sources = {S1:'A16', S2:'A15', S3:'A14', S4:'A26', S5:'A19', S6:'A17', S7:'A24', S8:'A20'};
 
@@ -46,9 +46,9 @@ async function bindings(page, sid) {
 
 async function run(name, engine, executablePath) {
   if (!fs.existsSync(executablePath)) {
-    report.browsers.push({ name, status: 'UNAVAILABLE', executablePath }); return;
+    report.browsers.push({ name, status: 'UNAVAILABLE', executable: path.basename(executablePath) }); return;
   }
-  const result = { name, status: 'RUNNING', checks: [], executablePath };
+  const result = { name, status: 'RUNNING', checks: [], executable: path.basename(executablePath) };
   report.browsers.push(result);
   const browser = await engine.launch({ headless: true, executablePath });
   result.version = browser.version();
