@@ -80,11 +80,11 @@ were applied retrospectively to the 2023 study day; indoor refuge is assumed rat
 physically measured; and no tourist behaviour, health/safety outcome, operational performance,
 or transfer to other days or destinations was observed or established.
 
-## Citation text for this release candidate
+## Citation text for this public preprint
 
 Karahrodi, S. (2026). *Thermal representation as a decision variable in heat-adaptive
 tourism opportunity screening: evidence from a Madrid pilot* (Version 1.0; non-peer-reviewed
-preprint / research work). HATI-Madrid ResearchGate release candidate.
+preprint / research work). HATI-Madrid public preprint.
 https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid
 
 Do not add a journal, volume, issue, DOI, or ResearchGate URL unless a human upload later
@@ -94,4 +94,4 @@ creates and verifies one.
 
 - Version: 1.0
 - Preparation date: 2026-09-11
-- Exact upload candidate: `HATI_Madrid_ResearchGate_Preprint_v1.0.pdf`
+- Exact upload candidate: `HATI_Madrid_Preprint_v1.0.pdf`
