@@ -28,7 +28,7 @@ The most interesting case returned nothing. Under one scenario's exact constrain
 
 The lesson travels well beyond heat and tourism: before optimising among choices, define which choices are actually admissible.
 
-HATI-Madrid is prepared as a non-peer-reviewed ResearchGate preprint / research work — several thermal values are model-derived, and it is not an operational or real-time product. Code, data provenance and figures are public here:
+HATI-Madrid is prepared as a non-peer-reviewed public preprint / research work — several thermal values are model-derived, and it is not an operational or real-time product. Code, data provenance and figures are public here:
 https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid
 
 Where in your field does a hard constraint quietly get treated as just another weighted factor — and what breaks when it does?

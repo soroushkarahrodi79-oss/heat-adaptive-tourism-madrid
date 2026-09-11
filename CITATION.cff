@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: >-
-  Cite this repository and its associated non-peer-reviewed ResearchGate preprint using
+  Cite this repository and its associated non-peer-reviewed public preprint using
   the metadata below. No journal, volume, issue, or DOI has been assigned.
 title: "HATI-Madrid - Heat-Adaptive Tourism Opportunity Screening (Madrid pilot)"
 abstract: >-
@@ -22,7 +22,7 @@ keywords:
   - SOLWEIG
   - uncertainty-aware decision-making
 repository-code: "https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid"
-version: "1.0-researchgate-release-candidate"
+version: "1.0"
 date-released: "2026-09-11"
 # --- Associated non-peer-reviewed manuscript ---
 preferred-citation:
@@ -35,5 +35,5 @@ preferred-citation:
     - given-names: "Soroush"
       family-names: "Karahrodi"
   notes: >-
-    ResearchGate release candidate; non-peer-reviewed preprint / research work. No journal,
+    Public preprint; non-peer-reviewed preprint / research work. No journal,
     volume, issue, or DOI assigned. Affiliation and ORCID are not stated in this repository.

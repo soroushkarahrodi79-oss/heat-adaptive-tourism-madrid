@@ -10,15 +10,15 @@ simple operational proxy and a physically based SOLWEIG/UTCI configuration — i
 transparent, constraint-first screening architecture that keeps thermal state, evidence, and
 uncertainty auditable rather than collapsed into a single score.
 
-![Research status: ResearchGate release candidate](https://img.shields.io/badge/research%20status-ResearchGate%20release%20candidate-555555)
+![Research status: public preprint](https://img.shields.io/badge/research%20status-public%20preprint-555555)
 ![Study area: Madrid pilot](https://img.shields.io/badge/study%20area-Madrid%20pilot-555555)
 ![Python 3.14 / 3.12](https://img.shields.io/badge/python-3.14%20%7C%203.12-3776AB)
 ![Reproducible research](https://img.shields.io/badge/reproducible-research-2E7D32)
 ![Repository: public](https://img.shields.io/badge/repository-public-2E7D32)
 
-> **Status — public research repository · ResearchGate release candidate.** The current academic
-> dissemination target is a **non-peer-reviewed preprint / research work on ResearchGate**. No
-> ResearchGate upload has been made by this repository update, no future journal route has been
+> **Status — public research repository · public preprint.** The current academic
+> dissemination route is a **non-peer-reviewed preprint / research work for public archival
+> dissemination**. No public upload has been made by this repository update, no future journal route has been
 > selected, and the work is **not an operational or real-time tourism product**. The figures and
 > findings shown below are **descriptive** results of a single Madrid pilot; several thermal
 > outputs are **model-derived** (see *What the project does not claim*).
@@ -37,8 +37,8 @@ uncertainty auditable rather than collapsed into a single score.
 | **Scenario experiments** | 8 pre-registered decision scenarios |
 | **Thermal methods compared** | operational proxy **vs** SOLWEIG → Tmrt → UTCI configuration |
 | **Decision architecture** | constraint-first, first-failing-gate screening (no composite score) |
-| **Research status** | ResearchGate release candidate; not peer reviewed |
-| **Current dissemination target** | ResearchGate preprint / research work |
+| **Research status** | Public preprint; not peer reviewed |
+| **Current dissemination target** | Public archival dissemination |
 | **Repository visibility** | public research repository |
 
 ---
@@ -264,7 +264,7 @@ A supplementary UTCI-field figure and the graphical abstract are in `outputs/pub
 .
 ├── manuscript/         manuscript sections, assembled manuscript, tables, verified references
 ├── supplementary/      supplementary material (Figure S1, Tables S1–S4, reproducibility notes)
-├── submission/         historical submission inventory and ResearchGate release package
+├── submission/         historical submission inventory and preprint release package
 ├── outputs/            locked result tables, SOLWEIG maps, and publication figures + render scripts
 ├── src/                analysis pipeline (study area, proxy, SOLWEIG runs, screening, validation)
 ├── scripts_assembly/   manuscript-assembly and reference-build scripts
@@ -341,15 +341,16 @@ This supports **auditability** — it does not imply that Git history itself val
 - [x] Publication figures locked
 - [x] Hostile four-reviewer audit
 - [x] Targeted-revision record preserved locally; the named branch is not present on the remote
-- [x] ResearchGate release package prepared from the public canonical manuscript
+- [x] Public preprint release package prepared from the public canonical manuscript
 - [ ] Human review of author/affiliation metadata and final PDF
-- [ ] ResearchGate upload
+- [ ] Zenodo archival upload
+- [ ] Later ResearchGate upload
 - [ ] Peer review
 
 Historical publication record: the manuscript was submitted on **2026-08-22** and received a
 **desk rejection on 2026-08-23**. Those events are historical audit facts, not the current
-dissemination route. The current route is a ResearchGate preprint / research work; upload remains
-a human action.
+dissemination route. The current route is public preprint archival dissemination; Zenodo upload
+and any later ResearchGate upload remain human actions.
 
 ---
 
@@ -360,7 +361,7 @@ opportunity screening: evidence from a Madrid pilot*.
 
 Manuscript sections, the assembled manuscript, editable tables, and the verified reference list
 are in **[`manuscript/`](manuscript/)**. The public canonical source is
-`manuscript/MANUSCRIPT_TMP_v0.2.md`; the bounded ResearchGate package records the neutral
+`manuscript/MANUSCRIPT_TMP_v0.2.md`; the bounded preprint package records the neutral
 administrative transformations used for its release PDF. No DOI has been assigned.
 
 ---

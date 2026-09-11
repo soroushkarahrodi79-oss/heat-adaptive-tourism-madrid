@@ -11,7 +11,7 @@ from pypdf import PdfReader
 
 ROOT = Path(__file__).resolve().parents[2]
 PACKAGE = Path(__file__).resolve().parent
-PDF = PACKAGE / "HATI_Madrid_ResearchGate_Preprint_v1.0.pdf"
+PDF = PACKAGE / "HATI_Madrid_Preprint_v1.0.pdf"
 TITLE = (
     "Thermal representation as a decision variable in heat-adaptive tourism opportunity "
     "screening: evidence from a Madrid pilot"
@@ -55,7 +55,7 @@ def check_files_and_local_links():
         "RESEARCHGATE_METADATA.md",
         "FIGURE_INVENTORY.md",
         "build_researchgate_pdf.py",
-        "HATI_Madrid_ResearchGate_Preprint_v1.0.pdf",
+        "HATI_Madrid_Preprint_v1.0.pdf",
     ]
     for name in expected:
         assert (PACKAGE / name).exists(), name
@@ -78,7 +78,11 @@ def check_manuscript_and_pdf():
     text = "\n".join(page.extract_text() or "" for page in reader.pages)
     compact = " ".join(text.split())
     assert TITLE in compact
-    assert "non-peer-reviewed preprint / research work" in compact
+    assert "Version 1.0 - public preprint - 2026-09-11" in compact
+    assert "Non-peer-reviewed preprint / research work" in compact
+    assert "Non-peer-reviewed preprint" in compact
+    assert "Creative Commons Attribution 4.0 International (CC BY 4.0)" in compact
+    assert re.search(r"ResearchGate\s+release\s+candidate", compact) is None
     assert "33.3%, 14 of 42" in compact
     assert "7 of 8" in compact
     assert "NO_DEFENSIBLE_ALTERNATIVE" in compact

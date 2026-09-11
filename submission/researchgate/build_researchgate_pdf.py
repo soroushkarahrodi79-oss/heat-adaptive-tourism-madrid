@@ -31,7 +31,7 @@ from reportlab.platypus import (
 ROOT = Path(__file__).resolve().parents[2]
 PACKAGE = Path(__file__).resolve().parent
 SOURCE = ROOT / "manuscript" / "MANUSCRIPT_TMP_v0.2.md"
-OUTPUT = PACKAGE / "HATI_Madrid_ResearchGate_Preprint_v1.0.pdf"
+OUTPUT = PACKAGE / "HATI_Madrid_Preprint_v1.0.pdf"
 TITLE = (
     "Thermal representation as a decision variable in heat-adaptive tourism "
     "opportunity screening: evidence from a Madrid pilot"
@@ -79,14 +79,16 @@ def release_markdown() -> str:
 
 **Author:** Soroush Karahrodi
 
-**Publication status.** Version 1.0 release candidate, prepared 2026-09-11 for human
-upload to ResearchGate as a non-peer-reviewed preprint / research work. This document
-has not been peer reviewed and is not an operational or real-time tourism product.
+**Publication status.** Version 1.0 public preprint, prepared 2026-09-11 for public archival
+dissemination. This document has not been peer reviewed and is not an operational or real-time
+tourism product.
 
 **Data/code availability.** Public materials are available from the repository below. It
 contains the code, documented provenance, derived tables, and locked publication figures.
 Repository URL: {REPO_URL}. Third-party data and software remain subject to their original
 licences. No repository DOI has been assigned.
+
+**License:** Creative Commons Attribution 4.0 International (CC BY 4.0).
 
 **Ethics.** The study used open environmental and spatial data and involved no human
 participants, personal data, interventions, surveys, or observed visitor behaviour.
@@ -97,7 +99,7 @@ participants, personal data, interventions, surveys, or observed visitor behavio
 
 **Soroush Karahrodi**
 
-Version 1.0 - ResearchGate release candidate - 2026-09-11
+Version 1.0 - public preprint - 2026-09-11
 
 **Non-peer-reviewed preprint / research work**
 
@@ -267,7 +269,7 @@ def build() -> Path:
         canvas.saveState()
         canvas.setFont(regular, 7.5)
         canvas.setFillColor(colors.HexColor("#666666"))
-        canvas.drawString(22 * mm, 12 * mm, "HATI-Madrid - non-peer-reviewed release candidate")
+        canvas.drawString(22 * mm, 12 * mm, "HATI-Madrid - non-peer-reviewed preprint")
         canvas.drawRightString(A4[0] - 22 * mm, 12 * mm, str(doc.page))
         canvas.restoreState()
 
@@ -280,7 +282,7 @@ def build() -> Path:
         bottomMargin=20 * mm,
         title=TITLE,
         author="Soroush Karahrodi",
-        subject="Non-peer-reviewed ResearchGate release candidate",
+        subject="Non-peer-reviewed preprint",
         creator="HATI-Madrid reproducible PDF builder",
         invariant=1,
     )

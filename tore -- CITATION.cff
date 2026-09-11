@@ -1,0 +1,73 @@
+[1mdiff --git a/CITATION.cff b/CITATION.cff[m
+[1mindex 10508b1..c1b4405 100644[m
+[1m--- a/CITATION.cff[m
+[1m+++ b/CITATION.cff[m
+[36m@@ -1,40 +1,39 @@[m
+[31m-cff-version: 1.2.0[m
+[31m-message: >-[m
+[31m-  Cite this repository and its associated non-peer-reviewed ResearchGate preprint using[m
+[31m-  the metadata below. No journal, volume, issue, or DOI has been assigned.[m
+[31m-title: "HATI-Madrid - Heat-Adaptive Tourism Opportunity Screening (Madrid pilot)"[m
+[31m-abstract: >-[m
+[31m-  A reproducible pilot that screens urban tourism opportunities under extreme heat with a[m
+[31m-  constraint-first, uncertainty-aware architecture, and tests whether the choice of thermal[m
+[31m-  method (a simple operational proxy vs a physically based SOLWEIG/UTCI configuration)[m
+[31m-  changes tourism-feasibility classifications and the surviving candidate set. Single-day,[m
+[31m-  single-city pilot in central Madrid; no field validation of Tmrt/UTCI and no behavioural[m
+[31m-  data.[m
+[31m-type: software[m
+[31m-authors:[m
+[31m-  - given-names: "Soroush"[m
+[31m-    family-names: "Karahrodi"[m
+[31m-keywords:[m
+[31m-  - urban tourism[m
+[31m-  - extreme heat[m
+[31m-  - UTCI[m
+[31m-  - tourism decision support[m
+[31m-  - SOLWEIG[m
+[31m-  - uncertainty-aware decision-making[m
+[31m-repository-code: "https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid"[m
+[31m-license: "NOASSERTION"[m
+[31m-version: "1.0-researchgate-release-candidate"[m
+[31m-date-released: "2026-09-11"[m
+[31m-# --- Associated non-peer-reviewed manuscript ---[m
+[31m-preferred-citation:[m
+[31m-  type: article[m
+[31m-  title: >-[m
+[31m-    Thermal representation as a decision variable in heat-adaptive tourism opportunity[m
+[31m-    screening: evidence from a Madrid pilot[m
+[31m-  status: preprint[m
+[31m-  authors:[m
+[31m-    - given-names: "Soroush"[m
+[31m-      family-names: "Karahrodi"[m
+[31m-  notes: >-[m
+[31m-    ResearchGate release candidate; non-peer-reviewed preprint / research work. No journal,[m
+[31m-    volume, issue, or DOI assigned. Affiliation and ORCID are not stated in this repository.[m
+[32m+[m[32mcff-version: 1.2.0[m[41m[m
+[32m+[m[32mmessage: >-[m[41m[m
+[32m+[m[32m  Cite this repository and its associated non-peer-reviewed ResearchGate preprint using[m[41m[m
+[32m+[m[32m  the metadata below. No journal, volume, issue, or DOI has been assigned.[m[41m[m
+[32m+[m[32mtitle: "HATI-Madrid - Heat-Adaptive Tourism Opportunity Screening (Madrid pilot)"[m[41m[m
+[32m+[m[32mabstract: >-[m[41m[m
+[32m+[m[32m  A reproducible pilot that screens urban tourism opportunities under extreme heat with a[m[41m[m
+[32m+[m[32m  constraint-first, uncertainty-aware architecture, and tests whether the choice of thermal[m[41m[m
+[32m+[m[32m  method (a simple operational proxy vs a physically based SOLWEIG/UTCI configuration)[m[41m[m
+[32m+[m[32m  changes tourism-feasibility classifications and the surviving candidate set. Single-day,[m[41m[m
+[32m+[m[32m  single-city pilot in central Madrid; no field validation of Tmrt/UTCI and no behavioural[m[41m[m
+[32m+[m[32m  data.[m[41m[m
+[32m+[m[32mtype: software[m[41m[m
+[32m+[m[32mauthors:[m[41m[m
+[32m+[m[32m  - given-names: "Soroush"[m[41m[m
+[32m+[m[32m    family-names: "Karahrodi"[m[41m[m
+[32m+[m[32mkeywords:[m[41m[m
+[32m+[m[32m  - urban tourism[m[41m[m
+[32m+[m[32m  - extreme heat[m[41m[m
+[32m+[m[32m  - UTCI[m[41m[m
+[32m+[m[32m  - tourism decision support[m[41m[m
+[32m+[m[32m  - SOLWEIG[m[41m[m
+[32m+[m[32m  - uncertainty-aware decision-making[m[41m[m
+[32m+[m[32mrepository-code: "https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid"[m[41m[m
+[32m+[m[32mversion: "1.0-researchgate-release-candidate"[m[41m[m
+[32m+[m[32mdate-released: "2026-09-11"[m[41m[m
+[32m+[m[32m# --- Associated non-peer-reviewed manuscript ---[m[41m[m
+[32m+[m[32mpreferred-citat
