@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: >-
-  This is a research pilot and manuscript-in-preparation. Author metadata and the final
-  article title are not yet confirmed; fields marked TO VERIFY are placeholders.
-title: "HATI-Madrid — Heat-Adaptive Tourism Opportunity Screening (Madrid pilot)"
+  Cite this repository and its associated non-peer-reviewed ResearchGate preprint using
+  the metadata below. No journal, volume, issue, or DOI has been assigned.
+title: "HATI-Madrid - Heat-Adaptive Tourism Opportunity Screening (Madrid pilot)"
 abstract: >-
   A reproducible pilot that screens urban tourism opportunities under extreme heat with a
   constraint-first, uncertainty-aware architecture, and tests whether the choice of thermal
@@ -12,11 +12,8 @@ abstract: >-
   data.
 type: software
 authors:
-  - name: "[AUTHOR NAME(S) TO VERIFY]"
-    # given-names: "TO VERIFY"
-    # family-names: "TO VERIFY"
-    # affiliation: "[AFFILIATION TO VERIFY]"
-    # orcid: "[ORCID TO VERIFY]"
+  - given-names: "Soroush"
+    family-names: "Karahrodi"
 keywords:
   - urban tourism
   - extreme heat
@@ -24,19 +21,20 @@ keywords:
   - tourism decision support
   - SOLWEIG
   - uncertainty-aware decision-making
-repository-code: "[GITHUB URL — set after repository creation]"
-license: "LICENSE DECISION REQUIRED — not yet chosen"
-version: "0.2-pre-targeted-revision"
-date-released: "2026-08-19"
-# --- Associated manuscript (provisional; title may change in targeted revision) ---
+repository-code: "https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid"
+license: "NOASSERTION"
+version: "1.0-researchgate-release-candidate"
+date-released: "2026-09-11"
+# --- Associated non-peer-reviewed manuscript ---
 preferred-citation:
   type: article
   title: >-
-    Decision sensitivity to thermal-method choice in heat-adaptive tourism opportunity
-    screening: evidence from a Madrid pilot [PROVISIONAL TITLE — under revision]
-  status: in-preparation
+    Thermal representation as a decision variable in heat-adaptive tourism opportunity
+    screening: evidence from a Madrid pilot
+  status: preprint
   authors:
-    - name: "[AUTHOR NAME(S) TO VERIFY]"
+    - given-names: "Soroush"
+      family-names: "Karahrodi"
   notes: >-
-    Target journal: Tourism Management Perspectives (primary). Title, authors, and venue not
-    yet finalised.
+    ResearchGate release candidate; non-peer-reviewed preprint / research work. No journal,
+    volume, issue, or DOI assigned. Affiliation and ORCID are not stated in this repository.

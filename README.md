@@ -10,18 +10,18 @@ simple operational proxy and a physically based SOLWEIG/UTCI configuration — i
 transparent, constraint-first screening architecture that keeps thermal state, evidence, and
 uncertainty auditable rather than collapsed into a single score.
 
-![Research status: pre-submission](https://img.shields.io/badge/research%20status-pre--submission-555555)
+![Research status: ResearchGate release candidate](https://img.shields.io/badge/research%20status-ResearchGate%20release%20candidate-555555)
 ![Study area: Madrid pilot](https://img.shields.io/badge/study%20area-Madrid%20pilot-555555)
 ![Python 3.14 / 3.12](https://img.shields.io/badge/python-3.14%20%7C%203.12-3776AB)
 ![Reproducible research](https://img.shields.io/badge/reproducible-research-2E7D32)
 ![Repository: public](https://img.shields.io/badge/repository-public-2E7D32)
 
-> **Status — public research repository · pre-submission manuscript.** Not published, accepted,
-> or peer reviewed, and **not an operational or real-time tourism product**. A reviewer-driven
-> **targeted revision has been completed on a development branch**
-> (`phase-5.4b3-targeted-revision`); the `main` publication snapshot update is pending. The
-> figures and findings shown below are **descriptive** results of a single Madrid pilot; several
-> thermal outputs are **model-derived** (see *What the project does not claim*).
+> **Status — public research repository · ResearchGate release candidate.** The current academic
+> dissemination target is a **non-peer-reviewed preprint / research work on ResearchGate**. No
+> ResearchGate upload has been made by this repository update, no future journal route has been
+> selected, and the work is **not an operational or real-time tourism product**. The figures and
+> findings shown below are **descriptive** results of a single Madrid pilot; several thermal
+> outputs are **model-derived** (see *What the project does not claim*).
 
 ---
 
@@ -37,9 +37,9 @@ uncertainty auditable rather than collapsed into a single score.
 | **Scenario experiments** | 8 pre-registered decision scenarios |
 | **Thermal methods compared** | operational proxy **vs** SOLWEIG → Tmrt → UTCI configuration |
 | **Decision architecture** | constraint-first, first-failing-gate screening (no composite score) |
-| **Research status** | pre-submission / targeted revision on development branch |
-| **Primary journal orientation** | *Tourism Management Perspectives* |
-| **Repository visibility** | public research repository (pre-submission research status) |
+| **Research status** | ResearchGate release candidate; not peer reviewed |
+| **Current dissemination target** | ResearchGate preprint / research work |
+| **Repository visibility** | public research repository |
 
 ---
 
@@ -264,7 +264,7 @@ A supplementary UTCI-field figure and the graphical abstract are in `outputs/pub
 .
 ├── manuscript/         manuscript sections, assembled manuscript, tables, verified references
 ├── supplementary/      supplementary material (Figure S1, Tables S1–S4, reproducibility notes)
-├── submission/         highlights, submission inventory
+├── submission/         historical submission inventory and ResearchGate release package
 ├── outputs/            locked result tables, SOLWEIG maps, and publication figures + render scripts
 ├── src/                analysis pipeline (study area, proxy, SOLWEIG runs, screening, validation)
 ├── scripts_assembly/   manuscript-assembly and reference-build scripts
@@ -278,7 +278,7 @@ A supplementary UTCI-field figure and the graphical abstract are in `outputs/pub
 `outputs/`, `src/`, `scripts_assembly/`, `tests/`, and the provenance files in `docs/`.
 **Internal research record:** the phase gates, audits, and reviewer notes in `docs/` are kept
 versioned as a transparent audit trail. They are working research records rather than curated
-public documentation, and would be tidied as part of preparing a formal release or submission.
+public documentation, and are outside the bounded ResearchGate release package.
 
 ---
 
@@ -340,25 +340,28 @@ This supports **auditability** — it does not imply that Git history itself val
 - [x] References verified (23 references)
 - [x] Publication figures locked
 - [x] Hostile four-reviewer audit
-- [x] Targeted revision **completed on development branch** (`main` snapshot update pending)
-- [ ] Final editorial QA
-- [ ] Administrative metadata (authors, funding, licence)
-- [ ] Journal submission
+- [x] Targeted-revision record preserved locally; the named branch is not present on the remote
+- [x] ResearchGate release package prepared from the public canonical manuscript
+- [ ] Human review of author/affiliation metadata and final PDF
+- [ ] ResearchGate upload
 - [ ] Peer review
 
-Submission has **not** occurred.
+Historical publication record: the manuscript was submitted on **2026-08-22** and received a
+**desk rejection on 2026-08-23**. Those events are historical audit facts, not the current
+dissemination route. The current route is a ResearchGate preprint / research work; upload remains
+a human action.
 
 ---
 
 ## Manuscript
 
-**Current working title:** *Decision sensitivity to thermal-method choice in heat-adaptive
-tourism opportunity screening: evidence from a Madrid pilot* — **pre-submission**.
+**Canonical title:** *Thermal representation as a decision variable in heat-adaptive tourism
+opportunity screening: evidence from a Madrid pilot*.
 
 Manuscript sections, the assembled manuscript, editable tables, and the verified reference list
-are in **[`manuscript/`](manuscript/)**. The current working title belongs to the targeted-revision
-development branch and is not yet merged into `main`; the assembled manuscript on `main` reflects
-the preserved pre-revision snapshot. Metadata (authors, affiliations, DOI) is provisional.
+are in **[`manuscript/`](manuscript/)**. The public canonical source is
+`manuscript/MANUSCRIPT_TMP_v0.2.md`; the bounded ResearchGate package records the neutral
+administrative transformations used for its release PDF. No DOI has been assigned.
 
 ---
 
@@ -388,15 +391,15 @@ These match the manuscript's Limitations section.
 
 ## Contributing
 
-This is a public repository that currently represents an active research manuscript, not yet
-maintained as a general-purpose software package. Research collaboration and methodological
-discussion are welcome; formal contribution procedures will be added as the project moves toward
-submission.
+This is a public research repository, not a general-purpose software package. Research
+collaboration and methodological discussion are welcome.
 
 ## Citation
 
-See **[CITATION.cff](CITATION.cff)**. Manuscript metadata (authors, title, venue, DOI) is
-**provisional** until submission; no DOI has been assigned.
+See **[CITATION.cff](CITATION.cff)** and the bounded
+**[ResearchGate metadata sheet](submission/researchgate/RESEARCHGATE_METADATA.md)**. Cite the
+current version as a non-peer-reviewed preprint / research work; do not invent a journal, volume,
+issue, or DOI.
 
 ## Licence
 
