@@ -28,7 +28,7 @@ The most interesting case returned nothing. Under one scenario's exact constrain
 
 The lesson travels well beyond heat and tourism: before optimising among choices, define which choices are actually admissible.
 
-HATI-Madrid is a pre-submission research prototype — several thermal values are model-derived, and it is not an operational or real-time product. Code, data provenance and figures are public here:
+HATI-Madrid is prepared as a non-peer-reviewed ResearchGate preprint / research work — several thermal values are model-derived, and it is not an operational or real-time product. Code, data provenance and figures are public here:
 https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid
 
 Where in your field does a hard constraint quietly get treated as just another weighted factor — and what breaks when it does?
@@ -47,7 +47,7 @@ HATI-Madrid tests a constraint-first alternative for heat-adaptive tourism oppor
 
 On one AEMET-designated extreme-heat day in a ~3.5 km² central-Madrid pilot (27 curated assets), the surviving candidate set diverged from a proximity-only nearest-open baseline in 7 of 8 pre-registered scenarios. In one scenario (Parque del Retiro, 15:00, 500 m reach), zero evaluated candidates survived and the pipeline returned an explicit NO_DEFENSIBLE_ALTERNATIVE state; the same source at 800 m and 1200 m yielded surviving alternatives, so the null is constraint-contingent, not a general claim about the area.
 
-Two boundaries worth stressing: the thermal fields are modelled (SOLWEIG → Tmrt → UTCI), not field-validated, and this is pre-submission work, not an operational system.
+Two boundaries worth stressing: the thermal fields are modelled (SOLWEIG → Tmrt → UTCI), not field-validated, and this is non-peer-reviewed research, not an operational system.
 
 Repository (code, provenance, figures):
 https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid
