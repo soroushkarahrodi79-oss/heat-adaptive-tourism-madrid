@@ -66,8 +66,10 @@ are available in the linked public GitHub repository.
 
 The code, documented provenance, derived tables, locked publication figures, and bounded
 pilot inputs available for public redistribution are provided in the public GitHub repository:
-https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid. Third-party data and
-software remain subject to their original licences. No repository DOI has been assigned.
+https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid. The preprint itself is
+publicly available on ResearchGate (see the confirmed URL below) and archived on Zenodo
+(DOI `10.5281/zenodo.22707470`; concept DOI `10.5281/zenodo.22707469`). Third-party data and
+software remain subject to their original licences. No repository-code DOI has been assigned.
 
 ## Limitations statement
 
@@ -87,11 +89,21 @@ tourism opportunity screening: evidence from a Madrid pilot* (Version 1.0; non-p
 preprint / research work). HATI-Madrid public preprint.
 https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid
 
-Do not add a journal, volume, issue, DOI, or ResearchGate URL unless a human upload later
-creates and verifies one.
+**Confirmed ResearchGate upload:**
+https://www.researchgate.net/publication/414226835_Thermal_representation_as_a_decision_variable_in_heat-adaptive_tourism_opportunity_screening_evidence_from_a_Madrid_pilot
+
+**Confirmed Zenodo archival record:**
+https://doi.org/10.5281/zenodo.22707470 (version DOI `10.5281/zenodo.22707470`; concept DOI
+`10.5281/zenodo.22707469`, which always resolves to the latest archived version)
+
+Do not add a journal, volume, or issue unless a human submission later creates and verifies one.
 
 ## Version and upload file
 
 - Version: 1.0
 - Preparation date: 2026-09-11
 - Exact upload candidate: `HATI_Madrid_Preprint_v1.0.pdf`
+- ResearchGate status: **published** (see confirmed URL above; exact upload date not
+  recorded in this repository)
+- Zenodo status: **published** — DOI `10.5281/zenodo.22707470`; concept DOI
+  `10.5281/zenodo.22707469` (exact upload date not recorded in this repository)

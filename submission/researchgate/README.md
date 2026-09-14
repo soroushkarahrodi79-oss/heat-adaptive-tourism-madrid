@@ -41,5 +41,7 @@ python submission/researchgate/build_researchgate_pdf.py
 python submission/researchgate/qa_researchgate_release.py
 ```
 
-The builder writes only the PDF in this folder. Zenodo archival and any later ResearchGate upload
-remain human actions.
+The builder writes only the PDF in this folder. This preprint has since been uploaded to
+ResearchGate (confirmed; see `RESEARCHGATE_METADATA.md` for the URL). This preprint has also
+since been archived on Zenodo (confirmed; DOI `10.5281/zenodo.22707470`, concept DOI
+`10.5281/zenodo.22707469` — see `RESEARCHGATE_METADATA.md`).
