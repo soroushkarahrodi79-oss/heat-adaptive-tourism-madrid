@@ -66,8 +66,10 @@ are available in the linked public GitHub repository.
 
 The code, documented provenance, derived tables, locked publication figures, and bounded
 pilot inputs available for public redistribution are provided in the public GitHub repository:
-https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid. Third-party data and
-software remain subject to their original licences. No repository DOI has been assigned.
+https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid. The preprint itself is
+publicly available on ResearchGate (see the confirmed URL below). Third-party data and
+software remain subject to their original licences. No repository or Zenodo DOI has been
+assigned yet.
 
 ## Limitations statement
 
@@ -87,7 +89,10 @@ tourism opportunity screening: evidence from a Madrid pilot* (Version 1.0; non-p
 preprint / research work). HATI-Madrid public preprint.
 https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid
 
-Do not add a journal, volume, issue, DOI, or ResearchGate URL unless a human upload later
+**Confirmed ResearchGate upload:**
+https://www.researchgate.net/publication/414226835_Thermal_representation_as_a_decision_variable_in_heat-adaptive_tourism_opportunity_screening_evidence_from_a_Madrid_pilot
+
+Do not add a journal, volume, issue, or Zenodo DOI/record URL unless a human upload later
 creates and verifies one.
 
 ## Version and upload file
@@ -95,3 +100,6 @@ creates and verifies one.
 - Version: 1.0
 - Preparation date: 2026-09-11
 - Exact upload candidate: `HATI_Madrid_Preprint_v1.0.pdf`
+- ResearchGate status: **published** (see confirmed URL above; exact upload date not
+  recorded in this repository)
+- Zenodo status: **not yet uploaded / no verified record or DOI**

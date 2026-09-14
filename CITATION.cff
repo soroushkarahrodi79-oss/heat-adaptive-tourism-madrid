@@ -1,7 +1,9 @@
 cff-version: 1.2.0
 message: >-
   Cite this repository and its associated non-peer-reviewed public preprint using
-  the metadata below. No journal, volume, issue, or DOI has been assigned.
+  the metadata below. The preprint is publicly available on ResearchGate (see
+  preferred-citation url). No journal, volume, issue, or Zenodo DOI has been assigned
+  or confirmed yet.
 title: "HATI-Madrid - Heat-Adaptive Tourism Opportunity Screening (Madrid pilot)"
 abstract: >-
   A reproducible pilot that screens urban tourism opportunities under extreme heat with a
@@ -34,6 +36,9 @@ preferred-citation:
   authors:
     - given-names: "Soroush"
       family-names: "Karahrodi"
+  url: "https://www.researchgate.net/publication/414226835_Thermal_representation_as_a_decision_variable_in_heat-adaptive_tourism_opportunity_screening_evidence_from_a_Madrid_pilot"
   notes: >-
-    Public preprint; non-peer-reviewed preprint / research work. No journal,
-    volume, issue, or DOI assigned. Affiliation and ORCID are not stated in this repository.
+    Public preprint; non-peer-reviewed preprint / research work. Publicly available on
+    ResearchGate (see url). A Zenodo archival upload is planned but its record/DOI is not
+    yet confirmed; no journal, volume, or issue has been assigned. Affiliation and ORCID
+    are not stated in this repository.
