@@ -42,5 +42,6 @@ python submission/researchgate/qa_researchgate_release.py
 ```
 
 The builder writes only the PDF in this folder. This preprint has since been uploaded to
-ResearchGate (confirmed; see `RESEARCHGATE_METADATA.md` for the URL). Zenodo archival upload
-remains a pending human action — no verified Zenodo record or DOI exists yet.
+ResearchGate (confirmed; see `RESEARCHGATE_METADATA.md` for the URL). This preprint has also
+since been archived on Zenodo (confirmed; DOI `10.5281/zenodo.22707470`, concept DOI
+`10.5281/zenodo.22707469` — see `RESEARCHGATE_METADATA.md`).
