@@ -1,6 +1,7 @@
 # GATE1_DECISION — GO / MODIFY / NO-GO
 
-**Version 0.2 · 2026-09-14 (revised after GATE1_EVIDENCE_CORRECTION_2026-09-14).**
+**Version 0.3 · 2026-09-14 (revised after GATE1_EVIDENCE_CORRECTION_2026-09-14 and the
+pre-merge methodological consistency pass).**
 
 ## Verdict
 
@@ -16,6 +17,14 @@ preconditions (route network + study-day freeze) are met.
 > Path A is corrected from *impossible* to *not currently available*. The two GO-blockers
 > (Path B; L05/L06 MISSING) remain, so MODIFY holds — now closer to GO, blocked primarily by
 > Path B rather than by a weak check.
+>
+> **Pre-merge consistency pass (2026-09-14):** four methodological fixes — (i) MDS 2023 − MDT
+> 2019 is a *normalized surface height*, not a building/canopy raster (classification is a new
+> OPEN input, L17); (ii) the single ∫UTCI dt scalar is **removed** for a multi-metric outcome
+> set; (iii) E-P3 wind is **demoted** from a frozen perturbation to an unresolved limitation /
+> ABSTAIN trigger; (iv) a real FROZEN-vs-OPEN boundary is drawn in the experiment spec. These
+> tighten the record and add preconditions (L17; metric freeze); **none invalidates MODIFY** —
+> no comparison was over-resolved and no scope was expanded. The verdict stands.
 
 ---
 
@@ -44,8 +53,8 @@ cannot be independently evaluated.
 | G1 | One fixed auditable O-D comparison | **PARTIAL** | OD1 (Atocha→Puerta de Alcalá) is fixed with two distinct alternatives, but the routes are not yet auditable because the network graph is not assembled. |
 | G2 | Plausible, independently-checked routes | **FAIL (now)** | L05 pedestrian network + L06 access/crossing plausibility are **MISSING** in-repo. Acquirable within Gate-1 rules, but not yet done or audited. |
 | G3 | Usable hourly forcing | **PASS** | Barajas 08221 hourly (L01), real observations; complete at target hours on candidate days. |
-| G4 | Dated / auditable geometry | **PASS (vintage improved 2026-09-14)** | Madrid MDS 2023 / MDT 2019 (L15) give a near-contemporaneous surface for a 2023+ day; PNOA 2008–2015 (L03/L04) retained as cross-check; tree inventory (L16) audits current canopy. |
-| G5 | Documented uncertainty sources | **PASS** | Ledger L01–L16; perturbation set E-P1…E-P6; principal-uncertainty ranking. |
+| G4 | Dated / auditable geometry | **PASS (vintage improved; classification OPEN)** | Madrid MDS 2023 / MDT 2019 (L15) give a near-contemporaneous *surface* for a 2023+ day; turning it into building/canopy layers needs an audited footprint source + vegetation mask (**L17, OPEN** — a Gate-2 precondition, not a Gate-1 blocker to feasibility). PNOA 2008–2015 (L03/L04) retained as cross-check; tree inventory (L16) audits current canopy. |
+| G5 | Documented uncertainty sources | **PASS** | Ledger L01–L17; perturbation dimensions E-P1/E-P2/E-P4/E-P5/E-P6 (E-P3 wind demoted); multi-metric outcome set (∫UTCI dt removed); principal-uncertainty ranking. |
 | G6 | ≥1 independent check | **PASS (upgraded 2026-09-14)** | Independent **urban hourly Ta/RH** at Escuelas Aguirre, adjacent to OD1 (L02). Retiro daily/monthly + ERA5-Land are regional context. Still not pedestrian-scale and not validation of Tmrt/UTCI (wind/radiation remain non-corridor-local). |
 | G7 | Legitimate ABSTAIN outcome | **PASS** | ABSTAIN is a first-class result (NC1–NC7; decision-reversal rule). |
 | G8 | Non-trivial surviving question | **PASS** | Abstention/evidence-sufficiency for comparative modeled exposure is unoccupied (`GATE1_LITERATURE_LOG.md`). |
@@ -97,6 +106,13 @@ is to lower the claim and satisfy the preconditions, not to add SOLWEIG layers.
 5. **Acquire geometry by bounded clip** — MDT 2019 + MDS 2023 clipped to OD1 only (not a
    city-wide raster download), PNOA retained as cross-check; confirm the Escuelas Aguirre
    hourly file actually covers the chosen day/hours (else forcing uncertainty → ABSTAIN, E-P1).
+6. **Resolve geometry classification (L17, OPEN)** — audit a building-footprint source (to
+   classify the MDS 2023 − MDT 2019 normalized surface height into buildings) and a justified
+   vegetation mask (before reading MDS height as canopy). Unresolved classification is an
+   ABSTAIN trigger, not something to assume away.
+7. **Freeze outcome metrics** — lock the multi-metric set (∫UTCI dt removed; no
+   "heat/physiological dose") and the exact UTCI category boundaries before any thermal output;
+   keep spatial wind as a demoted (E-P3) unresolved limitation, not a frozen perturbation.
 
 If condition 1 cannot be met (routes prove un-auditable or not legally walkable), the case
 does not upgrade — it becomes an ABSTAIN negative control, and the O-D case is reselected

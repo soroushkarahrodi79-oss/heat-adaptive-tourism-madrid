@@ -33,10 +33,14 @@ This pass ran **before** any thermal output and changes no Gate-0 decision.
    urban-minus-Barajas difference (now computable from Escuelas Aguirre) or, where that
    station is incomplete for the chosen day/hours, forcing uncertainty becomes an ABSTAIN
    condition — never an invented offset.
-3. **Geometry over-reliance on PNOA 2008–2015 (L03/L04) — improvable.** Madrid **MDS 2023**
-   (2023 aerial survey, ~100 pts/m², 10 cm tiles / 1 m COG) and municipal **MDT 2019** give a
-   near-contemporaneous surface/terrain pair for a 2023+ study day, materially better than
-   the 2008–2015 vintage for buildings/terrain.
+3. **Geometry over-reliance on PNOA 2008–2015 (L03/L04) — improvable, with a semantics caveat.**
+   Madrid **MDS 2023** (2023 aerial survey, ~100 pts/m², 10 cm tiles / 1 m COG) and municipal
+   **MDT 2019** give a near-contemporaneous *surface/terrain* pair for a 2023+ study day. But
+   **MDS 2023 is an unclassified photogrammetric surface**: MDS 2023 − MDT 2019 is a
+   *normalized surface height*, which becomes *building* height only after classification with
+   an auditable footprint source, and *canopy* height only after a justified vegetation mask —
+   both **OPEN** (L17). It is materially better-vintage than 2008–2015 *once classified*, not
+   before.
 4. **Path A "no pedestrian-level measurements exist and none is obtainable" (§1D) —
    OVERCLAIMED.** Impossibility was not demonstrated. Corrected to *NOT CURRENTLY AVAILABLE*:
    "no suitable independent pedestrian-level Tmrt/UTCI measurements have yet been identified
@@ -59,9 +63,13 @@ This pass ran **before** any thermal output and changes no Gate-0 decision.
 - L02 rewritten: hourly urban Ta/RH check now AVAILABLE near OD1; roles separated into
   MODEL FORCING / INDEPENDENT URBAN CHECK / REGIONAL CONTEXT.
 - E-P1 rewritten (empirical-hourly or ABSTAIN; the +0.5 °C offset is deleted).
-- L03/L04 rewritten to a hybrid architecture (MDT 2019 terrain · MDS 2023 surface/building ·
-  MDS 2023 + tree-inventory canopy audit · PNOA retained as cross-check/fallback); new ledger
-  rows L15 (MDS 2023 / MDT 2019) and L16 (tree inventory).
+- L03/L04 rewritten to a **classified evidence architecture** (not a "hybrid" hand-wave):
+  terrain = MDT 2019; normalized surface height = MDS 2023 − MDT 2019; building height =
+  normalized surface height *classified via an auditable footprint source* (OPEN); canopy =
+  normalized surface height *behind a justified vegetation mask* (OPEN); tree inventory =
+  presence/change audit only; PNOA = independent cross-vintage sensitivity source. New ledger
+  rows L15 (MDS 2023 / MDT 2019), L16 (tree inventory), **L17 (building/vegetation
+  classification — status OPEN)**.
 - §1D Path A downgraded from "impossible" to "not currently available."
 - §1B study-day protocol gains a geometry-alignment rule and now **prefers a fresh 2023/2024
   heat day**; 2021-08-14 is demoted (it predates MDS 2023).
@@ -233,16 +241,17 @@ R2/R3/R5 — no bulk download.
 
 ## GATE 1C — Input feasibility ledger
 
-The full structured ledger is `GATE1_INPUT_LEDGER.csv` (16 essential inputs after the
-2026-09-14 correction added L15/L16, each with source/publisher/product/URL/vintage/
-resolution/CRS/licence/role/status/independence/direction-risk/limitations/Gate-2 treatment).
-Status summary:
+The full structured ledger is `GATE1_INPUT_LEDGER.csv` (17 essential inputs after the
+2026-09-14 correction added L15/L16 and the pre-merge pass added L17, each with source/
+publisher/product/URL/vintage/resolution/CRS/licence/role/status/independence/direction-risk/
+limitations/Gate-2 treatment). Status summary:
 
 | Status | Inputs |
 |---|---|
 | **ACCEPT** | L07 timestamps/timezone; L08 vintage register; L09 licensing; L14 O-D endpoints. |
 | **ACCEPT WITH UNCERTAINTY** | L01 Barajas forcing; L02 independent urban check (now hourly Ta/RH near OD1; wind/radiation still not corridor-local); L03 buildings/terrain; L04 canopy; L10 departure-time support; L11 solar GHI; L13 wind; **L15 Madrid MDS 2023 / MDT 2019 (added)**; **L16 municipal tree inventory (added)**. |
 | **MISSING** | **L05 pedestrian network**; **L06 route access/crossing plausibility**; L12 land cover (package default — non-blocking). |
+| **OPEN (added 2026-09-14)** | **L17 geometry classification** — the building-footprint source and vegetation mask that turn MDS 2023 − MDT 2019 (a *normalized surface height*) into building and canopy layers are not yet audited; a Gate-2 precondition and an ABSTAIN trigger while unresolved. |
 | **REJECT** | none. |
 
 **Two MISSING inputs are load-bearing for a *route* comparison** and are the headline Gate 1
@@ -268,9 +277,12 @@ Specific attention points (per Gate 1C; updated 2026-09-14):
 - **Crown geometry vs tree points:** neither PNOA height raster, MDS 2023 surface, nor the
   tree inventory provides crown polygons, per-hour shade, or leaf state — shadow extent stays
   approximated; the tree inventory is a *presence/removal audit*, not crown geometry.
-- **Building geometry date:** MDS 2023 − MDT gives a **2023** building surface, materially
-  better than the 2008–2015 building nDSM; OSM incompleteness / side-of-street ambiguity still
-  unmodelled — the network audit (L06) must resolve which sidewalk each route uses.
+- **Building geometry date & MDS semantics:** MDS 2023 − MDT 2019 is a **2023 normalized
+  surface height**, not a building raster — a building layer requires classification against an
+  independently auditable footprint source, which is **OPEN** (L17). Once classified it is
+  materially better-vintage than the 2008–2015 building nDSM. OSM incompleteness /
+  side-of-street ambiguity still unmodelled — the network audit (L06) must resolve which
+  sidewalk each route uses.
 - **Crossings / pedestrian restrictions & historical opening hours:** required if a
   time-shift comparison is later attempted; 2026 hours applied to a historical day is a
   stated mismatch.
@@ -319,26 +331,38 @@ data/literature justification (no arbitrary parameter sweeps):
 | Dim | Uncertainty source | Justified alternatives | Why it can flip the decision |
 |---|---|---|---|
 | E-P1 (revised 2026-09-14) | Meteorological forcing representativeness | Barajas as-is vs an **empirical hourly** Escuelas-Aguirre-minus-Barajas Ta/RH difference at the target hours. If the urban station is incomplete for the chosen day/hours, forcing uncertainty becomes an **ABSTAIN** condition — the discarded +0.5 °C constant-offset is **not** reinstated. | Airport-vs-centre bias, now measured hourly; a daily-max offset was statistically invalid for the diurnal cycle. |
-| E-P2 (revised 2026-09-14) | **Canopy / vegetation geometry** | Bounding canopy states: PNOA 2008–2015 nDSM vs **MDS 2023** surface-derived canopy height vs **municipal tree-inventory** presence audit (removals/additions) vs Copernicus TCD 2018 density | The dominant risk: canopy change can add/remove the shade separating Alt A from Alt B; MDS 2023 + inventory bound it far better than one stale raster. |
-| E-P3 | Wind treatment | Uniform station wind vs a simple open-vs-canyon adjustment (no CFD) | Plaza-vs-canyon cooling could differentially favour one route. |
-| E-P4 (revised 2026-09-14) | Building/shadow representation | **MDS 2023 − MDT 2019** building surface (2023) vs PNOA 2008–2015 building nDSM as cross-check | Building edits alter cast shadow on one route; the 2023 surface is the preferred base, PNOA the fallback/cross-check. |
+| E-P2 (revised 2026-09-14) | **Canopy / vegetation geometry** | Bounding canopy states: PNOA 2008–2015 nDSM vs MDS 2023 normalized surface height **masked to vegetation** (mask OPEN, L17) vs **municipal tree-inventory** presence audit (removals/additions) vs Copernicus TCD 2018 density | The dominant risk: canopy change can add/remove the shade separating Alt A from Alt B; MDS 2023 height is canopy *only after* an audited vegetation mask, not before. |
+| ~~E-P3~~ (DEMOTED 2026-09-14) | Wind treatment | **Removed from the frozen perturbation set** — no specific published canyon-multiplier method for this context, so none is invented. Uniform station wind is the only justified treatment; spatial wind stays an **unresolved limitation / ABSTAIN trigger**. | A physically based treatment is deferred to Gate 2 only if wind proves decision-critical and suitable inputs/evaluation exist — never URock to rescue this. |
+| E-P4 (revised 2026-09-14) | Building/shadow representation | MDS 2023 − MDT 2019 **normalized surface height classified to buildings via an audited footprint source** (classification OPEN, L17) vs PNOA 2008–2015 building nDSM as an independent cross-vintage check | Raw MDS − MDT is *surface* height, not a building raster; buildings need classification first. |
 | E-P5 | Pedestrian network representation | Two independently-audited route traces (e.g. sidewalk side A vs side B where ambiguous) | Side-of-street choice changes exposure along the same corridor. |
-| E-P6 | Walking speed / pauses | 1.1 vs 1.4 m/s; optional queue/pause at endpoints | Changes cumulative exposure integral and could reorder near-ties. |
+| E-P6 | Walking speed / pauses | 1.1 vs 1.4 m/s; optional queue/pause at endpoints | Changes trip duration and the time-weighted / in-category metrics and could reorder near-ties. |
+
+**Outcome metrics (revised 2026-09-14):** the single cumulative ∫UTCI dt scalar is **removed**
+(no published method validates integrating an equivalent-temperature index into a "dose" for
+this comparative decision, and the claim ceiling forbids a physiological-dose reading). The
+routes are described by a pre-declared **multi-metric** set — trip duration; time-weighted
+mean modeled UTCI; along-route distribution/range; minutes and proportion within pre-declared
+standard UTCI stress categories; max/high-percentile only if separately justified —
+each with its uncertainty interval, and none labelled "heat/physiological dose"
+(`GATE1_EXPERIMENT_SPEC.md` §1.3).
 
 **Decision framework — no invented °C threshold.** The literature check (below and in
 `GATE1_LITERATURE_LOG.md`) found **no** defensible universal "material UTCI difference"
 threshold for *this* comparison type, but a **mature rank-reversal / decision-stability
 formalism** (pairwise-comparison robustness under uncertainty bounds). The comparison is
-therefore framed on decision stability, not on a magic number:
+framed on decision stability, evaluated **per metric**; UTCI category boundaries apply **only**
+to the category-meaningful metrics (time-weighted mean UTCI, minutes/proportion-in-category),
+never to an integrated value:
 
-- **ROBUST COMPARISON** — the *direction* of the paired Alt A − Alt B difference is
-  preserved across all justified perturbations (E-P1…E-P6) and the difference sits clear of
-  any UTCI category boundary.
-- **NO ROBUST DIFFERENCE** — the routes are statistically/materially indistinguishable, or
-  the sign is stable but the magnitude is within the modeled uncertainty interval.
-- **ABSTAIN / NO EVIDENCE** — the decision *reverses* under at least one justified
-  perturbation, OR an essential input is MISSING/near a category boundary, OR the
-  uncertainty interval spans the decision.
+- **ROBUST COMPARISON** — the sign of the Alt A − Alt B difference agrees across the metric set
+  and is preserved across all justified perturbations (E-P1, E-P2, E-P4, E-P5, E-P6), clear of
+  a UTCI category boundary.
+- **NO ROBUST DIFFERENCE** — routes indistinguishable, or sign stable but magnitude within the
+  modeled uncertainty interval, or **legitimate metrics disagree on ordering**.
+- **ABSTAIN / NO EVIDENCE** — the decision *reverses* under ≥1 justified perturbation, OR an
+  essential input is MISSING (L05/L06) or its classification unresolved (L17), OR a
+  category-based metric straddles a boundary, OR spatial wind is decision-critical while
+  unresolved (demoted E-P3), OR the uncertainty interval spans the decision.
 
 Statistical significance is explicitly **not** conflated with practical/physiological
 relevance (no physiological claim is made at all).
@@ -389,17 +413,22 @@ fresh 2023/2024 heat day per the correction).
 
 ## Principal uncertainties (ranked)
 
-1. **Canopy geometry** — still dominant and direction-changing, but **reduced** after the
-   correction: MDS 2023 (L15) + tree inventory (L16) bound it far better than the 2008–2015
-   raster alone; the residual (unclassified surface, no crown transmissivity, no leaf state)
-   is why the ABSTAIN logic still centres here.
-2. **No pedestrian-level validation (Path B operative)** — caps the claim while it holds;
+1. **Canopy geometry** — still dominant and direction-changing, but **reduced**: MDS 2023 (L15)
+   + tree inventory (L16) bound it far better than the 2008–2015 raster alone; the residual
+   (unclassified surface needing a vegetation mask (L17), no crown transmissivity, no leaf
+   state) is why the ABSTAIN logic still centres here.
+2. **Geometry classification unresolved (L17, OPEN)** — MDS 2023 − MDT 2019 is a normalized
+   *surface* height; building and canopy layers require an audited footprint source and a
+   justified vegetation mask before any thermal run.
+3. **No pedestrian-level validation (Path B operative)** — caps the claim while it holds;
    Path A is *not currently available*, not impossible.
-3. **Missing route network + access audit (L05/L06)** — a precondition gap, resolvable but
+4. **Missing route network + access audit (L05/L06)** — a precondition gap, resolvable but
    currently open.
-4. **Corridor-local wind & radiation not observed** — only peripheral met stations measure
+5. **Spatial wind (E-P3 demoted)** — no justified canyon parameterisation; uniform station
+   wind only; spatial wind heterogeneity is an unresolved limitation / ABSTAIN trigger.
+6. **Corridor-local wind & radiation not observed** — only peripheral met stations measure
    them; GHI stays modeled and wind non-local. (Ta/RH is now checkable at OD1.)
-5. **Forcing representativeness (Barajas airport)** — now testable via an empirical hourly
+7. **Forcing representativeness (Barajas airport)** — now testable via an empirical hourly
    Escuelas-Aguirre-minus-Barajas Ta/RH difference (E-P1), not merely assumed differenced-out.
 
 ## Unresolved blockers carried to Gate 2
@@ -408,6 +437,11 @@ fresh 2023/2024 heat day per the correction).
   acquired + manually audited before any thermal computation.
 - **B2:** Study day not yet frozen (R1–R7 shortlist; a fresh 2023/2024 heat day preferred;
   small AEMET + municipal metadata queries pending).
+- **B2b:** **Geometry classification (L17) OPEN** — audit a building-footprint source and a
+  vegetation mask before MDS 2023 − MDT 2019 is read as building/canopy height.
+- **B2c:** **Outcome metrics + wind** — freeze the §1E multi-metric set (∫UTCI dt removed) and
+  the exact UTCI category boundaries before any thermal output; spatial wind stays a demoted
+  (E-P3) unresolved limitation, not a frozen perturbation.
 - **B3:** A closely-adjacent 2026 paper ("How fine is fine enough? … heat-aware pedestrian
   routing") narrows the novelty envelope; Gate 2 framing must assert the abstention/
   evidence-sufficiency distinction sharply (see `GATE1_LITERATURE_LOG.md`).
