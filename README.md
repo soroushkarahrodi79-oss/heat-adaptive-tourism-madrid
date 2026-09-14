@@ -17,6 +17,11 @@ uncertainty auditable rather than collapsed into a single score.
 ![Repository: public](https://img.shields.io/badge/repository-public-2E7D32)
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22707470-blue)](https://doi.org/10.5281/zenodo.22707470)
 
+**See [PROJECT_STATUS.md](PROJECT_STATUS.md) for the canonical status record**
+(`RELEASE_LOCKED` as of 2026-09-14): current reference commit/DOI, what is demonstrated
+vs. model-derived/unvalidated, the claim ceiling, allowed maintenance changes, and the
+disposition of every issue and pull request.
+
 > **Status — public research repository · public preprint.** The current academic
 > dissemination route is a **non-peer-reviewed preprint / research work for public archival
 > dissemination**. The preprint is publicly available on
