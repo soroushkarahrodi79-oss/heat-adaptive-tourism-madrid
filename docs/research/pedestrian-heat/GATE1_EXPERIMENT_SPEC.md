@@ -1,6 +1,11 @@
 # GATE1_EXPERIMENT_SPEC — Frozen minimal comparison / perturbation experiment
 
-**Version 0.1 · 2026-09-14. Status: FROZEN specification of a FUTURE experiment. NOT executed.**
+**Version 0.2 · 2026-09-14. Status: FROZEN specification of a FUTURE experiment. NOT executed.**
+
+> **Revised 2026-09-14 (evidence correction):** E-P1 constant-offset deleted (empirical-hourly
+> or ABSTAIN); E-P2/E-P4 geometry now use Madrid MDS 2023 / MDT 2019 + tree inventory; study
+> day now prefers a fresh 2023/2024 heat event; independent check is Escuelas Aguirre hourly
+> Ta/RH. See `GATE1_FEASIBILITY_DOSSIER.md` §GATE1_EVIDENCE_CORRECTION_2026-09-14.
 
 > This is a pre-registration-style freeze of the *smallest defensible* Gate 2 experiment. It
 > is written now, **before** any thermal output exists, precisely so that route pair, day,
@@ -17,7 +22,7 @@
 | **O-D case** | OD1: Atocha (A09, 40.404557, −3.688683) → Puerta de Alcalá (A14, 40.419987, −3.688724). |
 | **Alt A** | Paseo del Prado / Recoletos monumental axis (open, low continuous canopy). |
 | **Alt B** | Real Jardín Botánico / Retiro western edge + Calle Alfonso XII (tree-lined). |
-| **Study day** | To be frozen at Gate 2 start on rules R1–R6 (`GATE1_FEASIBILITY_DOSSIER.md` §1B). Shortlist: 2021-08-14 (primary candidate) or a fresh AEMET-warning day; 2023-08-21 is **legacy stress-test only**. |
+| **Study day** | To be frozen at Gate 2 start on rules R1–R7 (`GATE1_FEASIBILITY_DOSSIER.md` §1B; updated 2026-09-14). **Preferred: a fresh 2023/2024 AEMET heat-warning day (≠ 21 Aug 2023)** — aligns Barajas/municipal hourly forcing, the Escuelas Aguirre urban hourly check, and MDS-2023 geometry. 2021-08-14 = PNOA-vintage alternative; 2023-08-21 = legacy stress-test only. |
 | **Target hours** | A small fixed set within the confirmed clear-sky daylight envelope (e.g. one near solar noon + one late-afternoon), fixed before running. |
 | **Claim ceiling** | Path B — robustness / sensitivity / decision-reversal / evidence sufficiency of *modeled* comparative exposure. No accuracy/comfort/behaviour/health claim. |
 | **Primary exposure statistic** | Cumulative along-route modeled UTCI exposure integral (∫ UTCI dt over the walk), plus a category-boundary flag. Buffer-mean sampling (not raw centroid) per the locked pilot's own validated choice. |
@@ -29,9 +34,12 @@
 - **P-B:** L06 access/crossing audit: both routes verified legally + physically walkable
   end-to-end on the study day; every controlled crossing and park gate (with opening hours)
   recorded. Any unresolved access → the case moves to an ABSTAIN negative control, not a run.
-- **P-C:** Study day frozen on R1–R6; forcing (Barajas) and independent check (Retiro/ERA5)
-  are **different** series.
+- **P-C:** Study day frozen on R1–R7; forcing (Barajas or a municipal met station) and the
+  independent **urban** check (Escuelas Aguirre hourly Ta/RH) are **different** series.
 - **P-D:** Both route polylines frozen and hashed before any UTCI field is generated.
+- **P-E (added 2026-09-14):** Geometry frozen — terrain = MDT 2019, building surface =
+  MDS 2023 − MDT 2019, canopy bounded per E-P2; obtained by **bounded bbox clip to OD1 only**
+  (not a city-wide raster download), with PNOA retained as cross-check.
 
 ## 3. Perturbation dimensions (frozen ranges + justification)
 
@@ -40,10 +48,10 @@ justified by data provenance or literature, never invented.
 
 | Dim | Perturbation | Frozen alternatives | Justification of the range |
 |---|---|---|---|
-| E-P1 | Forcing representativeness | (a) Barajas as-is; (b) diurnal shape re-anchored to Retiro official daily-max (+0.5 °C offset, the *measured* Barajas–Retiro gap). | The gap is a real, quantified value (Phase 1.1 Audit 1), not a guess. |
-| E-P2 | **Canopy geometry** | (a) PNOA 1st-coverage veg nDSM (2008–2015); (b) current Madrid arbolado per-tree points rasterised to canopy presence; (c) Copernicus TCD 2018 density as a third bounding state. | Three *real, independent* canopy datasets already in-repo/available bound the decade of unknown canopy change. |
+| E-P1 (revised 2026-09-14) | Forcing representativeness | (a) Barajas as-is; (b) an **empirical hourly** Escuelas-Aguirre-minus-Barajas Ta/RH difference at the target hours. **If** the urban station is incomplete for the chosen day/hours → forcing uncertainty is an **ABSTAIN** condition. | Airport-vs-centre bias measured hourly from a real corridor-adjacent station. **The former +0.5 °C daily-max constant offset is DELETED** — a daily-max gap does not license a constant hourly offset. |
+| E-P2 (revised 2026-09-14) | **Canopy geometry** | (a) PNOA veg nDSM (2008–2015); (b) **MDS 2023** surface-derived canopy height; (c) **municipal tree-inventory** presence/removal audit; (d) Copernicus TCD 2018 density. | Four *real, independent* canopy states bound the change; MDS 2023 + inventory add 2023/current vintages the old set lacked. |
 | E-P3 | Wind treatment | (a) uniform station wind; (b) simple open-plaza vs street-canyon multiplier (documented, no CFD/URock). | Bounds plaza-vs-canyon cooling contrast without introducing an unvalidated CFD field. |
-| E-P4 | Building/shadow geometry | (a) 1st-coverage building nDSM; (b) 2nd-coverage (2015–2021) sheet pull **only if** E-P2/E-P3 show the pair is decision-sensitive. | Avoids an expensive manual sheet download unless the cheaper perturbations already show fragility. |
+| E-P4 (revised 2026-09-14) | Building/shadow geometry | (a) **MDS 2023 − MDT 2019** building surface (2023, preferred); (b) PNOA 2008–2015 building nDSM as cross-check. | 2023 surface is near-contemporaneous with a 2023+ study day; PNOA tests geometry-source sensitivity. IGN 2nd-coverage sheet pull only if (a)/(b) still leave the pair fragile. |
 | E-P5 | Network / side-of-street | Two audited traces where sidewalk side is ambiguous (side A vs side B). | Side-of-street changes sun/shade exposure along the identical corridor. |
 | E-P6 | Walking speed / pauses | 1.1 m/s vs 1.4 m/s; optional endpoint pause. | Standard pedestrian speed range; changes the exposure integral and can reorder near-ties. |
 
