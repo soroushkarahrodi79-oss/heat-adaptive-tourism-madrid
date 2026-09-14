@@ -8,15 +8,19 @@ pre-merge methodological consistency pass).**
 # MODIFY
 
 Proceed to Gate 2 as a **Path-B robustness / evidence-sufficiency / abstention** study — not
-as a routing, accuracy, comfort, behaviour, or health study — and only after two hard
-preconditions (route network + study-day freeze) are met.
+as a routing, accuracy, comfort, behaviour, or health study — and only after the complete set
+of pre-modeling conditions in §5 (all seven) is met.
 
 > **Correction note (2026-09-14):** the verdict is unchanged, but two inputs strengthened —
 > an independent **urban hourly** Ta/RH check now exists near OD1 (Escuelas Aguirre; G6 upgraded
 > from WEAK PASS to PASS) and geometry vintage improves via Madrid MDS 2023 / MDT 2019 (G4).
-> Path A is corrected from *impossible* to *not currently available*. The two GO-blockers
-> (Path B; L05/L06 MISSING) remain, so MODIFY holds — now closer to GO, blocked primarily by
-> Path B rather than by a weak check.
+> Path A is corrected from *impossible* to *not currently available*. Two constraints of
+> **different kinds** remain: **L05/L06 MISSING** is the current **execution / auditability
+> blocker** (the routes cannot yet be traced or independently checked), while **Path B** is the
+> current **scientific claim-ceiling constraint** (no independent pedestrian-level thermal
+> measurements have been identified). Both keep the verdict at MODIFY rather than GO, but they
+> are not the same kind of thing — one gates whether the experiment can run, the other bounds
+> what it may claim if it does.
 >
 > **Pre-merge consistency pass (2026-09-14):** four methodological fixes — (i) MDS 2023 − MDT
 > 2019 is a *normalized surface height*, not a building/canopy raster (classification is a new
@@ -60,8 +64,11 @@ cannot be independently evaluated.
 | G8 | Non-trivial surviving question | **PASS** | Abstention/evidence-sufficiency for comparative modeled exposure is unoccupied (`GATE1_LITERATURE_LOG.md`). |
 
 **GO is not satisfied:** G2 fails now and G1 is only partial; pedestrian-level validation is
-**not currently available** (Path B operative — `…DOSSIER.md` §1D). G4 and G6 are no longer
-the binding constraints after the correction; **L05/L06 (routes not auditable) and Path B are.**
+**not currently available** (Path B operative — `…DOSSIER.md` §1D). G4 and G6 are no longer the
+binding constraints after the correction. What keeps GO out of reach are two constraints of
+**different kinds**: **L05/L06** — the current **execution / auditability blocker** (routes not
+yet traceable or independently checkable) — and **Path B** — the current **scientific
+claim-ceiling constraint** (no independent pedestrian-level thermal measurements identified).
 
 ## 3. Why MODIFY and not NO-GO
 
@@ -78,7 +85,7 @@ comparison is unsupportable in principle. Neither holds:
   the earlier weak daily/monthly one.
 
 The verdict is therefore MODIFY: feasible, but with the claim ceiling lowered to Path B and
-two preconditions attached.
+the complete set of pre-modeling conditions in §5 (all seven) attached.
 
 ## 4. Why MODIFY and not GO
 
