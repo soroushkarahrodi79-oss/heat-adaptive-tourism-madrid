@@ -353,6 +353,10 @@ This supports **auditability** — it does not imply that Git history itself val
 - [ ] Human review of author/affiliation metadata and final PDF
 - [ ] Peer review
 
+The metadata/PDF review above is a post-publication editorial check (e.g. confirming
+affiliation/ORCID text if any is later added); it does **not** mean the Zenodo/ResearchGate
+deposit itself is incomplete — both are already public, as recorded above.
+
 Historical publication record: the manuscript was submitted on **2026-08-22** and received a
 **desk rejection on 2026-08-23**. Those events are historical audit facts, not the current
 dissemination route. The current route is public preprint archival dissemination: the preprint

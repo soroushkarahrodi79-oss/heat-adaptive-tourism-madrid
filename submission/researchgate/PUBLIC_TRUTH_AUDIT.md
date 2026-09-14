@@ -41,7 +41,7 @@ and the relevant phase/provenance/limitations records in `docs/` and `data/proce
 | MATCH / historical | User-verified history: submitted 2026-08-22; desk rejected 2026-08-23. | Preserved explicitly as history, not presented as peer review or publication. |
 | UNKNOWN | Affiliation, ORCID, funding, competing interests, acknowledgements. | Not invented. Affiliation/ORCID must be supplied by the owner if applicable. |
 | RESOLVED (2026-09-14) | ResearchGate URL. | The preprint is confirmed publicly uploaded: https://www.researchgate.net/publication/414226835_Thermal_representation_as_a_decision_variable_in_heat-adaptive_tourism_opportunity_screening_evidence_from_a_Madrid_pilot — added to README, CITATION.cff, and `RESEARCHGATE_METADATA.md`. |
-| RESOLVED (2026-09-14) | Zenodo record/DOI. | Owner-supplied and not independently re-fetched in this session (doi.org and zenodo.org are egress-blocked here): version DOI `10.5281/zenodo.22707470`, concept DOI `10.5281/zenodo.22707469` (always resolves to the latest version) — added to README, CITATION.cff, and `RESEARCHGATE_METADATA.md`. Owner should confirm the resolved page's title/author/date match once merged. |
+| RESOLVED (2026-09-14) | Zenodo record/DOI. | Owner-confirmed against the official record at https://zenodo.org/records/22707470: title, author (Soroush Karahrodi), and file `HATI_Madrid_Preprint_v1.0.pdf` match. Version DOI `10.5281/zenodo.22707470`; concept DOI `10.5281/zenodo.22707469` (always resolves to the latest version) — added to README, CITATION.cff, and `RESEARCHGATE_METADATA.md`. |
 
 ## Branch verification
 
