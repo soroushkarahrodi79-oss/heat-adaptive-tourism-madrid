@@ -1,9 +1,17 @@
 # GATE3A_DECISION — pipeline falsification verdict
 
-**Version 1.1 · 2026-09-15 (updated after the sampling-correction audit).**
-Numbers below are the **corrected** global-chainage results at the frozen baseline speed
-1.1 m/s (AMENDMENT_002); see `GATE3A_SAMPLING_CORRECTION.md`. The correction did **not**
-change the interpretation.
+**Version 1.2 · 2026-09-15 (updated after the execution-semantics review).**
+Numbers below are the **fully corrected** results: global-chainage sampler (AMENDMENT_002,
+v = 1.1 m/s) + **stateful single-call SOLWEIG** and **hardened fail-closed Catastro**
+(AMENDMENT_003; `GATE3A_STATEFUL_CORRECTION.md`). Both correction passes left the
+interpretation unchanged.
+
+> **v1.2 correction summary.** (1) SOLWEIG now runs as ONE stateful `calculate()` over a
+> continuous 72-step 15-min sequence (00:00→17:45) — thermal state is carried, not reset per
+> timestamp; only the 8 frozen decision fields feed metrics. (2) Catastro acquisition is
+> fail-closed with structural GML parsing (rings/multipart, dedup) → building coverage
+> 32.03 %→30.14 %; DSM/CDSM regenerated. Corrected baseline A−B: **14:00 −0.042**, **17:00
+> −0.367** (was −0.048 / −0.365) — ordering and trade-off preserved.
 
 ## Baseline outcome label (3A.8 — no scientific winner)
 
@@ -15,9 +23,9 @@ preferred**; that requires the frozen uncertainty/perturbation experiment in Gat
 
 | | 14:00 departure | 17:00 departure |
 |---|---|---|
-| **THERMAL INTENSITY** — mean UTCI (A / B) | 40.50 / 40.55 °C → **A cooler by 0.05** | 42.18 / 42.55 °C → **A cooler by 0.37** |
+| **THERMAL INTENSITY** — mean UTCI (A / B) | 40.345 / 40.387 °C → **A cooler by 0.042** | 42.246 / 42.613 °C → **A cooler by 0.367** |
 | **EXPOSURE DURATION** — trip minutes (A / B) @1.1 m/s | 40.3 / 35.8 → **B shorter by 4.4** | 40.3 / 35.8 → **B shorter by 4.4** |
-| minutes in very-strong+extreme (A / B) | 34.4 / 32.9 | 40.3 / 35.8 → **B fewer** |
+| minutes in very-strong+extreme (A / B) | 33.8 / 32.5 | 40.3 / 35.8 → **B fewer** |
 
 (Speed-robustness QA at the other frozen value 1.4 m/s: A−B intensity = −0.077 / −0.387;
 sign unchanged. Corrected sampler: A = 532 samples, B = 474; Σ represented length = route

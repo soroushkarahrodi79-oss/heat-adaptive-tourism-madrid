@@ -31,9 +31,12 @@ thermal output. **Not** city-wide. Resolution 2 m: sidewalk-scale, SVF-tractable
 domain; fixed before results. MDS/MDT COG tiles read **windowed via `/vsicurl`** (not
 bulk-downloaded).
 
-## Time-resolved traversal (3A.3, frozen Gate-2 §0.1)
-Thermal fields at **Δt = 15 min**: 14:00/14:15/14:30/14:45 and 17:00/17:15/17:30/17:45
-(8 SOLWEIG runs; SVF computed once). Each route is sampled at **true global chainage**
+## Time-resolved traversal (3A.3, frozen Gate-2 §0.1; execution per AMENDMENT_003)
+Thermal fields at **Δt = 15 min**. **Corrected execution:** a **single stateful**
+`solweig.calculate(surface, weather=[...])` over a **continuous 72-step 15-min sequence
+00:00→17:45 local** (thermal state carried across steps; SVF computed once); the pre-17:00
+steps are model preconditioning, and **only** the 8 frozen decision fields (14:00/15/30/45,
+17:00/15/30/45) feed route metrics. Each route is sampled at **true global chainage**
 (Δs = 5 m measured continuously from the origin; final partial interval included; each
 sample carries an explicit **represented length / dwell weight** — corrected 2026-09-15,
 see `GATE3A_SAMPLING_CORRECTION.md`). Segment traversal time

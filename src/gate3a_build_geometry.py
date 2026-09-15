@@ -76,42 +76,20 @@ print(f"  MDT nan%={np.isnan(mdt).mean()*100:.1f} range {np.nanmin(mdt):.1f}..{n
 nsh=np.clip(mds-mdt,0,None); nsh[np.isnan(mds)|np.isnan(mdt)]=0.0
 print(f"  nSH range {np.nanmin(nsh):.1f}..{np.nanmax(nsh):.1f} mean {np.nanmean(nsh):.2f}")
 
-# ---- Catastro building footprints (WFS, EPSG:25830) ----
-def catastro_footprints():
-    """Catastro WFS caps bbox area, so tile the domain into ~200 m sub-bboxes and merge."""
-    import re
-    url="https://ovc.catastro.meh.es/INSPIRE/wfsBU.aspx"
-    polys=[]; h=hashlib.sha256(); step=200.0; nsub=0
-    yy=Y0
-    while yy<Y1:
-        xx=X0
-        while xx<X1:
-            sx1=min(xx+step,X1); sy1=min(yy+step,Y1)
-            (lo0,lo1),(la0,la1)=to4326([xx,sx1],[yy,sy1])
-            params={"service":"WFS","version":"2.0.0","request":"GetFeature",
-                    "typenames":"bu:Building","srsname":"urn:ogc:def:crs:EPSG::4326",
-                    "bbox":f"{la0},{lo0},{la1},{lo1},urn:ogc:def:crs:EPSG::4326"}
-            try:
-                r=requests.get(url,params=params,timeout=60); h.update(r.content); nsub+=1
-                for m in re.finditer(r'<gml:posList[^>]*>([^<]+)</gml:posList>',r.text):
-                    nums=[float(x) for x in m.group(1).split()]
-                    lats=[nums[i] for i in range(0,len(nums),2)]; lons=[nums[i+1] for i in range(0,len(nums),2)]
-                    if len(lons)<4: continue
-                    xs,ys=to25830(lons,lats)
-                    polys.append(Polygon(list(zip(xs,ys))))
-            except Exception as e:
-                print("   catastro subtile err",e)
-            xx+=step
-        yy+=step
-    print(f"   catastro sub-requests: {nsub}")
-    return polys, h.hexdigest(), len(polys)
-
-print("fetching Catastro footprints...")
-foot_polys,foot_hash,nfoot=catastro_footprints()
+# ---- Catastro building footprints — HARDENED, FAIL-CLOSED (AMENDMENT_003 correction) ----
+# Requests bu:Building directly in EPSG:25830; structural GML parse (rings/multipart); dedup;
+# every subtile must succeed or the build aborts. See src/catastro_bu.py.
+import catastro_bu, json as _json
+print("fetching Catastro footprints (hardened, fail-closed)...")
+foot_polys, foot_prov = catastro_bu.fetch_footprints(X0,Y0,X1,Y1,step=200.0)  # raises on any failure
+foot_hash=hashlib.sha256(_json.dumps(foot_prov["subtiles"],sort_keys=True).encode()).hexdigest()
+nfoot=len(foot_polys)
 foot_in=[p for p in foot_polys if p.intersects(domain)]
-print(f"  Catastro polygons: {nfoot} fetched, {len(foot_in)} intersect domain")
+print(f"  Catastro: {foot_prov['n_subtiles']} subtiles (all OK), {nfoot} unique buildings, "
+      f"{len(foot_in)} intersect domain, axis_EN={foot_prov['axis_easting_first']}")
 building_mask=rasterize([(p,1) for p in foot_in],out_shape=(NY,NX),transform=transform,
                         fill=0,dtype="uint8",all_touched=False).astype(bool) if foot_in else np.zeros((NY,NX),bool)
+(OUT/"catastro_provenance.json").write_text(_json.dumps(foot_prov,indent=1),encoding="utf-8")
 print(f"  building footprint coverage: {building_mask.mean()*100:.1f}% of domain")
 
 # ---- vegetation mask ----
