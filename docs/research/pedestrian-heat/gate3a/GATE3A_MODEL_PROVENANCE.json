@@ -1,0 +1,145 @@
+{
+  "gate": "GATE 3A \u2014 first thermal experiment / pipeline falsification",
+  "date": "2026-09-15",
+  "baseline_only": true,
+  "perturbations_run": "none (E-P1/E-P2/E-P4/E-P5/E-P6 deferred to robustness gate)",
+  "amendments": [
+    "AMENDMENT_001: terrain Madrid MDT 2019 -> MDT 2023 (user-approved, pre-thermal); see docs/research/pedestrian-heat/AMENDMENT_001.md",
+    "AMENDMENT_002: Gate-3A baseline walking speed 1.25 m/s (unfrozen midpoint) -> 1.1 m/s (frozen E-P6 tourist value); 1.4 m/s computed as speed-robustness QA only"
+  ],
+  "model": {
+    "package": "solweig 0.1.0b92 (UMEP-dev standalone)",
+    "python": "3.12 (.venv_solweig)",
+    "utci": "SOLWEIG-computed from Tmrt",
+    "clearsky": "pvlib 0.15.2 Ineichen"
+  },
+  "spatial_domain_epsg25830": {
+    "x0": 440996.0,
+    "y0": 4472668.0,
+    "x1": 441736.0,
+    "y1": 4474830.0,
+    "res": 2.0,
+    "nx": 370,
+    "ny": 1081,
+    "buffer_m": 150,
+    "buffer_justification": "150 m fixed buffer; actual solar altitude at 17:45 is 35.8 deg (per pvlib, consistent with QA/method) -> ~50 m building casts ~70 m shadow, so 150 m (>2x worst case) is adequate; buffer NOT changed"
+  },
+  "resolution_m": 2.0,
+  "resolution_justification": "2 m sidewalk-scale working grid; SVF-tractable over 370x1081 domain; fixed before any thermal output",
+  "geometry_inputs": {
+    "terrain": "Madrid MDT 2023 COG (AMENDMENT_001)",
+    "surface": "Madrid MDS 2023 COG",
+    "nSH": "MDS2023-MDT2023",
+    "building_classifier": "Catastro INSPIRE bu:Building footprints (typenames=bu:Building; note Gate-2 manifest wrongly said bu-ext2d:Building)",
+    "vegetation_mask": "OSM green polygons + municipal tree buffers(4m) + Copernicus TCD>=30%",
+    "catastro_polys_in_domain": 1850,
+    "building_coverage_pct": 32.03,
+    "veg_coverage_pct": 34.41,
+    "unclassified_tall_pct": 15.107
+  },
+  "mds_tiles": {
+    "440-4473": "https://servpub.madrid.es/fsdescargas/IDEAM_WBGEOPORTAL/ELEVACIONES/2023/MDS/COG/440-4473.tif",
+    "440-4474": "https://servpub.madrid.es/fsdescargas/IDEAM_WBGEOPORTAL/ELEVACIONES/2023/MDS/COG/440-4474.tif",
+    "440-4475": "https://servpub.madrid.es/fsdescargas/IDEAM_WBGEOPORTAL/ELEVACIONES/2023/MDS/COG/440-4475.tif",
+    "441-4473": "https://servpub.madrid.es/fsdescargas/IDEAM_WBGEOPORTAL/ELEVACIONES/2023/MDS/COG/441-4473.tif",
+    "441-4474": "https://servpub.madrid.es/fsdescargas/IDEAM_WBGEOPORTAL/ELEVACIONES/2023/MDS/COG/441-4474.tif",
+    "441-4475": "https://servpub.madrid.es/fsdescargas/IDEAM_WBGEOPORTAL/ELEVACIONES/2023/MDS/COG/441-4475.tif"
+  },
+  "mdt_tiles": {
+    "440-4473": "https://servpub.madrid.es/fsdescargas/IDEAM_WBGEOPORTAL/ELEVACIONES/2023/MDT/COG/440-4473.tif",
+    "440-4474": "https://servpub.madrid.es/fsdescargas/IDEAM_WBGEOPORTAL/ELEVACIONES/2023/MDT/COG/440-4474.tif",
+    "440-4475": "https://servpub.madrid.es/fsdescargas/IDEAM_WBGEOPORTAL/ELEVACIONES/2023/MDT/COG/440-4475.tif",
+    "441-4473": "https://servpub.madrid.es/fsdescargas/IDEAM_WBGEOPORTAL/ELEVACIONES/2023/MDT/COG/441-4473.tif",
+    "441-4474": "https://servpub.madrid.es/fsdescargas/IDEAM_WBGEOPORTAL/ELEVACIONES/2023/MDT/COG/441-4474.tif",
+    "441-4475": "https://servpub.madrid.es/fsdescargas/IDEAM_WBGEOPORTAL/ELEVACIONES/2023/MDT/COG/441-4475.tif"
+  },
+  "catastro_footprints_wfs_sha256": "d81d00a3b570c6d51756fee599be5386c8280110d308672c26f377219373e422",
+  "temporal": {
+    "departures_local": [
+      "14:00",
+      "17:00"
+    ],
+    "timezone": "Europe/Madrid CEST(UTC+2)",
+    "field_dt_min": 15,
+    "timestamps": [
+      "1400",
+      "1415",
+      "1430",
+      "1445",
+      "1700",
+      "1715",
+      "1730",
+      "1745"
+    ],
+    "traversal": "t_k = departure + chainage/v ; nearest-15min field ; buffer-mean 10 m ; represented-length weighting",
+    "baseline_speed_ms": 1.1,
+    "discretization_uncertainty": "+/-7.5 min (nearest-field), QA'd: does not flip A-B intensity sign",
+    "speed_governance": "baseline 1.1 m/s (AMENDMENT_002, frozen E-P6 tourist); 1.4 m/s = QA robustness check; both preserve A-B intensity sign"
+  },
+  "forcing": "Barajas 08221 hourly 2023-08-24 linearly interpolated to each field timestamp + pvlib clear-sky GHI",
+  "field_qa": {
+    "out_of_range_frac": 0.0,
+    "edge_mean_vs_interior_mean": [
+      44.37,
+      42.99
+    ],
+    "tmrt1700_p05_p50_p95": [
+      38.6,
+      65.1,
+      68.2
+    ],
+    "tmrt1700_shaded_frac(<45C)": 0.373,
+    "shaded_frac_1400(<45C)": 0.315,
+    "shaded_frac_1700(<45C)": 0.373,
+    "shaded_frac_1745(<45C)": 0.418,
+    "building_cov": 0.32,
+    "veg_cov": 0.344,
+    "dem_2m": [
+      602.0,
+      662.9
+    ],
+    "dsm_2m": [
+      602.0,
+      709.4
+    ],
+    "cdsm_2m": [
+      0.0,
+      36.9
+    ],
+    "tmrt1700_mean_on_building": 64.3,
+    "tmrt1700_mean_open_noveg_nobuild": 57.7,
+    "tmrt1700_mean_under_veg": 48.6
+  },
+  "artifact_hashes": {
+    "dem_2m.tif": "978527ede4960202c9d5427090c0d57cccfa190ca9536337170aff0afa32dab1",
+    "dsm_2m.tif": "4fdb7f3cbaffab3b120a8749fa0bbe92e923fb5ea242255073e6bb5213795ac5",
+    "cdsm_2m.tif": "9d1d8894ee34ef7ad3024de6003cf20c7c9e02e6f671d9af2aaaf19927533a48",
+    "building_mask.tif": "85445fdd8a439abe62774adbff398796021b82c221c74fe466debb0111194d46",
+    "veg_mask.tif": "911a31d1dc833a6034c7dc9237e29b2d99cc2fcdb9c60f5dad7b992358da0523",
+    "gate3a_forcing.csv": "4bfc0a126ad42da19e08e8042f96dce7af90bba5ef7878834d122966a8fc2d7a",
+    "solweig/tmrt_1400.tif": "45fe87a700dccb6fe558021fa162042ceb2f387de4fb76a7e94362b97c772381",
+    "solweig/tmrt_1415.tif": "837893db800e01f9b1f25ffc473d9e4ce364ee3ac415693268258b69162dd590",
+    "solweig/tmrt_1430.tif": "9fa9dbd2e313fdf8b113c96bb399ee1e525434a09c715d843c32e8826ce4a923",
+    "solweig/tmrt_1445.tif": "b427138d16b3aac37738499a8c99895ef5f6201e0ba6e3e879d7d63b689879d5",
+    "solweig/tmrt_1700.tif": "1b73fe571c12718487473d4702bf928f6ad6e13304610ecc3045c6e2b0fd6c4c",
+    "solweig/tmrt_1715.tif": "f4ba117309527d9c76ffe778068c4bec4807bdc4fc7f8a05e346b729bec63678",
+    "solweig/tmrt_1730.tif": "0450ee728da59932f5e3eadacf9f83f831fdeca257b7d7d9e70ed67abf52fd9c",
+    "solweig/tmrt_1745.tif": "14c5ffac0c4b9b9e571d2d308b68d5d0ab8d2417044ca008060792714301dc90",
+    "solweig/utci_1400.tif": "510419d77a7213013532a89dc5defa786640b89149696b410a438b1dc71e65d3",
+    "solweig/utci_1415.tif": "274f21292d742448fff29684b78a6e55549cdc1d18191b562ec7e906697519b4",
+    "solweig/utci_1430.tif": "c7a3e638fd8a72cf00e9010917d3a9be8a648c9eb50596927c9ad14fce83cf83",
+    "solweig/utci_1445.tif": "51b78391f9ac9431a1fdd8b7ce9312a8539c38dae0ec0b6eb8aba202917f8484",
+    "solweig/utci_1700.tif": "0ed1ccb71dcbe71cf8a04dd462f551fbf4e6de18a9d61c99752afd4eb94ae67c",
+    "solweig/utci_1715.tif": "1f5549fac1a729cd30ad5ab8b06c66eca5728d24f5ce805a937d2a51f3d569ce",
+    "solweig/utci_1730.tif": "625d60fa4996cc55b5dfa0215f8557254d749835ebd214172ae4a9888e813df9",
+    "solweig/utci_1745.tif": "2788bb0ce71527c29e16459cbbcc8d137c00dbb9c7a7eda5c06e4e366de03090"
+  },
+  "large_raster_policy": "MDS/MDT COGs read windowed via /vsicurl (not downloaded); interim geometry+thermal rasters kept locally under data/interim/pedestrian-heat/gate3a/ (gitignored) with SHA-256 recorded here",
+  "reproducible_commands": [
+    "py src/gate3a_build_geometry.py",
+    "(.venv_solweig) python src/gate3a_run_solweig.py",
+    "py src/gate3a_sample_metrics.py",
+    "(PROJ_DATA/PROJ_LIB/GDAL_DATA set to the interpreter's rasterio bundled data)"
+  ],
+  "sampling_correction": "2026-09-15 audit fix: true global-chainage sampling (Delta s=5 m, represented-length weights) replaces per-vertex densification; M2 length-weighted; M4 minutes from represented duration; see GATE3A_SAMPLING_CORRECTION.md. Thermal rasters unchanged."
+}

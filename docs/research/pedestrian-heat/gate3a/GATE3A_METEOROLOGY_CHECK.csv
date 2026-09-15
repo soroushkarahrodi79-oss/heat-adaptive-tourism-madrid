@@ -1,0 +1,13 @@
+departure,timestamp_local,var,forcing_barajas,independent_escuelas_aguirre,ea_hour_convention,difference_ea_minus_forcing,units,role,notes
+14:00,14:00,Ta,37.0,35.3 (H14) / 37.1 (H15),H14=13-14h / H15=14-15h local,-1.7 / +0.1,degC,representativeness check (NOT Tmrt/UTCI validation),urban station tracks airport forcing within ~2 degC
+14:00,14:00,RH,17.0,23 (H14) / 20 (H15),local CEST,+6 / +3,percent,representativeness,urban slightly moister
+17:00,17:00,Ta,40.0,39.8 (H17) / 39.9 (H18),H17=16-17h / H18=17-18h local,-0.2 / -0.1,degC,representativeness,near-identical at peak heat
+17:00,17:00,RH,12.0,16 (H17) / 15 (H18),local CEST,+4 / +3,percent,representativeness,urban slightly moister
+14:00,14:15,Ta,37.5,(interp of EA H14-H15 ~35.9),local CEST,~-1.6,degC,representativeness (interpolated sub-step),forcing interpolated Barajas 12-13 UTC
+14:00,14:30,Ta,38.0,(EA H15 37.1),local CEST,~-0.9,degC,representativeness,
+14:00,14:45,Ta,38.5,(EA H15-H16),local CEST,~-1.0,degC,representativeness,
+17:00,17:15,Ta,40.0,(EA H17-H18 ~39.9),local CEST,~-0.1,degC,representativeness,
+17:00,17:30,Ta,40.0,(EA H18 39.9),local CEST,-0.1,degC,representativeness,
+17:00,17:45,Ta,40.0,(EA H18 39.9),local CEST,-0.1,degC,representativeness,
+n/a,n/a,wind,"11.2 km/h (14:00) / 6.0 km/h (17:00) Barajas",NOT MEASURED at Escuelas Aguirre,n/a,n/a,km/h,LIMITATION,corridor-local wind unobserved; uniform-wind treatment (E-P3 demoted)
+n/a,n/a,solar_radiation,pvlib Ineichen clear-sky (866->531 W/m2),NOT MEASURED at Escuelas Aguirre,n/a,n/a,W/m2,LIMITATION,corridor-local radiation unobserved; modeled clear-sky applied identically to both routes
