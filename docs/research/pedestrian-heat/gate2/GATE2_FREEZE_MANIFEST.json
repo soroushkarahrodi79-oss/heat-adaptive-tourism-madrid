@@ -1,0 +1,138 @@
+{
+  "gate": "GATE 2 — Evidence Acquisition & Experiment Freeze",
+  "status": "FROZEN",
+  "freeze_date": "2026-09-15",
+  "verdict": "GO_TO_FIRST_THERMAL_EXPERIMENT",
+  "claim_ceiling": "Path B — robustness / sensitivity / decision-reversal / evidence-sufficiency of MODELED comparative pedestrian thermal exposure, with ABSTAIN as a first-class outcome. No accuracy / comfort / behaviour / physiological / health / dose claim.",
+  "research_object": "Decision reliability + evidence sufficiency + uncertainty + abstention for modeled comparative pedestrian thermal-exposure decisions (Gate-0).",
+
+  "OD1": {
+    "identity": "Atocha -> Puerta de Alcala",
+    "origin_A09": {"name": "Madrid-Puerta de Atocha", "lat": 40.404557, "lon": -3.688683, "osm": "way/733993037"},
+    "destination_A14": {"name": "Puerta de Alcala", "lat": 40.419987, "lon": -3.688724, "osm": "way/174805987"},
+    "corridor_bbox_SWNE_wgs84": [40.4035, -3.6950, 40.4210, -3.6820]
+  },
+
+  "routes": {
+    "A": {
+      "identity": "Paseo del Prado / Recoletos monumental axis (open, low continuous canopy)",
+      "file": "data/processed/pedestrian-heat/OD1_Route_A_epsg25830.geojson",
+      "crs": "EPSG:25830",
+      "sha256": "f2f9d8b4d093a52a4179238553745bbd5287d5d82b6a408d9816ced4337dc9a6",
+      "length_m": 2657.8, "n_vertices": 127, "n_osm_ways": 42,
+      "mapped_crossings_on_route": 23, "park_gates_on_route": 0, "open_plaza_segments_gt50m": 13,
+      "audit": {"VERIFIED": 111, "VERIFIED_WITH_UNCERTAINTY": 15, "REJECT": 0, "UNRESOLVED": 0}
+    },
+    "B": {
+      "identity": "Real Jardin Botanico / Retiro western edge + Calle Alfonso XII (tree-lined); park-side (east) sidewalk",
+      "file": "data/processed/pedestrian-heat/OD1_Route_B_epsg25830.geojson",
+      "crs": "EPSG:25830",
+      "sha256": "fedf5ed49e327324425e3ee40979dd06fc0da2f27ae73247a4a1b9fe56b6c54a",
+      "length_m": 2365.7, "n_vertices": 115, "n_osm_ways": 38,
+      "mapped_crossings_on_route": 13, "park_gates_on_route": 0, "open_plaza_segments_gt50m": 13,
+      "audit": {"VERIFIED": 99, "VERIFIED_WITH_UNCERTAINTY": 15, "REJECT": 0, "UNRESOLVED": 0}
+    },
+    "note": "Both routes continuously walkable, zero REJECT/UNRESOLVED, zero park-gate dependence. Geometry must not change without an amendment."
+  },
+  "route_construction": {
+    "method": "corridor-pinned shortest walkable path on the OSM footway/pedestrian graph; NO thermal input",
+    "source": "OpenStreetMap contributors, ODbL",
+    "raw_response": "data/raw/osm_pedestrian/osm_od1_pedestrian_raw.json",
+    "raw_sha256": "a3a616016a9646197bdbcff2c26a853f0179afb6ccf79b13209cf9e2c0ce2e8f",
+    "query": "data/raw/osm_pedestrian/query_od1_pedestrian.overpassql",
+    "overpass_acquisition_utc": "2026-09-14T19:46:20Z",
+    "osm_base_timestamp": "2026-09-14T19:45:03Z"
+  },
+
+  "study_day": {
+    "date": "2023-08-24",
+    "timezone": "Europe/Madrid (CEST = UTC+2 in August)",
+    "target_hours_are": "DEPARTURE TIMES (not whole-trip static snapshots)",
+    "target_hours_local": ["14:00", "17:00"],
+    "target_hours_utc": ["12:00", "15:00"],
+    "thermal_field_temporal_resolution": "Delta t = 15 min sub-steps across each ~30-40 min trip (primary); static-per-departure-hour fallback lowers the claim explicitly (see GATE2_METRIC_SPEC.md 0.1)",
+    "selection_basis": "R1-R7; pre-declared data-quality rule (fully-clear coco=1 + complete 24h + top heat tier 40.0C + max temporal separation from excluded 21 Aug 2023). NOT chosen on route contrast (no thermal output exists).",
+    "R1_heat": "AEMET-documented extreme-heat episode 20-25 Aug 2023; Barajas AEMET daily max 40.0 C >= naranja threshold (39 C).",
+    "R2_complete_forcing": "Barajas 24/24 hourly, no gaps at target hours.",
+    "R3_sky": "coco=1 (Clear) at all daytime hours incl. target hours.",
+    "R5_urban_check": "Escuelas Aguirre hourly Ta/RH present and valid at target hours.",
+    "R7_geometry_alignment": "2023 study day aligns with MDS 2023 surface."
+  },
+
+  "meteorology": {
+    "model_forcing": {
+      "station": "Madrid-Barajas WMO 08221 (AEMET; via Meteostat ISD/SYNOP)",
+      "lat": 40.4675, "lon": -3.5556, "dist": "~13 km NE",
+      "variables": ["temp_c", "rhum_pct", "wspd_kmh", "wdir_deg", "pres_hpa", "coco"],
+      "file": "data/raw/aemet_barajas_08221_hourly_202308.csv",
+      "sha256": "ffd1ed05d593599c2763c07102bff6b9677e5622698657446631e9d2bc025019",
+      "target_hour_values": {"14:00": {"Ta_C": 37.0, "RH_pct": 17, "wind_kmh": 11.2, "coco": 1}, "17:00": {"Ta_C": 40.0, "RH_pct": 12, "wind_kmh": 6.0, "coco": 1}},
+      "solar": "pvlib Ineichen clear-sky (recompute for 2023-08-24); applied identically to both routes"
+    },
+    "independent_urban_check": {
+      "station": "Escuelas Aguirre (municipal, code 8 / air-quality 28079008)",
+      "lat": 40.4215, "lon": -3.6824, "dist": "~0.5 km ENE of A14 (corridor-adjacent)",
+      "variables": ["MAGNITUD 83 = Ta_C", "MAGNITUD 86 = RH_pct"],
+      "NOT_measured_here": ["wind", "solar radiation"],
+      "file": "data/raw/madrid_meteo_municipal/meteo_municipal_202308.csv",
+      "sha256": "e3f933f8d1b00b77309e034e6f81f335dedefe702e4a5a0b1ce4d05a30430fe5",
+      "coverage_at_target_hours": {"14:00": {"Ta_C": "35.3 (H14) / 37.1 (H15)", "RH_pct": "23 / 20", "flag": "V"}, "17:00": {"Ta_C": "39.8 (H17) / 39.9 (H18)", "RH_pct": "16 / 15", "flag": "V"}},
+      "agreement_with_forcing": "Ta within ~0-2 C of Barajas at target hours",
+      "role": "forcing-representativeness check and E-P1 basis; NOT validation of Tmrt/UTCI"
+    },
+    "regional_context": {
+      "AEMET_avance": "data/raw/aemet_official_pdfs/AEMET_ACM_MAD_202308_avance_climatologico.pdf (episode 20-25 Aug; Retiro 40.0 C on 21 Aug)",
+      "AEMET_meteoalerta": "data/raw/aemet_official_pdfs/AEMET_METEOALERTA_ANX1_Umbrales_y_niveles_de_aviso.pdf (zone 722802: amarillo 36 / naranja 39 / rojo 42)",
+      "role": "R1 attribution and thresholds; NOT pedestrian validation"
+    }
+  },
+
+  "geometry": {
+    "bounded_acquisition_extent_epsg25830": {"minx": 440941, "miny": 4472831, "maxx": 442525, "maxy": 4474706, "note": "OD1 clip extent (matches study_area.geojson); all raster clips bounded to this box, NOT city-wide"},
+    "terrain": {"source": "Madrid MDT 2019 (geoportal.madrid.es), 10 cm COG tiles; IGN MDT 5m in-repo (dem_wcs_5m.tif, sha in gate2_hash_manifest) as cross-check", "crs": "EPSG:25830", "service_verified_live": "2026-09-15 (IGN WCS servicios.idee.es/wcs-inspire/mdt)", "bounded_acquisition": "select 1km tiles covering the 25830 extent from the geoportal download-mesh shapefile; clip; record clip SHA-256 at execution"},
+    "normalized_surface_height": {"definition": "MDS 2023 - MDT 2019", "source": "Madrid MDS 2023 (geoportal.madrid.es dataset id=MDS_2023), 100 pts/m2, 1 m COG tiles", "semantics": "top-of-everything surface; NOT building/canopy until classified", "service_verified_live": "2026-09-15", "bounded_acquisition": "clip MDS 2023 + MDT 2019 tiles covering the 25830 extent; nSH=MDS-MDT; record clip SHA-256 at execution; NOT city-wide"},
+    "building_classification": {"footprint_source": "Catastro INSPIRE Buildings WFS (bu-ext2d:Building)", "service_audited_live": "2026-09-15", "reproducible_query": "https://ovc.catastro.meh.es/INSPIRE/wfsBU.aspx?service=WFS&version=2.0.0&request=GetFeature&typenames=bu-ext2d:Building&srsname=urn:ogc:def:crs:EPSG::4326&bbox=<OD1 in 4326>,urn:ogc:def:crs:EPSG::4326 ; reproject to 25830; record GetFeature response SHA-256 at execution", "semantics": "authoritative 2D footprint polygons (gml:posList)", "height_rule": "building height = nSH within footprint; Catastro numberOfFloorsAboveGround REJECTED as height (floor-count proxy, frequently nil=unpopulated per audit)", "status": "L17 building side RESOLVED"},
+    "vegetation_classification": {"strategy": "canopy = nSH masked to vegetation; mask = union(municipal tree-inventory buffers, OSM green polygons, Copernicus TCD>=threshold)", "tree_inventory": "datos.madrid.es 300761 (in-repo live geojson); 1322 park + 1528 street trees in-corridor; species + ALTURA height; NOT crown polygons", "prohibitions": "no crown geometry from points; no historical crown; Sentinel-2/optical NEVER as thermal/LST", "status": "bounded uncertainty compatible with Path B; ABSTAIN if canopy state flips A-vs-B ordering (E-P2/NC7)"},
+    "cross_vintage_checks": {"PNOA_building_nDSM": "data/raw/pnoa_lidar/building_ndsm_025.tif (2008-2015)", "PNOA_veg_nDSM": "data/raw/pnoa_lidar/veg_ndsm_025.tif (2008-2015)", "Copernicus_TCD_2018": "data/raw/copernicus_tcd/tcd_2018_study_area.tif"}
+  },
+
+  "wind_treatment": {
+    "decision": "UNIFORM station wind only (single non-local point applied to whole grid)",
+    "observation": "Barajas wind at target hours (11.2 / 6.0 km/h); Escuelas Aguirre does NOT measure wind; only 6 peripheral municipal met stations measure wind/radiation, none in corridor",
+    "spatial_wind": "E-P3 DEMOTED; no justified canyon multiplier; URock NOT introduced; spatial heterogeneity is an unresolved limitation / ABSTAIN trigger if shown decision-critical",
+    "acceptability_under_PathB": "acceptable: low target-hour wind (1.7-3.1 m/s) reduces canyon-channeling magnitude; applied identically to both routes; claim ceiling forbids a spatial-wind claim anyway"
+  },
+
+  "outcome_metrics": {
+    "spec": "docs/research/pedestrian-heat/gate2/GATE2_METRIC_SPEC.md",
+    "metrics": ["M1 trip duration", "M2 time-weighted mean UTCI", "M3 along-route distribution/range", "M4 minutes+proportion per UTCI category", "M5 max/95th percentile (DESCRIPTOR ONLY, not decision-bearing)"],
+    "intensity_vs_duration_decomposition": "THERMAL-INTENSITY {M2,M3,M5} (length-independent) reported SEPARATELY from EXPOSURE-DURATION {M1,M4} (length-dependent); shorter route != cooler microclimate; intensity/duration trade-off -> NO ROBUST DIFFERENCE/ABSTAIN; NO composite score",
+    "removed": "cumulative integral (INT UTCI dt) — removed at Gate 1; no output called dose",
+    "spatial_sampling": "Delta s = 5 m along-route; buffer-mean per locked-pilot validated choice; >5% missing pixels -> ABSTAIN",
+    "temporal_sampling": "departure-time, time-resolved: Delta t = 15 min SOLWEIG fields; segment timestamp t_k = departure + cumulative_distance/v; UTCI sampled from nearest-t_k field; hourly met linearly interpolated; clear-sky GHI recomputed per timestamp; identical for both routes; static-per-hour fallback = explicit claim-lowering downgrade",
+    "UTCI_categories_source": "Broede et al. 2012 Int J Biometeorol 56:481-494 / www.utci.org; heat cut-points +26/+32/+38/+46 C",
+    "UTCI_category_semantics": "sample-by-sample category accounting (M4) is the boundary-meaningful metric; categorising a route-AVERAGE (M2) is a descriptive band only, NOT a physiological classification of the journey (Path B)"
+  },
+
+  "perturbations": {
+    "spec": "docs/research/pedestrian-heat/gate2/GATE2_PERTURBATION_SPEC.md",
+    "E-P1_forcing": "Barajas as-is vs empirical hourly Escuelas-Aguirre-minus-Barajas Ta/RH (measured: dTa -1.7..+0.1 C, dRH +3..+6%)",
+    "E-P2_canopy": "PNOA nDSM 2008-2015 vs MDS2023 nSH masked-to-veg vs tree-inventory presence audit vs Copernicus TCD 2018 (dominant; NC7 ABSTAIN if ordering flips)",
+    "E-P3_wind": "DEMOTED (unresolved limitation / ABSTAIN trigger)",
+    "E-P4_building": "MDS2023-MDT2019 nSH classified via Catastro footprints vs PNOA 2008-2015 building nDSM",
+    "E-P5_side_of_street": "frozen sidewalk vs opposite sidewalk (Route A Prado central promenade vs west sidewalk; Route B east/park-side vs west sidewalk of Alfonso XII)",
+    "E-P6_speed": "1.1 vs 1.4 m/s; optional identical endpoint pause",
+    "boundary_guard": "category metric clear iff perturbation-ensemble interval excludes cut-points +26/+32/+38/+46 C; no invented fixed guard"
+  },
+
+  "negative_controls": "docs/research/pedestrian-heat/gate2/GATE2_EVIDENCE_REPORT.md §2I (NC1-NC7 operationalised with explicit ABSTAIN evidence conditions, pre-declared before any thermal output)",
+
+  "provenance_hashes": "data/processed/pedestrian-heat/gate2_hash_manifest.json (14 evidence artifacts) + route_freeze_hashes.json",
+
+  "prohibitions_restated": [
+    "21 Aug 2023 not used as independent validation of the locked HATI output; 24 Aug 2023 is a NEW day reusing NO locked thermal/asset result",
+    "no Sentinel-2/optical as thermal or LST",
+    "no ERA5-Land / same-forcing / another-model-run treated as independent pedestrian UTCI validation",
+    "no invented material-UTCI-difference threshold; decision-stability formalism governs"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "acquisition_utc": "2026-09-15T07:23:25.132742+00:00",
+  "url": "https://datos.madrid.es/dataset/300352-0-meteorologicos-horarios/resource/300352-46-meteorologicos-horarios-csv/download/300352-46-meteorologicos-horarios-csv.csv",
+  "sha256": "e3f933f8d1b00b77309e034e6f81f335dedefe702e4a5a0b1ce4d05a30430fe5",
+  "bytes": 491028,
+  "dataset": "datos.madrid.es 300352 Datos meteorologicos horarios desde 2019",
+  "file_period": "2023-08",
+  "station_code": "8",
+  "station_name": "Escuelas Aguirre",
+  "magnitudes": {
+    "83": "air temperature (C)",
+    "86": "relative humidity (%)"
+  },
+  "time_convention": "H01..H24 local official time (CEST=UTC+2 in August); Hnn = hour index",
+  "attribution": "Ayuntamiento de Madrid, open data (free reuse with attribution)"
+}

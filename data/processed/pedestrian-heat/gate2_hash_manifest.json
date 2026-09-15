@@ -1,0 +1,58 @@
+{
+  "data/raw/osm_pedestrian/query_od1_pedestrian.overpassql": {
+    "sha256": "a806162d48c512fba5ceca35551fe82b7f85c17789acac6ff781144ddbd6ffef",
+    "bytes": 1187
+  },
+  "data/raw/osm_pedestrian/osm_od1_pedestrian_raw.json": {
+    "sha256": "a3a616016a9646197bdbcff2c26a853f0179afb6ccf79b13209cf9e2c0ce2e8f",
+    "bytes": 1792217
+  },
+  "data/processed/pedestrian-heat/OD1_Route_A_epsg25830.geojson": {
+    "sha256": "f2f9d8b4d093a52a4179238553745bbd5287d5d82b6a408d9816ced4337dc9a6",
+    "bytes": 8398
+  },
+  "data/processed/pedestrian-heat/OD1_Route_B_epsg25830.geojson": {
+    "sha256": "fedf5ed49e327324425e3ee40979dd06fc0da2f27ae73247a4a1b9fe56b6c54a",
+    "bytes": 7702
+  },
+  "data/raw/madrid_meteo_municipal/meteo_municipal_202308.csv": {
+    "sha256": "e3f933f8d1b00b77309e034e6f81f335dedefe702e4a5a0b1ce4d05a30430fe5",
+    "bytes": 491028
+  },
+  "data/raw/aemet_barajas_08221_hourly_202308.csv": {
+    "sha256": "ffd1ed05d593599c2763c07102bff6b9677e5622698657446631e9d2bc025019",
+    "bytes": 37568
+  },
+  "data/raw/episode_aug2023_barajas_raw.csv": {
+    "sha256": "f6a13bfaf71190b421f6158d50337ccd4b652f5fcfe4b0792ec6f031a4b5d275",
+    "bytes": 9775
+  },
+  "data/raw/pnoa_lidar/dem_wcs_5m.tif": {
+    "sha256": "cd9300da35e13261b6aa1de19a69b61bbd547a89e83d920131f6effb401b3e69",
+    "bytes": 238462
+  },
+  "data/raw/pnoa_lidar/building_ndsm_025.tif": {
+    "sha256": "75f9916e5e3772b838148d730b0deea1c10fe1af84b5c52f05ce0c9cdcb802cf",
+    "bytes": 949690
+  },
+  "data/raw/pnoa_lidar/veg_ndsm_025.tif": {
+    "sha256": "6bfedd1f6027be023c6f608181e3803c12bcc3df6b91267847e11621144051a7",
+    "bytes": 949690
+  },
+  "data/raw/copernicus_tcd/tcd_2018_study_area.tif": {
+    "sha256": "e49dd50bffd1836b836ac4fbc6d57689f17c763812b56d80ee27aec703ceaeb5",
+    "bytes": 66366
+  },
+  "data/raw/madrid_arbolado/arbolado_parques_historicos_live.geojson": {
+    "sha256": "6793e0697fef4d4e6d15286d814603309d12bd7cb95e7cac351c6b4b9f5ba776",
+    "bytes": 711250
+  },
+  "data/raw/madrid_arbolado/arbolado_street_greenzone_live.geojson": {
+    "sha256": "ef4a4f8723dc7d9df58644d8d7c81d8f594316f21e56cd3985a178b6703561c6",
+    "bytes": 732564
+  },
+  "data/raw/openmeteo_radiation/madrid_2023-08-21_radiation.json": {
+    "sha256": "ca5d717d3e5319efab6de2a0bf81df290cd8f8686a070a1196f9960951a81b74",
+    "bytes": 1917
+  }
+}
