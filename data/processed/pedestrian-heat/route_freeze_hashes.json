@@ -1,0 +1,22 @@
+{
+  "A": {
+    "file": "data/processed/pedestrian-heat/OD1_Route_A_epsg25830.geojson",
+    "sha256": "f2f9d8b4d093a52a4179238553745bbd5287d5d82b6a408d9816ced4337dc9a6",
+    "length_m_25830": 2657.8,
+    "n_vertices": 127,
+    "n_osm_ways": 42,
+    "controlled_crossings_on_route": 23,
+    "gates_on_route": 0,
+    "open_plaza_segments_gt50m": 13
+  },
+  "B": {
+    "file": "data/processed/pedestrian-heat/OD1_Route_B_epsg25830.geojson",
+    "sha256": "fedf5ed49e327324425e3ee40979dd06fc0da2f27ae73247a4a1b9fe56b6c54a",
+    "length_m_25830": 2365.7,
+    "n_vertices": 115,
+    "n_osm_ways": 38,
+    "controlled_crossings_on_route": 13,
+    "gates_on_route": 0,
+    "open_plaza_segments_gt50m": 13
+  }
+}

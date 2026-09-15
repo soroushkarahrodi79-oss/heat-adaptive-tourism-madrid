@@ -1,0 +1,241 @@
+route,seg_index,lat_a,lon_a,lat_b,lon_b,seg_len_m,start_node,end_node,classification,notes
+A,0,40.404557,-3.688683,40.403994,-3.689463,91.0,OD,31009976,VERIFIED WITH UNCERTAINTY,O-D endpoint access snap (station concourse / monument island)
+A,1,40.403994,-3.689463,40.403972,-3.689463,2.5,31009976,13983688068,VERIFIED,continuous mapped footway/pedestrian way
+A,2,40.403972,-3.689463,40.403956,-3.689465,1.7,13983688068,13983688069,VERIFIED,continuous mapped footway/pedestrian way
+A,3,40.403956,-3.689465,40.403944,-3.689471,1.5,13983688069,13983688066,VERIFIED,continuous mapped footway/pedestrian way
+A,4,40.403944,-3.689471,40.403933,-3.689483,1.6,13983688066,13983688065,VERIFIED,continuous mapped footway/pedestrian way
+A,5,40.403933,-3.689483,40.403927,-3.689496,1.3,13983688065,13983688064,VERIFIED,continuous mapped footway/pedestrian way
+A,6,40.403927,-3.689496,40.403923,-3.689513,1.5,13983688064,13983688063,VERIFIED,continuous mapped footway/pedestrian way
+A,7,40.403923,-3.689513,40.403922,-3.689528,1.2,13983688063,13983688062,VERIFIED,continuous mapped footway/pedestrian way
+A,8,40.403922,-3.689528,40.403923,-3.689548,1.7,13983688062,4237299411,VERIFIED,"controlled crossing at node 4237299411 (crossing=uncontrolled, markings=zebra, signals=None)"
+A,9,40.403923,-3.689548,40.403955,-3.689574,4.2,4237299411,13983688060,VERIFIED,continuous mapped footway/pedestrian way
+A,10,40.403955,-3.689574,40.403981,-3.6896,3.7,13983688060,14028809938,VERIFIED,continuous mapped footway/pedestrian way
+A,11,40.403981,-3.6896,40.404026,-3.689616,5.2,14028809938,14028809939,VERIFIED,continuous mapped footway/pedestrian way
+A,12,40.404026,-3.689616,40.404782,-3.690469,110.8,14028809939,14028809933,VERIFIED WITH UNCERTAINTY,"open plaza/axis desire-line: 111 m straight OSM edge, exact walked line approximate"
+A,13,40.404782,-3.690469,40.404814,-3.690421,5.4,14028809933,6177136010,VERIFIED,continuous mapped footway/pedestrian way
+A,14,40.404814,-3.690421,40.404837,-3.69038,4.3,6177136010,6177136007,VERIFIED,"controlled crossing at node 6177136007 (crossing=traffic_signals, markings=dots, signals=None)"
+A,15,40.404837,-3.69038,40.404854,-3.690353,3.0,6177136007,4471097877,VERIFIED,continuous mapped footway/pedestrian way
+A,16,40.404854,-3.690353,40.404874,-3.690321,3.5,4471097877,14028874883,VERIFIED,continuous mapped footway/pedestrian way
+A,17,40.404874,-3.690321,40.405554,-3.691065,98.3,14028874883,4471097876,VERIFIED WITH UNCERTAINTY,"open plaza/axis desire-line: 98 m straight OSM edge, exact walked line approximate"
+A,18,40.405554,-3.691065,40.405619,-3.691133,9.3,4471097876,8540648584,VERIFIED,continuous mapped footway/pedestrian way
+A,19,40.405619,-3.691133,40.406144,-3.691685,74.7,8540648584,6177135999,VERIFIED WITH UNCERTAINTY,"open plaza/axis desire-line: 75 m straight OSM edge, exact walked line approximate"
+A,20,40.406144,-3.691685,40.406201,-3.691747,8.2,6177135999,4471097875,VERIFIED,continuous mapped footway/pedestrian way
+A,21,40.406201,-3.691747,40.406249,-3.691798,6.9,4471097875,1248177375,VERIFIED,"controlled crossing at node 1248177375 (crossing=uncontrolled, markings=zebra, signals=None)"
+A,22,40.406249,-3.691798,40.406275,-3.691828,3.9,1248177375,10905796446,VERIFIED,continuous mapped footway/pedestrian way
+A,23,40.406275,-3.691828,40.406309,-3.69187,5.2,10905796446,4471098595,VERIFIED,continuous mapped footway/pedestrian way
+A,24,40.406309,-3.69187,40.406982,-3.692607,97.4,4471098595,4471098596,VERIFIED WITH UNCERTAINTY,"open plaza/axis desire-line: 97 m straight OSM edge, exact walked line approximate"
+A,25,40.406982,-3.692607,40.40723,-3.692866,35.3,4471098596,612920893,VERIFIED,continuous mapped footway/pedestrian way
+A,26,40.40723,-3.692866,40.407318,-3.692854,9.8,612920893,612920894,VERIFIED,continuous mapped footway/pedestrian way
+A,27,40.407318,-3.692854,40.407445,-3.692876,14.2,612920894,612920895,VERIFIED,continuous mapped footway/pedestrian way
+A,28,40.407445,-3.692876,40.407658,-3.692698,28.1,612920895,674161562,VERIFIED,continuous mapped footway/pedestrian way
+A,29,40.407658,-3.692698,40.407865,-3.69249,29.0,674161562,612920830,VERIFIED,continuous mapped footway/pedestrian way
+A,30,40.407865,-3.69249,40.407923,-3.692393,10.4,612920830,612920831,VERIFIED,continuous mapped footway/pedestrian way
+A,31,40.407923,-3.692393,40.408134,-3.692069,36.1,612920831,1416248926,VERIFIED,continuous mapped footway/pedestrian way
+A,32,40.408134,-3.692069,40.408199,-3.691876,17.8,1416248926,612920832,VERIFIED,continuous mapped footway/pedestrian way
+A,33,40.408199,-3.691876,40.408216,-3.691657,18.6,612920832,1416248933,VERIFIED,continuous mapped footway/pedestrian way
+A,34,40.408216,-3.691657,40.408192,-3.691558,8.8,1416248933,5242464896,VERIFIED,continuous mapped footway/pedestrian way
+A,35,40.408192,-3.691558,40.408248,-3.691541,6.4,5242464896,6407689921,VERIFIED,continuous mapped footway/pedestrian way
+A,36,40.408248,-3.691541,40.408343,-3.691512,10.8,6407689921,26493352,VERIFIED,"controlled crossing at node 26493352 (crossing=traffic_signals, markings=dots, signals=None)"
+A,37,40.408343,-3.691512,40.408426,-3.69149,9.5,26493352,9687726563,VERIFIED,continuous mapped footway/pedestrian way
+A,38,40.408426,-3.69149,40.408562,-3.691453,15.4,9687726563,1416248939,VERIFIED,continuous mapped footway/pedestrian way
+A,39,40.408562,-3.691453,40.4087,-3.691386,16.3,1416248939,9687726562,VERIFIED,continuous mapped footway/pedestrian way
+A,40,40.4087,-3.691386,40.408738,-3.691367,4.6,9687726562,318314063,VERIFIED,"controlled crossing at node 318314063 (crossing=traffic_signals, markings=dots, signals=None)"
+A,41,40.408738,-3.691367,40.40882,-3.691284,11.5,318314063,13096456333,VERIFIED,continuous mapped footway/pedestrian way
+A,42,40.40882,-3.691284,40.408865,-3.69123,6.8,13096456333,1416248951,VERIFIED,continuous mapped footway/pedestrian way
+A,43,40.408865,-3.69123,40.409017,-3.691426,23.7,1416248951,4504427072,VERIFIED,continuous mapped footway/pedestrian way
+A,44,40.409017,-3.691426,40.409161,-3.691612,22.5,4504427072,11283957276,VERIFIED,continuous mapped footway/pedestrian way
+A,45,40.409161,-3.691612,40.409201,-3.691663,6.2,11283957276,1416248962,VERIFIED,continuous mapped footway/pedestrian way
+A,46,40.409201,-3.691663,40.40958,-3.691893,46.4,1416248962,612920834,VERIFIED,continuous mapped footway/pedestrian way
+A,47,40.40958,-3.691893,40.409823,-3.692058,30.5,612920834,2873438706,VERIFIED,continuous mapped footway/pedestrian way
+A,48,40.409823,-3.692058,40.409812,-3.692124,5.7,2873438706,13202641810,VERIFIED,continuous mapped footway/pedestrian way
+A,49,40.409812,-3.692124,40.409793,-3.692228,9.0,13202641810,318314092,VERIFIED,"controlled crossing at node 318314092 (crossing=traffic_signals, markings=dots, signals=None)"
+A,50,40.409793,-3.692228,40.409951,-3.692273,18.0,318314092,8433060767,VERIFIED,continuous mapped footway/pedestrian way
+A,51,40.409951,-3.692273,40.410271,-3.692365,36.4,8433060767,1416249009,VERIFIED,continuous mapped footway/pedestrian way
+A,52,40.410271,-3.692365,40.410907,-3.692518,72.0,1416249009,5418583612,VERIFIED WITH UNCERTAINTY,"open plaza/axis desire-line: 72 m straight OSM edge, exact walked line approximate; controlled crossing at node 5418583612 (crossing=traffic_signals, markings=dots, signals=None)"
+A,53,40.410907,-3.692518,40.411622,-3.692688,80.8,5418583612,1416249021,VERIFIED WITH UNCERTAINTY,"open plaza/axis desire-line: 81 m straight OSM edge, exact walked line approximate"
+A,54,40.411622,-3.692688,40.412253,-3.692815,71.0,1416249021,1416249036,VERIFIED WITH UNCERTAINTY,"open plaza/axis desire-line: 71 m straight OSM edge, exact walked line approximate; controlled crossing at node 1416249036 (crossing=traffic_signals, markings=dots, signals=None)"
+A,55,40.412253,-3.692815,40.412502,-3.69287,28.0,1416249036,420073191,VERIFIED,continuous mapped footway/pedestrian way
+A,56,40.412502,-3.69287,40.41277,-3.692919,30.1,420073191,3068290684,VERIFIED,continuous mapped footway/pedestrian way
+A,57,40.41277,-3.692919,40.412811,-3.692927,4.6,3068290684,317743498,VERIFIED,"controlled crossing at node 317743498 (crossing=traffic_signals, markings=None, signals=None)"
+A,58,40.412811,-3.692927,40.412977,-3.692969,18.8,317743498,8433060764,VERIFIED,continuous mapped footway/pedestrian way
+A,59,40.412977,-3.692969,40.413192,-3.693022,24.3,8433060764,960871271,VERIFIED,continuous mapped footway/pedestrian way
+A,60,40.413192,-3.693022,40.413797,-3.693166,68.4,960871271,5418583616,VERIFIED WITH UNCERTAINTY,"open plaza/axis desire-line: 68 m straight OSM edge, exact walked line approximate"
+A,61,40.413797,-3.693166,40.414549,-3.693344,85.0,5418583616,5418583615,VERIFIED WITH UNCERTAINTY,"open plaza/axis desire-line: 85 m straight OSM edge, exact walked line approximate"
+A,62,40.414549,-3.693344,40.414651,-3.693369,11.5,5418583615,13633748682,VERIFIED,continuous mapped footway/pedestrian way
+A,63,40.414651,-3.693369,40.414689,-3.693379,4.2,13633748682,1416249318,VERIFIED,"controlled crossing at node 1416249318 (crossing=traffic_signals, markings=dots, signals=None)"
+A,64,40.414689,-3.693379,40.414838,-3.693411,16.8,1416249318,317743420,VERIFIED,continuous mapped footway/pedestrian way
+A,65,40.414838,-3.693411,40.414993,-3.693446,17.5,317743420,1416249467,VERIFIED,continuous mapped footway/pedestrian way
+A,66,40.414993,-3.693446,40.415066,-3.693464,8.2,1416249467,1416249490,VERIFIED,continuous mapped footway/pedestrian way
+A,67,40.415066,-3.693464,40.415114,-3.693473,5.4,1416249490,8090494131,VERIFIED,continuous mapped footway/pedestrian way
+A,68,40.415114,-3.693473,40.415219,-3.693498,11.8,8090494131,1209330285,VERIFIED,continuous mapped footway/pedestrian way
+A,69,40.415219,-3.693498,40.415361,-3.69353,16.0,1209330285,1209330270,VERIFIED,continuous mapped footway/pedestrian way
+A,70,40.415361,-3.69353,40.415421,-3.693545,6.9,1209330270,3068290685,VERIFIED,continuous mapped footway/pedestrian way
+A,71,40.415421,-3.693545,40.415641,-3.693606,25.0,3068290685,2513458296,VERIFIED,"controlled crossing at node 2513458296 (crossing=no, markings=None, signals=None)"
+A,72,40.415641,-3.693606,40.415718,-3.693622,8.7,2513458296,325076854,VERIFIED,continuous mapped footway/pedestrian way
+A,73,40.415718,-3.693622,40.415919,-3.693684,22.9,325076854,13620375999,VERIFIED,continuous mapped footway/pedestrian way
+A,74,40.415919,-3.693684,40.415962,-3.69369,4.8,13620375999,26486569,VERIFIED,"controlled crossing at node 26486569 (crossing=traffic_signals, markings=dots, signals=None)"
+A,75,40.415962,-3.69369,40.415993,-3.69369,3.5,26486569,13620375998,VERIFIED,continuous mapped footway/pedestrian way
+A,76,40.415993,-3.69369,40.416091,-3.693664,11.1,13620375998,12339438928,VERIFIED,continuous mapped footway/pedestrian way
+A,77,40.416091,-3.693664,40.4162,-3.69363,12.4,12339438928,1416249587,VERIFIED,continuous mapped footway/pedestrian way
+A,78,40.4162,-3.69363,40.41697,-3.693452,86.9,1416249587,325076749,VERIFIED WITH UNCERTAINTY,"open plaza/axis desire-line: 87 m straight OSM edge, exact walked line approximate"
+A,79,40.41697,-3.693452,40.418425,-3.693159,163.7,325076749,25891992,VERIFIED WITH UNCERTAINTY,"open plaza/axis desire-line: 164 m straight OSM edge, exact walked line approximate"
+A,80,40.418425,-3.693159,40.418585,-3.693112,18.2,25891992,8433060765,VERIFIED,continuous mapped footway/pedestrian way
+A,81,40.418585,-3.693112,40.418632,-3.693099,5.4,8433060765,12802978742,VERIFIED,continuous mapped footway/pedestrian way
+A,82,40.418632,-3.693099,40.418647,-3.693095,1.7,12802978742,13620318680,VERIFIED,continuous mapped footway/pedestrian way
+A,83,40.418647,-3.693095,40.418694,-3.693082,5.3,13620318680,1278838977,VERIFIED,"controlled crossing at node 1278838977 (crossing=traffic_signals, markings=dots, signals=None)"
+A,84,40.418694,-3.693082,40.418689,-3.693021,5.2,1278838977,12802978744,VERIFIED,continuous mapped footway/pedestrian way
+A,85,40.418689,-3.693021,40.418681,-3.692924,8.2,12802978744,1522690040,VERIFIED,continuous mapped footway/pedestrian way
+A,86,40.418681,-3.692924,40.418789,-3.692819,14.9,1522690040,1522690045,VERIFIED,continuous mapped footway/pedestrian way
+A,87,40.418789,-3.692819,40.418794,-3.692766,4.6,1522690045,9366879107,VERIFIED,continuous mapped footway/pedestrian way
+A,88,40.418794,-3.692766,40.418792,-3.692706,5.1,9366879107,25892120,VERIFIED,"controlled crossing at node 25892120 (crossing=traffic_signals, markings=dots, signals=None)"
+A,89,40.418792,-3.692706,40.418789,-3.692651,4.7,25892120,3949527081,VERIFIED,continuous mapped footway/pedestrian way
+A,90,40.418789,-3.692651,40.41895,-3.69263,18.0,3949527081,13620375983,VERIFIED,continuous mapped footway/pedestrian way
+A,91,40.41895,-3.69263,40.419106,-3.692599,17.5,13620375983,3949526895,VERIFIED,continuous mapped footway/pedestrian way
+A,92,40.419106,-3.692599,40.419153,-3.692576,5.6,3949526895,3949526896,VERIFIED,continuous mapped footway/pedestrian way
+A,93,40.419153,-3.692576,40.419196,-3.692543,5.5,3949526896,11974100205,VERIFIED,continuous mapped footway/pedestrian way
+A,94,40.419196,-3.692543,40.419153,-3.692576,5.5,11974100205,3949526896,VERIFIED,continuous mapped footway/pedestrian way
+A,95,40.419153,-3.692576,40.419106,-3.692599,5.6,3949526896,3949526895,VERIFIED,continuous mapped footway/pedestrian way
+A,96,40.419106,-3.692599,40.41895,-3.69263,17.5,3949526895,13620375983,VERIFIED,continuous mapped footway/pedestrian way
+A,97,40.41895,-3.69263,40.418789,-3.692651,18.0,13620375983,3949527081,VERIFIED,continuous mapped footway/pedestrian way
+A,98,40.418789,-3.692651,40.418792,-3.692706,4.7,3949527081,25892120,VERIFIED,"controlled crossing at node 25892120 (crossing=traffic_signals, markings=dots, signals=None)"
+A,99,40.418792,-3.692706,40.418827,-3.692701,3.9,25892120,13620375985,VERIFIED,continuous mapped footway/pedestrian way
+A,100,40.418827,-3.692701,40.418937,-3.692683,12.4,13620375985,1278839116,VERIFIED,continuous mapped footway/pedestrian way
+A,101,40.418937,-3.692683,40.419282,-3.692593,39.0,1278839116,435728822,VERIFIED,continuous mapped footway/pedestrian way
+A,102,40.419282,-3.692593,40.419503,-3.692505,25.7,435728822,25892096,VERIFIED,"controlled crossing at node 25892096 (crossing=no, markings=None, signals=None)"
+A,103,40.419503,-3.692505,40.419559,-3.692486,6.4,25892096,435729044,VERIFIED,continuous mapped footway/pedestrian way
+A,104,40.419559,-3.692486,40.419645,-3.692476,9.6,435729044,3280495560,VERIFIED,continuous mapped footway/pedestrian way
+A,105,40.419645,-3.692476,40.419765,-3.692447,13.6,3280495560,13620318676,VERIFIED,continuous mapped footway/pedestrian way
+A,106,40.419765,-3.692447,40.419813,-3.692425,5.6,13620318676,25892135,VERIFIED,"controlled crossing at node 25892135 (crossing=traffic_signals, markings=None, signals=None)"
+A,107,40.419813,-3.692425,40.420285,-3.692213,55.5,25892135,2584446944,VERIFIED WITH UNCERTAINTY,"open plaza/axis desire-line: 55 m straight OSM edge, exact walked line approximate"
+A,108,40.420285,-3.692213,40.420433,-3.692152,17.3,2584446944,12601981607,VERIFIED,continuous mapped footway/pedestrian way
+A,109,40.420433,-3.692152,40.420482,-3.692133,5.7,12601981607,25901826,VERIFIED,continuous mapped footway/pedestrian way
+A,110,40.420482,-3.692133,40.420463,-3.691988,12.5,25901826,13620318673,VERIFIED,"controlled crossing at node 13620318673 (crossing=uncontrolled, markings=zebra, signals=None)"
+A,111,40.420463,-3.691988,40.420312,-3.69084,98.6,13620318673,4578485127,VERIFIED WITH UNCERTAINTY,"open plaza/axis desire-line: 99 m straight OSM edge, exact walked line approximate; controlled crossing at node 4578485127 (crossing=uncontrolled, markings=zebra, signals=None)"
+A,112,40.420312,-3.69084,40.420304,-3.690756,7.2,4578485127,25901853,VERIFIED,continuous mapped footway/pedestrian way
+A,113,40.420304,-3.690756,40.420364,-3.690714,7.5,25901853,13629401405,VERIFIED,continuous mapped footway/pedestrian way
+A,114,40.420364,-3.690714,40.420627,-3.690588,31.1,13629401405,13629401406,VERIFIED,"controlled crossing at node 13629401406 (crossing=uncontrolled, markings=zebra, signals=None)"
+A,115,40.420627,-3.690588,40.42065,-3.690577,2.8,13629401406,13629401408,VERIFIED,continuous mapped footway/pedestrian way
+A,116,40.42065,-3.690577,40.420686,-3.690551,4.5,13629401408,25901851,VERIFIED,continuous mapped footway/pedestrian way
+A,117,40.420686,-3.690551,40.420577,-3.690285,25.5,25901851,13629401407,VERIFIED,"controlled crossing at node 13629401407 (crossing=uncontrolled, markings=zebra, signals=None)"
+A,118,40.420577,-3.690285,40.420541,-3.690191,8.9,13629401407,25901898,VERIFIED,continuous mapped footway/pedestrian way
+A,119,40.420541,-3.690191,40.420466,-3.689999,18.3,25901898,9684664017,VERIFIED,continuous mapped footway/pedestrian way
+A,120,40.420466,-3.689999,40.420268,-3.689487,48.5,9684664017,26485809,VERIFIED,"controlled crossing at node 26485809 (crossing=uncontrolled, markings=zebra, signals=None)"
+A,121,40.420268,-3.689487,40.420252,-3.689449,3.7,26485809,4140937593,VERIFIED,"controlled crossing at node 4140937593 (crossing=uncontrolled, markings=zebra, signals=None)"
+A,122,40.420252,-3.689449,40.420212,-3.689348,9.7,4140937593,13930993134,VERIFIED,continuous mapped footway/pedestrian way
+A,123,40.420212,-3.689348,40.420183,-3.689267,7.5,13930993134,26485808,VERIFIED,continuous mapped footway/pedestrian way
+A,124,40.420183,-3.689267,40.420156,-3.689169,8.9,26485808,2615463410,VERIFIED,continuous mapped footway/pedestrian way
+A,125,40.420156,-3.689169,40.419987,-3.688724,42.1,2615463410,OD,VERIFIED WITH UNCERTAINTY,O-D endpoint access snap (station concourse / monument island)
+B,0,40.404557,-3.688683,40.403994,-3.689463,91.0,OD,31009976,VERIFIED WITH UNCERTAINTY,O-D endpoint access snap (station concourse / monument island)
+B,1,40.403994,-3.689463,40.403972,-3.689463,2.5,31009976,13983688068,VERIFIED,continuous mapped footway/pedestrian way
+B,2,40.403972,-3.689463,40.403956,-3.689465,1.7,13983688068,13983688069,VERIFIED,continuous mapped footway/pedestrian way
+B,3,40.403956,-3.689465,40.403944,-3.689471,1.5,13983688069,13983688066,VERIFIED,continuous mapped footway/pedestrian way
+B,4,40.403944,-3.689471,40.403933,-3.689483,1.6,13983688066,13983688065,VERIFIED,continuous mapped footway/pedestrian way
+B,5,40.403933,-3.689483,40.403927,-3.689496,1.3,13983688065,13983688064,VERIFIED,continuous mapped footway/pedestrian way
+B,6,40.403927,-3.689496,40.403923,-3.689513,1.5,13983688064,13983688063,VERIFIED,continuous mapped footway/pedestrian way
+B,7,40.403923,-3.689513,40.403922,-3.689528,1.2,13983688063,13983688062,VERIFIED,continuous mapped footway/pedestrian way
+B,8,40.403922,-3.689528,40.403923,-3.689548,1.7,13983688062,4237299411,VERIFIED,"controlled crossing at node 4237299411 (crossing=uncontrolled, markings=zebra, signals=None)"
+B,9,40.403923,-3.689548,40.403955,-3.689574,4.2,4237299411,13983688060,VERIFIED,continuous mapped footway/pedestrian way
+B,10,40.403955,-3.689574,40.403981,-3.6896,3.7,13983688060,14028809938,VERIFIED,continuous mapped footway/pedestrian way
+B,11,40.403981,-3.6896,40.404026,-3.689616,5.2,14028809938,14028809939,VERIFIED,continuous mapped footway/pedestrian way
+B,12,40.404026,-3.689616,40.404782,-3.690469,110.8,14028809939,14028809933,VERIFIED WITH UNCERTAINTY,"open plaza/axis desire-line: 111 m straight OSM edge, exact walked line approximate"
+B,13,40.404782,-3.690469,40.404814,-3.690421,5.4,14028809933,6177136010,VERIFIED,continuous mapped footway/pedestrian way
+B,14,40.404814,-3.690421,40.404837,-3.69038,4.3,6177136010,6177136007,VERIFIED,"controlled crossing at node 6177136007 (crossing=traffic_signals, markings=dots, signals=None)"
+B,15,40.404837,-3.69038,40.404854,-3.690353,3.0,6177136007,4471097877,VERIFIED,continuous mapped footway/pedestrian way
+B,16,40.404854,-3.690353,40.404874,-3.690321,3.5,4471097877,14028874883,VERIFIED,continuous mapped footway/pedestrian way
+B,17,40.404874,-3.690321,40.405554,-3.691065,98.3,14028874883,4471097876,VERIFIED WITH UNCERTAINTY,"open plaza/axis desire-line: 98 m straight OSM edge, exact walked line approximate"
+B,18,40.405554,-3.691065,40.405619,-3.691133,9.3,4471097876,8540648584,VERIFIED,continuous mapped footway/pedestrian way
+B,19,40.405619,-3.691133,40.406144,-3.691685,74.7,8540648584,6177135999,VERIFIED WITH UNCERTAINTY,"open plaza/axis desire-line: 75 m straight OSM edge, exact walked line approximate"
+B,20,40.406144,-3.691685,40.406201,-3.691747,8.2,6177135999,4471097875,VERIFIED,continuous mapped footway/pedestrian way
+B,21,40.406201,-3.691747,40.406206,-3.691738,0.9,4471097875,10909273751,VERIFIED,continuous mapped footway/pedestrian way
+B,22,40.406206,-3.691738,40.406278,-3.691629,12.2,10909273751,4471098592,VERIFIED,continuous mapped footway/pedestrian way
+B,23,40.406278,-3.691629,40.406319,-3.691565,7.1,4471098592,4471098591,VERIFIED,continuous mapped footway/pedestrian way
+B,24,40.406319,-3.691565,40.406357,-3.691526,5.3,4471098591,4471098590,VERIFIED,continuous mapped footway/pedestrian way
+B,25,40.406357,-3.691526,40.406213,-3.691349,21.9,4471098590,6244878957,VERIFIED,continuous mapped footway/pedestrian way
+B,26,40.406213,-3.691349,40.406233,-3.691296,5.0,6244878957,6244878958,VERIFIED,continuous mapped footway/pedestrian way
+B,27,40.406233,-3.691296,40.406188,-3.691253,6.2,6244878958,6244878956,VERIFIED,continuous mapped footway/pedestrian way
+B,28,40.406188,-3.691253,40.40632,-3.69095,29.5,6244878956,7326916750,VERIFIED,continuous mapped footway/pedestrian way
+B,29,40.40632,-3.69095,40.406399,-3.690768,17.7,7326916750,4775943425,VERIFIED,continuous mapped footway/pedestrian way
+B,30,40.406399,-3.690768,40.406521,-3.690489,27.3,4775943425,6244878969,VERIFIED,continuous mapped footway/pedestrian way
+B,31,40.406521,-3.690489,40.406623,-3.690241,23.8,6244878969,7968305184,VERIFIED,continuous mapped footway/pedestrian way
+B,32,40.406623,-3.690241,40.406638,-3.690205,3.5,7968305184,4775943424,VERIFIED,continuous mapped footway/pedestrian way
+B,33,40.406638,-3.690205,40.406702,-3.690045,15.3,4775943424,4775943423,VERIFIED,continuous mapped footway/pedestrian way
+B,34,40.406702,-3.690045,40.406852,-3.689823,25.2,4775943423,4775943422,VERIFIED,continuous mapped footway/pedestrian way
+B,35,40.406852,-3.689823,40.406939,-3.689763,10.9,4775943422,2667468806,VERIFIED,continuous mapped footway/pedestrian way
+B,36,40.406939,-3.689763,40.407003,-3.689765,7.1,2667468806,7683219054,VERIFIED,continuous mapped footway/pedestrian way
+B,37,40.407003,-3.689765,40.407069,-3.689786,7.6,7683219054,5242464897,VERIFIED,continuous mapped footway/pedestrian way
+B,38,40.407069,-3.689786,40.4071,-3.689754,4.4,5242464897,13103334099,VERIFIED,continuous mapped footway/pedestrian way
+B,39,40.4071,-3.689754,40.407174,-3.689652,11.9,13103334099,2046029960,VERIFIED,"controlled crossing at node 2046029960 (crossing=traffic_signals, markings=dots, signals=None)"
+B,40,40.407174,-3.689652,40.40725,-3.689551,12.0,2046029960,13103334098,VERIFIED,continuous mapped footway/pedestrian way
+B,41,40.40725,-3.689551,40.407395,-3.689479,17.3,13103334098,13103334097,VERIFIED,continuous mapped footway/pedestrian way
+B,42,40.407395,-3.689479,40.407449,-3.689414,8.1,13103334097,2046029864,VERIFIED,"controlled crossing at node 2046029864 (crossing=traffic_signals, markings=dots, signals=None)"
+B,43,40.407449,-3.689414,40.407522,-3.689338,10.4,2046029864,2046029944,VERIFIED,"controlled crossing at node 2046029944 (crossing=traffic_signals, markings=dots, signals=None)"
+B,44,40.407522,-3.689338,40.407575,-3.689279,7.7,2046029944,13103334096,VERIFIED,continuous mapped footway/pedestrian way
+B,45,40.407575,-3.689279,40.407609,-3.689244,4.9,13103334096,2667469336,VERIFIED,continuous mapped footway/pedestrian way
+B,46,40.407609,-3.689244,40.40757,-3.689136,10.1,2667469336,6533545007,VERIFIED,continuous mapped footway/pedestrian way
+B,47,40.40757,-3.689136,40.407508,-3.689029,11.4,6533545007,11822278111,VERIFIED,continuous mapped footway/pedestrian way
+B,48,40.407508,-3.689029,40.407475,-3.688972,6.0,11822278111,2667468920,VERIFIED,continuous mapped footway/pedestrian way
+B,49,40.407475,-3.688972,40.407502,-3.68888,8.3,2667468920,2667469334,VERIFIED,continuous mapped footway/pedestrian way
+B,50,40.407502,-3.68888,40.407541,-3.688762,10.9,2667469334,6244878954,VERIFIED,continuous mapped footway/pedestrian way
+B,51,40.407541,-3.688762,40.409304,-3.688831,196.2,6244878954,6244878953,VERIFIED WITH UNCERTAINTY,"open plaza/axis desire-line: 196 m straight OSM edge, exact walked line approximate"
+B,52,40.409304,-3.688831,40.409302,-3.68879,3.5,6244878953,1727199786,VERIFIED,"controlled crossing at node 1727199786 (crossing=traffic_signals, markings=dots, signals=None)"
+B,53,40.409302,-3.68879,40.409304,-3.688606,15.5,1727199786,1727199775,VERIFIED,"controlled crossing at node 1727199775 (crossing=traffic_signals, markings=dots, signals=None)"
+B,54,40.409304,-3.688606,40.409304,-3.688546,5.1,1727199775,3964130707,VERIFIED,continuous mapped footway/pedestrian way
+B,55,40.409304,-3.688546,40.409437,-3.688554,14.8,3964130707,3964130745,VERIFIED,continuous mapped footway/pedestrian way
+B,56,40.409437,-3.688554,40.409481,-3.688552,4.9,3964130745,3964130750,VERIFIED,continuous mapped footway/pedestrian way
+B,57,40.409481,-3.688552,40.40955,-3.688543,7.7,3964130750,3964130767,VERIFIED,continuous mapped footway/pedestrian way
+B,58,40.40955,-3.688543,40.409576,-3.688525,3.3,3964130767,3964130770,VERIFIED,continuous mapped footway/pedestrian way
+B,59,40.409576,-3.688525,40.40962,-3.688487,5.8,3964130770,3964130779,VERIFIED,continuous mapped footway/pedestrian way
+B,60,40.40962,-3.688487,40.409689,-3.688465,7.9,3964130779,3964130789,VERIFIED,continuous mapped footway/pedestrian way
+B,61,40.409689,-3.688465,40.409767,-3.688479,8.8,3964130789,3964130797,VERIFIED,continuous mapped footway/pedestrian way
+B,62,40.409767,-3.688479,40.409805,-3.688502,4.7,3964130797,3964130800,VERIFIED,continuous mapped footway/pedestrian way
+B,63,40.409805,-3.688502,40.409872,-3.688565,9.2,3964130800,3964130808,VERIFIED,continuous mapped footway/pedestrian way
+B,64,40.409872,-3.688565,40.409898,-3.688576,3.0,3964130808,3964130810,VERIFIED,continuous mapped footway/pedestrian way
+B,65,40.409898,-3.688576,40.409926,-3.688576,3.1,3964130810,3964130816,VERIFIED,continuous mapped footway/pedestrian way
+B,66,40.409926,-3.688576,40.410946,-3.688614,113.5,3964130816,3964130819,VERIFIED WITH UNCERTAINTY,"open plaza/axis desire-line: 113 m straight OSM edge, exact walked line approximate"
+B,67,40.410946,-3.688614,40.412094,-3.688659,127.8,3964130819,3964130820,VERIFIED WITH UNCERTAINTY,"open plaza/axis desire-line: 128 m straight OSM edge, exact walked line approximate"
+B,68,40.412094,-3.688659,40.412609,-3.688682,57.2,3964130820,3964130825,VERIFIED WITH UNCERTAINTY,"open plaza/axis desire-line: 57 m straight OSM edge, exact walked line approximate"
+B,69,40.412609,-3.688682,40.412791,-3.688692,20.2,3964130825,3964130826,VERIFIED,continuous mapped footway/pedestrian way
+B,70,40.412791,-3.688692,40.413618,-3.688719,92.1,3964130826,3964130829,VERIFIED WITH UNCERTAINTY,"open plaza/axis desire-line: 92 m straight OSM edge, exact walked line approximate"
+B,71,40.413618,-3.688719,40.414534,-3.688757,101.9,3964130829,3964130831,VERIFIED WITH UNCERTAINTY,"open plaza/axis desire-line: 102 m straight OSM edge, exact walked line approximate"
+B,72,40.414534,-3.688757,40.415186,-3.688782,72.5,3964130831,3964130837,VERIFIED WITH UNCERTAINTY,"open plaza/axis desire-line: 72 m straight OSM edge, exact walked line approximate"
+B,73,40.415186,-3.688782,40.415185,-3.688796,1.2,3964130837,3964130836,VERIFIED,continuous mapped footway/pedestrian way
+B,74,40.415185,-3.688796,40.415184,-3.688845,4.1,3964130836,3964130835,VERIFIED,"controlled crossing at node 3964130835 (crossing=traffic_signals, markings=dots, signals=None)"
+B,75,40.415184,-3.688845,40.415185,-3.688796,4.1,3964130835,3964130836,VERIFIED,continuous mapped footway/pedestrian way
+B,76,40.415185,-3.688796,40.415186,-3.688782,1.2,3964130836,3964130837,VERIFIED,continuous mapped footway/pedestrian way
+B,77,40.415186,-3.688782,40.415274,-3.688784,9.8,3964130837,3964130838,VERIFIED,continuous mapped footway/pedestrian way
+B,78,40.415274,-3.688784,40.416444,-3.688835,130.2,3964130838,3964130841,VERIFIED WITH UNCERTAINTY,"open plaza/axis desire-line: 130 m straight OSM edge, exact walked line approximate"
+B,79,40.416444,-3.688835,40.416651,-3.688821,23.0,3964130841,3964130842,VERIFIED,continuous mapped footway/pedestrian way
+B,80,40.416651,-3.688821,40.416711,-3.688813,6.7,3964130842,3964130844,VERIFIED,continuous mapped footway/pedestrian way
+B,81,40.416711,-3.688813,40.41677,-3.688811,6.6,3964130844,3964130845,VERIFIED,continuous mapped footway/pedestrian way
+B,82,40.41677,-3.688811,40.416847,-3.688817,8.6,3964130845,3964130846,VERIFIED,continuous mapped footway/pedestrian way
+B,83,40.416847,-3.688817,40.416861,-3.688819,1.5,3964130846,3964130847,VERIFIED,continuous mapped footway/pedestrian way
+B,84,40.416861,-3.688819,40.416902,-3.688822,4.6,3964130847,3964130852,VERIFIED,continuous mapped footway/pedestrian way
+B,85,40.416902,-3.688822,40.417332,-3.688783,48.0,3964130852,3964130853,VERIFIED,continuous mapped footway/pedestrian way
+B,86,40.417332,-3.688783,40.418694,-3.688665,151.8,3964130853,3964130855,VERIFIED WITH UNCERTAINTY,"open plaza/axis desire-line: 152 m straight OSM edge, exact walked line approximate"
+B,87,40.418694,-3.688665,40.41919,-3.68862,55.2,3964130855,3964130960,VERIFIED WITH UNCERTAINTY,"open plaza/axis desire-line: 55 m straight OSM edge, exact walked line approximate"
+B,88,40.41919,-3.68862,40.41929,-3.688601,11.2,3964130960,3964130962,VERIFIED,continuous mapped footway/pedestrian way
+B,89,40.41929,-3.688601,40.419319,-3.688592,3.4,3964130962,3964130964,VERIFIED,continuous mapped footway/pedestrian way
+B,90,40.419319,-3.688592,40.419363,-3.688554,5.8,3964130964,3964130969,VERIFIED,continuous mapped footway/pedestrian way
+B,91,40.419363,-3.688554,40.419354,-3.68861,4.9,3964130969,3964130968,VERIFIED,continuous mapped footway/pedestrian way
+B,92,40.419354,-3.68861,40.419348,-3.688667,4.9,3964130968,2005647258,VERIFIED,"controlled crossing at node 2005647258 (crossing=traffic_signals, markings=None, signals=None)"
+B,93,40.419348,-3.688667,40.419345,-3.688728,5.1,2005647258,3964130965,VERIFIED,continuous mapped footway/pedestrian way
+B,94,40.419345,-3.688728,40.419345,-3.688765,3.1,3964130965,3964130967,VERIFIED,continuous mapped footway/pedestrian way
+B,95,40.419345,-3.688765,40.419349,-3.68883,5.5,3964130967,2005647240,VERIFIED,"controlled crossing at node 2005647240 (crossing=traffic_signals, markings=None, signals=None)"
+B,96,40.419349,-3.68883,40.419355,-3.688888,5.0,2005647240,7326907272,VERIFIED,continuous mapped footway/pedestrian way
+B,97,40.419355,-3.688888,40.419392,-3.689054,14.6,7326907272,4140937599,VERIFIED,continuous mapped footway/pedestrian way
+B,98,40.419392,-3.689054,40.419456,-3.689206,14.7,4140937599,4140937598,VERIFIED,continuous mapped footway/pedestrian way
+B,99,40.419456,-3.689206,40.419542,-3.689336,14.7,4140937598,4140937597,VERIFIED,continuous mapped footway/pedestrian way
+B,100,40.419542,-3.689336,40.419649,-3.689439,14.6,4140937597,4140937596,VERIFIED,continuous mapped footway/pedestrian way
+B,101,40.419649,-3.689439,40.419742,-3.689518,12.4,4140937596,7326907273,VERIFIED,continuous mapped footway/pedestrian way
+B,102,40.419742,-3.689518,40.419822,-3.689537,8.9,7326907273,29275251,VERIFIED,"controlled crossing at node 29275251 (crossing=traffic_signals, markings=None, signals=None)"
+B,103,40.419822,-3.689537,40.419861,-3.689546,4.5,29275251,3964131015,VERIFIED,continuous mapped footway/pedestrian way
+B,104,40.419861,-3.689546,40.419878,-3.68955,1.9,3964131015,3964131022,VERIFIED,continuous mapped footway/pedestrian way
+B,105,40.419878,-3.68955,40.41992,-3.689559,4.7,3964131022,29275281,VERIFIED,"controlled crossing at node 29275281 (crossing=traffic_signals, markings=None, signals=None)"
+B,106,40.41992,-3.689559,40.420006,-3.689579,9.7,29275281,4140937595,VERIFIED,continuous mapped footway/pedestrian way
+B,107,40.420006,-3.689579,40.420146,-3.689507,16.8,4140937595,4140937594,VERIFIED,continuous mapped footway/pedestrian way
+B,108,40.420146,-3.689507,40.420226,-3.689465,9.6,4140937594,11918409312,VERIFIED,continuous mapped footway/pedestrian way
+B,109,40.420226,-3.689465,40.420252,-3.689449,3.2,11918409312,4140937593,VERIFIED,"controlled crossing at node 4140937593 (crossing=uncontrolled, markings=zebra, signals=None)"
+B,110,40.420252,-3.689449,40.420212,-3.689348,9.7,4140937593,13930993134,VERIFIED,continuous mapped footway/pedestrian way
+B,111,40.420212,-3.689348,40.420183,-3.689267,7.5,13930993134,26485808,VERIFIED,continuous mapped footway/pedestrian way
+B,112,40.420183,-3.689267,40.420156,-3.689169,8.9,26485808,2615463410,VERIFIED,continuous mapped footway/pedestrian way
+B,113,40.420156,-3.689169,40.419987,-3.688724,42.1,2615463410,OD,VERIFIED WITH UNCERTAINTY,O-D endpoint access snap (station concourse / monument island)

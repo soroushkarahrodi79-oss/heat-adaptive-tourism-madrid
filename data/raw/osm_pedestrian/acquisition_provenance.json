@@ -1,0 +1,19 @@
+{
+  "acquisition_utc": "2026-09-14T19:46:20.531749+00:00",
+  "endpoint": "https://overpass-api.de/api/interpreter",
+  "sha256": "a3a616016a9646197bdbcff2c26a853f0179afb6ccf79b13209cf9e2c0ce2e8f",
+  "bytes": 1792217,
+  "n_elements": 2979,
+  "bbox_SWNE": [
+    40.4035,
+    -3.695,
+    40.421,
+    -3.682
+  ],
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm_base": {
+    "timestamp_osm_base": "2026-09-14T19:45:03Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "attribution": "(c) OpenStreetMap contributors, ODbL"
+}
