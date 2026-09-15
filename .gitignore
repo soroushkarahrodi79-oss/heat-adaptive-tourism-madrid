@@ -60,3 +60,6 @@ tmp/
 cache/
 .cache/
 scratch/
+
+# Gate 3A pedestrian-heat interim rasters + SVF cache (heavy, regenerable; hashes in GATE3A_MODEL_PROVENANCE.json)
+data/interim/pedestrian-heat/
