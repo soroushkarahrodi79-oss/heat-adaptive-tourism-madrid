@@ -12,28 +12,35 @@ No other frozen element changes (MDS 2023 surface, Catastro building footprints,
 vegetation mask, routes, study day, departure times, forcing, metrics, perturbations,
 controls all unchanged).
 
-## 2. Why (frozen assumption impossible to execute as written)
-- Madrid publishes the **2019** terrain only as **10 cm ESRI-ASCII (.asc)** tiles
-  (`…/ELEVACIONES/2019/MDT/`), which are gigabyte-scale per 1 km tile with **no
-  cloud-optimized / windowed (`/vsicurl`) access** — not practically clippable to the
-  bounded OD1 domain.
-- The **2023** campaign publishes both **MDS 2023 and MDT 2023** as **Cloud-Optimized
-  GeoTIFF** with internal overviews (`…/ELEVACIONES/2023/{MDS,MDT}/COG/<tile>.tif`),
-  verified live and windowed-readable (2026-09-15).
-- The Gate-2 manifest itself labelled the terrain "MDT actualizado (MDT 2019)"; the
-  *actualizado* (current) Madrid MDT is the 2023 product. The "2019" was a vintage
-  assumption carried from Gate 1, not a scientific requirement.
+> **CORRECTION (2026-09-15, Gate-3A review).** The original v1 justification for this
+> amendment contained factual errors about MDT-2019 availability and made unquantified
+> invariance claims. Both are corrected below. The *decision* (use MDT 2023 for bounded,
+> same-epoch execution, taken before any thermal output) stands, but it is reframed as an
+> **acquisition/governance** choice, not a "2019 is impossible" claim.
 
-## 3. Scientific impact (immaterial; arguably improving)
-- The decision-bearing quantity is **nSH (above-ground height)**. Bare-earth **terrain
-  is essentially invariant 2019→2023** in the protected built heritage core (Prado
-  axis / Alfonso XII); no terracing/regrading occurred.
-- Using MDT 2023 makes surface and terrain **same-epoch (2023)**, giving a cleaner nSH
-  than mixing a 2023 surface with 2019 terrain.
-- Terrain is nearly identical under **both** routes and is **differenced out** in the
-  Route A − Route B comparison; it cannot by itself flip the ordering.
-- Path-B claim ceiling unaffected (no accuracy/comfort/health claim rests on terrain
-  vintage).
+## 2. Why (acquisition/governance choice — corrected)
+- **Madrid MDT 2019 IS available** — as 10 cm ESRI-ASCII (.asc) tiles (`…/ELEVACIONES/2019/
+  MDT/`) **and** as an associated **generalized 1 m COG mosaic** download. The earlier
+  statement that "2019 has no COG" was **false** and is withdrawn.
+- **Gate-2 record error:** the Gate-2 manifest/ledger described the terrain source as
+  "10 cm COG tiles"; that too was inaccurate (the 10 cm 2019 product is ASC; the COG is a
+  generalized 1 m mosaic). Recorded here as a freeze-record correction.
+- **Choice made:** MDT **2023** is used because it is the **same 2023 campaign as the frozen
+  MDS 2023**, giving a same-epoch `nSH = MDS 2023 − MDT 2023` from one consistent COG source
+  clippable to the bounded OD1 domain via `/vsicurl`. This is an execution/consistency choice
+  decided **before** any thermal output was produced or inspected — not forced by an
+  impossibility.
+
+## 3. Scientific impact (bounded; not quantified as "invariant")
+- The decision-bearing quantity is **nSH (above-ground height)**; the change is to the
+  **terrain datum** under it, applied identically to both routes.
+- The earlier claims that 2019→2023 terrain is "essentially invariant" and "cannot by itself
+  flip the ordering" are **removed** — they were **not quantified**. A direct MDT-2019 vs
+  MDT-2023 comparison over OD1 has not been computed here, so no invariance is asserted.
+- What *is* stated: terrain is applied identically to A and B, and Path-B forbids any
+  accuracy/comfort/health claim resting on terrain vintage. Whether the terrain datum could
+  affect the A−B ordering is left to be demonstrated, not assumed; if a reviewer requires it,
+  an MDT-2019 vs MDT-2023 sensitivity run can be added under a further amendment.
 
 ## 4. Discovery timing & anti-cherry-pick
 Discovered and decided **before** any Tmrt/UTCI was computed or inspected; the change is

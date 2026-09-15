@@ -4,12 +4,17 @@
 reported **before** interpreting Route A vs Route B. A visually attractive map is not
 validation.
 
-> **v1.1 update.** An external audit found the v1.0 route sampler used per-vertex
-> densification (not true global chainage) and equal-weight metrics. Fixed:
-> global-chainage sampling with represented-length weights; baseline speed corrected to the
-> frozen 1.1 m/s (AMENDMENT_002). Thermal rasters were **not** re-run. See
-> `GATE3A_SAMPLING_CORRECTION.md`; field-level QA below (rasters) is unchanged and still
-> valid. 5/5 sampling invariants pass (`tests/pedestrian_heat/test_gate3a_sampling.py`).
+> **v1.1 update.** Route sampler corrected to true global chainage + represented-length
+> weights; baseline speed → frozen 1.1 m/s (AMENDMENT_002). See `GATE3A_SAMPLING_CORRECTION.md`.
+>
+> **v1.2 update (execution-semantics review, AMENDMENT_003).** Two blockers fixed and the
+> thermal fields **re-run**: (1) SOLWEIG now a single **stateful** `calculate()` over a
+> continuous 72-step 15-min sequence (00:00→17:45) — thermal state carried, not reset per
+> timestamp; (2) Catastro acquisition **fail-closed** with structural GML parsing (rings/
+> multipart, dedup) → building coverage 32.03 %→30.14 %, DSM/CDSM regenerated. Corrected-field
+> QA below is **re-verified** on the stateful fields. See `GATE3A_STATEFUL_CORRECTION.md`.
+> All tests pass: 5/5 sampling + 6/6 Catastro/temporal-state
+> (`tests/pedestrian_heat/test_gate3a_{sampling,catastro_and_state}.py`).
 
 ## 3A.1 Reproducibility preflight — PASS
 All 14 Gate-2 artifact hashes recompute-match; both frozen route hashes match the
@@ -63,12 +68,12 @@ unobserved** (uniform wind; modeled clear-sky radiation) — stated limitations.
 ## TEMPORAL-DISCRETIZATION QA (±7.5 min, frozen 15-min nearest-field method)
 Re-sampling each route with the field chosen at −7.5 / nearest / +7.5 min:
 
-(Recomputed with the corrected global-chainage sampler at v = 1.1 m/s.)
+(Recomputed on the **corrected stateful fields** with the global-chainage sampler at v = 1.1 m/s.)
 
 | Departure | A−B (−7.5) | A−B (nearest) | A−B (+7.5) | Sign flips? |
 |---|---|---|---|---|
-| 14:00 | −0.073 | −0.047 | −0.102 | No |
-| 17:00 | −0.377 | −0.365 | −0.291 | No |
+| 14:00 | −0.070 | −0.042 | −0.086 | No |
+| 17:00 | −0.379 | −0.367 | −0.301 | No |
 
 The ±7.5 min discretization **does not flip the sign** of the Route A − Route B mean-UTCI
 difference at either departure; magnitude varies ≤ 0.1 °C. Discretization could **not
