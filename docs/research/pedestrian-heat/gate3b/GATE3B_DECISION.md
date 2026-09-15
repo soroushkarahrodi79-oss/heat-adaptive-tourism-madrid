@@ -1,6 +1,14 @@
 # GATE3B_DECISION — robustness / evidence-sufficiency verdict
 
-**Version 1.0 · 2026-09-15.**
+**Version 2.0 · 2026-09-15 (CORRECTED: stateful SOLWEIG + hardened Catastro propagated from
+Gate-3A AMENDMENT_003).**
+
+> **Correction note.** Every Gate-3B perturbation was re-run with the corrected **stateful**
+> single-call SOLWEIG (continuous 72-step 15-min sequence) on the corrected fail-closed-Catastro
+> geometry. Perturbation definitions and the decision rule are **unchanged**. The verdict is
+> **unchanged: ABSTAIN**. Corrected A−B sign still reverses under E-P2b (PNOA canopy, 14:00) and
+> E-P5 (side-of-street, both departures); the ensemble spans zero. See
+> `GATE3B_DECISION_STABILITY.md` (v2) for OLD-vs-corrected numbers.
 
 ## Verdict
 

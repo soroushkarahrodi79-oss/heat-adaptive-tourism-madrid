@@ -4,7 +4,8 @@
   "verdict": "ABSTAIN / NO ROBUST DIFFERENCE",
   "amendments": [
     "AMENDMENT_001 (terrain MDT 2023)",
-    "AMENDMENT_002 (baseline speed 1.1 m/s)"
+    "AMENDMENT_002 (baseline speed 1.1 m/s)",
+    "AMENDMENT_003 (stateful SOLWEIG + fail-closed Catastro)"
   ],
   "model": "solweig 0.1.0b92 (.venv_solweig); pvlib 0.15.2 Ineichen",
   "domain": "EPSG:25830 370x1081 @ 2 m (Gate-3A)",
@@ -45,5 +46,16 @@
     "py src/gate3b_build_perturbation_geometry.py",
     "(.venv_solweig) python src/gate3b_run_one.py <config> [label]  # per config/timestamp, memory-frugal",
     "py src/gate3b_analyze.py"
-  ]
+  ],
+  "execution_correction": "AMENDMENT_003 propagated: every perturbation re-run as a single STATEFUL calculate() over continuous 72-step 15-min sequence 00:00->17:45; hardened fail-closed Catastro geometry (building coverage 30.14%). Perturbation defs + decision rule unchanged; verdict unchanged (ABSTAIN).",
+  "corrected_artifact_hashes_count": 44,
+  "sign_reversal_corrected": {
+    "14:00": [
+      "EP2b_canopy_pnoa",
+      "EP5_side_-12m"
+    ],
+    "17:00": [
+      "EP5_side_-12m"
+    ]
+  }
 }

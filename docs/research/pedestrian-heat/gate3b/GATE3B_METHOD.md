@@ -21,12 +21,15 @@ sign is preserved across **all** justified perturbations. Baseline geometry/forc
 Canopy coverage across E-P2 states spans **4.9 %–41 %** (tree-inventory → PNOA), directly
 probing the dominant direction-changing uncertainty.
 
-## Thermal computation
-`solweig` 0.1.0b92 (`.venv_solweig`), same domain (370×1081 @ 2 m), Δt = 15 min fields
-(8 timestamps per config), corrected global-chainage sampling (v = 1.1 m/s; 10 m buffer-mean).
-Memory note: the run environment had ~1 GB free RAM, so each config's 8 timestamps were run
-one-per-process (SVF cached once, reused) with a retry-fill loop for transient OOM — all
-5 configs reached 8/8 rasters; this is an execution/logistics detail with no effect on values.
+## Thermal computation (CORRECTED — stateful, AMENDMENT_003)
+`solweig` 0.1.0b92 (`.venv_solweig`), same domain (370×1081 @ 2 m). **Each perturbation config
+is run as a single STATEFUL `calculate()` over the continuous 72-step 15-min sequence
+00:00→17:45 local** (thermal state carried; only the 8 frozen decision fields feed metrics) —
+matching the Gate-3A stateful correction. Geometry uses the hardened fail-closed Catastro build
+(building coverage 30.14 %). Corrected global-chainage sampling (v = 1.1 m/s; 10 m buffer-mean).
+One config per process for memory isolation; all 5 configs completed 8/8 (no RESOURCE_BLOCKED).
+The earlier provisional 3B run used non-stateful per-timestamp fields; re-running stateful left
+the verdict unchanged.
 
 ## Decision rule (frozen, GATE2_METRIC_SPEC §3)
 - ROBUST: sign of A−B agrees across M1–M4 AND preserved across all perturbations AND category
