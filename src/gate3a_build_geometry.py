@@ -190,7 +190,7 @@ with rasterio.open(OUT/"building_mask.tif","w",**{**prof,"dtype":"uint8"}) as ds
 with rasterio.open(OUT/"veg_mask.tif","w",**{**prof,"dtype":"uint8"}) as dst: dst.write(veg.astype("uint8"),1)
 
 prov={"domain_epsg25830":{"x0":X0,"y0":Y0,"x1":X1,"y1":Y1,"res":RES,"nx":NX,"ny":NY,"buffer_m":150,
-        "buffer_justification":"max ~50 m heritage-core building at ~20 deg late-afternoon (17:45) solar altitude -> ~140 m shadow"},
+        "buffer_justification":"150 m fixed; actual 17:45 solar altitude 35.8 deg (pvlib) -> ~50 m building casts ~70 m shadow; 150 m (>2x worst case) adequate"},
       "terrain":"Madrid MDT 2023 (AMENDMENT_001) COG windowed","surface":"Madrid MDS 2023 COG windowed",
       "mds_tiles":mds_urls,"mdt_tiles":mdt_urls,
       "catastro_footprints_wfs_sha256":foot_hash,"catastro_polys_in_domain":len(foot_in),

@@ -4,7 +4,8 @@
   "baseline_only": true,
   "perturbations_run": "none (E-P1/E-P2/E-P4/E-P5/E-P6 deferred to robustness gate)",
   "amendments": [
-    "AMENDMENT_001: terrain Madrid MDT 2019 -> MDT 2023 (user-approved, pre-thermal); see docs/research/pedestrian-heat/AMENDMENT_001.md"
+    "AMENDMENT_001: terrain Madrid MDT 2019 -> MDT 2023 (user-approved, pre-thermal); see docs/research/pedestrian-heat/AMENDMENT_001.md",
+    "AMENDMENT_002: Gate-3A baseline walking speed 1.25 m/s (unfrozen midpoint) -> 1.1 m/s (frozen E-P6 tourist value); 1.4 m/s computed as speed-robustness QA only"
   ],
   "model": {
     "package": "solweig 0.1.0b92 (UMEP-dev standalone)",
@@ -21,7 +22,7 @@
     "nx": 370,
     "ny": 1081,
     "buffer_m": 150,
-    "buffer_justification": "max ~50 m heritage-core building at ~20 deg late-afternoon (17:45) solar altitude -> ~140 m shadow"
+    "buffer_justification": "150 m fixed buffer; actual solar altitude at 17:45 is 35.8 deg (per pvlib, consistent with QA/method) -> ~50 m building casts ~70 m shadow, so 150 m (>2x worst case) is adequate; buffer NOT changed"
   },
   "resolution_m": 2.0,
   "resolution_justification": "2 m sidewalk-scale working grid; SVF-tractable over 370x1081 domain; fixed before any thermal output",
@@ -70,9 +71,10 @@
       "1730",
       "1745"
     ],
-    "traversal": "t_k = departure + cumdist/v ; nearest-15min field ; buffer-mean 10 m",
-    "baseline_speed_ms": 1.25,
-    "discretization_uncertainty": "+/-7.5 min (nearest-field), QA'd: does not flip A-B intensity sign"
+    "traversal": "t_k = departure + chainage/v ; nearest-15min field ; buffer-mean 10 m ; represented-length weighting",
+    "baseline_speed_ms": 1.1,
+    "discretization_uncertainty": "+/-7.5 min (nearest-field), QA'd: does not flip A-B intensity sign",
+    "speed_governance": "baseline 1.1 m/s (AMENDMENT_002, frozen E-P6 tourist); 1.4 m/s = QA robustness check; both preserve A-B intensity sign"
   },
   "forcing": "Barajas 08221 hourly 2023-08-24 linearly interpolated to each field timestamp + pvlib clear-sky GHI",
   "field_qa": {
@@ -138,5 +140,6 @@
     "(.venv_solweig) python src/gate3a_run_solweig.py",
     "py src/gate3a_sample_metrics.py",
     "(PROJ_DATA/PROJ_LIB/GDAL_DATA set to the interpreter's rasterio bundled data)"
-  ]
+  ],
+  "sampling_correction": "2026-09-15 audit fix: true global-chainage sampling (Delta s=5 m, represented-length weights) replaces per-vertex densification; M2 length-weighted; M4 minutes from represented duration; see GATE3A_SAMPLING_CORRECTION.md. Thermal rasters unchanged."
 }

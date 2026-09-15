@@ -6,7 +6,7 @@ time-resolved modeled comparison **without violating the Path-B claim ceiling** 
 prove a route cooler. Baseline only; no perturbation matrix; no path optimisation; no
 scientific winner.
 
-## Inputs (frozen Gate-2, + AMENDMENT_001)
+## Inputs (frozen Gate-2, + AMENDMENT_001 terrain, + AMENDMENT_002 baseline speed)
 - **Routes:** frozen `OD1_Route_A_epsg25830.geojson` (2657.8 m) and
   `OD1_Route_B_epsg25830.geojson` (2365.7 m) — hashes verified (3A.1).
 - **Study day / departures:** 2023-08-24; **14:00 and 17:00 Europe/Madrid as departure
@@ -33,12 +33,17 @@ bulk-downloaded).
 
 ## Time-resolved traversal (3A.3, frozen Gate-2 §0.1)
 Thermal fields at **Δt = 15 min**: 14:00/14:15/14:30/14:45 and 17:00/17:15/17:30/17:45
-(8 SOLWEIG runs; SVF computed once). Each route densified to **Δs = 5 m**; segment
-traversal time `t_k = departure + cumulative_distance / v` at baseline **v = 1.25 m/s**
-(midpoint of the frozen E-P6 1.1/1.4 range); UTCI/Tmrt sampled from the field **nearest
-t_k** via a **10 m buffer-mean** (locked-pilot PRIMARY_BUFFER_M). Solar geometry/shadows
-therefore evolve along the trip. A single static field is **not** applied to the whole
-walk. ±7.5 min discretization uncertainty is QA'd (`GATE3A_QA_REPORT.md`).
+(8 SOLWEIG runs; SVF computed once). Each route is sampled at **true global chainage**
+(Δs = 5 m measured continuously from the origin; final partial interval included; each
+sample carries an explicit **represented length / dwell weight** — corrected 2026-09-15,
+see `GATE3A_SAMPLING_CORRECTION.md`). Segment traversal time
+`t_k = departure + chainage / v` at baseline **v = 1.1 m/s** (frozen E-P6
+tourist-representative value; **AMENDMENT_002** — the earlier 1.25 m/s midpoint was
+unfrozen; 1.4 m/s is a speed-robustness QA check only). UTCI/Tmrt sampled from the field
+**nearest t_k** via a **10 m buffer-mean** (locked-pilot PRIMARY_BUFFER_M). Metrics are
+represented-length-weighted (M2, M3, M5) and represented-duration-based (M1, M4). Solar
+geometry/shadows evolve along the trip; a single static field is **not** applied to the
+whole walk. ±7.5 min discretization uncertainty is QA'd (`GATE3A_QA_REPORT.md`).
 
 ## Metrics (3A.7, frozen Gate-2)
 Computed exactly per `GATE2_METRIC_SPEC.md`, with **THERMAL INTENSITY** (M2 time-weighted

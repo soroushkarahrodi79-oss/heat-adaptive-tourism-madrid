@@ -1,7 +1,15 @@
 # GATE3A_QA_REPORT — Pipeline falsification / physical sanity
 
-**Version 1.0 · 2026-09-15.** Diagnostics reported **before** interpreting Route A vs
-Route B. A visually attractive map is not validation.
+**Version 1.1 · 2026-09-15 (updated after the sampling-correction audit).** Diagnostics
+reported **before** interpreting Route A vs Route B. A visually attractive map is not
+validation.
+
+> **v1.1 update.** An external audit found the v1.0 route sampler used per-vertex
+> densification (not true global chainage) and equal-weight metrics. Fixed:
+> global-chainage sampling with represented-length weights; baseline speed corrected to the
+> frozen 1.1 m/s (AMENDMENT_002). Thermal rasters were **not** re-run. See
+> `GATE3A_SAMPLING_CORRECTION.md`; field-level QA below (rasters) is unchanged and still
+> valid. 5/5 sampling invariants pass (`tests/pedestrian_heat/test_gate3a_sampling.py`).
 
 ## 3A.1 Reproducibility preflight — PASS
 All 14 Gate-2 artifact hashes recompute-match; both frozen route hashes match the
@@ -21,7 +29,8 @@ same-epoch, immaterial to nSH, differenced out under both routes. Not silent.
 | Check | Result | Verdict |
 |---|---|---|
 | Nodata artefacts (fields) | 0.0% nodata in every Tmrt/UTCI field | PASS |
-| Route samples off valid raster | off_raster = False; nan_samples = 0 (all 4 route/departure combos) | PASS |
+| Route samples off valid raster | off_raster = False; nan_samples = 0 (all route/departure/speed combos; corrected sampler A=532 / B=474 samples) | PASS |
+| Sampling invariants (corrected) | Σ represented length == route length; Σ M4 minutes == M1; weighted-M2 constant-field exact; vertex-segmentation invariant | PASS (5/5 tests) |
 | Implausible values | out-of-range fraction 0.0 (UTCI∈[10,55], Tmrt∈[10,85]) | PASS |
 | Raster-edge discontinuity | edge mean 44.4 °C vs interior 43.0 °C (UTCI, 17:00) — mild finite-domain SVF edge effect | CONFINED: routes are ≥150 m from the boundary (the buffer); no route sample lies in the edge zone |
 | Building mask | Catastro 1850 footprints, 32.0% coverage; building heights max 63.6 m, mean 20.9 m | PASS (plausible heritage-core) |
@@ -33,13 +42,16 @@ same-epoch, immaterial to nSH, differenced out under both routes. Not silent.
 | CRS displacement | domain bounds match requested EPSG:25830 extent; MDS/MDT/Catastro co-registered | PASS |
 | Sun/shade on classification | Tmrt 17:00: under-vegetation 48.6 °C < open 57.7 °C < sunlit roof 64.3 °C | PASS (canopy shade cools ~9 °C — model responds to geometry) |
 
-### Limitation: 15% unclassified-tall nSH
+### Stated baseline limitation: 15% unclassified-tall nSH (NOT to be tuned)
 15.1% of domain pixels have nSH ≥ 2 m but fall outside both the Catastro building
 footprints and the vegetation mask (footprint-edge slivers, boundary walls, monuments,
-kiosks, and trees beyond the mask). These are currently modeled as ground, so their
-shadows are omitted. Dominant obstacles **are** modeled (buildings 32%, canopy 34%). This
-does not invalidate the baseline comparison but is a **classification-refinement item for
-the robustness gate** (tighten footprint/veg coverage to reduce the unclassified tail).
+kiosks, trees beyond the mask). These are modeled as ground, so their shadows are omitted.
+Dominant obstacles **are** modeled (buildings 32%, canopy 34%). This is a **fixed,
+declared property of the frozen classification architecture** for this baseline — it does
+not invalidate the comparison. **It will not be "refined" opportunistically.** Per the
+audit, any change to the classification must come **only** through the already-frozen
+**E-P2 (canopy) / E-P4 (building)** geometry-source perturbations in Gate 3B, or through a
+new amendment — never an ad-hoc reclassification tuned to stabilise the A/B ordering.
 
 ## 3A.6 Independent meteorological context (representativeness only)
 `GATE3A_METEOROLOGY_CHECK.csv`. Escuelas Aguirre urban Ta tracks the Barajas forcing
@@ -51,10 +63,12 @@ unobserved** (uniform wind; modeled clear-sky radiation) — stated limitations.
 ## TEMPORAL-DISCRETIZATION QA (±7.5 min, frozen 15-min nearest-field method)
 Re-sampling each route with the field chosen at −7.5 / nearest / +7.5 min:
 
+(Recomputed with the corrected global-chainage sampler at v = 1.1 m/s.)
+
 | Departure | A−B (−7.5) | A−B (nearest) | A−B (+7.5) | Sign flips? |
 |---|---|---|---|---|
-| 14:00 | −0.08 | −0.10 | −0.11 | No |
-| 17:00 | −0.43 | −0.41 | −0.33 | No |
+| 14:00 | −0.073 | −0.047 | −0.102 | No |
+| 17:00 | −0.377 | −0.365 | −0.291 | No |
 
 The ±7.5 min discretization **does not flip the sign** of the Route A − Route B mean-UTCI
 difference at either departure; magnitude varies ≤ 0.1 °C. Discretization could **not
