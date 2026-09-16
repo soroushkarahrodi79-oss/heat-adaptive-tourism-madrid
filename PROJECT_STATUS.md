@@ -1,45 +1,60 @@
 # Project status
 
-**Audit date: 2026-09-14. Status: `RELEASE_LOCKED`.**
+**Audit date: 2026-09-16.**
 
-This file is the canonical status record for HATI-Madrid. It exists to reconcile any
-first-page or badge wording with the actual evidence in this repository and its two
-public archival records. Where this file and any other document disagree, this file
-governs.
+This file is the canonical status record for this repository. It exists to reconcile
+any first-page or badge wording with the actual evidence in this repository, its two
+public archival records, and its GitHub pull-request/issue history. Where this file and
+any other document disagree, this file governs.
+
+This repository now hosts **two separate layers of work** with two separate statuses.
+They must never be collapsed into one status line:
+
+| Layer | Content | Status |
+|---|---|---|
+| **A. Locked publication** | The archived HATI-Madrid pilot (DOI-bound preprint) | **`RELEASE_LOCKED`** |
+| **B. Research extension** | `docs/research/pedestrian-heat/` — a new, bounded research thread hosted in the same repository | **`BOUNDED_EXTENSION_COMPLETED_THROUGH_GATE_3B`** |
+
+Layer B is new research. It does **not** revise, reopen, or alter Layer A's locked
+scientific content, DOI, or archived claims, unless and until a separate
+publication/release process explicitly says so (see §8).
 
 ---
 
-## 1. Status classification
+## A. Locked publication layer
+
+### A.1 Status classification
 
 **`RELEASE_LOCKED`**
 
 The scientific content this repository documents — the single Madrid pilot (21 Aug
 2023), the 27 curated assets, the operational-proxy vs SOLWEIG/UTCI comparison, the
 eight decision scenarios, the locked result tables, and the four publication figures —
-is **fixed**. It is archived under an immutable DOI and republished as a preprint. The
-repository's job now is to preserve and correctly describe that locked release, not to
-extend it.
+is **fixed**. It is archived under an immutable DOI and republished as a preprint. This
+layer's job is to preserve and correctly describe that locked release, not to extend it.
+Nothing in this audit changes any locked number, table, figure, threshold, route,
+geometry, forcing, perturbation, or decision rule belonging to this layer.
 
 Why this label and not another:
 
-- Not `ACTIVE_BOUNDED`: there is no open research work item. Zero open issues, zero
-  open pull requests, and the last five merged PRs (2026-09-01 through 2026-09-14)
-  changed only documentation/status text — no new science, table, or figure was added
-  or altered.
-- Not `PAUSED_PENDING_EVIDENCE`: the repository is not idling while waiting on a
-  specific external trigger to resume development. Nothing is blocked; the release is
-  simply finished and locked.
+- Not `ACTIVE_BOUNDED`: no PR against this layer's own scientific content is open, and
+  no PR has altered a locked number, table, or figure since the DOI'd release. (The
+  repository as a whole is *not* free of open research work — see Layer B, §B — but
+  that work is scoped to a separate document tree and does not touch this layer.)
+- Not `PAUSED_PENDING_EVIDENCE`: this layer is not idling while waiting on a specific
+  external trigger to resume development. Nothing is blocked; the release is simply
+  finished and locked.
 - Not plain `MAINTENANCE_ONLY`: that label would be accurate too, but it doesn't
   capture *why* — the constraint is that the archived DOI'd artifact (Zenodo
-  `10.5281/zenodo.22707470`) is immutable, so any edit to the scientific content here
-  would desynchronize the repository from the thing it documents. `RELEASE_LOCKED`
-  names that constraint explicitly.
+  `10.5281/zenodo.22707470`) is immutable, so any edit to this layer's scientific
+  content would desynchronize the repository from the thing it documents.
+  `RELEASE_LOCKED` names that constraint explicitly.
 
-## 2. Current reference
+### A.2 Current reference
 
 | Artifact | Identifier | Date |
 |---|---|---|
-| **Repository HEAD / default branch (`main`)** | commit `c6c1190` | 2026-09-14 |
+| **Repository HEAD / default branch (`main`)** | commit `f508383` | 2026-09-16 |
 | **GitHub release (citable code snapshot)** | tag [`v0.1.0`](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/releases/tag/v0.1.0) | 2026-09-01 |
 | **Preserved pre-revision science checkpoint** | tag `pre-targeted-revision-v0.2` | — |
 | **Archived preprint (version-specific)** | Zenodo DOI [`10.5281/zenodo.22707470`](https://doi.org/10.5281/zenodo.22707470) | recorded 2026-09-14 |
@@ -48,13 +63,14 @@ Why this label and not another:
 
 **Known gap, flagged rather than fixed here:** the GitHub release tag (`v0.1.0`,
 2026-09-01) predates the confirmed ResearchGate/Zenodo publication (2026-09-11 →
-confirmed 2026-09-14) and four subsequent merged documentation PRs. `main` and the
-Zenodo/ResearchGate text are consistent with each other, but there is currently no
-GitHub tag/release that matches the repository's present `main`. Cutting a new tag
-(e.g. `v1.0.0`) once the release-status wording below is reviewed would close this
-gap — that is a repository-owner action, not made here.
+confirmed 2026-09-14), the four subsequent documentation PRs, and the entire Layer B
+research extension. `main` and the Zenodo/ResearchGate text remain consistent with each
+other for Layer A's content, but there is currently no GitHub tag/release that matches
+the repository's present `main`. Cutting a new tag once release-status wording is
+reviewed would close this gap — that is a repository-owner action, not made here, and
+it is not a Layer A scientific change.
 
-## 3. Demonstrated vs. simulated / derived / provisional / unvalidated
+### A.3 Demonstrated vs. simulated / derived / provisional / unvalidated
 
 | Demonstrated (in-repo, reproducible) | Simulated / derived / provisional / unvalidated |
 |---|---|
@@ -69,9 +85,10 @@ gap — that is a repository-owner action, not made here.
 This table summarizes; the authoritative source is the README's *What the project does
 not claim* and *Limitations* sections, and `submission/researchgate/PUBLIC_TRUTH_AUDIT.md`.
 
-## 4. Claim ceiling
+### A.4 Claim ceiling
 
-HATI-Madrid does **not** claim, and this status record does not raise that ceiling:
+HATI-Madrid (Layer A) does **not** claim, and this status record does not raise that
+ceiling:
 
 - SOLWEIG/UTCI as ground truth, or the physical method as more accurate than the proxy;
 - that the physical method supplied a richer categorical decision signal (in this
@@ -82,57 +99,158 @@ HATI-Madrid does **not** claim, and this status record does not raise that ceili
 - peer review, journal acceptance, or operational/real-time product status;
 - validation of `ROBUST` beyond the tested uncertainty dimensions.
 
-## 5. Allowed maintenance changes
+### A.5 Allowed maintenance changes
 
-Consistent with `RELEASE_LOCKED`, the following are in scope without changing this
-status:
+Consistent with `RELEASE_LOCKED`, the following are in scope for Layer A without
+changing this layer's status:
 
-- Fixing broken links, typos, formatting, and outdated status wording (as this and the
-  prior four merged PRs did);
+- Fixing broken links, typos, formatting, and outdated status wording;
 - Correcting or completing citation/publication metadata (DOIs, ResearchGate/Zenodo
   URLs, `CITATION.cff`) as new *confirming* evidence arrives (e.g., a human verifies
   affiliation/ORCID text);
 - Cutting a new GitHub tag/release that matches the current, already-locked `main`, to
-  close the gap noted in §2;
+  close the gap noted in §A.2;
 - Adding a licence file if the owner selects one (the licence choice itself is not
   made here — see the ambiguity noted below);
 - Non-scientific repository administration (visibility, description, README badges)
-  that does not alter or reinterpret a locked number, table, or figure.
+  that does not alter or reinterpret a locked number, table, or figure;
+- Hosting the bounded Layer B research extension in its own document tree, provided it
+  never edits Layer A's locked numbers, tables, figures, or claims.
 
-Out of scope while `RELEASE_LOCKED` holds: new scenarios, new thermal methods, new
-study days/areas, changed thresholds, regenerated/altered locked tables or figures,
-new claims of validation, or presentation-layer features beyond the existing read-only
-replay prototype in `app/`.
+Out of scope while Layer A is `RELEASE_LOCKED`: new scenarios, new thermal methods, new
+study days/areas, changed thresholds, regenerated/altered locked tables or figures, new
+claims of validation, or presentation-layer features beyond the existing read-only
+replay prototype in `app/` — **for this layer's own locked pilot.** (Layer B's separate,
+bounded pedestrian-heat work is described in §B and is not governed by this
+restriction, because it is not part of the locked pilot's content.)
 
-## 6. What would reopen development
+### A.6 What would reopen Layer A development
 
-Any of the following would be grounds to move this status back toward
+Any of the following would be grounds to move Layer A's status back toward
 `ACTIVE_BOUNDED`:
 
 - Field validation data for Tmrt/UTCI (e.g., in-situ sensor readings) that could be
   compared against the modelled field;
 - A journal review decision (the manuscript is not currently submitted anywhere; a new
   submission and its outcome would be new evidence);
-- A concrete external user/stakeholder need to extend the pilot to a new day, season,
-  or district, with the resources to do so under the same evidence standards;
+- A concrete external user/stakeholder need to extend the pilot itself to a new day,
+  season, or district, with the resources to do so under the same evidence standards;
 - Observed-behaviour or usability data from the `app/` prototype beyond the existing
-  bounded owner desk review recorded in PR #2.
+  bounded owner desk review recorded in PR #2;
+- A formal decision by the repository owner to fold Layer B's findings into a revision
+  of the locked pilot (see §8) — until that happens, Layer B stays a separate research
+  thread and does not, by itself, reopen Layer A.
 
-Until one of these occurs, the repository stays in maintenance/documentation mode.
+Until one of these occurs, Layer A stays in maintenance/documentation mode.
 
-## 7. Open issues and pull requests
+---
 
-As of 2026-09-14: **0 open issues, 0 open pull requests.**
+## B. Active / bounded research-extension layer
 
-| # | Title | Disposition |
-|---|---|---|
-| [#1](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/1) | docs: align HATI public status and evidence framing | Merged 2026-09-01. Documentation-only; superseded by later status updates. |
-| [#2](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/2) | HATI Spatial Decision Replay — linked scenario inspection | Merged 2026-09-05. Read-only presentation layer over locked outputs; no new science. Desk-reviewed by owner, not field/usability validated. |
-| [#3](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/3) | Release/researchgate v1.0 | Merged 2026-09-11. Prepared bounded preprint release package. |
-| [#4](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/4) | docs: neutralize preprint release for Zenodo archival | Merged 2026-09-11. Platform-neutral PDF/metadata prep; no scientific content changed. |
-| [#5](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/5) | docs: confirm ResearchGate + Zenodo publication status | Merged 2026-09-14. Recorded owner-confirmed live ResearchGate and Zenodo records. |
+### B.1 Status classification
 
-No issue tracker activity has occurred (0 issues opened to date).
+**`BOUNDED_EXTENSION_COMPLETED_THROUGH_GATE_3B`**
+
+`docs/research/pedestrian-heat/` is a separate, phase-gated research thread that began
+after Layer A's DOI'd release and has materially progressed since PROJECT_STATUS.md was
+first written (2026-09-14, PR #6). It is **new research hosted in the same repository**,
+not a revision of the DOI-locked HATI-Madrid preprint, unless and until a separate
+publication/release process explicitly says so.
+
+Gate history (all merged into `main`, no open PR remains):
+
+| Gate | PR | Merged | Verdict |
+|---|---|---|---|
+| Gate 1 — feasibility / methodological definition | [#7](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/7) | 2026-09-14 | MODIFY (methodology refined before proceeding) |
+| Gate 2 — evidence freeze | [#8](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/8) | 2026-09-15 | `GO_TO_FIRST_THERMAL_EXPERIMENT` |
+| Gate 3A — first thermal / pipeline-falsification experiment | [#10](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/10) | 2026-09-16 | `GATE3A_CORRECTED_GO_TO_3B` (corrected stateful SOLWEIG execution, fail-closed structural Catastro acquisition/parsing, date-aware meteorological forcing) |
+| Gate 3B — robustness / evidence-sufficiency experiment | [#9](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/9) | 2026-09-16 | **`ABSTAIN / NO ROBUST DIFFERENCE`** (final) |
+
+PR #10 (Gate 3A) was merged before PR #9 (Gate 3B); both carry the same corrected,
+date-aware protocol propagated between them. As of this audit there is no open pull
+request or open issue associated with either gate, or with any part of this
+repository — **0 open issues, 0 open pull requests** (verified live against GitHub,
+2026-09-16).
+
+No work exists in the repository past Gate 3B. This status record does not open, imply,
+or schedule a Gate 4.
+
+### B.2 Scientific ceiling of the extension (current, final for this gate sequence)
+
+At minimum, the following facts must be preserved wherever this extension is described:
+
+- **Gate 3A** established that the corrected pipeline (stateful single-call SOLWEIG,
+  fail-closed structural Catastro parsing, date-aware forcing) could produce a
+  reproducible, time-resolved modeled comparison under the bounded experiment — a
+  baseline difference was observed, with no scientific winner declared.
+- **Gate 3B** found that comparative difference was **not robust** under justified
+  perturbations (canopy vintage/source, side-of-street mapping): the Route A−B sign
+  reverses under ≥1 frozen perturbation at both tested departures, and the perturbation
+  ensemble spans zero.
+- **Final Gate-3B result: `ABSTAIN / NO ROBUST DIFFERENCE`.**
+- **No route is established as cooler, superior, safer, healthier, or preferable.**
+  Thermal intensity marginally favours Route A; exposure duration favours Route B — a
+  preserved trade-off, not a resolved winner.
+- **No pedestrian-level Tmrt/UTCI validation exists.** All thermal fields remain
+  model outputs, exactly as in Layer A.
+- The result is fundamentally an **evidence-sufficiency / robustness finding**, not a
+  failure: ABSTAIN is treated as a first-class outcome of the gate design, not an
+  inconclusive experiment to be rerun until it produces a winner.
+
+Full basis, decision rule, and negative-control results are recorded in
+`docs/research/pedestrian-heat/gate3b/GATE3B_DECISION.md` and
+`docs/research/pedestrian-heat/gate3a/GATE3A_DECISION.md`, which govern over any
+summary here if they disagree.
+
+### B.3 What would change the Gate 3B verdict (not undertaken here)
+
+Per `GATE3B_DECISION.md`: independent pedestrian-level Tmrt/UTCI measurement (would
+reopen a Path-A comparative claim); an authoritative current-vintage classified
+canopy/crown model (would collapse the dominant canopy-source uncertainty dimension);
+resolved side-of-street sidewalk mapping. None of these has occurred. Absent them,
+ABSTAIN stands, and this audit does not begin any new gate to pursue them.
+
+### B.4 Boundary with Layer A
+
+The pedestrian-heat extension is new research hosted in the same repository, but it is
+**not** a revision of the DOI-locked HATI-Madrid preprint (Zenodo
+`10.5281/zenodo.22707470`) unless and until a separate publication/release process
+explicitly says so. Concretely:
+
+- The extension does not alter any locked number, table, figure, threshold, route,
+  geometry, forcing, perturbation definition, or decision rule belonging to Layer A.
+- The extension uses its own study day, its own OD pair (Atocha → Puerta de Alcalá),
+  its own routes, and its own frozen decision rule — none of these are Layer A objects.
+- The extension's ABSTAIN verdict does not retroactively weaken, strengthen, or
+  reinterpret any Layer A claim; Layer A never made a route-superiority claim for this
+  OD pair to begin with.
+- Should the repository owner later decide to fold Layer B's findings into a formal
+  publication or a revision of the archived preprint, that would be a new, explicit
+  publication/release action — not something this status record performs or implies.
+
+---
+
+## Repository-wide facts
+
+### 7. Open issues and pull requests
+
+As of 2026-09-16 (verified live against GitHub): **0 open issues, 0 open pull
+requests**, across both Layer A and Layer B.
+
+| # | Title | Layer | Disposition |
+|---|---|---|---|
+| [#1](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/1) | docs: align HATI public status and evidence framing | A | Merged 2026-09-01. Documentation-only. |
+| [#2](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/2) | HATI Spatial Decision Replay — linked scenario inspection | A | Merged 2026-09-05. Read-only presentation layer over locked outputs; no new science. Desk-reviewed by owner, not field/usability validated. |
+| [#3](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/3) | Release/researchgate v1.0 | A | Merged 2026-09-11. Prepared bounded preprint release package. |
+| [#4](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/4) | docs: neutralize preprint release for Zenodo archival | A | Merged 2026-09-11. Platform-neutral PDF/metadata prep; no scientific content changed. |
+| [#5](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/5) | docs: confirm ResearchGate + Zenodo publication status | A | Merged 2026-09-14. Recorded owner-confirmed live ResearchGate and Zenodo records. |
+| [#6](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/6) | docs: add PROJECT_STATUS.md as canonical status record | A | Merged 2026-09-14. First version of this file; superseded by this revision, which adds Layer B. |
+| [#7](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/7) | docs(pedestrian-heat): Gate 1 feasibility dossier — verdict MODIFY | B | Merged 2026-09-14. New bounded research thread, not part of the locked pilot. |
+| [#8](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/8) | research: pedestrian-heat Gate 2 — evidence freeze | B | Merged 2026-09-15. `GO_TO_FIRST_THERMAL_EXPERIMENT`. |
+| [#9](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/9) | research: pedestrian-heat Gate 3B robustness experiment → ABSTAIN | B | Merged 2026-09-16. Final gate result to date: `ABSTAIN / NO ROBUST DIFFERENCE`. |
+| [#10](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/10) | research: pedestrian-heat Gate 3A first thermal + sampling correction | B | Merged 2026-09-16 (before #9). `GATE3A_CORRECTED_GO_TO_3B`. |
+
+No issue-tracker activity has occurred (0 issues opened to date, either layer).
 
 ---
 
@@ -146,4 +264,5 @@ audit can close — assigning a licence is a substantive legal choice, not a
 documentation fix, so it is intentionally left unresolved and unassigned here. Note
 that the Zenodo record's own licensing terms (if any were set during deposit) may
 differ from the repository's code/text licensing; that is outside this repository's
-version control and was not verified as part of this audit.
+version control and was not verified as part of this audit. This ambiguity applies to
+the whole repository, both layers.
