@@ -105,6 +105,18 @@ def test_execution_is_single_stateful_call_not_eight():
     # guard against a per-timestamp loop calling calculate inside a for-loop
     assert "for r in fdf.itertuples():\n    solweig.calculate" not in src, "must not call calculate per-timestep"
 
+def test_gate3b_runner_uses_dateaware_forcing_and_single_stateful_call():
+    # AMENDMENT_003 date-aware fix propagated to the 3B perturbation runner: it must use the
+    # shared timezone-aware forcing module and a single stateful calculate() over a Weather LIST,
+    # and must NOT reintroduce the same-day %24 UTC-hour date-wrap bug.
+    src=(pathlib.Path(__file__).resolve().parents[2]/"src/gate3b_run_one.py").read_text(encoding="utf-8")
+    assert "import forcing_barajas as fb" in src, "3B runner must use the shared forcing_barajas module"
+    assert "fb.build_local_sequence(" in src, "3B runner must build its forcing via build_local_sequence"
+    assert ")%24" not in src, "3B runner must not reintroduce the %24 UTC-hour date-wrap"
+    assert 'if r["date"]==DATE' not in src, "3B runner must not filter forcing to same-day rows only"
+    assert src.count("solweig.calculate(surface=")==1, "3B runner must issue exactly one stateful calculate()"
+    assert "weather=wl" in src, "calculate() must be fed the full Weather LIST (stateful)"
+
 if __name__=="__main__":
     import traceback
     fns=[v for k,v in sorted(globals().items()) if k.startswith("test_")]

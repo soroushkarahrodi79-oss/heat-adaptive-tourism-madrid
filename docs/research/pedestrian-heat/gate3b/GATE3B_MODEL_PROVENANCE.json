@@ -1,0 +1,62 @@
+{
+  "gate": "GATE 3B \u2014 robustness / uncertainty / abstention experiment",
+  "date": "2026-09-15",
+  "verdict": "ABSTAIN / NO ROBUST DIFFERENCE",
+  "amendments": [
+    "AMENDMENT_001 (terrain MDT 2023)",
+    "AMENDMENT_002 (baseline speed 1.1 m/s)",
+    "AMENDMENT_003 (stateful SOLWEIG + fail-closed Catastro + date-aware preconditioning forcing)"
+  ],
+  "model": "solweig 0.1.0b92 (.venv_solweig); pvlib 0.15.2 Ineichen",
+  "domain": "EPSG:25830 370x1081 @ 2 m (Gate-3A)",
+  "perturbations_run": {
+    "E-P1": "forcing EA-adjusted",
+    "E-P2": "canopy PNOA / tree-inv / TCD (baseline MDS-veg)",
+    "E-P4": "building PNOA (baseline Catastro)",
+    "E-P5": "side +/-12 m",
+    "E-P6": "speed 1.4 (baseline 1.1)",
+    "E-P3": "demoted (uniform wind)"
+  },
+  "canopy_coverage_span_pct": {
+    "tree_inv": 4.9,
+    "tcd": 19.7,
+    "baseline_mds_veg": 34.4,
+    "pnoa": 41.0
+  },
+  "perturbation_geometry_hashes": {
+    "cdsm_EP2b_pnoa.tif": "6c49d9581e25a0ebc4a3008d8c754c0b5b71f960bb16addf7ddc3cfb8141b656",
+    "cdsm_EP2c_treeinv.tif": "cc193cf08c5b223cd4cb53f400dfde0db3328a39157f88d52a097654a3d6cd72",
+    "cdsm_EP2d_tcd.tif": "4649db41390cc4c9f44b82d5566b9c8f021cd3eacd52e829ed1c275cb8f32cf0",
+    "dsm_EP4b_pnoa.tif": "1b531cebfe7e2843c1aa7aa5255a48a9ccfb18e281a7eafba08e5843fd4297fd"
+  },
+  "n_perturbation_utci_rasters": 40,
+  "artifact_hashes": "data/interim/pedestrian-heat/gate3b/gate3b_all_hashes.json (46 entries)",
+  "sign_reversal": {
+    "14:00": [
+      "EP2b_canopy_pnoa",
+      "EP2c_canopy_treeinv",
+      "EP5_side_-12m"
+    ],
+    "17:00": [
+      "EP5_side_-12m"
+    ]
+  },
+  "large_raster_policy": "heavy rasters gitignored; hashes + reproducible commands recorded",
+  "reproducible": [
+    "py src/gate3b_build_perturbation_geometry.py",
+    "(.venv_solweig) python src/gate3b_run_one.py <config> [label]  # per config/timestamp, memory-frugal",
+    "py src/gate3b_analyze.py"
+  ],
+  "execution_correction": "AMENDMENT_003 propagated: every perturbation re-run as a single STATEFUL calculate() over continuous 72-step 15-min sequence 00:00->17:45; hardened fail-closed Catastro geometry (building coverage 30.14%). Perturbation defs + decision rule unchanged; verdict unchanged (ABSTAIN).",
+  "forcing_correction": "AMENDMENT_003 date-aware preconditioning fix propagated to src/gate3b_run_one.py: replaced same-day date filter + %24 UTC-hour wrap with shared src/forcing_barajas.py (Europe/Madrid->UTC via zoneinfo, interpolation between actual surrounding UTC records; first-night 00:00.. local now reads 2023-08-23 UTC). All 5 configs re-run stateful. Effect: GATE3B_PERTURBATION_RESULTS.csv byte-identical (error confined to first-night preconditioning, dissipated before 14:00/17:00 decision window); verdict unchanged (ABSTAIN).",
+  "corrected_artifact_hashes_count": 44,
+  "sign_reversal_corrected": {
+    "14:00": [
+      "EP2b_canopy_pnoa",
+      "EP5_side_-12m"
+    ],
+    "17:00": [
+      "EP5_side_-12m"
+    ]
+  }
+}
