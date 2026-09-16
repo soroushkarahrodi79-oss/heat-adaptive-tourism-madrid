@@ -27,31 +27,13 @@ with rasterio.open(GEOM/"dem_2m.tif") as ds:
     cx=(ds.bounds.left+ds.bounds.right)/2; cy=(ds.bounds.bottom+ds.bounds.top)/2
     lon,lat=rio_transform(ds.crs,rasterio.crs.CRS.from_epsg(4326),[cx],[cy]); LON,LAT=lon[0],lat[0]
 
-# ---- full-day Barajas hourly (2023-08-24) from frozen file ----
-rows=list(csv.DictReader(open(ROOT/"data/raw/aemet_barajas_08221_hourly_202308.csv")))
-barj={}
-for r in rows:
-    if r["date"]==DATE and r["hour_utc"].isdigit():
-        barj[int(r["hour_utc"])]=(float(r["temp_c"]),float(r["rhum_pct"]),float(r["wspd_kmh"]),float(r["pres_hpa"]))
-def interp_utc(uh,i):
-    lo=int(np.floor(uh))%24; hi=int(np.ceil(uh))%24; f=uh-np.floor(uh)
-    a=barj.get(lo); b=barj.get(hi)
-    if a is None: a=barj[min(barj)]
-    if b is None: b=a
-    return a[i]+(b[i]-a[i])*f
-
-# ---- continuous 15-min sequence 00:00 -> 17:45 local ----
-steps=[]
-t=0
-while t<=17*60+45:
-    hh,mm=t//60,t%60; steps.append((hh,mm)); t+=15
-frows=[]
-for hh,mm in steps:
-    uh=hh+mm/60-UTC_OFFSET  # local->UTC
-    frows.append({"local":f"{hh:02d}:{mm:02d}","label":f"{hh:02d}{mm:02d}",
-                  "ta":round(interp_utc(uh,0),2),"rh":round(min(100,max(1,interp_utc(uh,1))),1),
-                  "ws":round(interp_utc(uh,2)/3.6,2),"pres":round(interp_utc(uh,3),1)})
-fdf=pd.DataFrame(frows)
+# ---- continuous 15-min sequence 00:00 -> 17:45 LOCAL, timezone-aware forcing ----
+# Date-aware fix (AMENDMENT_003): 00:00/00:15... local map to previous-day (2023-08-23) UTC
+# records; interpolation is between actual surrounding UTC datetimes (no %24 wrap).
+import forcing_barajas as fb
+seq=fb.build_local_sequence(date_local=DATE, end="17:45", step_min=15)
+fdf=pd.DataFrame([{ "local":r["local"],"label":r["label"],"ta":r["ta"],"rh":r["rh"],"ws":r["ws"],
+                   "pres":r["pres"],"utc":r["utc_dt"].strftime("%Y-%m-%d %H:%M") } for r in seq])
 times=pd.DatetimeIndex([pd.Timestamp(f"{DATE} {r.local}:00",tz="Europe/Madrid") for r in fdf.itertuples()])
 site=pvlib.location.Location(LAT,LON,tz="Europe/Madrid",altitude=ALT)
 cs=site.get_clearsky(times,model="ineichen"); solpos=site.get_solarposition(times)

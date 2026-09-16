@@ -13,8 +13,17 @@ validation.
 > timestamp; (2) Catastro acquisition **fail-closed** with structural GML parsing (rings/
 > multipart, dedup) → building coverage 32.03 %→30.14 %, DSM/CDSM regenerated. Corrected-field
 > QA below is **re-verified** on the stateful fields. See `GATE3A_STATEFUL_CORRECTION.md`.
-> All tests pass: 5/5 sampling + 6/6 Catastro/temporal-state
+> All tests pass: 5/5 sampling + 10/10 Catastro/temporal-state
 > (`tests/pedestrian_heat/test_gate3a_{sampling,catastro_and_state}.py`).
+>
+> **v1.3 update (second review).** Date-wrap bug fixed: the stateful preconditioning sequence
+> starts 00:00 local = 2023-08-23 22:00 UTC, so the first night steps must use previous-day UTC
+> records; the runner now uses timezone-aware datetime interpolation (`src/forcing_barajas.py`),
+> no `%24`. Effect on the 8 decision fields: **ΔTmrt = ΔUTCI = 0.000** (error confined to night
+> preconditioning, dissipated before the decision window); baseline A−B unchanged (14:00 −0.042,
+> 17:00 −0.367). QA tests are now deterministic (no silent skip-as-PASS) and assert the
+> prev-day UTC mapping, the 72-step continuous sequence, the 8 decision labels, and a single
+> stateful multi-Weather call.
 
 ## 3A.1 Reproducibility preflight — PASS
 All 14 Gate-2 artifact hashes recompute-match; both frozen route hashes match the

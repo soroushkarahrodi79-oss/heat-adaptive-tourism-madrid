@@ -146,7 +146,8 @@
   "execution_semantics_correction": {
     "solweig_temporal": "single calculate(surface, weather=[72x15min]) stateful call; timestep 15 min; sequence 00:00->17:45 local; decision fields 14:00/15/30/45 17:00/15/30/45; RESOURCE_BLOCKED if OOM (did not trigger; 72 steps in 35.6 s)",
     "catastro": "src/catastro_bu.py fail-closed; bu:Building; EPSG:25830 direct; structural rings/multipart; dedup by gml:id; per-subtile provenance in catastro_provenance.json",
-    "geometry_change": "building coverage 32.03%->30.14%; dsm_2m/cdsm_2m regenerated; dem_2m/veg_mask unchanged"
+    "geometry_change": "building coverage 32.03%->30.14%; dsm_2m/cdsm_2m regenerated; dem_2m/veg_mask unchanged",
+    "date_aware_forcing": "AMENDMENT_003 second-review fix: src/forcing_barajas.py timezone-aware lookup; 00:00/01:00 local use prev-day (2023-08-23) 22:00/23:00 UTC; no %24. Effect on 8 decision fields: dTmrt=dUTCI=0.000; baseline A-B unchanged (14:00 -0.042, 17:00 -0.367)."
   },
   "corrected_artifact_hashes": {
     "dem_2m.tif": "978527ede4960202c9d5427090c0d57cccfa190ca9536337170aff0afa32dab1",

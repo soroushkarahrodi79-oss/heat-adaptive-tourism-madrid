@@ -34,8 +34,28 @@ corrected thermal run.
 | 17:30 | 54.85 | 54.94 | +0.08 | 42.38 | 42.39 | +0.02 |
 | 17:45 | 54.02 | 54.08 | +0.06 | 42.01 | 42.02 | +0.01 |
 
-Stateful preconditioning lowers the **midday** fields ~0.75 °C Tmrt / ~0.18 °C UTCI; the
-**late-afternoon** fields are essentially unchanged (state converged). The shift is domain-wide.
+The **combined Gate-3A corrections** (stateful execution **and** hardened-Catastro geometry,
+which changed together in this pass) lower the **midday** fields ~0.75 °C Tmrt / ~0.18 °C UTCI
+and leave the **late-afternoon** fields essentially unchanged. **Attribution caveat:** because
+the stateful-execution change and the geometry change were applied simultaneously, the observed
+shift is reported as the effect of the *combined* corrections — it is **not** isolated to
+"stateful preconditioning", and no claim of thermal-"state convergence" is made (neither was
+independently demonstrated by a factorial experiment). The shift is domain-wide.
+
+## Date-aware preconditioning forcing (second-review fix, under AMENDMENT_003)
+A second review found the stateful runner still loaded only `date == 2023-08-24` rows and used
+`%24` on negative UTC hours, so **00:00 and 01:00 local** wrongly used same-day 22:00/23:00 UTC
+instead of **2023-08-23** 22:00/23:00 UTC. Fixed (`src/forcing_barajas.py`): timezone-aware
+lookup — each local 15-min timestamp is built in Europe/Madrid, converted to UTC, and
+interpolated between the **actual surrounding UTC records** (previous-day where appropriate); no
+`%24`. The frozen AEMET CSV already holds the previous-day observations (no evidence gap).
+
+**Effect of the date fix (4e1a735 vs date-corrected), all 8 decision fields:**
+ΔTmrt = ΔUTCI = **0.000 °C** at every decision timestamp. The date-wrap error was confined to
+the first ~1–2 night preconditioning steps and had **fully dissipated** by the 14:00–17:45
+decision window (surface thermal memory ≪ 14 h). Corrected baseline A−B is therefore unchanged:
+**14:00 −0.042, 17:00 −0.367.** No route, resolution, metric, decision rule, geometry, or UTCI
+boundary changed — this is an implementation correction under AMENDMENT_003.
 
 ## OLD vs CORRECTED — route metrics (v = 1.1 m/s)
 | metric | OLD (8a1597a) | CORRECTED |
