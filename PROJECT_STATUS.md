@@ -66,9 +66,13 @@ Why this label and not another:
 confirmed 2026-09-14), the four subsequent documentation PRs, and the entire Layer B
 research extension. `main` and the Zenodo/ResearchGate text remain consistent with each
 other for Layer A's content, but there is currently no GitHub tag/release that matches
-the repository's present `main`. Cutting a new tag once release-status wording is
-reviewed would close this gap — that is a repository-owner action, not made here, and
-it is not a Layer A scientific change.
+the repository's present `main`. This is *not* simply closed by cutting a new tag off
+`main`: `main` now carries both the locked Layer A content and the Layer B research
+extension, so a tag against current `main` would be a snapshot of both, not a
+republication of the locked preprint alone. Any future GitHub release/tag must
+explicitly state whether it snapshots the locked publication layer, the later research
+extension, or both; no new release is required by this reconciliation, and none is
+made here.
 
 ### A.3 Demonstrated vs. simulated / derived / provisional / unvalidated
 
@@ -108,8 +112,10 @@ changing this layer's status:
 - Correcting or completing citation/publication metadata (DOIs, ResearchGate/Zenodo
   URLs, `CITATION.cff`) as new *confirming* evidence arrives (e.g., a human verifies
   affiliation/ORCID text);
-- Cutting a new GitHub tag/release that matches the current, already-locked `main`, to
-  close the gap noted in §A.2;
+- Cutting a new GitHub tag/release, provided it explicitly states whether it snapshots
+  the locked Layer A content, the Layer B research extension, or both (see the gap
+  noted in §A.2 — `main` no longer contains only Layer A, so an unlabeled tag against
+  current `main` would not by itself close that gap);
 - Adding a licence file if the owner selects one (the licence choice itself is not
   made here — see the ambiguity noted below);
 - Non-scientific repository administration (visibility, description, README badges)
@@ -169,8 +175,10 @@ Gate history (all merged into `main`, no open PR remains):
 PR #10 (Gate 3A) was merged before PR #9 (Gate 3B); both carry the same corrected,
 date-aware protocol propagated between them. As of this audit there is no open pull
 request or open issue associated with either gate, or with any part of this
-repository — **0 open issues, 0 open pull requests** (verified live against GitHub,
-2026-09-16).
+repository's research content — **0 open research PRs; the pull request that
+performed this documentation reconciliation is the only open pull request at audit
+time** (see §7; it is documentation-only and does not alter this status model's
+findings).
 
 No work exists in the repository past Gate 3B. This status record does not open, imply,
 or schedule a Gate 4.
@@ -234,8 +242,13 @@ explicitly says so. Concretely:
 
 ### 7. Open issues and pull requests
 
-As of 2026-09-16 (verified live against GitHub): **0 open issues, 0 open pull
-requests**, across both Layer A and Layer B.
+As of 2026-09-16 (verified live against GitHub): **0 open issues; 0 open research
+pull requests across both Layer A and Layer B.** The only open pull request at audit
+time is the one performing this documentation reconciliation
+([#11](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/11)),
+which touches only this file and one README paragraph and changes no scientific
+content. A future update, made once #11 is merged, may simplify this to "0 open pull
+requests" if that remains true then — this record does not assume that outcome.
 
 | # | Title | Layer | Disposition |
 |---|---|---|---|
@@ -249,6 +262,7 @@ requests**, across both Layer A and Layer B.
 | [#8](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/8) | research: pedestrian-heat Gate 2 — evidence freeze | B | Merged 2026-09-15. `GO_TO_FIRST_THERMAL_EXPERIMENT`. |
 | [#9](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/9) | research: pedestrian-heat Gate 3B robustness experiment → ABSTAIN | B | Merged 2026-09-16. Final gate result to date: `ABSTAIN / NO ROBUST DIFFERENCE`. |
 | [#10](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/10) | research: pedestrian-heat Gate 3A first thermal + sampling correction | B | Merged 2026-09-16 (before #9). `GATE3A_CORRECTED_GO_TO_3B`. |
+| [#11](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/11) | docs: reconcile PROJECT_STATUS with merged pedestrian-heat extension | — | **Open** at audit time. Documentation-only (this file + one README paragraph); introduces the two-layer status model and adds no scientific content. |
 
 No issue-tracker activity has occurred (0 issues opened to date, either layer).
 
