@@ -19,14 +19,10 @@ with rasterio.open(G3A/"dem_2m.tif") as ds:
     cx=(ds.bounds.left+ds.bounds.right)/2; cy=(ds.bounds.bottom+ds.bounds.top)/2
     lon,lat=rio_transform(ds.crs,rasterio.crs.CRS.from_epsg(4326),[cx],[cy]); LON,LAT=lon[0],lat[0]
 
-# full-day Barajas hourly (frozen file)
-barj={}
-for r in csv.DictReader(open(ROOT/"data/raw/aemet_barajas_08221_hourly_202308.csv")):
-    if r["date"]==DATE and r["hour_utc"].isdigit():
-        barj[int(r["hour_utc"])]=(float(r["temp_c"]),float(r["rhum_pct"]),float(r["wspd_kmh"]),float(r["pres_hpa"]))
-def interp_utc(uh,i):
-    lo=int(np.floor(uh))%24; hi=int(np.ceil(uh))%24; f=uh-np.floor(uh)
-    a=barj.get(lo,barj[min(barj)]); b=barj.get(hi,a); return a[i]+(b[i]-a[i])*f
+# Timezone-aware Barajas forcing (AMENDMENT_003 date-aware fix): the 00:00.. local
+# preconditioning steps map to previous-day (2023-08-23) UTC records; interpolation is
+# between the actual surrounding UTC datetimes (no integer-hour modulo). Shared with Gate 3A.
+import forcing_barajas as fb
 
 # E-P1b EA delta: measured EA-minus-Barajas at target hours (14:00 +0.1/+3 ; 17:00 -0.1/+3),
 # linearly interpolated by local hour, flat outside [14,17]. Applied to the whole stateful seq.
@@ -44,17 +40,17 @@ CONF={  # (dsm, cdsm, dem, ea_adjust)
 }
 name=sys.argv[1]; dsm,cdsm,dem,ea=CONF[name]
 
-# continuous 72-step forcing 00:00->17:45
-steps=[]; t=0
-while t<=17*60+45: steps.append((t//60,t%60)); t+=15
+# continuous 72-step forcing 00:00->17:45 LOCAL, timezone-aware (date-aware fix)
+seq=fb.build_local_sequence(date_local=DATE, end="17:45", step_min=15)
 rows=[]
-for hh,mm in steps:
-    uh=hh+mm/60-UTC_OFFSET
-    ta=interp_utc(uh,0); rh=interp_utc(uh,1)
+for s in seq:
+    hh=int(s["local"][:2]); mm=int(s["local"][3:5])
+    ta=s["ta"]; rh=s["rh"]
     if ea:
         dTa,dRH=ea_delta(hh+mm/60); ta+=dTa; rh+=dRH
-    rows.append({"local":f"{hh:02d}:{mm:02d}","label":f"{hh:02d}{mm:02d}",
-                 "ta":round(ta,2),"rh":round(min(100,max(1,rh)),1),"ws":round(interp_utc(uh,2)/3.6,2),"pres":round(interp_utc(uh,3),1)})
+    rows.append({"local":s["local"],"label":s["label"],
+                 "ta":round(ta,2),"rh":round(min(100,max(1,rh)),1),"ws":s["ws"],"pres":s["pres"],
+                 "utc":s["utc_dt"].strftime("%Y-%m-%d %H:%M")})
 fdf=pd.DataFrame(rows)
 times=pd.DatetimeIndex([pd.Timestamp(f"{DATE} {r.local}:00",tz="Europe/Madrid") for r in fdf.itertuples()])
 fdf["ghi"]=np.round(pvlib.location.Location(LAT,LON,tz="Europe/Madrid",altitude=ALT).get_clearsky(times,model="ineichen")["ghi"].values,1)

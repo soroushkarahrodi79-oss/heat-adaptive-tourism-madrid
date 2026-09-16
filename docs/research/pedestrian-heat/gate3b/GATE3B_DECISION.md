@@ -1,14 +1,26 @@
 # GATE3B_DECISION — robustness / evidence-sufficiency verdict
 
-**Version 2.0 · 2026-09-15 (CORRECTED: stateful SOLWEIG + hardened Catastro propagated from
-Gate-3A AMENDMENT_003).**
+**Version 2.1 · 2026-09-16 (date-aware preconditioning forcing propagated from Gate-3A
+AMENDMENT_003; supersedes v2.0 stateful + hardened-Catastro correction).**
 
-> **Correction note.** Every Gate-3B perturbation was re-run with the corrected **stateful**
-> single-call SOLWEIG (continuous 72-step 15-min sequence) on the corrected fail-closed-Catastro
-> geometry. Perturbation definitions and the decision rule are **unchanged**. The verdict is
-> **unchanged: ABSTAIN**. Corrected A−B sign still reverses under E-P2b (PNOA canopy, 14:00) and
-> E-P5 (side-of-street, both departures); the ensemble spans zero. See
-> `GATE3B_DECISION_STABILITY.md` (v2) for OLD-vs-corrected numbers.
+> **Correction note (v2.0).** Every Gate-3B perturbation was re-run with the corrected
+> **stateful** single-call SOLWEIG (continuous 72-step 15-min sequence) on the corrected
+> fail-closed-Catastro geometry. Perturbation definitions and the decision rule are
+> **unchanged**. The verdict is **unchanged: ABSTAIN**. Corrected A−B sign still reverses under
+> E-P2b (PNOA canopy, 14:00) and E-P5 (side-of-street, both departures); the ensemble spans
+> zero. See `GATE3B_DECISION_STABILITY.md` (v2) for OLD-vs-corrected numbers.
+>
+> **Correction note (v2.1) — date-aware preconditioning forcing.** The 3B stateful runner
+> (`src/gate3b_run_one.py`) shared the same date-wrap defect fixed in Gate 3A: it loaded only
+> `date == 2023-08-24` rows and applied `%24` to negative UTC hours, so **00:00/00:15… local**
+> preconditioning wrongly used same-day 22:00 UTC instead of **2023-08-23** 22:00 UTC. It now
+> uses the shared timezone-aware `src/forcing_barajas.py` (Europe/Madrid → UTC, interpolation
+> between the actual surrounding UTC records, no `%24`). All five perturbation configs were
+> re-run stateful. **Measured effect: the frozen `GATE3B_PERTURBATION_RESULTS.csv` is
+> byte-identical** — the error was confined to the first-night preconditioning and fully
+> dissipated before the 14:00/17:00 decision window, so every route metric, sign reversal, and
+> the verdict are **unchanged: ABSTAIN**. Implementation correction under AMENDMENT_003 — no
+> routes/metrics/decision-rule/geometry/E-P definitions changed.
 
 ## Verdict
 
