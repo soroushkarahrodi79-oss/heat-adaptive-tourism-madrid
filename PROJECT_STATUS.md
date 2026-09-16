@@ -17,7 +17,7 @@ They must never be collapsed into one status line:
 
 Layer B is new research. It does **not** revise, reopen, or alter Layer A's locked
 scientific content, DOI, or archived claims, unless and until a separate
-publication/release process explicitly says so (see §8).
+publication/release process explicitly says so (see the Layer A/Layer B boundary, §B.4).
 
 ---
 
@@ -39,8 +39,8 @@ Why this label and not another:
 
 - Not `ACTIVE_BOUNDED`: no PR against this layer's own scientific content is open, and
   no PR has altered a locked number, table, or figure since the DOI'd release. (The
-  repository as a whole is *not* free of open research work — see Layer B, §B — but
-  that work is scoped to a separate document tree and does not touch this layer.)
+  the repository as a whole contains post-release research work — see Layer B, §B —
+  but that work is scoped to a separate document tree and does not touch this layer.)
 - Not `PAUSED_PENDING_EVIDENCE`: this layer is not idling while waiting on a specific
   external trigger to resume development. Nothing is blocked; the release is simply
   finished and locked.
@@ -144,7 +144,7 @@ Any of the following would be grounds to move Layer A's status back toward
 - Observed-behaviour or usability data from the `app/` prototype beyond the existing
   bounded owner desk review recorded in PR #2;
 - A formal decision by the repository owner to fold Layer B's findings into a revision
-  of the locked pilot (see §8) — until that happens, Layer B stays a separate research
+  of the locked pilot (see the Layer A/Layer B boundary, §B.4) — until that happens, Layer B stays a separate research
   thread and does not, by itself, reopen Layer A.
 
 Until one of these occurs, Layer A stays in maintenance/documentation mode.
