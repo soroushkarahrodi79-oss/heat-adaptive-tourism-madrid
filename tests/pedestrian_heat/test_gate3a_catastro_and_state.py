@@ -54,26 +54,56 @@ def test_empty_valid_vs_error_distinguished():
     assert root.tag.endswith("FeatureCollection")
     assert len(list(root.iter(f"{{{BU}}}Building")))==0
 
-# ---- temporal-state execution invariants (behavioral, on produced artifacts) ----
-G=pathlib.Path(__file__).resolve().parents[2]/"data/interim/pedestrian-heat/gate3a"
-def test_stateful_sequence_continuous_15min():
-    f=G/"gate3a_forcing_stateful.csv"
-    if not f.exists():
-        print("  (skip: stateful forcing not present)"); return
-    rows=list(csv.DictReader(open(f)))
-    labels=[r["label"] for r in rows]
-    assert len(rows)==72, len(rows)                                   # 00:00->17:45 @15min
-    mins=[int(l[:2])*60+int(l[2:]) for l in labels]
+# ---- timezone-aware forcing + stateful-execution invariants (DETERMINISTIC, no artifacts) ----
+import forcing_barajas as fb
+from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
+
+def test_00local_maps_to_prevday_2200utc():
+    # 2023-08-24 00:00 Europe/Madrid == 2023-08-23 22:00 UTC (date-wrap bug fix)
+    u=fb.local_to_utc(2023,8,24,0,0)
+    assert u==datetime(2023,8,23,22,0,tzinfo=timezone.utc), u
+
+def test_01local_maps_to_prevday_2300utc():
+    u=fb.local_to_utc(2023,8,24,1,0)
+    assert u==datetime(2023,8,23,23,0,tzinfo=timezone.utc), u
+
+def test_00local_forcing_uses_prevday_record():
+    # value at 00:00 local must equal the 2023-08-23 22:00 UTC observation (29.6 C), NOT
+    # the same-day 22:00 UTC value the old %24 bug would have used.
+    seq=fb.build_local_sequence(date_local="2023-08-24", end="17:45", step_min=15)
+    s0=seq[0]
+    assert s0["local"]=="00:00" and s0["utc_dt"]==datetime(2023,8,23,22,0,tzinfo=timezone.utc)
+    assert abs(s0["ta"]-29.6)<1e-6, s0["ta"]
+    # sanity: the buggy same-day 2023-08-24 22:00 UTC temperature differs materially
+    recs={ (t.date().isoformat(),t.hour):v for t,v in fb.load_records()}
+    same_day_2200=recs[("2023-08-24",22)][0]
+    assert abs(s0["ta"]-same_day_2200)>1.0, "date-wrap bug would be indistinguishable"
+
+def test_sequence_72_continuous_15min():
+    seq=fb.build_local_sequence(date_local="2023-08-24", end="17:45", step_min=15)
+    assert len(seq)==72, len(seq)
+    mins=[int(s["label"][:2])*60+int(s["label"][2:]) for s in seq]
+    assert mins[0]==0 and mins[-1]==17*60+45
     assert all(b-a==15 for a,b in zip(mins,mins[1:])), "non-uniform 15-min spacing"
+
+def test_eight_decision_labels_present():
+    seq=fb.build_local_sequence(date_local="2023-08-24", end="17:45", step_min=15)
+    labels={s["label"] for s in seq}
     for dl in ["1400","1415","1430","1445","1700","1715","1730","1745"]:
         assert dl in labels, dl
-def test_stateful_meta_single_call():
-    m=G/"gate3a_stateful_meta.json"
-    if not m.exists():
-        print("  (skip: stateful meta not present)"); return
-    d=json.loads(m.read_text())
-    assert d["timestep_min"]==15 and d["n_timesteps"]==72
-    assert "single-call" in d["protocol"]
+
+def test_execution_is_single_stateful_call_not_eight():
+    # Structural check on the runner source: exactly one solweig.calculate() invocation, fed a
+    # LIST (weather_list), i.e. one stateful multi-Weather call (NOT 8 independent per-step calls).
+    src=(pathlib.Path(__file__).resolve().parents[2]/"src/gate3a_run_solweig.py").read_text(encoding="utf-8")
+    # count actual call sites (signature form), not docstring mentions
+    calls=src.count("solweig.calculate(surface=")
+    assert calls==1, f"expected exactly one stateful calculate(surface=...) call, found {calls}"
+    assert "weather=weather_list" in src, "calculate() must be fed the full Weather LIST (stateful)"
+    assert "weather_list=[solweig.Weather" in src, "must build a Weather list for the stateful call"
+    # guard against a per-timestamp loop calling calculate inside a for-loop
+    assert "for r in fdf.itertuples():\n    solweig.calculate" not in src, "must not call calculate per-timestep"
 
 if __name__=="__main__":
     import traceback

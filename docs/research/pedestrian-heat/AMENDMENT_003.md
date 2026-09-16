@@ -33,6 +33,18 @@ So the 14:00/14:15/… fields each **reset** surface/wall thermal state — not 
 - **Resource rule:** if RAM prevents the scientifically-correct single stateful run, **STOP
   and report `RESOURCE_BLOCKED`** — do **not** fall back to independent one-timestamp runs.
 
+### 2a. Date-aware preconditioning forcing (second-review implementation fix)
+The initial stateful runner loaded only `date == 2023-08-24` rows and applied `%24` to negative
+UTC hours, so **00:00/01:00 local** wrongly used same-day 22:00/23:00 UTC instead of the correct
+**2023-08-23** 22:00/23:00 UTC. **Corrected** (`src/forcing_barajas.py`): build each local
+15-min timestamp in Europe/Madrid, convert to UTC via `zoneinfo`, and interpolate between the
+**actual surrounding UTC records** (previous-day where the local time wraps back) — no `%24`.
+Frozen AEMET CSV holds the previous-day observations (no evidence gap). Measured effect on the 8
+decision fields: **ΔTmrt = ΔUTCI = 0.000** (the error was confined to the first night
+preconditioning steps and dissipated before the decision window). Implementation correction under
+this amendment — **no new scientific amendment**, no change to routes/metrics/decision rule/
+geometry/UTCI boundaries/E-P definitions.
+
 ## 3. Hardened, fail-closed Catastro acquisition
 Gate-3A `catastro_footprints()` was fail-open (silent per-subtile except; regex over every
 `gml:posList` treated as an independent polygon). Corrected (`src/catastro_bu.py`):

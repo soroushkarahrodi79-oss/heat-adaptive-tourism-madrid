@@ -12,6 +12,11 @@ interpretation unchanged.
 > fail-closed with structural GML parsing (rings/multipart, dedup) → building coverage
 > 32.03 %→30.14 %; DSM/CDSM regenerated. Corrected baseline A−B: **14:00 −0.042**, **17:00
 > −0.367** (was −0.048 / −0.365) — ordering and trade-off preserved.
+>
+> **v1.3 (second review): date-aware preconditioning forcing.** The stateful sequence's first
+> night steps now correctly use previous-day (2023-08-23) UTC records via timezone-aware
+> interpolation (no `%24`). Effect on the 8 decision fields: **ΔTmrt = ΔUTCI = 0.000**; baseline
+> A−B unchanged (14:00 −0.042, 17:00 −0.367). **Verdict unchanged.**
 
 ## Baseline outcome label (3A.8 — no scientific winner)
 
