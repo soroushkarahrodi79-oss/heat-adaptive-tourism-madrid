@@ -54,7 +54,7 @@ Why this label and not another:
 
 | Artifact | Identifier | Date |
 |---|---|---|
-| **Repository HEAD / default branch (`main`)** | commit `fcbb9b6` | 2026-09-17 |
+| **Freeze base commit / pre-freeze `main`** | commit `fcbb9b6` | 2026-09-17 |
 | **GitHub release (citable code snapshot)** | tag [`v0.1.0`](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/releases/tag/v0.1.0) | 2026-09-01 |
 | **Preserved pre-revision science checkpoint** | tag `pre-targeted-revision-v0.2` | — |
 | **Archived preprint (version-specific)** | Zenodo DOI [`10.5281/zenodo.22707470`](https://doi.org/10.5281/zenodo.22707470) | recorded 2026-09-14 |
@@ -266,12 +266,14 @@ explicitly says so. Concretely:
 
 ### 7. Open issues and pull requests
 
-As of 2026-09-17 (verified live against GitHub): **0 open issues; 0 open pull
+As of the freeze audit (2026-09-17): **0 open issues and 0 open research pull
 requests, across both Layer A and Layer B.** PR #11 (the documentation reconciliation
-that introduced this two-layer status model) merged 2026-09-16. This freeze update
-(§B.1) is itself made via a new documentation-only pull request against `main`,
-touching only this file and one README paragraph and changing no scientific content;
-it does not, by itself, reopen this "0 open pull requests" count once merged.
+that introduced this two-layer status model) merged 2026-09-16. PR #12 is the
+documentation-only freeze pull request (§B.1) that introduces `RESEARCH_FROZEN_AFTER_GATE_3B`;
+it touches only this file and one README paragraph, changes no scientific content, and
+does not represent active research — its own open/merged state at any given moment
+does not change this section's research-PR count, which counts research work, not
+documentation housekeeping.
 
 | # | Title | Layer | Disposition |
 |---|---|---|---|
@@ -286,6 +288,7 @@ it does not, by itself, reopen this "0 open pull requests" count once merged.
 | [#9](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/9) | research: pedestrian-heat Gate 3B robustness experiment → ABSTAIN | B | Merged 2026-09-16. Final gate result to date: `ABSTAIN / NO ROBUST DIFFERENCE`. |
 | [#10](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/10) | research: pedestrian-heat Gate 3A first thermal + sampling correction | B | Merged 2026-09-16 (before #9). `GATE3A_CORRECTED_GO_TO_3B`. |
 | [#11](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/11) | docs: reconcile PROJECT_STATUS with merged pedestrian-heat extension | — | Merged 2026-09-16. Documentation-only (this file + one README paragraph); introduced the two-layer status model and added no scientific content. |
+| [#12](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/12) | docs: freeze HATI research sequence after Gate 3B | — | Documentation-only freeze update; changes no scientific content. Introduces `RESEARCH_FROZEN_AFTER_GATE_3B` for Layer B. |
 
 No issue-tracker activity has occurred (0 issues opened to date, either layer).
 
