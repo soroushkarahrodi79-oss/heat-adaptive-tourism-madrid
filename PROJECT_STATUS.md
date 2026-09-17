@@ -1,6 +1,6 @@
 # Project status
 
-**Audit date: 2026-09-16.**
+**Audit date: 2026-09-17.**
 
 This file is the canonical status record for this repository. It exists to reconcile
 any first-page or badge wording with the actual evidence in this repository, its two
@@ -13,7 +13,7 @@ They must never be collapsed into one status line:
 | Layer | Content | Status |
 |---|---|---|
 | **A. Locked publication** | The archived HATI-Madrid pilot (DOI-bound preprint) | **`RELEASE_LOCKED`** |
-| **B. Research extension** | `docs/research/pedestrian-heat/` — a new, bounded research thread hosted in the same repository | **`BOUNDED_EXTENSION_COMPLETED_THROUGH_GATE_3B`** |
+| **B. Research extension** | `docs/research/pedestrian-heat/` — a new, bounded research thread hosted in the same repository | **`RESEARCH_FROZEN_AFTER_GATE_3B`** |
 
 Layer B is new research. It does **not** revise, reopen, or alter Layer A's locked
 scientific content, DOI, or archived claims, unless and until a separate
@@ -39,7 +39,7 @@ Why this label and not another:
 
 - Not `ACTIVE_BOUNDED`: no PR against this layer's own scientific content is open, and
   no PR has altered a locked number, table, or figure since the DOI'd release. (The
-  the repository as a whole contains post-release research work — see Layer B, §B —
+  repository as a whole contains post-release research work — see Layer B, §B —
   but that work is scoped to a separate document tree and does not touch this layer.)
 - Not `PAUSED_PENDING_EVIDENCE`: this layer is not idling while waiting on a specific
   external trigger to resume development. Nothing is blocked; the release is simply
@@ -54,7 +54,7 @@ Why this label and not another:
 
 | Artifact | Identifier | Date |
 |---|---|---|
-| **Repository HEAD / default branch (`main`)** | commit `f508383` | 2026-09-16 |
+| **Freeze base commit / pre-freeze `main`** | commit `fcbb9b6` | 2026-09-17 |
 | **GitHub release (citable code snapshot)** | tag [`v0.1.0`](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/releases/tag/v0.1.0) | 2026-09-01 |
 | **Preserved pre-revision science checkpoint** | tag `pre-targeted-revision-v0.2` | — |
 | **Archived preprint (version-specific)** | Zenodo DOI [`10.5281/zenodo.22707470`](https://doi.org/10.5281/zenodo.22707470) | recorded 2026-09-14 |
@@ -151,17 +151,33 @@ Until one of these occurs, Layer A stays in maintenance/documentation mode.
 
 ---
 
-## B. Active / bounded research-extension layer
+## B. Frozen research-extension layer
 
 ### B.1 Status classification
 
-**`BOUNDED_EXTENSION_COMPLETED_THROUGH_GATE_3B`**
+**`RESEARCH_FROZEN_AFTER_GATE_3B`**
 
 `docs/research/pedestrian-heat/` is a separate, phase-gated research thread that began
-after Layer A's DOI'd release and has materially progressed since PROJECT_STATUS.md was
-first written (2026-09-14, PR #6). It is **new research hosted in the same repository**,
-not a revision of the DOI-locked HATI-Madrid preprint, unless and until a separate
-publication/release process explicitly says so.
+after Layer A's DOI'd release and progressed through Gate 3B (final verdict below). It
+is **new research hosted in the same repository**, not a revision of the DOI-locked
+HATI-Madrid preprint, unless and until a separate publication/release process
+explicitly says so.
+
+Gate 3B completed the currently authorised research sequence, and the sequence is now
+deliberately **frozen** rather than paused pending routine follow-up work. Concretely,
+"frozen" means:
+
+- no active scientific development on this extension;
+- no new gate opened simply to continue the sequence (no Gate 4, no Gate 3C);
+- no rerunning of the experiment until a route winner appears;
+- no speculative expansion to new Madrid areas, dates, or OD pairs;
+- no dashboard/product expansion presented as scientific progress;
+- no reinterpretation of `ABSTAIN` as inconclusive-therefore-unfinished.
+
+`ABSTAIN / NO ROBUST DIFFERENCE` (§B.2) is treated as a valid, final bounded research
+outcome. This layer does not need a positive route winner to be complete. §B.3 lists
+the narrow, specific conditions under which Layer B may reopen; those are reopening
+conditions, not a roadmap or backlog, and none of them has occurred.
 
 Gate history (all merged into `main`, no open PR remains):
 
@@ -175,13 +191,10 @@ Gate history (all merged into `main`, no open PR remains):
 PR #10 (Gate 3A) was merged before PR #9 (Gate 3B); both carry the same corrected,
 date-aware protocol propagated between them. As of this audit there is no open pull
 request or open issue associated with either gate, or with any part of this
-repository's research content — **0 open research PRs; the pull request that
-performed this documentation reconciliation is the only open pull request at audit
-time** (see §7; it is documentation-only and does not alter this status model's
-findings).
+repository's research content — **0 open research PRs** (see §7).
 
 No work exists in the repository past Gate 3B. This status record does not open, imply,
-or schedule a Gate 4.
+or schedule a Gate 4, and no such gate is authorised or planned.
 
 ### B.2 Scientific ceiling of the extension (current, final for this gate sequence)
 
@@ -210,13 +223,24 @@ Full basis, decision rule, and negative-control results are recorded in
 `docs/research/pedestrian-heat/gate3a/GATE3A_DECISION.md`, which govern over any
 summary here if they disagree.
 
-### B.3 What would change the Gate 3B verdict (not undertaken here)
+### B.3 Reopening conditions (narrow; not undertaken here)
 
-Per `GATE3B_DECISION.md`: independent pedestrian-level Tmrt/UTCI measurement (would
-reopen a Path-A comparative claim); an authoritative current-vintage classified
-canopy/crown model (would collapse the dominant canopy-source uncertainty dimension);
-resolved side-of-street sidewalk mapping. None of these has occurred. Absent them,
-ABSTAIN stands, and this audit does not begin any new gate to pursue them.
+Layer B may reopen only if new evidence could realistically change the Gate 3B
+decision. Per `GATE3B_DECISION.md`, plus one further externally driven condition, the
+specific conditions are:
+
+- independent pedestrian-level Tmrt/UTCI measurement (would reopen a Path-A
+  comparative claim);
+- an authoritative current-vintage classified canopy/crown model (would collapse the
+  dominant canopy-source uncertainty dimension);
+- resolved, authoritative side-of-street sidewalk mapping;
+- a concrete external stakeholder/research requirement that justifies a new,
+  separately scoped study.
+
+None of these has occurred. These are reopening conditions, not a roadmap or
+backlog — they do not themselves authorise any new gate. Absent them, ABSTAIN stands
+as the final result of this research sequence, and this audit does not begin any new
+gate to pursue them.
 
 ### B.4 Boundary with Layer A
 
@@ -242,13 +266,14 @@ explicitly says so. Concretely:
 
 ### 7. Open issues and pull requests
 
-As of 2026-09-16 (verified live against GitHub): **0 open issues; 0 open research
-pull requests across both Layer A and Layer B.** The only open pull request at audit
-time is the one performing this documentation reconciliation
-([#11](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/11)),
-which touches only this file and one README paragraph and changes no scientific
-content. A future update, made once #11 is merged, may simplify this to "0 open pull
-requests" if that remains true then — this record does not assume that outcome.
+As of the freeze audit (2026-09-17): **0 open issues and 0 open research pull
+requests, across both Layer A and Layer B.** PR #11 (the documentation reconciliation
+that introduced this two-layer status model) merged 2026-09-16. PR #12 is the
+documentation-only freeze pull request (§B.1) that introduces `RESEARCH_FROZEN_AFTER_GATE_3B`;
+it touches only this file and one README paragraph, changes no scientific content, and
+does not represent active research — its own open/merged state at any given moment
+does not change this section's research-PR count, which counts research work, not
+documentation housekeeping.
 
 | # | Title | Layer | Disposition |
 |---|---|---|---|
@@ -262,7 +287,8 @@ requests" if that remains true then — this record does not assume that outcome
 | [#8](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/8) | research: pedestrian-heat Gate 2 — evidence freeze | B | Merged 2026-09-15. `GO_TO_FIRST_THERMAL_EXPERIMENT`. |
 | [#9](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/9) | research: pedestrian-heat Gate 3B robustness experiment → ABSTAIN | B | Merged 2026-09-16. Final gate result to date: `ABSTAIN / NO ROBUST DIFFERENCE`. |
 | [#10](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/10) | research: pedestrian-heat Gate 3A first thermal + sampling correction | B | Merged 2026-09-16 (before #9). `GATE3A_CORRECTED_GO_TO_3B`. |
-| [#11](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/11) | docs: reconcile PROJECT_STATUS with merged pedestrian-heat extension | — | **Open** at audit time. Documentation-only (this file + one README paragraph); introduces the two-layer status model and adds no scientific content. |
+| [#11](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/11) | docs: reconcile PROJECT_STATUS with merged pedestrian-heat extension | — | Merged 2026-09-16. Documentation-only (this file + one README paragraph); introduced the two-layer status model and added no scientific content. |
+| [#12](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid/pull/12) | docs: freeze HATI research sequence after Gate 3B | — | Documentation-only freeze update; changes no scientific content. Introduces `RESEARCH_FROZEN_AFTER_GATE_3B` for Layer B. |
 
 No issue-tracker activity has occurred (0 issues opened to date, either layer).
 

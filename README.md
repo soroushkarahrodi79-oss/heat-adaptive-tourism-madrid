@@ -21,10 +21,14 @@ uncertainty auditable rather than collapsed into a single score.
 original HATI-Madrid pilot described below is `RELEASE_LOCKED` (as of 2026-09-14):
 current reference commit/DOI, what is demonstrated vs. model-derived/unvalidated, the
 claim ceiling, and allowed maintenance changes. Since that lock, a separate bounded
-research extension (`docs/research/pedestrian-heat/`) has progressed through Gate 3B
-(`ABSTAIN / NO ROBUST DIFFERENCE`) — see PROJECT_STATUS.md §B for its status; it does
-not revise this locked pilot. PROJECT_STATUS.md also records the disposition of every
-issue and pull request across both.
+research extension (`docs/research/pedestrian-heat/`) completed a bounded research
+sequence through Gate 3B, concluding `ABSTAIN / NO ROBUST DIFFERENCE` — evidence was
+insufficient to declare either route robustly superior. That extension is now
+`RESEARCH_FROZEN_AFTER_GATE_3B`: the sequence is deliberately frozen rather than
+extended indefinitely, not abandoned or unfinished. See PROJECT_STATUS.md §B for its
+status and narrow reopening conditions; it does not revise this locked pilot.
+PROJECT_STATUS.md also records the disposition of every issue and pull request across
+both.
 
 > **Status — public research repository · public preprint.** The current academic
 > dissemination route is a **non-peer-reviewed preprint / research work for public archival
