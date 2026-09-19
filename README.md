@@ -28,7 +28,8 @@ insufficient to declare either route robustly superior. That extension is now
 extended indefinitely, not abandoned or unfinished. See PROJECT_STATUS.md §B for its
 status and narrow reopening conditions; it does not revise this locked pilot.
 PROJECT_STATUS.md also records the disposition of every issue and pull request across
-both.
+both. A concise professional summary of this work is available in
+[`portfolio/HATI_CASE_STUDY.md`](portfolio/HATI_CASE_STUDY.md).
 
 > **Status — public research repository · public preprint.** The current academic
 > dissemination route is a **non-peer-reviewed preprint / research work for public archival
