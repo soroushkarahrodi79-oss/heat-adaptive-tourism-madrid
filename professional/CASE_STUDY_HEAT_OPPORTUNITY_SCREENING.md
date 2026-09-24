@@ -26,9 +26,9 @@ And the evidence about how hot it is may be too weak to justify any change.
 **The single decision examined in this case study:**
 
 > *For a given outdoor tour stop at a given hour, is there a substitute stop, prepared
-> before the season, that is open, within the group's walking limit, not modelled as
-> hotter, and supported by sufficient evidence? Or is the defensible answer "no
-> substitution recommended"?*
+> before the season, that is open, within the group's straight-line distance limit, not
+> modelled as hotter, and supported by sufficient evidence? Or is the defensible answer
+> "no substitution recommended"?*
 
 This is **opportunity screening**, meaning it decides which options are admissible. It
 is **not route optimisation**, and it does not choose the "best" or "safest" route.
@@ -106,7 +106,7 @@ Each candidate substitute then passes through ordered gates. The first gate it f
 recorded as its only exclusion reason, and nothing is combined into a score:
 
 ```
-open at that hour? → within walking limit? → below thermal limit (UTCI < 46 °C)?
+open at that hour? → within straight-line distance limit? → below thermal limit (UTCI < 46 °C)?
 → evidence sufficient? → meaningful improvement over the original stop?
 ```
 
@@ -135,8 +135,8 @@ reproduction.*
    hotter than the stop it would replace.
 3. **The candidate sets differed.** The screening removed at least one open, in-range
    candidate in 7 of 8 scenarios (23 removals in total).
-4. **The method can say "no".** In S8 (Parque del Retiro, 15:00, 500 m walking limit)
-   no substitute survived, so the output is `NO_DEFENSIBLE_ALTERNATIVE`.
+4. **The method can say "no".** In S8 (Parque del Retiro, 15:00, 500 m straight-line
+   radius) no substitute survived, so the output is `NO_DEFENSIBLE_ALTERNATIVE`.
 5. **Stability is labelled.** Of the 42 outdoor decisions, 35 are ROBUST, 6 BOUNDARY and
    1 UNSTABLE under the tested perturbations.
 
@@ -147,10 +147,23 @@ reproduction.*
   visitors would have been safer. The strength of the three cases also varies (§8).
 - **7/8 mostly shows that the filters are active.** Adding constraints to a pool removes
   items almost by construction. It is context, not evidence of commercial superiority.
-- **S8 is the result a manager can most readily use.** The source park was already the
-  coolest outdoor option nearby (38.6 °C modelled). Every outdoor alternative within
-  500 m was modelled hotter, and no open indoor venue lay within 500 m. "Stay" was the
-  defensible answer. The answer depends on the radius: at 800 m two substitutes appear.
+- **S8 shows the method's abstention state, not an operational recommendation.**
+  `NO_DEFENSIBLE_ALTERNATIVE` means that, within the tested 500 m radius, no candidate
+  substitute cleared every gate: the source park was already the coolest outdoor option
+  nearby (38.6 °C modelled), every outdoor alternative within 500 m was modelled hotter,
+  and no open indoor venue lay within 500 m. **That is not the same statement as "staying
+  at the original stop is safe, thermally recommendable or preferable."** HATI screens
+  candidate *substitutes*; it does not evaluate the thermal exposure of remaining at the
+  original stop, so it cannot certify that option either. The two distinct claims are:
+  (a) no admissible substitute was identified within the tested radius — this is what
+  S8 demonstrates; and (b) remaining at the original stop is the recommended course of
+  action — this is a separate operational judgement that HATI does not make and that
+  would need additional information (e.g., current conditions, shade at the original
+  stop, group tolerance) to support. Whether to continue, shorten, interrupt or cancel
+  the visit is an operational decision for the client and guides, not an output of this
+  screening. The abstention is also radius-dependent, which underlines that it is a
+  property of the tested constraint, not an absolute safety statement: at 800 m two
+  substitutes appear.
 - **The method matters most at the shoulder hours of that day.** At 15:00 both heat
   representations gave the same classes, so the choice of method mattered at 12:00 and
   18:00. This is one day's observation, not a rule.
