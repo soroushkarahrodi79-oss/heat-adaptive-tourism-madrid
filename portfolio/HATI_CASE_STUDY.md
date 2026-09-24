@@ -91,6 +91,7 @@ result, not a failure to iterate away.
 
 - [Repository](https://github.com/soroushkarahrodi79-oss/heat-adaptive-tourism-madrid)
 - [PROJECT_STATUS.md](../PROJECT_STATUS.md) — canonical status record for both layers
+- [Professional case: heat-aware opportunity screening](../professional/CASE_STUDY_HEAT_OPPORTUNITY_SCREENING.md) — hypothetical business application, reproduction report and evidence matrix (separate from the locked research)
 - [Gate 3B decision](../docs/research/pedestrian-heat/gate3b/GATE3B_DECISION.md) — final ABSTAIN verdict and basis
 - [Gate 3A decision](../docs/research/pedestrian-heat/gate3a/GATE3A_DECISION.md) — first thermal experiment
 - Published preprint: [ResearchGate](https://www.researchgate.net/publication/414226835_Thermal_representation_as_a_decision_variable_in_heat-adaptive_tourism_opportunity_screening_evidence_from_a_Madrid_pilot) · archived on [Zenodo](https://doi.org/10.5281/zenodo.22707470) (DOI 10.5281/zenodo.22707470)
