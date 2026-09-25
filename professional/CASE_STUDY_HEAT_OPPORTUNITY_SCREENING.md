@@ -72,13 +72,12 @@ replay prototype; this was not verified. I did not personally write all of the c
 decision at a time, who first proposed each methodological choice. That includes the
 research question, the gate order, the 32/46 °C decision thresholds, the 0.8 °C
 improvement margin, the 800/500 m radii and the eight scenarios. This case study
-therefore does not attribute those choices individually.
-
-> **[OWNER REVIEW REQUIRED before any external use]** Replace this note with a short,
-> truthful statement of which of these choices you originated, specified, or selected
-> among AI-proposed options, **only where you can support it** with your own records
-> (notes, prompts, supervisor correspondence). If you cannot support it, keep the
-> limited wording above.
+therefore does not attribute the individual origin of those choices to myself, to an AI
+assistant, or to any specific exchange between us. What is claimed above — ownership,
+merge authority over every accepted change, and the specific dated decisions cited with
+their sources — is what the repository's own records support. No broader claim of
+personal authorship over the code or the method is made here, and none should be
+inferred from the space this section otherwise leaves unattributed.
 
 ## 4. Data and processing
 
@@ -207,6 +206,16 @@ satisfaction or health is claimed.
 - field measurement of Tmrt or UTCI to check the model;
 - operational trials to learn whether guides and visitors can use the substitutions;
 - replacement of non-commercially licensed inputs (see the pilot proposal).
+
+**Licensing status of the existing thermal outputs.** Commercial reuse has not yet been
+verified against the exact providers, endpoints and terms applicable when each
+meteorological input was acquired. Meteostat currently documents its standard data
+licence as CC BY 4.0, while Open-Meteo restricts its free API service to non-commercial
+use and offers separate commercial access. Until the provenance and applicable terms of
+the exact archived inputs are confirmed, these specific UTCI/Tmrt outputs are not offered
+as a paid deliverable. The diagnostic and method-demonstration work described in the
+pilot proposal remains separate from this restriction. Full detail:
+[`PILOT_PROPOSAL_10_DAYS.md`](PILOT_PROPOSAL_10_DAYS.md) §11.
 
 A bounded paid pilot to begin this is set out in
 [`PILOT_PROPOSAL_10_DAYS.md`](PILOT_PROPOSAL_10_DAYS.md). The claim-by-claim evidence is
