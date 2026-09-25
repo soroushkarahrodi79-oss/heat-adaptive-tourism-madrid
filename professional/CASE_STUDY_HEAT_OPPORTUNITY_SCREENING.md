@@ -207,15 +207,15 @@ satisfaction or health is claimed.
 - operational trials to learn whether guides and visitors can use the substitutions;
 - replacement of non-commercially licensed inputs (see the pilot proposal).
 
-**Licensing status of the existing thermal outputs (not yet resolved).** The UTCI/Tmrt
-values used throughout this case study were computed using meteorological forcing
-relayed by Meteostat, whose recorded terms are free for non-commercial and attributed
-use only, and radiation from Open-Meteo, whose commercial terms are unverified. Until
-these are cleared or the affected inputs are re-sourced, these specific thermal outputs
-are **not offered as a paid deliverable** — only as non-commercial, academic material, as
-in this case study. The diagnostic and method-demonstration labour described in the pilot
-proposal below does not depend on these outputs and is not affected by this limit. Full
-detail: [`PILOT_PROPOSAL_10_DAYS.md`](PILOT_PROPOSAL_10_DAYS.md) §11.
+**Licensing status of the existing thermal outputs.** Commercial reuse has not yet been
+verified against the exact providers, endpoints and terms applicable when each
+meteorological input was acquired. Meteostat currently documents its standard data
+licence as CC BY 4.0, while Open-Meteo restricts its free API service to non-commercial
+use and offers separate commercial access. Until the provenance and applicable terms of
+the exact archived inputs are confirmed, these specific UTCI/Tmrt outputs are not offered
+as a paid deliverable. The diagnostic and method-demonstration work described in the
+pilot proposal remains separate from this restriction. Full detail:
+[`PILOT_PROPOSAL_10_DAYS.md`](PILOT_PROPOSAL_10_DAYS.md) §11.
 
 A bounded paid pilot to begin this is set out in
 [`PILOT_PROPOSAL_10_DAYS.md`](PILOT_PROPOSAL_10_DAYS.md). The claim-by-claim evidence is
