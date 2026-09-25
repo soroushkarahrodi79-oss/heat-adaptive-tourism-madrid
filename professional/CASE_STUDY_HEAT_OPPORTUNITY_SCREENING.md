@@ -41,43 +41,25 @@ answer depend on the method used to represent heat?
 
 ## 3. My role, and how this project was built
 
-**What the repository records about my role:**
+I defined the overall objectives of HATI-Madrid and coordinated the development of the
+project as a research and tourism-intelligence case study. Artificial-intelligence tools
+were used extensively to support research, programming, analysis and documentation.
 
-- I own the project and repository, and I am the sole named author of the archived
-  preprint (`CITATION.cff`; the Zenodo record was owner-confirmed on 2026-09-14,
-  `submission/researchgate/PUBLIC_TRUTH_AUDIT.md`).
-- Pull requests enter `main` through my account. Twelve merge commits are mine, and so
-  is the single commit whose title matches PR #5 (`PROJECT_STATUS.md` §7). Changes were
-  therefore accepted by me before reaching `main`.
-- I made recorded decisions at specific points. I approved AMENDMENT_001, the terrain
-  source change, before any thermal output was inspected
-  (`docs/research/pedestrian-heat/AMENDMENT_001.md`). I carried out the owner desk
-  review of the scenario-replay prototype, with disposition `USEFUL / PROMOTE_TO_PR`,
-  recorded as a bounded review and not a usability study (`docs/replay/DESK_REVIEW.md`).
-  I confirmed the public ResearchGate and Zenodo records.
+For methodological parameters such as thresholds, distance radii and scenario
+configurations, AI tools proposed options that I reviewed and selected or approved for
+use in the project. I do not claim to have originated every individual methodological
+choice or to have written all of the project code personally.
 
-**Use of AI assistance (declared):** the code, documentation and analysis were produced
-with substantial help from AI coding assistants. Of the repository's 52 commits:
+My responsibility included reviewing the methodology, interpreting the analytical
+results, and making decisions about how those results should be framed, limited and
+communicated. In particular, I reviewed the evidence supporting the project's
+conclusions and made decisions about the treatment of uncertainty, methodological
+limitations, abstention states and unsupported claims.
 
-- 27 are authored or co-authored by Anthropic's Claude.
-- 13 carry my own account. Twelve of these are pull-request merges; one is a documentation
-  commit.
-- 12 were made under a generic project identity ("HATI-Madrid") with no co-author record.
-  For these, the repository cannot tell who wrote the content.
-
-One branch name (`codex/…`, PR #2) suggests that a second AI assistant was used for the
-replay prototype; this was not verified. I did not personally write all of the code.
-
-**What cannot be attributed from the repository:** the repository does not record, one
-decision at a time, who first proposed each methodological choice. That includes the
-research question, the gate order, the 32/46 °C decision thresholds, the 0.8 °C
-improvement margin, the 800/500 m radii and the eight scenarios. This case study
-therefore does not attribute the individual origin of those choices to myself, to an AI
-assistant, or to any specific exchange between us. What is claimed above — ownership,
-merge authority over every accepted change, and the specific dated decisions cited with
-their sources — is what the repository's own records support. No broader claim of
-personal authorship over the code or the method is made here, and none should be
-inferred from the space this section otherwise leaves unattributed.
+The project should therefore be understood as AI-assisted research and development under
+my direction and review. Where the repository does not provide evidence about who first
+proposed a particular technical or methodological choice, I do not attribute that choice
+exclusively to myself.
 
 ## 4. Data and processing
 
