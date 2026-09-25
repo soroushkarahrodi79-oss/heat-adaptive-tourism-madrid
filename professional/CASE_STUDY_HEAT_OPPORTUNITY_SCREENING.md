@@ -72,13 +72,12 @@ replay prototype; this was not verified. I did not personally write all of the c
 decision at a time, who first proposed each methodological choice. That includes the
 research question, the gate order, the 32/46 °C decision thresholds, the 0.8 °C
 improvement margin, the 800/500 m radii and the eight scenarios. This case study
-therefore does not attribute those choices individually.
-
-> **[OWNER REVIEW REQUIRED before any external use]** Replace this note with a short,
-> truthful statement of which of these choices you originated, specified, or selected
-> among AI-proposed options, **only where you can support it** with your own records
-> (notes, prompts, supervisor correspondence). If you cannot support it, keep the
-> limited wording above.
+therefore does not attribute the individual origin of those choices to myself, to an AI
+assistant, or to any specific exchange between us. What is claimed above — ownership,
+merge authority over every accepted change, and the specific dated decisions cited with
+their sources — is what the repository's own records support. No broader claim of
+personal authorship over the code or the method is made here, and none should be
+inferred from the space this section otherwise leaves unattributed.
 
 ## 4. Data and processing
 
@@ -207,6 +206,16 @@ satisfaction or health is claimed.
 - field measurement of Tmrt or UTCI to check the model;
 - operational trials to learn whether guides and visitors can use the substitutions;
 - replacement of non-commercially licensed inputs (see the pilot proposal).
+
+**Licensing status of the existing thermal outputs (not yet resolved).** The UTCI/Tmrt
+values used throughout this case study were computed using meteorological forcing
+relayed by Meteostat, whose recorded terms are free for non-commercial and attributed
+use only, and radiation from Open-Meteo, whose commercial terms are unverified. Until
+these are cleared or the affected inputs are re-sourced, these specific thermal outputs
+are **not offered as a paid deliverable** — only as non-commercial, academic material, as
+in this case study. The diagnostic and method-demonstration labour described in the pilot
+proposal below does not depend on these outputs and is not affected by this limit. Full
+detail: [`PILOT_PROPOSAL_10_DAYS.md`](PILOT_PROPOSAL_10_DAYS.md) §11.
 
 A bounded paid pilot to begin this is set out in
 [`PILOT_PROPOSAL_10_DAYS.md`](PILOT_PROPOSAL_10_DAYS.md). The claim-by-claim evidence is
