@@ -10,11 +10,13 @@ simple operational proxy and a physically based SOLWEIG/UTCI configuration — i
 transparent, constraint-first screening architecture that keeps thermal state, evidence, and
 uncertainty auditable rather than collapsed into a single score.
 
-![Research status: public preprint](https://img.shields.io/badge/research%20status-public%20preprint-555555)
-![Study area: Madrid pilot](https://img.shields.io/badge/study%20area-Madrid%20pilot-555555)
-![Python 3.14 / 3.12](https://img.shields.io/badge/python-3.14%20%7C%203.12-3776AB)
-![Reproducible research](https://img.shields.io/badge/reproducible-research-2E7D32)
-![Repository: public](https://img.shields.io/badge/repository-public-2E7D32)
+**[Read the preprint and archived research record (DOI 10.5281/zenodo.22707470)](https://doi.org/10.5281/zenodo.22707470)** · [Project status and claim limits](PROJECT_STATUS.md)
+
+![Tourism-feasibility classification for three times on the documented Madrid heat-episode day](outputs/maps/04_feasibility_by_timestamp.png)
+
+_Descriptive classification from a single-day pilot; this figure is not an operational recommendation or a validated intervention._
+
+[![Research status: public preprint](https://img.shields.io/badge/research%20status-public%20preprint-555555)](PROJECT_STATUS.md)
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22707470-blue)](https://doi.org/10.5281/zenodo.22707470)
 
 **See [PROJECT_STATUS.md](PROJECT_STATUS.md) for the canonical status record.** The
