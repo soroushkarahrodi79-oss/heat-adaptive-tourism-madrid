@@ -1,0 +1,15 @@
+family,variant,system_varied,rows,detail,A_changes_12:00,A_changes_15:00,A_changes_18:00,A_changes_total,B_changes_12:00,B_changes_15:00,B_changes_18:00,B_changes_total,disagreements_12:00,disagreements_15:00,disagreements_18:00,disagreements_total,disagreements_shared_with_baseline,rows_changed
+baseline,"baseline (Barajas instantaneous Ta, OSM trees, UTCI 10 m mean)",none,42,reference,0,0,0,0,0,0,0,0,9,0,5,14,14,
+A: air-temperature source,"Barajas mean of (T-1h, T)",A,42,Ta 12/15/18 h = 33.20/38.15/40.35,0,0,0,0,0,0,0,0,9,0,5,14,14,
+A: air-temperature source,"Escuelas Aguirre H(T), hour-ending mean",A,42,Ta 12/15/18 h = 32.60/37.50/40.80,0,0,0,0,0,0,0,0,9,0,5,14,14,
+A: air-temperature source,"Escuelas Aguirre interpolated to T from [H(T), H(T+1)]",A,42,Ta 12/15/18 h = 33.40/38.35/40.55,0,0,0,0,0,0,0,0,9,0,5,14,14,
+A: temporal definition of the AEMET rule,AEMET warning thresholds applied to the daily maximum (Barajas),A,42,"daily max = 40.5 C for all three hours (sensitivity to the definition of the rule, not an hourly equivalent)",14,5,0,19,0,0,0,0,5,5,5,15,5,A14@12:00;A15@12:00;A16@12:00;A17@12:00;A18@12:00;A19@12:00;A20@12:00;A21@12:00;A22@12:00;A23@12:00;A24@12:00;A25@12:00;A26@12:00;A27@12:00;A14@15:00;A15@15:00;A16@15:00;A19@15:00;A26@15:00
+A: temporal definition of the AEMET rule,AEMET warning thresholds applied to the daily maximum (Escuelas Aguirre),A,42,"daily max = 40.8 C for all three hours (sensitivity to the definition of the rule, not an hourly equivalent)",14,5,0,19,0,0,0,0,5,5,5,15,5,A14@12:00;A15@12:00;A16@12:00;A17@12:00;A18@12:00;A19@12:00;A20@12:00;A21@12:00;A22@12:00;A23@12:00;A24@12:00;A25@12:00;A26@12:00;A27@12:00;A14@15:00;A15@15:00;A16@15:00;A19@15:00;A26@15:00
+A: shade/tree proxy,exposure grade from Madrid proxy,A,42,tercile grade as stored in shade_proxy_comparison.csv,4,0,4,8,0,0,0,0,9,0,5,14,10,A16@12:00;A18@12:00;A21@12:00;A26@12:00;A16@18:00;A18@18:00;A21@18:00;A26@18:00
+A: shade/tree proxy,exposure grade from TCD proxy,A,42,tercile grade as stored in shade_proxy_comparison.csv,4,0,4,8,0,0,0,0,9,0,5,14,10,A14@12:00;A18@12:00;A19@12:00;A25@12:00;A14@18:00;A18@18:00;A19@18:00;A25@18:00
+A: shade/tree proxy,exposure grade from green proxy,A,42,tercile grade as stored in shade_proxy_comparison.csv,4,0,4,8,0,0,0,0,9,0,5,14,10,A17@12:00;A18@12:00;A19@12:00;A26@12:00;A17@18:00;A18@18:00;A19@18:00;A26@18:00
+B: irradiance,REAL_SATELLITE,B,42,dUTCI min/median/max = -1.1/0.0/1.0 C (within B only),0,0,0,0,0,0,1,1,9,0,6,15,14,A24@18:00
+B: irradiance,SENS_A_minus10pct,B,42,dUTCI min/median/max = -1.1/-0.3/0.2 C (within B only),0,0,0,0,0,0,0,0,9,0,5,14,14,
+B: irradiance,SENS_B_minus20pct,B,42,dUTCI min/median/max = -2.3/-0.7/0.2 C (within B only),0,0,0,0,0,0,0,0,9,0,5,14,14,
+B: spatial support,UTCI centroid instead of 10 m mean,B,42,dUTCI min/median/max = -7.0/-0.4/6.3 C (within B only),0,0,0,0,0,0,1,1,9,0,6,15,14,A22@18:00
+B: spatial support,UTCI p90 within 10 m instead of 10 m mean,B,42,dUTCI min/median/max = -0.1/1.7/6.9 C (within B only),0,0,0,0,0,1,1,2,9,1,6,16,14,A18@15:00;A22@18:00

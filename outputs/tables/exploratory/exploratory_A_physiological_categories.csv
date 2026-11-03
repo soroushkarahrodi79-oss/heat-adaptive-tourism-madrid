@@ -1,0 +1,19 @@
+variant,hour,<26 (no stress),26-32 moderate,32-38 strong,38-46 very strong,>=46 extreme,category_changes_vs_baseline
+baseline (10 m mean),12:00,0,0,8,6,0,0
+baseline (10 m mean),15:00,0,0,0,14,0,0
+baseline (10 m mean),18:00,0,0,0,14,0,0
+irradiance REAL_SATELLITE,12:00,0,0,8,6,0,0
+irradiance REAL_SATELLITE,15:00,0,0,0,14,0,0
+irradiance REAL_SATELLITE,18:00,0,0,0,13,1,1
+irradiance SENS_A_minus10pct,12:00,0,0,8,6,0,0
+irradiance SENS_A_minus10pct,15:00,0,0,0,14,0,0
+irradiance SENS_A_minus10pct,18:00,0,0,0,14,0,0
+irradiance SENS_B_minus20pct,12:00,0,0,9,5,0,1
+irradiance SENS_B_minus20pct,15:00,0,0,0,14,0,0
+irradiance SENS_B_minus20pct,18:00,0,0,0,14,0,0
+centroid,12:00,0,0,8,6,0,4
+centroid,15:00,0,0,0,14,0,0
+centroid,18:00,0,0,0,13,1,1
+p90 within 10 m,12:00,0,0,2,12,0,6
+p90 within 10 m,15:00,0,0,0,13,1,1
+p90 within 10 m,18:00,0,0,0,13,1,1
