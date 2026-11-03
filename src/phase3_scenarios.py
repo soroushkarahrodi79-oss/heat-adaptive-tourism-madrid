@@ -47,7 +47,10 @@ ACCESS_SENS = [500, 1200]
 DELTA = 0.8
 WALK_SPEED_MS = 4.8 * 1000 / 3600  # 1.333 m/s
 
-UTCI_CATEGORY_EDGES = [(32, "Strong"), (38, "Very strong"), (46, "Extreme"), (999, "Extreme")]
+# Standard UTCI heat-stress categories (Broede et al. 2012) as (UPPER limit, label); only
+# used to test "strictly cooler UTCI category" in improvement(). (Corrected: labels were
+# one category too severe and the 38-46 and >=46 categories shared one label.)
+UTCI_CATEGORY_EDGES = [(32, "Moderate or below"), (38, "Strong"), (46, "Very strong"), (999, "Extreme")]
 
 EXPERIENCE = {
     "museum_indoor": "indoor_cultural", "transit_hub": "transit_refuge",

@@ -62,11 +62,13 @@ UTCI_THRESHOLDS = [32.0, 46.0]
 def thermal_stress_state(u):
     if u is None or (isinstance(u, float) and np.isnan(u)):
         return "NOT_MODELLED_INDOOR"
-    if u < 26:  return "MODERATE_HEAT_STRESS"
-    if u < 32:  return "STRONG_HEAT_STRESS"
-    if u < 38:  return "VERY_STRONG_HEAT_STRESS"   # 32-38
-    if u < 46:  return "VERY_STRONG_HEAT_STRESS"   # 38-46 (Broede: "very strong" 38-46)
-    return "EXTREME_HEAT_STRESS"
+    # Broede et al. (2012) categories; values < 9 C are outside this heat episode.
+    # (Corrected: labels were one category too severe below 38 C.)
+    if u < 26:  return "NO_THERMAL_STRESS"
+    if u < 32:  return "MODERATE_HEAT_STRESS"
+    if u < 38:  return "STRONG_HEAT_STRESS"        # 32-38
+    if u < 46:  return "VERY_STRONG_HEAT_STRESS"   # 38-46
+    return "EXTREME_HEAT_STRESS"                   # >= 46
 
 # NOTE: Broede category edges are 26/32/38/46. We keep the official labels; the
 # decision thresholds (32/46) are a SEPARATE project decision layer, below.
@@ -74,10 +76,11 @@ def thermal_stress_state(u):
 def official_utci_category(u):
     # verbatim official labels, matches src/extract_asset_thermal_exposure.py
     if u < 9:   return "Below moderate range"
-    if u < 26:  return "Moderate heat stress"
-    if u < 32:  return "Strong heat stress"
-    if u < 38:  return "Very strong heat stress"
-    return "Extreme heat stress"  # >= 38 ... (Broede: 38-46 very strong, >=46 extreme)
+    if u < 26:  return "No thermal stress"
+    if u < 32:  return "Moderate heat stress"
+    if u < 38:  return "Strong heat stress"
+    if u < 46:  return "Very strong heat stress"
+    return "Extreme heat stress"  # >= 46 (Broede: 38-46 very strong, >46 extreme)
 
 def decision_state(u):
     """Tourism action - a project decision layer, explicitly NOT the UTCI category."""

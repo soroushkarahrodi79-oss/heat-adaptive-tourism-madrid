@@ -93,8 +93,8 @@ CATS = ["<26 (no stress)", "26-32 moderate", "32-38 strong", "38-46 very strong"
 
 def stress_category(u):
     """Standard UTCI heat-stress categories (Broede et al. 2012), computed from the numeric
-    value. The category-label columns stored in the locked CSVs are NOT used (see manuscript
-    v0.3, Section 8: their labels are shifted by one level relative to this standard)."""
+    value. The category-label columns stored in the CSVs are NOT used (see manuscript v0.3,
+    Section 8: before their correction those labels were shifted by one level)."""
     return CATS[int(np.digitize(u, [26, 32, 38, 46]))]
 
 

@@ -165,8 +165,8 @@ reproduction.*
   air conditioning and ignores queues.
 - **The pedestrian-route extension abstained.** No route is established as cooler, safer
   or preferable.
-- **Two label columns in the locked data carry a known category-label shift.** They do
-  not affect decisions (`EVIDENCE_MATRIX.md`).
+- **UTCI category labels in the locked data were shifted by one category and have been
+  corrected (labels only).** No UTCI value, class or decision changed (`EVIDENCE_MATRIX.md`).
 
 ## 9. Potential business application (HYPOTHETICAL)
 

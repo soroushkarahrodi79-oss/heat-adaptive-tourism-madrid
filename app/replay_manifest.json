@@ -41,6 +41,7 @@
   "screening_enums": {
     "thermal_state": [
       "INDOOR_NOT_MODELLED",
+      "STRONG_HEAT_STRESS",
       "VERY_STRONG_HEAT_STRESS"
     ],
     "decision_state": [
@@ -253,7 +254,7 @@
     },
     "screening": {
       "path": "data/processed/phase3_candidate_screening.csv",
-      "sha256": "deecfe44aa07f22cfc9d50718d090646943186befc246b5cc1a85be2f7fd28b2",
+      "sha256": "85fc6148b8e58387c1d41da2688a23efcac6126a5147a1e13b62f7cde78feb50",
       "keys": [
         "asset_id",
         "timestamp"

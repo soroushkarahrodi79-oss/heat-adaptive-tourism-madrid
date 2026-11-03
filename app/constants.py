@@ -33,10 +33,12 @@ DECISION_STATE_LABEL = {
 # ── thermal_state → glyph + label (Visual Semantics §2) ────────────────────
 # Glyph is an independent channel from decision colour, never inferred from it.
 THERMAL_STATE_GLYPH = {
+    "STRONG_HEAT_STRESS": "☀",           # heat-stress pictogram (UTCI 32-38; label differs)
     "VERY_STRONG_HEAT_STRESS": "☀",      # heat-stress pictogram
     "INDOOR_NOT_MODELLED": "⌂",          # indoor pictogram
 }
 THERMAL_STATE_LABEL = {
+    "STRONG_HEAT_STRESS": "Strong heat stress (modelled)",
     "VERY_STRONG_HEAT_STRESS": "Very strong heat stress (modelled)",
     "INDOOR_NOT_MODELLED": "Indoor — thermal stress not physically modelled",
 }

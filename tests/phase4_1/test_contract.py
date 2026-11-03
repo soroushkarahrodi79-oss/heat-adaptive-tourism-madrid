@@ -18,12 +18,14 @@ from app.components import asset_panel, map_view, tradeoff
 
 REPO_ROOT = Path(dl.REPO_ROOT)
 
-# SHA-256 recorded in docs/PHASE4_1_IMPLEMENTATION_BASELINE.md §3.
+# SHA-256 recorded in docs/PHASE4_1_IMPLEMENTATION_BASELINE.md §3, except
+# phase3_candidate_screening.csv: its hash was updated by the UTCI category-label
+# correction (8 `thermal_state` cells, VERY_STRONG -> STRONG_HEAT_STRESS at 12:00).
 BASELINE_HASHES = {
     "data/processed/phase3_asset_catalog.csv":
         "936d6dd51150e96d8c8445fec6910c40d273f005a99b5d945cff2f8b106b7b54",
     "data/processed/phase3_candidate_screening.csv":
-        "deecfe44aa07f22cfc9d50718d090646943186befc246b5cc1a85be2f7fd28b2",
+        "85fc6148b8e58387c1d41da2688a23efcac6126a5147a1e13b62f7cde78feb50",
     "data/processed/phase3_scenarios.csv":
         "79ce49c174e9143cd937eaebb515be334efdf1e86989d65740e9d406200129cf",
     "data/processed/phase3_scenarios_summary.csv":
