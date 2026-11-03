@@ -73,6 +73,8 @@ def symbols_body():
             html.P(C.CONFIDENCE_NOT_SEVERITY_NOTE, className="legend__caveat"),
 
             html.Div("Inner glyph · thermal condition", className="legend__group"),
+            _glyph(C.THERMAL_STATE_GLYPH["STRONG_HEAT_STRESS"],
+                   C.THERMAL_STATE_LABEL["STRONG_HEAT_STRESS"]),
             _glyph(C.THERMAL_STATE_GLYPH["VERY_STRONG_HEAT_STRESS"],
                    C.THERMAL_STATE_LABEL["VERY_STRONG_HEAT_STRESS"]),
             _glyph(C.THERMAL_STATE_GLYPH["INDOOR_NOT_MODELLED"],

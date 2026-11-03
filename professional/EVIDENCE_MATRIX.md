@@ -61,20 +61,40 @@ locked method and is disclosed here, not changed.
 3. **Explicit uncertainty and evidence sufficiency (E3, E8).** Stability labels are
    bounded to the tested dimensions, and abstention is a first-class outcome.
 
-## Data defect discovered during reproduction (flagged, not fixed)
+## Data defect discovered during reproduction (corrected)
 
 The descriptive column `utci_category` in `data/processed/phase2_asset_thermal_exposure.csv`
-and the column `utci_category_official` in `data/processed/phase2_2_decision_confidence.csv`
-are shifted one band upward relative to the Bröde et al. (2012) categories that the
-project's own `docs/PHASE2_UTCI_METHOD.md` documents. As a result, 34 rows with UTCI
-38.4–45.4 °C carry the label "Extreme heat stress" (correct: "Very strong", 38–46 °C), and
-8 rows with 32.4–37.6 °C carry "Very strong" (correct: "Strong").
+(42 of 42 outdoor rows) and in `data/processed/phase2_1_solar_scenario_assets.csv`
+(125 of 126 rows), and the column `utci_category_official` in
+`data/processed/phase2_2_decision_confidence.csv` (42 of 42), are shifted one band upward
+relative to the Bröde et al. (2012) categories that the project's own
+`docs/PHASE2_UTCI_METHOD.md` documents. As a result, 34 rows with UTCI 38.4–45.4 °C carry
+the label "Extreme heat stress" (correct: "Very strong", 38–46 °C), and 8 rows with
+32.4–37.6 °C carry "Very strong" (correct: "Strong"). The same shift affects
+`thermal_stress_state` (`phase2_2_decision_confidence.csv`) and its copy `thermal_state`
+(`phase3_candidate_screening.csv`) in those 8 rows, all at 12:00, which read
+`VERY_STRONG_HEAT_STRESS` instead of `STRONG_HEAT_STRESS`; the 34 rows at 38.4–45.4 °C were
+labelled correctly. (Described as found, before the correction below.)
 
 **The decision variables are not affected.** The feasibility thresholds (32/46 °C),
-`decision_state`, `thermal_stress_state` and the category comparison in
-`phase3_scenarios.py` all use the correct numeric edges. The mislabelled column is not
-cited in the manuscript, supplementary material, figures or app.
+`decision_state`, decision confidence and the screening status use numeric limits and do
+not depend on the labels. The category comparison in `phase3_scenarios.py` had correct
+boundaries at 32 and 38 °C but shifted labels and no boundary at 46 °C (38–46 °C and
+≥ 46 °C shared one label); it changes no outcome on the locked data because no UTCI value
+in the scenario rows reaches 46 °C. The `utci_category*` columns are not cited in the
+manuscript, supplementary material, figures or app, but `thermal_state` **was** displayed by
+the read-only prototype, which showed "Very strong heat stress (modelled)" for those 8 rows
+when 12:00 was selected. Scenario tables (15:00 and 18:00 only) contained no mislabelled row.
 
-Because these files belong to the `RELEASE_LOCKED` layer, they are left unchanged. Any
-correction is an owner decision under `PROJECT_STATUS.md` §A.5. Until then, **do not
-quote those label columns in professional material**; quote UTCI values instead.
+**Correction applied (labels only).** The category lookups in
+`src/extract_asset_thermal_exposure.py`, `src/phase2_2_decision_confidence.py` and
+`src/phase3_scenarios.py` now use the Bröde et al. limits (9/26/32/38/46 °C). With the
+repository owner's explicit authorisation, 225 label cells in five columns of the four
+affected `RELEASE_LOCKED` files were corrected in place (`phase2_asset_thermal_exposure.csv`
+42, `phase2_1_solar_scenario_assets.csv` 125, `phase2_2_decision_confidence.csv` 50,
+`phase3_candidate_screening.csv` 8). UTCI values, `decision_state`, confidence classes,
+screening status, row order, columns and line endings are unchanged, and the pre-correction
+files remain in the Git history. The replay manifest (SHA-256 of `phase3_candidate_screening.csv`
+and the `thermal_state` enum, which gains `STRONG_HEAT_STRESS`), the two hash pins in the
+tests and the app legend were updated accordingly. The corrected labels in the
+`utci_category*` columns can now be quoted, but UTCI values remain the preferred evidence.

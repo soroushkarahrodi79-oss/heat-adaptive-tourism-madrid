@@ -112,11 +112,17 @@ numbers.
 
 ## 6. Findings raised during reproduction
 
-1. **UTCI category label shift (decision-neutral data defect).** Two descriptive label
-   columns are one Bröde category too high. See
-   [`EVIDENCE_MATRIX.md`](EVIDENCE_MATRIX.md#data-defect-discovered-during-reproduction-flagged-not-fixed).
-   No decision, figure or manuscript statement depends on them. They are not fixed here
-   because the files are `RELEASE_LOCKED`.
+1. **UTCI category label shift (decision-neutral data defect).** Descriptive label
+   columns were one Bröde category too high. See
+   [`EVIDENCE_MATRIX.md`](EVIDENCE_MATRIX.md#data-defect-discovered-during-reproduction-corrected).
+   No decision, figure or manuscript statement depended on them. They were not fixed by
+   this run, which compared against the pre-correction tables; the labels (225 cells in four
+   locked files) were corrected afterwards, with the owner's authorisation and without
+   changing any value or decision. After the correction, every pipeline step that needs no
+   rasters (decision confidence to accessibility sensitivity) was re-run in a disposable
+   copy and its 9 tables matched the corrected references; the extraction step was not
+   re-executed, so its relabelled columns were checked against the corrected function
+   instead.
 2. **Aggregate table without a generator.** `outputs/tables/proxy_vs_physical_comparison.csv`
    has no producing script in `src/`. Its values were checked against the reproduced
    per-row table, and they agree. Its provenance as a file is nonetheless undocumented.

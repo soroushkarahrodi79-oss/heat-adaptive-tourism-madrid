@@ -31,10 +31,16 @@ TIMESTAMPS = [("12:00", "1200"), ("15:00", "1500"), ("18:00", "1800")]
 
 # Official UTCI thermal-stress category boundaries (Broede et al. 2012, "UTCI-
 # Fiala model", the standard published category system - not project-invented).
+# Entries are (UPPER limit, label of the category below it); the lookup below
+# uses `utci_c < bound`. Standard categories: 9-26 no thermal stress, 26-32
+# moderate, 32-38 strong, 38-46 very strong, >46 extreme heat stress.
+# (Corrected: the previous table paired the category LOWER limits 9/26/32/38/46
+# with the labels of the categories starting there but read them as upper
+# limits, so every value received the label of the next-higher category.)
 UTCI_CATEGORY_BOUNDS = [
-    (9, "No thermal stress"), (26, "Moderate heat stress"),
-    (32, "Strong heat stress"), (38, "Very strong heat stress"),
-    (46, "Extreme heat stress"), (float("inf"), "Extreme heat stress"),
+    (26, "No thermal stress"), (32, "Moderate heat stress"),
+    (38, "Strong heat stress"), (46, "Very strong heat stress"),
+    (float("inf"), "Extreme heat stress"),
 ]
 
 

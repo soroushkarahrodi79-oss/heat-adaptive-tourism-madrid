@@ -41,8 +41,10 @@ At **12:00**, Phase 1's air-temperature-only hazard gate found most sites
 FEASIBLE (regional air temperature had not yet crossed a warning threshold).
 The physical model shows the opposite at the same hour: measured solar
 elevation is already 48.6° and modelled UTCI at 9 of 14 outdoor assets is
-already in the "Very strong" or "Extreme" heat-stress category (32.2–65.3 °C
-Tmrt, 32.4–40.4 °C UTCI). **This is a real, mechanistically explicable
+already in the "Strong" (32–38 °C; 5 assets) or "Very strong" (38–46 °C; 4 assets)
+heat-stress category (32.2–65.3 °C Tmrt, 32.4–40.4 °C UTCI). [Corrected: this passage
+originally read "Very strong" or "Extreme", from the shifted category labels; see
+`professional/EVIDENCE_MATRIX.md`.] **This is a real, mechanistically explicable
 failure mode of an air-temperature-only proxy**: solar radiant load peaks
 earlier in the day (tracking sun angle) than regional air temperature
 (which lags, peaking mid-afternoon) — a distinction a single-variable
@@ -74,7 +76,8 @@ simple-proxy architecture. Full detail:
 - The **hazard-gate concept itself is vindicated in structure**: the
   physical model does not contradict the idea that this is an extreme,
   high-stress episode — every single outdoor asset×timestamp combination
-  (42/42) is at least in "Very strong heat stress" territory (UTCI ≥ 32 °C);
+  (42/42) is at least in "Strong heat stress" territory (UTCI ≥ 32 °C; originally
+  written "Very strong", corrected);
   none reach the official "No thermal stress" or "Moderate" bands. The
   disagreement is about *degree and timing*, not about whether this was a
   genuinely dangerous heat episode.

@@ -1,0 +1,15 @@
+hour,asset_id,name,morphology,hazard_A,tree_count_50m,exposure_A,rule_A_id,A_class,utci_B,B_class
+12:00,A17,Estatua de Goya,street_corridor,LOW,13,LOW,7,FEASIBLE,33.9,FEASIBLE WITH CONDITIONS
+12:00,A18,Palacio de Cibeles - Ayuntamiento de Madrid,plaza_hardscape,LOW,3,MODERATE,7,FEASIBLE,39.1,FEASIBLE WITH CONDITIONS
+12:00,A20,Parque del Retiro,park_garden,LOW,355,LOW,7,FEASIBLE,33.7,FEASIBLE WITH CONDITIONS
+12:00,A21,Real Jardín Botánico de Madrid,park_garden,LOW,55,LOW,7,FEASIBLE,32.4,FEASIBLE WITH CONDITIONS
+12:00,A22,Palacio de Cristal,attraction_exterior,LOW,1,MODERATE,7,FEASIBLE,36.8,FEASIBLE WITH CONDITIONS
+12:00,A23,Jardines de Cecilio Rodríguez,park_garden,LOW,4,LOW,7,FEASIBLE,39.4,FEASIBLE WITH CONDITIONS
+12:00,A24,La Rosaleda,park_garden,LOW,2,MODERATE,7,FEASIBLE,40.4,FEASIBLE WITH CONDITIONS
+12:00,A25,Jardín del Parterre,park_garden,LOW,2,MODERATE,7,FEASIBLE,40.3,FEASIBLE WITH CONDITIONS
+12:00,A27,Jardines del Arquitecto Herrero Palacios,park_garden,LOW,22,LOW,7,FEASIBLE,37.6,FEASIBLE WITH CONDITIONS
+18:00,A14,Puerta de Alcalá,plaza_hardscape,SEVERE,0,HIGH,2,NOT RECOMMENDED,42.7,FEASIBLE WITH CONDITIONS
+18:00,A15,Fuente de Cibeles,plaza_hardscape,SEVERE,0,HIGH,2,NOT RECOMMENDED,44.2,FEASIBLE WITH CONDITIONS
+18:00,A16,Fuente de Neptuno,plaza_hardscape,SEVERE,0,HIGH,2,NOT RECOMMENDED,45.2,FEASIBLE WITH CONDITIONS
+18:00,A19,Real Observatorio de Madrid,attraction_exterior,SEVERE,0,HIGH,2,NOT RECOMMENDED,41.7,FEASIBLE WITH CONDITIONS
+18:00,A26,Monumento a Alfonso XII,attraction_exterior,SEVERE,0,HIGH,2,NOT RECOMMENDED,43.9,FEASIBLE WITH CONDITIONS

@@ -130,6 +130,15 @@ replay prototype in `app/` — **for this layer's own locked pilot.** (Layer B's
 bounded pedestrian-heat work is described in §B and is not governed by this
 restriction, because it is not part of the locked pilot's content.)
 
+### A.5.1 Maintenance record: UTCI category-label correction
+
+On 2026-11-03 a correction of UTCI heat-stress category **labels** was applied, with the
+repository owner's explicit authorisation. It changed 225 label cells in four locked CSV
+files and the corresponding replay-contract hashes. It did not modify the model, any UTCI
+value, threshold, feasibility class, decision, confidence class or conclusion; the earlier
+files remain in the Git history. Details: `professional/EVIDENCE_MATRIX.md`. This record does
+not reopen any closed scientific phase.
+
 ### A.6 What would reopen Layer A development
 
 Any of the following would be grounds to move Layer A's status back toward

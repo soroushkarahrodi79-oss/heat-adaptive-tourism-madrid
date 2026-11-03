@@ -1,0 +1,9 @@
+scope,EA_Hnn_compared_with,n,rmse_c,bias_c,sd_c
+all hours,Barajas local hour n,743,1.61,0.17,1.6
+all hours,Barajas local hour n-1,742,1.98,0.16,1.98
+all hours,Barajas local hour n+1,744,2.25,0.18,2.24
+all hours,"Barajas mean of (n-1, n)",742,1.6,0.16,1.6
+daytime 10-20 h,Barajas local hour n,341,1.08,-0.58,0.91
+daytime 10-20 h,Barajas local hour n-1,341,1.68,0.56,1.58
+daytime 10-20 h,Barajas local hour n+1,341,1.97,-1.32,1.46
+daytime 10-20 h,"Barajas mean of (n-1, n)",341,1.13,-0.01,1.14
