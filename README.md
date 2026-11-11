@@ -437,10 +437,21 @@ No journal, volume, or issue has been assigned — **do not invent one**.
 
 ## Licence
 
-**No repository-wide licence has yet been assigned.** Third-party datasets and software retain
-their original licences. A repository licence is expected to be selected before formal submission;
-until then, please treat the code and text as "all rights reserved" and contact the author before
-reuse.
+**Scope of the licence.** The source code in `src/`, `tests/` and `app/` is released under the
+[MIT License](LICENSE). The licence covers that code only. It does **not** cover:
+
+- **Third-party data** in `data/`, which retains its original licence and attribution terms
+  (for example OpenStreetMap under ODbL, which carries share-alike terms for derived products;
+  Ayuntamiento de Madrid and IGN/CNIG under CC BY 4.0; Meteostat/AEMET under their own terms).
+  See the provenance tables above and `docs/PHASE1_DATA_PROVENANCE.md`.
+- **The manuscript, figures, documentation and derived outputs** (`manuscript/`, `outputs/`,
+  `docs/`, `supplementary/`, `submission/`, `portfolio/`, `professional/`) as kept in this
+  repository. No licence has been assigned to these working files, so they remain "all rights
+  reserved"; please contact the author before reuse. The preprint as deposited on
+  [Zenodo](https://doi.org/10.5281/zenodo.22707470) is licensed separately under
+  **CC BY 4.0**, per its Zenodo record; that licence applies to the deposited version.
+- **Third-party software**, such as SOLWEIG, which is installed as an external dependency and
+  keeps its own licence.
 
 ## Contact
 

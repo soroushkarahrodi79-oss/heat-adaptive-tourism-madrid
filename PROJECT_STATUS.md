@@ -305,13 +305,10 @@ No issue-tracker activity has occurred (0 issues opened to date, either layer).
 
 ## Ambiguity flagged, not resolved here
 
-**Repository licence.** No `LICENSE` file exists in this repository. The README
-states: *"No repository-wide licence has yet been assigned... until then, please
-treat the code and text as 'all rights reserved' and contact the author before
-reuse."* This is a genuine open decision for the repository owner, not a gap this
-audit can close — assigning a licence is a substantive legal choice, not a
-documentation fix, so it is intentionally left unresolved and unassigned here. Note
-that the Zenodo record's own licensing terms (if any were set during deposit) may
-differ from the repository's code/text licensing; that is outside this repository's
-version control and was not verified as part of this audit. This ambiguity applies to
-the whole repository, both layers.
+**Repository licence.** Updated 2026-11-11: a `LICENSE` file (MIT) now covers the source
+code in `src/`, `tests/` and `app/` only. Third-party data keeps its original licences, and the
+manuscript, figures, documentation and derived outputs remain without an assigned licence
+("all rights reserved"); see the README's Licence section. This change touches no locked
+number, table, figure or claim. The preprint deposited on Zenodo is licensed CC BY 4.0 per its record
+(owner-confirmed 2026-11-11); that licence applies to the deposited version and is separate
+from the repository's licence.
