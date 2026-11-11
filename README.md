@@ -445,10 +445,11 @@ No journal, volume, or issue has been assigned — **do not invent one**.
   Ayuntamiento de Madrid and IGN/CNIG under CC BY 4.0; Meteostat/AEMET under their own terms).
   See the provenance tables above and `docs/PHASE1_DATA_PROVENANCE.md`.
 - **The manuscript, figures, documentation and derived outputs** (`manuscript/`, `outputs/`,
-  `docs/`, `supplementary/`, `submission/`, `portfolio/`, `professional/`). No licence has been
-  assigned to these, so they remain "all rights reserved"; please contact the author before
-  reuse. The preprint's own terms are set on its Zenodo record and are separate from this
-  repository.
+  `docs/`, `supplementary/`, `submission/`, `portfolio/`, `professional/`) as kept in this
+  repository. No licence has been assigned to these working files, so they remain "all rights
+  reserved"; please contact the author before reuse. The preprint as deposited on
+  [Zenodo](https://doi.org/10.5281/zenodo.22707470) is licensed separately under
+  **CC BY 4.0**, per its Zenodo record; that licence applies to the deposited version.
 - **Third-party software**, such as SOLWEIG, which is installed as an external dependency and
   keeps its own licence.
 

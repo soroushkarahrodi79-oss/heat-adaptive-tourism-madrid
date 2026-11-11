@@ -309,5 +309,6 @@ No issue-tracker activity has occurred (0 issues opened to date, either layer).
 code in `src/`, `tests/` and `app/` only. Third-party data keeps its original licences, and the
 manuscript, figures, documentation and derived outputs remain without an assigned licence
 ("all rights reserved"); see the README's Licence section. This change touches no locked
-number, table, figure or claim. The Zenodo record's own licensing terms were not verified here
-and remain separate from the repository's licence.
+number, table, figure or claim. The preprint deposited on Zenodo is licensed CC BY 4.0 per its record
+(owner-confirmed 2026-11-11); that licence applies to the deposited version and is separate
+from the repository's licence.
